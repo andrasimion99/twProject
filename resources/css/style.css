@@ -17,6 +17,12 @@ html{
     font-size: 18px;
 }
 
+.clearfix:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
 /*---------REUSEBLE--------------*/
 
 h2{
@@ -44,6 +50,13 @@ h3{
     float: left;
     margin: 1% 0% 1% 1.6%;
     width: 48%;
+}
+
+.col-1-of-3{
+    display: block;
+    float: left;
+    margin: 1% 1% 1% 2%;
+    width: 30%;
 }
 
 .col-1-of-2 p{
@@ -128,7 +141,7 @@ header
 
 .hero-text-box{
     position: absolute;
-    width:20%;
+    width:300px;
     top:35%;
     left: 80%;
     transform: translate(-50%,-50%);
@@ -144,6 +157,7 @@ header
 }
 
 .title h1{
+    text-align: center;
     margin: 0;
     color: white;
     font-size: 200%;
@@ -163,7 +177,7 @@ header
     position: absolute;
     top:2%;
     left: 2%;
-    height: 65px;
+    height: 50px;
     width: auto;
     float: left;
 }
@@ -268,10 +282,12 @@ header
  background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),
         url(img/program1.jpg);
     height: 45vh;
-    width: 30%;
+    width: 20vw;
     border-radius: 50%;
     background-size: cover;
     background-position: center;
+    margin-left: 200px;
+    transition: 0.5s;
 }
 
 
@@ -279,18 +295,21 @@ header
  background-image:
         url(img/program1.jpg);
     height: 45vh;
-    width: 30%;
+    width: 20vw;
     border-radius: 50%;
     background-size: cover;
     background-position: center;
+
 }
 
 .round-photo-2{
- background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),
+    transition: 0.5s;
+    margin-right: 200px;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),
         url(img/program.jpeg);
     height: 45vh;
     float: right;
-    width: 30%;
+    width: 22vw;
     border-radius: 50%;
     background-size: cover;
     background-position: center;
@@ -300,54 +319,28 @@ header
  background-image:
         url(img/program.jpeg);
     height: 45vh;
-    width: 30%;
+    width: 22vw;
     border-radius: 50%;
     background-size: cover;
     background-position: center;
 }
 
-/*.round-photo-1 .img-content
-{
-    position: absolute;
-    text-align: center;
-    width: 100%;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-}
-
-
-.round-photo-2{
-    position: relative;
-    margin-top: 30px;
-    margin-right: 8%;
-    float: right;
-    width: 30%;
-   border: 1px solid #483f3f;
-    border-radius: 50%;
-    width: 30%;
-    background: rgba(0, 0, 0, 0.7);
-}
-
-.round-photo-1 img, .round-photo-2 img{
-    object-fit: cover;
-    height: auto;
-    width: 100%;
-    border-radius: 100%;
-    opacity: 0.3;
-}
-
-.round-photo-1 h3{
-    color: white;
-}
-
-.round-photo-1 img:hover, .round-photo-2 img:hover{
+.round-photo-text{
+    width:300px;
+    margin-top:50%;
+    margin-left: 15%;
     
-    height: auto;
-    width: 101%;
-    margin: 3px 3px;
-    border-radius: 100%;
-    opacity: 1;
-    transition: 0.5s ease;
-}*/
+}
 
+.round-photo-text h3{
+    color: white;
+    font-size: 140%;
+    font-weight: 400;
+    word-spacing: 2px;
+}
+
+footer{
+    height: 30vh;
+    display: block;
+    background-color: #071c2a ;
+}
