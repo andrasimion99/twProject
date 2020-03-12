@@ -363,8 +363,8 @@ header {
 .round-photo-1 {
     float: left;
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/program-run.jpeg);
-    height: 40vh;
-    width: 20vw;
+    height: 44vh;
+    width: 22vw;
     border-radius: 50%;
     background-size: cover;
     background-position: center;
@@ -375,8 +375,8 @@ header {
 
 .round-photo-1:hover {
     background-image: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), url(img/program-run.jpeg);
-    height: 44vh;
-    width: 22vw;
+    height: 48vh;
+    width: 24vw;
     border-radius: 50%;
     background-size: cover;
     background-position: center;
@@ -392,8 +392,8 @@ header {
     transition: 0.3s;
     margin-right: 200px;
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/program-test3.jpg);
-    height: 40vh;
-    width: 20vw;
+    height: 44vh;
+    width: 22vw;
     border-radius: 50%;
     background-size: cover;
     background-position: center;
@@ -402,8 +402,8 @@ header {
 
 .round-photo-2:hover {
     background-image: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)),url(img/program-test3.jpg);
-    height: 44vh;
-    width: 22vw;
+    height: 48vh;
+    width: 24vw;
     border-radius: 50%;
     background-size: cover;
     background-position: center;
