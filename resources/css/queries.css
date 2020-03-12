@@ -14,6 +14,15 @@
     .round-photo-2:hover {
         height: 40vh;
     }
+    
+    .round-photo-1 h3 , .round-photo-2 h3{
+        font-size: 20px;
+        padding: 0px 2px 0px 2px;
+    }
+    .round-photo-1:hover h3, .round-photo-2:hover h3{
+        font-size: 22px;
+    }
+    
 }
 
 @media only screen and (max-width: 1023px) {
@@ -32,20 +41,24 @@
         letter-spacing: 1px;
         word-spacing: 4px;
     }
-    .hero-text-box h2 {
-        font-size: 140%;
+    .hero-text-box h2 { font-size: 140%; }
+    .round-photo-1 { height: 35vh; }
+    .round-photo-1:hover { height: 35vh; }
+    .round-photo-2 { height: 35vh; }
+    .round-photo-2:hover { height: 35vh }
+    .sidenav a { 
+        padding: 10px 10px 10px 10px;
+        font-size: 17px; 
     }
-    .round-photo-1 {
-        height: 35vh;
+    
+    .round-photo-1 { margin-left: 180px; }
+    .round-photo-2 { margin-right: 180px; }
+        .round-photo-1 h3 , .round-photo-2 h3{
+        font-size: 18px;
+        padding: 0px 2px 0px 2px;
     }
-    .round-photo-1:hover {
-        height: 35vh;
-    }
-    .round-photo-2 {
-        height: 35vh;
-    }
-    .round-photo-2:hover {
-        height: 35vh;
+    .round-photo-1:hover h3, .round-photo-2:hover h3{
+        font-size: 21px;
     }
 }
 
@@ -80,6 +93,21 @@
     .round-photo-2:hover {
         height: 30vh;
     }
+    
+    .sidenav a { 
+        padding: 10px 10px 10px 10px;
+        font-size: 17px; 
+    }
+    
+    .round-photo-1 { margin-left: 160px; }
+    .round-photo-2 { margin-right: 160px; }
+    .round-photo-1 h3 , .round-photo-2 h3{
+        font-size: 18px;
+        padding: 0px 2px 0px 2px;
+    }
+    .round-photo-1:hover h3, .round-photo-2:hover h3{
+        font-size: 21px;
+    }
 }
 
 @media only screen and (max-width: 750px) {
@@ -112,6 +140,15 @@
     }
     .round-photo-2:hover {
         height: 25vh;
+    }
+    .round-photo-1 { margin-left: 140px; }
+    .round-photo-2 { margin-right: 140px; }
+    .round-photo-1 h3 , .round-photo-2 h3{
+        font-size: 17px;
+        padding: 0px 2px 0px 2px;
+    }
+    .round-photo-1:hover h3, .round-photo-2:hover h3{
+        font-size: 18px;
     }
 }
 
@@ -146,6 +183,10 @@
     .round-photo-2:hover {
         height: 20vh;
     }
+    
+        .round-photo-1 { margin-left: 120px; }
+    .round-photo-2 { margin-right: 120px; }
+    
 }
 
 @media only screen and (max-width: 700px) {
@@ -169,6 +210,15 @@
     }
     .main-nav {
         height: 40px;
+    }
+    .round-photo-1 { margin-left: 100px; }
+    .round-photo-2 { margin-right: 100px; }
+    .round-photo-1 h3 , .round-photo-2 h3{
+        font-size: 15px;
+        padding: 0px 2px 0px 2px;
+    }
+    .round-photo-1:hover h3, .round-photo-2:hover h3{
+        font-size: 16px;
     }
 }
 
@@ -209,4 +259,5 @@
         border-bottom: 2px transparent;
         transition: border-bottom 0.2s;
     }
+    
 }
