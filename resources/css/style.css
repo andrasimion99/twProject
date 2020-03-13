@@ -453,7 +453,7 @@ header {
 
 .footer-information ul li, .footer-helpful ul li
 {
-    margin-bottom: 5px;
+    margin-bottom: 3px;
 }
 
 .footer-information ul li a, .footer-helpful ul li a
@@ -472,9 +472,9 @@ header {
 .footer-content h3
 {
     color: #2980b9;
-    font-size: 100%;
-    margin-bottom: 10px;
-    margin-top:15px;
+    font-size: 90%;
+    margin-bottom: 8px;
+    margin-top:10px;
 }
 
 
