@@ -116,7 +116,7 @@ section {
 
 /*--------------- HEADER -----------*/
 
-header {
+.main-header {
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/hero2.jpg);
     height: 70vh;
     background-size: cover;
@@ -161,8 +161,9 @@ header {
     background: transparent;
     border-width: 0;
     position: absolute;
-    left:90%;
-    top:5%;
+    /* left:90%; */
+    right: 7%;
+    top:6.5%;
     color: white;
     font-size: 110%;
     cursor: pointer;
@@ -381,9 +382,9 @@ header {
 
 .main-nav {
     position: fixed;
-    top: 2%;
-    left: 2%;
-    height: 50px;
+    top: 5%;
+    left: 4%;
+    font-size: 2vw;
     width: auto;
     float: left;
 }

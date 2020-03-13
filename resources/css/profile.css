@@ -1,0 +1,227 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background-color: white;
+  color: #555;
+  font-family: "Lato", "Arial", sans-serif;
+  font-weight: 300;
+  text-rendering: optimizeLegibility;
+  font-size: 18px;
+}
+
+a {
+  text-decoration: none;
+  color: #555;
+  font-family: "Lato", "Arial", sans-serif;
+  text-rendering: optimizeLegibility;
+}
+
+.profile-header {
+  /* background-color: rgb(80, 132, 228); */
+}
+.profile-title {
+  color: aliceblue;
+  text-align: center;
+  background-color: cornflowerblue;
+  padding: 30px;
+}
+
+.profile-header:after {
+  display: block;
+  height: 2px;
+  background-color: rgb(41, 75, 143);
+  content: " ";
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 20px;
+  transition: width 0.5s;
+}
+
+.profile-header:before {
+  display: block;
+  height: 2px;
+  background-color: rgb(41, 75, 143);
+  content: " ";
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  transition: width 0.5s;
+}
+
+.total-profile-container {
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+  margin-top: 5%;
+  width: 50%;
+  border: 1px solid grey;
+  margin-bottom: 5%;
+}
+
+.left-profile-container {
+  height: 100%;
+  width: 35%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.right-profile-container {
+  height: 100%;
+  width: 100%;
+  border-left: 1px solid grey;
+}
+
+.profile-pic {
+  position: relative;
+  width: 50%;
+  margin: 0 auto;
+  border-radius: 50%;
+  background-color: cornflowerblue;
+}
+
+.profile-pic:after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
+
+.profile-name {
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  color: aliceblue;
+  font-size: 2vw;
+}
+
+.username {
+  text-align: center;
+  padding: 10px;
+  font-weight: bold;
+  font-size: 1.1vw;
+}
+
+.user-info {
+  margin-top: 30%;
+  text-align: center;
+}
+
+.profile-info {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  width: 100%;
+}
+
+.user-photo {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  width: 100%;
+}
+
+.liked-articles {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  width: 100%;
+}
+
+.settings {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  width: 100%;
+}
+
+.profile-info:hover {
+  background-color: rgb(41, 75, 143);
+  color: white;
+  transition: 0.3s;
+}
+
+.user-photo:hover {
+  background-color: rgb(41, 75, 143);
+  transition: 0.3s;
+  color: white;
+}
+
+.liked-articles:hover {
+  background-color: rgb(41, 75, 143);
+  color: white;
+  transition: 0.3s;
+}
+
+.settings:hover {
+  background-color: rgb(41, 75, 143);
+  color: white;
+  transition: 0.3s;
+}
+
+.edit-header {
+  padding: 10px;
+  border-bottom: 1px solid grey;
+}
+
+.edit-title {
+  text-align: center;
+  padding: 10px;
+}
+
+.edit-subtitle {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-size: medium;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  border: 2px solid #ccc;
+  outline: none;
+}
+
+input:focus {
+  border: 2px solid rgb(41, 75, 143);
+  border-radius: 10px;
+}
+
+.edit-info {
+  /* padding-bottom: 5%; */
+  /* border-bottom: 1px solid grey; */
+}
+.edit-info form {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 10%;
+}
+
+.nume-camp {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.save-info {
+  padding-top: 5%;
+  padding-bottom: 5%;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.save-info .btn {
+  background-color: rgb(223, 56, 89);
+  color: white;
+  padding: 10px;
+  border: none;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.save-info .btn:hover {
+  background-color: rgb(228, 8, 52);
+  cursor: pointer;
+}
