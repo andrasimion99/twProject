@@ -157,6 +157,28 @@ section {
   font-weight: 300;
 }
 
+.search-btn input {
+  position: absolute;
+  top: 2%;
+  left: 2%;
+  width: 7%;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: white;
+  background-image: url("img/searchicon.png");
+  background-position: 10px 10px; 
+  background-repeat: no-repeat;
+  background-size: 1.2vw;
+  font-size: 0.9vw;
+  padding: 12px 20px 12px 40px;
+  box-sizing: border-box;
+  transition: width 0.4s ease-in-out;
+}
+
+.search-btn input:focus {
+  width: 30%;
+}
+
 /*----logIn modal------------*/
 
 .button-login {

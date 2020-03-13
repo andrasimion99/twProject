@@ -22,18 +22,17 @@ a {
 
 .profile-header {
   background-color: cornflowerblue;
+  
 }
 .profile-title {
   color: aliceblue;
   text-align: center;
-  /* background-color: cornflowerblue; */
   padding: 30px;
 }
 
 .profile-header:after {
   display: block;
   height: 2px;
-  /* background-color: rgb(41, 75, 143); */
   content: " ";
   width: 100%;
   margin: 0 auto;
@@ -44,12 +43,10 @@ a {
 .profile-header:before {
   display: block;
   height: 2px;
-  /* background-color: rgb(41, 75, 143); */
   content: " ";
   width: 100%;
   margin: 0 auto;
   margin-bottom: 2%;
-  /* margin-top: 10px; */
   transition: width 0.5s;
 }
 
