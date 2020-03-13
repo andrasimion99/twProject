@@ -27,8 +27,56 @@
                     <p class="main-nav" onclick="openNav()">&#9776;</p>
                 </div>
             </div>
-            <a class="button-login" href="#">Log in</a>
+            
+            
+            <button id="modalBtn" class="button-login">Log in</button>
+            <div id="loginModal" class="modal">
+                <div id="container" class="modal-content">
+                    <span class="closeBtn">&times;</span>
+                    <div class="form-container sign-up-container">
+                        <form action="#">
+                            <h2>Create Account</h2>
+                            <div class="social-container">
+                                <a href="#" class="social"><i class="ion-social-facebook"></i></a>
+                                <a href="#" class="social"><i class="ion-social-googleplus"></i></a>
+                                <a href="#" class="social"><i class="ion-social-twitter"></i></a>
+                            </div>
+                            <span>or use your email for registration</span>
+                            <input type="text" placeholder="Name" />
+                            <input type="email" placeholder="Email" />
+                            <input type="password" placeholder="Password" />
+                            <p>Now you can sign in</p>
+                            <button>Sign in</button>
+                        </form>
+                        <div class="change-1">
+                        <button id="back" class="back" >Back</button>
+                        </div>
+                    </div>
+                    
+                    <div class="form-container sign-in-container">
+                        <form action="#">
+                            <h2>Sign in</h2>
+                            <div class="social-container">
+                                <a href="#" class="social"><i class="ion-social-facebook"></i></a>
+                                <a href="#" class="social"><i class="ion-social-googleplus"></i></a>
+                                <a href="#" class="social"><i class="ion-social-twitter"></i></a>
+                            </div>
+                            <span>or use your account</span>
+                            <input type="email" placeholder="Email" />
+                            <input type="password" placeholder="Password" />
+                            <a href="#">Forgot your password?</a>
+                            <button>Sign in</button>
+                        </form>
+                        <div class="change-2">
+                        <p>You don't have an account?</p>
+                        <button id ="signUp" class="button-ghost">Sign up</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
+        
+                    <script src="login.js"></script>
 
         <div class="title">
             <h1>Obesity prevalance visualizer</h1>

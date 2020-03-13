@@ -325,20 +325,10 @@
     .main-nav {
         height: 40px;
     }
-    .button-login:link,
-    .button-login:visited {
-        padding: 7px 0;
-        position: absolute;
-        top: 5%;
-        left: 85%;
-        color: white;
-        text-decoration: none;
-        font-weight: 300;
-        font-size: 110%;
-        margin-right: 10px;
-        text-rendering: optimizeLegibility;
-        border-bottom: 2px transparent;
-        transition: border-bottom 0.2s;
-    }
+.button-login {
+    font-size: 95%;
+    left:85%;
+    top:5%;
+}
     
 }

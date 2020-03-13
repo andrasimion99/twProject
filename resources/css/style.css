@@ -94,27 +94,6 @@ section {
     background-color: #1d5a81;
 }
 
-.button-login:link,
-.button-login:visited {
-    padding: 7px 0;
-    position: absolute;
-    top: 5%;
-    left: 90%;
-    color: white;
-    text-decoration: none;
-    font-weight: 300;
-    font-size: 110%;
-    margin-right: 10px;
-    text-rendering: optimizeLegibility;
-    border-bottom: 2px transparent;
-    transition: border-bottom 0.2s;
-}
-
-.button-login:hover,
-.button-login:active {
-    border-bottom: 2px solid #2980b9;
-}
-
 .button-more:link,
 .button-more:visited {
     display: inline;
@@ -176,6 +155,227 @@ header {
     font-weight: 300;
 }
 
+/*----logIn modal------------*/
+
+.button-login {
+    background: transparent;
+    border-width: 0;
+    position: absolute;
+    left:90%;
+    top:5%;
+    color: white;
+    font-size: 110%;
+    cursor: pointer;
+    font-weight: 300;
+}
+
+
+.button-login:hover {
+    border-bottom: 2px solid #2980b9;
+}
+
+.modal{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.modal-content{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    background-color: #fff;
+    margin: 5% auto;
+    width: 370px;
+    box-shadow: 0 5px 8px 0 rgba(0,0,0,1),  0 7px 20px 0 rgba(0,0,0,0.17);
+    animation-name: modalopen;
+    animation-duration: 0.5s;
+    max-width: 100%;
+    min-height: 480px;
+}
+
+.closeBtn{
+    position: absolute;
+    color: black;
+    right: 0;
+    top:0;
+    padding:10px;
+    z-index: 100;
+}
+
+.closeBtn:hover, closeBtn:focus{
+    color:black;
+    text-decoration: none;
+    cursor:pointer;
+}
+
+
+@keyframes modalopen
+{
+    from{opacity: 0}
+    to {opacity: 1}
+}
+
+.modal-content span{
+    font-size: 15px;
+}
+
+.modal-content a{
+    color: #333;
+    font-size: 15px;
+    text-decoration: none;
+    margin: 10px 0;
+}
+
+.modal-content p{
+    color: #333;
+    margin-top:10px;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.form-container
+{
+    height: 100%;
+}
+
+.change-1
+{
+    height: 10%;
+}
+.change-2
+{
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.form-container form
+{
+    background: #fff;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    padding-top: 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.social-container
+{
+    margin: 10px 0;
+}
+
+.social-container a
+{
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 5px;
+    height: 40px;
+    width: 40px;
+}
+
+.form-container input
+{
+    background: #eee;
+    border: none;
+    padding: 12px 15px;
+    margin: 8px 0;
+    width: 80%;
+}
+
+.modal-content button
+{
+    border-radius: 20px;
+    border: 1px solid #2980b9;
+    background: #2980b9;
+    color: #fff;
+    font-size: 12px;
+    text-transform: uppercase;
+    padding: 7px 25px;
+    letter-spacing: 1px;
+    transition: transform 80ms ease-in;
+}
+
+.modal-content button:hover{
+    cursor: pointer;
+}
+
+.modal-content button:active
+{
+    transform: scale(0.95);
+}
+
+.modal-content button:focus{
+    outline: none;
+}
+
+.modal-content .button-ghost
+{
+    background: transparent;
+    border-color:  #2980b9;
+    color:  #2980b9;
+}
+
+.form-container
+{
+    position: absolute;
+    top:0;
+    height: 100%;  
+}
+
+.sign-in-container
+{
+    left:0;
+    width:100%;
+    z-index: 5;
+    opacity: 1;
+}
+
+.sign-up-container
+{
+    left:0;
+    width:100%;
+    z-index: 1;
+    opacity: 0;
+}
+
+
+.modal-content.sign-up-active .sign-up-container
+{
+    z-index: 5;
+    opacity: 1;
+}
+
+.modal-content.sign-up-active .sign-in-container
+{
+    opacity: 0;
+    z-index: 2;
+}
+
+
+.modal-content .back
+{
+    position: absolute;
+    right:0;
+    bottom: 0;
+    margin: 15px;
+    background: transparent;
+    border-color:  #2980b9;
+    color:  #2980b9;
+}
 
 /*--------------NAV-----------------*/
 
@@ -529,10 +729,10 @@ header {
     margin: 0 auto;
 }
 
-i.ion-social-facebook,
-i.ion-social-twitter,
-i.ion-social-googleplus,
-i.ion-social-instagram-outline {
+footer i.ion-social-facebook,
+footer i.ion-social-twitter,
+footer i.ion-social-googleplus,
+footer i.ion-social-instagram-outline {
     color: #535050;
     font-size: 130%;
     margin-left: 15px;
