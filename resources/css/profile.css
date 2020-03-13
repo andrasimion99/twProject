@@ -21,35 +21,35 @@ a {
 }
 
 .profile-header {
-  /* background-color: rgb(80, 132, 228); */
+  background-color: cornflowerblue;
 }
 .profile-title {
   color: aliceblue;
   text-align: center;
-  background-color: cornflowerblue;
+  /* background-color: cornflowerblue; */
   padding: 30px;
 }
 
 .profile-header:after {
   display: block;
   height: 2px;
-  background-color: rgb(41, 75, 143);
+  /* background-color: rgb(41, 75, 143); */
   content: " ";
   width: 100%;
   margin: 0 auto;
-  margin-top: 20px;
+  margin-top: 2%;
   transition: width 0.5s;
 }
 
 .profile-header:before {
   display: block;
   height: 2px;
-  background-color: rgb(41, 75, 143);
+  /* background-color: rgb(41, 75, 143); */
   content: " ";
   width: 100%;
   margin: 0 auto;
-  margin-bottom: 20px;
-  margin-top: 10px;
+  margin-bottom: 2%;
+  /* margin-top: 10px; */
   transition: width 0.5s;
 }
 
