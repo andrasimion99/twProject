@@ -108,6 +108,37 @@
     .round-photo-1:hover h3, .round-photo-2:hover h3{
         font-size: 21px;
     }
+    
+    /*-------------Footer--------*/
+    
+    .footer-information ul li a, .footer-helpful ul li a
+    {
+        font-size: 80%;
+    }
+    
+    .footer-content h3
+    {
+        font-size: 80%;
+        margin-bottom: 10px;
+        margin-top:15px;
+    }
+    
+     .footer-content p
+    {
+        font-size: 80%;
+        margin-bottom: 8px;
+    }
+
+    .footer-information
+    {
+        margin-left: 5%;
+    }
+
+    .footer-helful
+    {
+        margin-left: 5%;
+    }
+
 }
 
 @media only screen and (max-width: 750px) {
@@ -150,6 +181,8 @@
     .round-photo-1:hover h3, .round-photo-2:hover h3{
         font-size: 18px;
     }
+    
+    
 }
 
 @media only screen and (max-width: 755px) {
@@ -186,6 +219,54 @@
     
         .round-photo-1 { margin-left: 120px; }
     .round-photo-2 { margin-right: 120px; }
+    
+    
+        /*-------------Footer--------*/
+    
+    
+.footer-content
+    {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    
+    .footer-information ul li a, .footer-helpful ul li a
+    {
+        font-size: 80%;
+    }
+    
+    .footer-content h3
+    {
+        font-size: 80%;
+        margin-bottom: 10px;
+        margin-top:15px;
+    }
+    
+     .footer-content p
+    {
+        color:black;
+        font-size: 80%;
+        margin-bottom: 8px;
+    }
+
+    .footer-about-us
+    {
+        margin-left: 2%;
+    }
+    
+    .footer-information
+    {
+        margin-left: 5%;
+    }
+
+    .footer-helpful 
+    {
+        margin-left: 5%;
+    }
+    
+    .footer-end p{
+        font-size: 70%;
+    }
     
 }
 
