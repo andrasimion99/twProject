@@ -22,7 +22,6 @@ a {
 
 .profile-header {
   background-color: cornflowerblue;
-  
 }
 .profile-title {
   color: aliceblue;
@@ -182,6 +181,31 @@ input {
   outline: none;
 }
 
+.upload-btn-wrapper .btn {
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  border: 2px solid #ccc;
+  outline: none;
+  margin-top: 20px;
+  background-color: white;
+}
+
+.upload-btn-wrapper {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  width: 100%;
+}
+
+.upload-btn-wrapper input[type=file] {
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+
 input:focus {
   border: 2px solid rgb(41, 75, 143);
   border-radius: 10px;
@@ -190,6 +214,7 @@ input:focus {
 .edit-info {
   /* padding-bottom: 5%; */
   /* border-bottom: 1px solid grey; */
+  /* background-color: blueviolet; */
 }
 .edit-info form {
   width: 80%;
@@ -200,6 +225,33 @@ input:focus {
 .nume-camp {
   padding-top: 10px;
   padding-bottom: 10px;
+}
+
+.photo-preview-container {
+  /* background-color: blueviolet; */
+  margin: 0 auto;
+  width: 80%;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid grey;
+}
+
+.photo-preview-text {
+  /* border: 1px solid blue; */
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin: 0 auto;
+  width: 80%;
+  border-radius: 10px;
+}
+
+.photo-preview {
+  /* border: 1px solid brown; */
+  font-size: 10vw;
+  text-align: center;
+  padding: 10px;
+  background: #f2f3f5;
+  border-radius: 10px;
 }
 
 .save-info {
