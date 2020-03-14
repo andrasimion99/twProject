@@ -192,6 +192,14 @@ input {
     background-color: white;
 }
 
+input:hover{
+    border: 2px solid rgb(92, 88, 88);
+}
+
+.upload-btn-wrapper .btn:hover{
+    border: 2px solid rgb(92, 88, 88);
+}
+
 .upload-btn-wrapper {
     position: relative;
     overflow: hidden;
@@ -255,7 +263,6 @@ input:focus {
 
 .article-flex-container {
     padding: 20px;
-    /* background-color: rgb(223, 56, 89); */
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -266,7 +273,6 @@ input:focus {
 
 .article {
     width: 30%;
-    /* background-color: cornflowerblue; */
     border: 1px solid gray;
     margin-top: 5%;
     margin-bottom: 5%;
@@ -278,7 +284,6 @@ input:focus {
 }
 
 .article-title {
-    /* background-color: rgb(228, 8, 52); */
     text-align: center;
     padding: 10px;
     font-size: 1vw;
