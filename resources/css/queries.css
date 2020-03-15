@@ -14,16 +14,14 @@
     .round-photo-2:hover {
         height: 40vh;
     }
-    
-    .round-photo-1 h3 , .round-photo-2 h3{
+    .round-photo-1 h3, .round-photo-2 h3 {
         font-size: 20px;
         padding: 0px 2px 0px 2px;
     }
-    .round-photo-1:hover h3, .round-photo-2:hover h3{
+    .round-photo-1:hover h3, .round-photo-2:hover h3 {
         font-size: 22px;
     }
-        .col-1-of-1 .button-more
-    {
+    .col-1-of-1 .button-more {
         margin-right: 50px;
     }
 }
@@ -39,30 +37,42 @@
     .title h1 {
         font-size: 160%;
     }
-    .hero-text-box h2 { font-size: 140%; }
-    .round-photo-1 { height: 35vh; }
-    .round-photo-1:hover { height: 35vh; }
-    .round-photo-2 { height: 35vh; }
-    .round-photo-2:hover { height: 35vh }
-    .sidenav a { 
-        padding: 10px 10px 10px 10px;
-        font-size: 17px; 
+    .hero-text-box h2 {
+        font-size: 140%;
     }
-    
-    .round-photo-1 { margin-left: 180px; }
-    .round-photo-2 { margin-right: 180px; }
-        .round-photo-1 h3 , .round-photo-2 h3{
+    .round-photo-1 {
+        height: 35vh;
+    }
+    .round-photo-1:hover {
+        height: 35vh;
+    }
+    .round-photo-2 {
+        height: 35vh;
+    }
+    .round-photo-2:hover {
+        height: 35vh
+    }
+    .sidenav a {
+        padding: 10px 10px 10px 10px;
+        font-size: 17px;
+    }
+    .round-photo-1 {
+        margin-left: 180px;
+    }
+    .round-photo-2 {
+        margin-right: 180px;
+    }
+    .round-photo-1 h3, .round-photo-2 h3 {
         font-size: 18px;
         padding: 0px 2px 0px 2px;
     }
-    .round-photo-1:hover h3, .round-photo-2:hover h3{
+    .round-photo-1:hover h3, .round-photo-2:hover h3 {
         font-size: 21px;
     }
-    .col-1-of-1 .button-more
-    {
+    .col-1-of-1 .button-more {
         margin-right: 50px;
     }
-}   
+}
 
 @media only screen and (max-width: 776px) {
     .title h1 {
@@ -80,37 +90,43 @@
     .round-photo-2:hover {
         height: 30vh;
     }
-    
-    .sidenav a { 
+    .sidenav a {
         padding: 10px 10px 10px 10px;
-        font-size: 17px; 
+        font-size: 17px;
     }
-    
-    .round-photo-1 { margin-left: 160px; }
-    .round-photo-2 { margin-right: 160px; }
-    .round-photo-1 h3 , .round-photo-2 h3{
+    .round-photo-1 {
+        margin-left: 160px;
+    }
+    .round-photo-2 {
+        margin-right: 160px;
+    }
+    .round-photo-1 h3, .round-photo-2 h3 {
         font-size: 18px;
         padding: 0px 2px 0px 2px;
     }
-    .round-photo-1:hover h3, .round-photo-2:hover h3{
+    .round-photo-1:hover h3, .round-photo-2:hover h3 {
         font-size: 21px;
     }
-    
-    .footer-information ul li a, .footer-helpful ul li a
-    {
+    .footer-information ul li a, .footer-helpful ul li a {
         font-size: 80%;
     }
-    
-    .footer-content h3, .footer-content p
-    {
+    .footer-content h3, .footer-content p {
         font-size: 80%;
     }
-
-    .footer-information,.footer-helful
-    {
+    .footer-information, .footer-helful {
         margin-left: 5%;
     }
 
+    .search-btn input {
+        top: 1%;
+        background-position: 8px 5px; 
+        background-size: 16px;
+        font-size: 12px;
+        padding: 5px 20px 5px 40px;
+      }
+      .search-btn input:focus {
+        width: 87vw;
+      }
 }
 
 /*@media only screen and (max-width: 750px) {
@@ -169,36 +185,28 @@
     .round-photo-2:hover {
         height: 20vh;
     }
-    
-        .round-photo-1 { margin-left: 120px; }
-    .round-photo-2 { margin-right: 120px; }
-    
-    
-.footer-content
-    {
+    .round-photo-1 {
+        margin-left: 120px;
+    }
+    .round-photo-2 {
+        margin-right: 120px;
+    }
+    .footer-content {
         margin-left: 5%;
         margin-right: 5%;
     }
-
-    .footer-about-us
-    {
+    .footer-about-us {
         margin-left: 2%;
     }
-    
-    .footer-information
-    {
+    .footer-information {
         margin-left: 5%;
     }
-
-    .footer-helpful 
-    {
+    .footer-helpful {
         margin-left: 5%;
     }
-    
-    .footer-end p{
+    .footer-end p {
         font-size: 70%;
     }
-    
 }
 
 @media only screen and (max-width: 700px) {
@@ -208,13 +216,17 @@
     .main-nav {
         height: 40px;
     }
-    .round-photo-1 { margin-left: 100px; }
-    .round-photo-2 { margin-right: 100px; }
-    .round-photo-1 h3 , .round-photo-2 h3{
+    .round-photo-1 {
+        margin-left: 100px;
+    }
+    .round-photo-2 {
+        margin-right: 100px;
+    }
+    .round-photo-1 h3, .round-photo-2 h3 {
         font-size: 15px;
         padding: 0px 2px 0px 2px;
     }
-    .round-photo-1:hover h3, .round-photo-2:hover h3{
+    .round-photo-1:hover h3, .round-photo-2:hover h3 {
         font-size: 16px;
     }
 }
@@ -238,10 +250,17 @@
     }
     .button-login {
         font-size: 95%;
-        left:85%;
-        top:5%;}
+        left: 85%;
+        top: 8.5%;
+    }
+
+    .sidenav {
+        background-color: rgb(0, 0, 0, 0.95);
+      }
+      
+      
 }
-   
+
 @media only screen and (max-width: 580px) {
     .hero-text-box {
         padding-left: 10px;
@@ -253,48 +272,55 @@
     .title h1 {
         font-size: 120%;
     }
-    h2 { font-size: 110%; }
-    
-    .col-1-of-1 h2:hover {
-      font-size: 130%;
+    h2 {
+        font-size: 110%;
     }
-    .button-more{
+    .col-1-of-1 h2:hover {
+        font-size: 130%;
+    }
+    .button-more {
         margin-right: 20px;
     }
-    .col-1-of-2 p { font-size: 80%; }
-    
-    .col-1-of-1 p { font-size: 90%; }
-    
-    .hero-text-box h2 { font-size: 110%;}
-    
-    .main-nav { height: 40px; }
-    
-    .footer-about-us { flex: 1; }
-    
+    .col-1-of-2 p {
+        font-size: 80%;
+    }
+    .col-1-of-1 p {
+        font-size: 90%;
+    }
+    .hero-text-box h2 {
+        font-size: 110%;
+    }
+    .main-nav {
+        height: 40px;
+    }
+    .footer-about-us {
+        flex: 1;
+    }
     .button-login {
         font-size: 90%;
-        left:80%;
-        top:7%;
+        left: 80%;
+        top: 8.5%;
     }
-    
-    .footer-helpful { display: none; }
-    
-    .section-about .button-more{
-      width: 90%;
-      text-align: center;
+    .footer-helpful {
+        display: none;
     }
-    
+    .section-about .button-more {
+        width: 90%;
+        text-align: center;
+    }
     .modal-content {
-      margin: 5% auto;
-      width: 320px;
+        margin: 5% auto;
+        width: 320px;
     }
-    .col-1-of-1 .button-more { margin-right: 50px; }
+    .col-1-of-1 .button-more {
+        margin-right: 50px;
+    }
 }
-    
+
 @media only screen and (max-width: 320px) {
     .modal-content {
-      margin: 5% auto;
-      width: 250px;
+        margin: 5% auto;
+        width: 250px;
     }
     .hero-text-box {
         padding-left: 10px;
@@ -305,10 +331,14 @@
     }
     .button-login {
         font-size: 90%;
-        left:75%;
-        top:7%;
+        left: 75%;
+        top: 7%;
     }
-    .footer-information {display: none;}
-    .footer-about {flex=1; justify-self: center;}
-    
+    .footer-information {
+        display: none;
+    }
+    .footer-about {
+        flex: 1;
+        justify-self: center;
+    }
 }
