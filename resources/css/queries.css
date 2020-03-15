@@ -72,6 +72,22 @@
     .col-1-of-1 .button-more {
         margin-right: 50px;
     }
+
+    .total-profile-container {
+        width: 80%;
+    }
+
+    .profile-name {
+        font-size: 25px;
+    }
+
+    .username {
+        font-size: 16px;
+    }
+
+    .article-title {
+        font-size: 16px;
+    }
 }
 
 @media only screen and (max-width: 776px) {
@@ -127,6 +143,17 @@
       .search-btn input:focus {
         width: 87vw;
       }
+      .profile-name {
+        font-size: 35px;
+    }
+
+      .profile-pic {
+        width: 70%;
+    }
+
+    .article {
+        width: 40%;
+    }
 }
 
 /*@media only screen and (max-width: 750px) {
@@ -315,6 +342,36 @@
     .col-1-of-1 .button-more {
         margin-right: 50px;
     }
+    .profile-name {
+        font-size: 25px;
+    }
+
+    .username {
+        font-size: 12px;
+    }
+
+    .profile-title {
+        font-size: 12px;
+    }
+
+    .photo-preview-container {
+        padding: 10px;
+        border-radius: 10px;
+    }
+
+    .article {
+        width: 40%;
+    }
+
+    .total-profile-container {
+        width: 95%;
+    }
+
+    .article-title {
+        padding: 8px;
+        font-size: 12px;
+    }
+
 }
 
 @media only screen and (max-width: 320px) {

@@ -61,14 +61,14 @@ a {
 }
 
 .left-profile-container {
-    height: 100%;
+    height: auto;
     width: 35%;
     padding-top: 20px;
     padding-bottom: 20px;
 }
 
 .right-profile-container {
-    height: 100%;
+    height: auto;
     width: 100%;
     border-left: 1px solid grey;
 }
@@ -286,7 +286,7 @@ input:focus {
 .article-title {
     text-align: center;
     padding: 10px;
-    font-size: 1vw;
+    font-size: 16px;
 }
 
 .article-photo img{
