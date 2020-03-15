@@ -104,7 +104,6 @@ section {
 
 .button-more:link,
 .button-more:visited {
-  display: inline;
   float: right;
   padding: 10px 15px;
   font-weight: 300;
@@ -189,9 +188,10 @@ section {
 
 .button-login {
   background: transparent;
-  border-width: 0;
+  border:none;
   position: absolute;
   /* left:90%; */
+  outline: none;
   right: 7%;
   top: 8.5%;
   color: white;
@@ -555,21 +555,21 @@ closeBtn:focus {
   height: auto;
 }
 
-.button-more-1-col:link .button-more-1-col:visited {
+/*.button-more-1-col:link .button-more-1-col:visited {
   margin-bottom: 50px;
   padding: 10px 15px;
   font-weight: 300;
   text-decoration: none;
   background-color: #2980b9;
   border-radius: 200px;
-  color: white;
+  color: red;
   transition: background-color 0.2s;
 }
 
 .button-more-1-col:hover .button-more-1-col:active {
   background-color: #1d5a81;
 }
-
+*/
 .section-disease h2:before {
   display: block;
   height: 0px;
