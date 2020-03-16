@@ -88,6 +88,10 @@
     .article-title {
         font-size: 16px;
     }
+
+    .image-text {
+        font-size: 14px;
+    }
 }
 
 @media only screen and (max-width: 776px) {
@@ -153,6 +157,18 @@
 
     .article {
         width: 40%;
+    }
+
+    .article:hover {
+        width: 45%;
+    }
+
+    .image-text {
+        display: none;
+    }
+
+    #loadMore {
+        width: 70%;
     }
 }
 
