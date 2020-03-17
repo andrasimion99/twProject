@@ -407,7 +407,7 @@ closeBtn:focus {
 .main-nav {
   position: fixed;
   top: 7%;
-  left: 4%;
+  left: 2%;
   font-size: 30px;
   width: auto;
   float: left;
@@ -427,13 +427,13 @@ closeBtn:focus {
   background-color: rgb(0, 0, 0, 0.6);
   overflow-x: hidden;
   transition: 0.5s;
-  padding-top: 5%;
+  padding-top: 8%;
 }
 
 .sidenav a {
   padding: 10px 10px 10px 32px;
   text-decoration: none;
-  font-size: 1.3vw;
+  font-size: 23px;
   color: #c0b0b0;
   display: block;
   transition: 0.3s;
@@ -454,6 +454,7 @@ closeBtn:focus {
 #main {
   transition: margin-left 0.5s;
   color: #c0b0b0;
+  margin-left: 0;
 }
 
 .menu-elem a:after {
@@ -468,6 +469,10 @@ closeBtn:focus {
 
 .menu-elem a:hover::after {
   width: 60%;
+}
+
+#mySidenav {
+  width: 0;
 }
 
 /*-----------SECTIONS-------*/
