@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400&display=swap" rel="stylesheet" />
     <script src="https://kit.fontawesome.com/cec80c6e23.js" crossorigin="anonymous"></script>
     <script src="../scripts/main.js"></script>
-    <title>Change photo</title>
+    <title>Admin</title>
   </head>
   <body>
     <header class="profile-header">
@@ -79,51 +79,46 @@
     </div>  
                <script src="../scripts/login.js"></script>
       <div class="profile-title">
-        <h1>Hello, Your Name!</h1>
+        <h1>Hello, Admin!</h1>
       </div>
     </header>
     <div class="total-profile-container">
       <div class="left-profile-container">
         <div class="profile-pic">
-          <div class="profile-name"><p>YN</p></div>
+          <div class="profile-name"><p>AR</p></div>
         </div>
-        <div class="username"><p>username0499</p></div>
+        <div class="username"><p>Admin</p></div>
         <div class="user-info">
-          <a href="profile.html"
-            ><div class="profile-info"><i class="fas fa-user-cog"></i> Profile info</div></a
+          <a href="adminProfile.html"
+            ><div class="profile-info"><i class="fas fa-file-signature"></i> Add article</div></a
           >
-          <a href="uploadPhoto.html"
-            ><div class="user-photo"><i class="far fa-image"></i> Change photo</div></a
+          <a href="removeArticle.html"
+            ><div class="user-photo"><i class="far fa-file-excel"></i> Remove Article</div></a
           >
-          <a href="likedArticles.html"
-            ><div class="liked-articles"><i class="far fa-heart"></i> Liked articles</div></a
+          <a href="manageUsers.html"
+            ><div class="liked-articles"><i class="fas fa-user-slash"></i> Restrict users</div></a
           >
-          <a href="settings.html"
-            ><div class="settings"><i class="fas fa-tools"></i> Settings</div></a
+          <a href="adminStats.html"
+            ><div class="settings"><i class="fas fa-chart-bar"></i> See statistics</div></a
           >
         </div>
       </div>
       <div class="right-profile-container">
         <div class="edit-header">
-          <div class="edit-title"><h3>Profile Photo</h3></div>
-          <div class="edit-subtitle"><p>Add a nice photo of yourself for your profile</p></div>
+          <div class="edit-title"><h3>Admin</h3></div>
+          <div class="edit-subtitle"><p>Remove any articles you want</p></div>
         </div>
         <div class="edit-info">
-            <div class="photo-preview-text">
-                <p>Photo preview</p>
-            </div>
-         <div class="photo-preview-container">
-             <div class="photo-preview">
-                <i class="far fa-user-circle" ></i>
-             </div>
-         </div>
-         <div class="photo-preview-text">
-            <p>Add/Change photo</p>
-            <div class="upload-btn-wrapper">
-                <button class="btn"><p>Upload a file</p></button>
-                <input type="file" id="photo-upload" name="photo-upload" accept=".png, .jpg, .jpeg"/>
-            </div>
-        </div>
+          <form>
+            <p class="nume-camp">First Name</p>
+            <input type="text" id="fname" name="fname" placeholder="First Name" />
+            <p class="nume-camp">Last Name</p>
+            <input type="text" id="lname" name="lname" placeholder="Last Name" />
+            <p class="nume-camp">Username</p>
+            <input type="text" id="username" name="username" placeholder="username" />
+            <p class="nume-camp">Email</p>
+            <input type="text" id="email" name="email" placeholder="email" />
+          </form>
         </div>
         <div class="save-info">
           <button class="btn">Save</button>

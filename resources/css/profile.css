@@ -21,7 +21,7 @@ a {
 }
 
 .profile-header {
-    background-color: cornflowerblue;
+    background-color: #489ed8;
 }
 
 .profile-title {
@@ -78,7 +78,7 @@ a {
     width: 50%;
     margin: 0 auto;
     border-radius: 50%;
-    background-color: cornflowerblue;
+    background-color: #489ed8;
 }
 
 .profile-pic:after {
