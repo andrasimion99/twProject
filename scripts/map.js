@@ -1,14 +1,16 @@
-document.addEventListener("DOMContentLoaded", function(e) {
+document.addEventListener("DOMContentLoaded", function (e) {
   var countries = document.getElementsByTagName("path");
 
   for (var i = 0; i < countries.length; i++) {
-    countries[i].addEventListener("mousemove", function(event) {
+    countries[i].addEventListener("mousemove", function (event) {
       document.getElementById("box").style.display = "block";
-      document.getElementById("box").innerHTML = this.getAttribute("data-name");
-      document.getElementById("box").style.top = event.offsetY - 10 + "px";
+      var data = "<div>" + this.getAttribute("data-name") + "</div>";
+      data += "<div>" + this.getAttribute("data-capital") + "</div>";
+      document.getElementById("box").innerHTML = data;
+      document.getElementById("box").style.top = event.offsetY - 30 + "px";
       document.getElementById("box").style.left = event.offsetX + "px";
     });
-    countries[i].addEventListener("mouseleave", function(event) {
+    countries[i].addEventListener("mouseleave", function (event) {
       document.getElementById("box").style.display = "none";
     });
   }
