@@ -1,56 +1,56 @@
-﻿"ID","Description","LocationAbbr","LocationDesc","DataSource","Topic","Data_Value","Sample_Size","Stratification1","StratificationId1","LocationDisplayOrder"
-"39571","2016","US","National","BRFSS","Obesity / Weight Status","26.1","1,891","Other","RACEOTH","0"
-"42117","2016","AL","Alabama","BRFSS","Obesity / Weight Status","~","~","Other","RACEOTH","1"
-"43464","2016","AK","Alaska","BRFSS","Obesity / Weight Status","~","~","Other","RACEOTH","2"
-"40943","2016","AZ","Arizona","BRFSS","Obesity / Weight Status","28.3","97","Other","RACEOTH","4"
-"41954","2016","AR","Arkansas","BRFSS","Obesity / Weight Status","~","~","Other","RACEOTH","5"
-"41292","2016","CA","California","BRFSS","Obesity / Weight Status","28.4","122","Other","RACEOTH","6"
-"42046","2016","CO","Colorado","BRFSS","Obesity / Weight Status","35","70","Other","RACEOTH","8"
-"43194","2016","CT","Connecticut","BRFSS","Obesity / Weight Status","22.8","89","Other","RACEOTH","9"
-"40115","2016","DE","Delaware","BRFSS","Obesity / Weight Status","~","~","Other","RACEOTH","10"
-"40312","2016","DC","District of Columbia","BRFSS","Obesity / Weight Status","32.4","60","Other","RACEOTH","11"
-"39668","2016","FL","Florida","BRFSS","Obesity / Weight Status","27.9","123","Other","RACEOTH","12"
-"42145","2016","GA","Georgia","BRFSS","Obesity / Weight Status","~","~","Other","RACEOTH","13"
-"40157","2016","HI","Hawaii","BRFSS","Obesity / Weight Status","~","~","Other","RACEOTH","15"
-"40650","2016","ID","Idaho","BRFSS","Obesity / Weight Status","~","~","Other","RACEOTH","16"
-"42329","2016","IL","Illinois","BRFSS","Obesity / Weight Status","~","~","Other","RACEOTH","17"
-"40073","2016","IN","Indiana","BRFSS","Obesity / Weight Status","~","~","Other","RACEOTH","18"
-"43823","2016","IA","Iowa","BRFSS","Obesity / Weight Status","~","~","Other","RACEOTH","19"
-"43124","2016","KS","Kansas","BRFSS","Obesity / Weight Status","~","~","Other","RACEOTH","20"
-"41455","2016","KY","Kentucky","BRFSS","Obesity / Weight Status","~","~","Other","RACEOTH","21"
-"41317","2016","LA","Louisiana","BRFSS","Obesity / Weight Status","~","~","Other","RACEOTH","22"
-"43879","2016","ME","Maine","BRFSS","Obesity / Weight Status","~","~","Other","RACEOTH","23"
-"41264","2016","MD","Maryland","BRFSS","Obesity / Weight Status","32.6","172","Other","RACEOTH","24"
-"43651","2016","MA","Massachusetts","BRFSS","Obesity / Weight Status","15.9","58","Other","RACEOTH","25"
-"43451","2016","MI","Michigan","BRFSS","Obesity / Weight Status","~","~","Other","RACEOTH","26"
-"41646","2016","MN","Minnesota","BRFSS","Obesity / Weight Status","~","~","Other","RACEOTH","27"
-"44279","2016","MS","Mississippi","BRFSS","Obesity / Weight Status","~","~","Other","RACEOTH","28"
-"43442","2016","MO","Missouri","BRFSS","Obesity / Weight Status","~","~","Other","RACEOTH","29"
-"40138","2016","MT","Montana","BRFSS","Obesity / Weight Status","32.5","56","Other","RACEOTH","30"
-"39650","2016","NE","Nebraska","BRFSS","Obesity / Weight Status","~","~","Other","RACEOTH","31"
-"42740","2016","NV","Nevada","BRFSS","Obesity / Weight Status","17.2","54","Other","RACEOTH","32"
-"41533","2016","NH","New Hampshire","BRFSS","Obesity / Weight Status","~","~","Other","RACEOTH","33"
-"39603","2016","NJ","New Jersey","BRFSS","Obesity / Weight Status","~","~","Other","RACEOTH","34"
-"40504","2016","NM","New Mexico","BRFSS","Obesity / Weight Status","~","~","Other","RACEOTH","35"
-"42548","2016","NY","New York","BRFSS","Obesity / Weight Status","~","~","Other","RACEOTH","36"
-"39737","2016","NC","North Carolina","BRFSS","Obesity / Weight Status","~","~","Other","RACEOTH","37"
-"43777","2016","ND","North Dakota","BRFSS","Obesity / Weight Status","~","~","Other","RACEOTH","38"
-"41150","2016","OH","Ohio","BRFSS","Obesity / Weight Status","~","~","Other","RACEOTH","39"
-"40426","2016","OK","Oklahoma","BRFSS","Obesity / Weight Status","~","~","Other","RACEOTH","40"
-"44787","2016","OR","Oregon","BRFSS","Obesity / Weight Status","~","~","Other","RACEOTH","41"
-"41906","2016","PA","Pennsylvania","BRFSS","Obesity / Weight Status","~","~","Other","RACEOTH","42"
-"41161","2016","RI","Rhode Island","BRFSS","Obesity / Weight Status","~","~","Other","RACEOTH","44"
-"41378","2016","SC","South Carolina","BRFSS","Obesity / Weight Status","38.5","53","Other","RACEOTH","45"
-"41819","2016","SD","South Dakota","BRFSS","Obesity / Weight Status","~","~","Other","RACEOTH","46"
-"43180","2016","TN","Tennessee","BRFSS","Obesity / Weight Status","~","~","Other","RACEOTH","47"
-"40879","2016","TX","Texas","BRFSS","Obesity / Weight Status","~","~","Other","RACEOTH","48"
-"43167","2016","UT","Utah","BRFSS","Obesity / Weight Status","~","~","Other","RACEOTH","49"
-"40654","2016","VT","Vermont","BRFSS","Obesity / Weight Status","20.8","54","Other","RACEOTH","50"
-"40518","2016","VA","Virginia","BRFSS","Obesity / Weight Status","~","~","Other","RACEOTH","51"
-"43863","2016","WA","Washington","BRFSS","Obesity / Weight Status","22.9","113","Other","RACEOTH","53"
-"41878","2016","WV","West Virginia","BRFSS","Obesity / Weight Status","~","~","Other","RACEOTH","54"
-"40704","2016","WI","Wisconsin","BRFSS","Obesity / Weight Status","~","~","Other","RACEOTH","55"
-"42587","2016","WY","Wyoming","BRFSS","Obesity / Weight Status","~","~","Other","RACEOTH","56"
-"39793","2016","GU","Guam","BRFSS","Obesity / Weight Status","~","~","Other","RACEOTH","66"
-"43833","2016","PR","Puerto Rico","BRFSS","Obesity / Weight Status","~","~","Other","RACEOTH","72"
-"42375","2016","VI","Virgin Islands","BRFSS","Obesity / Weight Status","~","~","Other","RACEOTH","78"
+﻿ID,Description,LocationAbbr,LocationDesc,DataSource,Topic,Data_Value,Sample_Size,Stratification1,StratificationId1,LocationDisplayOrder
+39571,2016,US,National,BRFSS,Obesity / Weight Status,26.1,1,891,Other,RACEOTH,0
+42117,2016,AL,Alabama,BRFSS,Obesity / Weight Status,~,~,Other,RACEOTH,1
+43464,2016,AK,Alaska,BRFSS,Obesity / Weight Status,~,~,Other,RACEOTH,2
+40943,2016,AZ,Arizona,BRFSS,Obesity / Weight Status,28.3,97,Other,RACEOTH,4
+41954,2016,AR,Arkansas,BRFSS,Obesity / Weight Status,~,~,Other,RACEOTH,5
+41292,2016,CA,California,BRFSS,Obesity / Weight Status,28.4,122,Other,RACEOTH,6
+42046,2016,CO,Colorado,BRFSS,Obesity / Weight Status,35,70,Other,RACEOTH,8
+43194,2016,CT,Connecticut,BRFSS,Obesity / Weight Status,22.8,89,Other,RACEOTH,9
+40115,2016,DE,Delaware,BRFSS,Obesity / Weight Status,~,~,Other,RACEOTH,10
+40312,2016,DC,District of Columbia,BRFSS,Obesity / Weight Status,32.4,60,Other,RACEOTH,11
+39668,2016,FL,Florida,BRFSS,Obesity / Weight Status,27.9,123,Other,RACEOTH,12
+42145,2016,GA,Georgia,BRFSS,Obesity / Weight Status,~,~,Other,RACEOTH,13
+40157,2016,HI,Hawaii,BRFSS,Obesity / Weight Status,~,~,Other,RACEOTH,15
+40650,2016,ID,Idaho,BRFSS,Obesity / Weight Status,~,~,Other,RACEOTH,16
+42329,2016,IL,Illinois,BRFSS,Obesity / Weight Status,~,~,Other,RACEOTH,17
+40073,2016,IN,Indiana,BRFSS,Obesity / Weight Status,~,~,Other,RACEOTH,18
+43823,2016,IA,Iowa,BRFSS,Obesity / Weight Status,~,~,Other,RACEOTH,19
+43124,2016,KS,Kansas,BRFSS,Obesity / Weight Status,~,~,Other,RACEOTH,20
+41455,2016,KY,Kentucky,BRFSS,Obesity / Weight Status,~,~,Other,RACEOTH,21
+41317,2016,LA,Louisiana,BRFSS,Obesity / Weight Status,~,~,Other,RACEOTH,22
+43879,2016,ME,Maine,BRFSS,Obesity / Weight Status,~,~,Other,RACEOTH,23
+41264,2016,MD,Maryland,BRFSS,Obesity / Weight Status,32.6,172,Other,RACEOTH,24
+43651,2016,MA,Massachusetts,BRFSS,Obesity / Weight Status,15.9,58,Other,RACEOTH,25
+43451,2016,MI,Michigan,BRFSS,Obesity / Weight Status,~,~,Other,RACEOTH,26
+41646,2016,MN,Minnesota,BRFSS,Obesity / Weight Status,~,~,Other,RACEOTH,27
+44279,2016,MS,Mississippi,BRFSS,Obesity / Weight Status,~,~,Other,RACEOTH,28
+43442,2016,MO,Missouri,BRFSS,Obesity / Weight Status,~,~,Other,RACEOTH,29
+40138,2016,MT,Montana,BRFSS,Obesity / Weight Status,32.5,56,Other,RACEOTH,30
+39650,2016,NE,Nebraska,BRFSS,Obesity / Weight Status,~,~,Other,RACEOTH,31
+42740,2016,NV,Nevada,BRFSS,Obesity / Weight Status,17.2,54,Other,RACEOTH,32
+41533,2016,NH,New Hampshire,BRFSS,Obesity / Weight Status,~,~,Other,RACEOTH,33
+39603,2016,NJ,New Jersey,BRFSS,Obesity / Weight Status,~,~,Other,RACEOTH,34
+40504,2016,NM,New Mexico,BRFSS,Obesity / Weight Status,~,~,Other,RACEOTH,35
+42548,2016,NY,New York,BRFSS,Obesity / Weight Status,~,~,Other,RACEOTH,36
+39737,2016,NC,North Carolina,BRFSS,Obesity / Weight Status,~,~,Other,RACEOTH,37
+43777,2016,ND,North Dakota,BRFSS,Obesity / Weight Status,~,~,Other,RACEOTH,38
+41150,2016,OH,Ohio,BRFSS,Obesity / Weight Status,~,~,Other,RACEOTH,39
+40426,2016,OK,Oklahoma,BRFSS,Obesity / Weight Status,~,~,Other,RACEOTH,40
+44787,2016,OR,Oregon,BRFSS,Obesity / Weight Status,~,~,Other,RACEOTH,41
+41906,2016,PA,Pennsylvania,BRFSS,Obesity / Weight Status,~,~,Other,RACEOTH,42
+41161,2016,RI,Rhode Island,BRFSS,Obesity / Weight Status,~,~,Other,RACEOTH,44
+41378,2016,SC,South Carolina,BRFSS,Obesity / Weight Status,38.5,53,Other,RACEOTH,45
+41819,2016,SD,South Dakota,BRFSS,Obesity / Weight Status,~,~,Other,RACEOTH,46
+43180,2016,TN,Tennessee,BRFSS,Obesity / Weight Status,~,~,Other,RACEOTH,47
+40879,2016,TX,Texas,BRFSS,Obesity / Weight Status,~,~,Other,RACEOTH,48
+43167,2016,UT,Utah,BRFSS,Obesity / Weight Status,~,~,Other,RACEOTH,49
+40654,2016,VT,Vermont,BRFSS,Obesity / Weight Status,20.8,54,Other,RACEOTH,50
+40518,2016,VA,Virginia,BRFSS,Obesity / Weight Status,~,~,Other,RACEOTH,51
+43863,2016,WA,Washington,BRFSS,Obesity / Weight Status,22.9,113,Other,RACEOTH,53
+41878,2016,WV,West Virginia,BRFSS,Obesity / Weight Status,~,~,Other,RACEOTH,54
+40704,2016,WI,Wisconsin,BRFSS,Obesity / Weight Status,~,~,Other,RACEOTH,55
+42587,2016,WY,Wyoming,BRFSS,Obesity / Weight Status,~,~,Other,RACEOTH,56
+39793,2016,GU,Guam,BRFSS,Obesity / Weight Status,~,~,Other,RACEOTH,66
+43833,2016,PR,Puerto Rico,BRFSS,Obesity / Weight Status,~,~,Other,RACEOTH,72
+42375,2016,VI,Virgin Islands,BRFSS,Obesity / Weight Status,~,~,Other,RACEOTH,78

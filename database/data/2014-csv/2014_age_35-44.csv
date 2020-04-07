@@ -1,55 +1,55 @@
-﻿"ID","Description","LocationAbbr","LocationDesc","DataSource","Topic","Data_Value","Sample_Size","Stratification1","StratificationId1","LocationDisplayOrder"
-"532","2014","US","National","BRFSS","Obesity / Weight Status","32.1","49,240","35 - 44","AGEYR3544","0"
-"20503","2014","AL","Alabama","BRFSS","Obesity / Weight Status","40.9","839","35 - 44","AGEYR3544","1"
-"25967","2014","AK","Alaska","BRFSS","Obesity / Weight Status","33.6","612","35 - 44","AGEYR3544","2"
-"36271","2014","AZ","Arizona","BRFSS","Obesity / Weight Status","33.3","1,347","35 - 44","AGEYR3544","4"
-"24930","2014","AR","Arkansas","BRFSS","Obesity / Weight Status","38","403","35 - 44","AGEYR3544","5"
-"26103","2014","CA","California","BRFSS","Obesity / Weight Status","28.1","1,108","35 - 44","AGEYR3544","6"
-"6687","2014","CO","Colorado","BRFSS","Obesity / Weight Status","24.1","1,661","35 - 44","AGEYR3544","8"
-"38539","2014","CT","Connecticut","BRFSS","Obesity / Weight Status","26.8","815","35 - 44","AGEYR3544","9"
-"12141","2014","DE","Delaware","BRFSS","Obesity / Weight Status","34.5","391","35 - 44","AGEYR3544","10"
-"29052","2014","DC","District of Columbia","BRFSS","Obesity / Weight Status","20.6","408","35 - 44","AGEYR3544","11"
-"7385","2014","FL","Florida","BRFSS","Obesity / Weight Status","31.2","810","35 - 44","AGEYR3544","12"
-"34507","2014","GA","Georgia","BRFSS","Obesity / Weight Status","33.3","661","35 - 44","AGEYR3544","13"
-"39258","2014","HI","Hawaii","BRFSS","Obesity / Weight Status","28","843","35 - 44","AGEYR3544","15"
-"30252","2014","ID","Idaho","BRFSS","Obesity / Weight Status","32.4","593","35 - 44","AGEYR3544","16"
-"24017","2014","IL","Illinois","BRFSS","Obesity / Weight Status","35","584","35 - 44","AGEYR3544","17"
-"5509","2014","IN","Indiana","BRFSS","Obesity / Weight Status","35.5","1,194","35 - 44","AGEYR3544","18"
-"31390","2014","IA","Iowa","BRFSS","Obesity / Weight Status","35.4","842","35 - 44","AGEYR3544","19"
-"10011","2014","KS","Kansas","BRFSS","Obesity / Weight Status","36.5","1,502","35 - 44","AGEYR3544","20"
-"4205","2014","KY","Kentucky","BRFSS","Obesity / Weight Status","39.5","1,140","35 - 44","AGEYR3544","21"
-"21637","2014","LA","Louisiana","BRFSS","Obesity / Weight Status","40.7","727","35 - 44","AGEYR3544","22"
-"12695","2014","ME","Maine","BRFSS","Obesity / Weight Status","29.5","859","35 - 44","AGEYR3544","23"
-"5491","2014","MD","Maryland","BRFSS","Obesity / Weight Status","31.1","1,348","35 - 44","AGEYR3544","24"
-"20579","2014","MA","Massachusetts","BRFSS","Obesity / Weight Status","24.5","1,509","35 - 44","AGEYR3544","25"
-"18950","2014","MI","Michigan","BRFSS","Obesity / Weight Status","33.3","795","35 - 44","AGEYR3544","26"
-"14695","2014","MN","Minnesota","BRFSS","Obesity / Weight Status","29.8","2,064","35 - 44","AGEYR3544","27"
-"24420","2014","MS","Mississippi","BRFSS","Obesity / Weight Status","42.6","440","35 - 44","AGEYR3544","28"
-"25976","2014","MO","Missouri","BRFSS","Obesity / Weight Status","34.4","673","35 - 44","AGEYR3544","29"
-"2815","2014","MT","Montana","BRFSS","Obesity / Weight Status","31.3","689","35 - 44","AGEYR3544","30"
-"17069","2014","NE","Nebraska","BRFSS","Obesity / Weight Status","33.8","2,477","35 - 44","AGEYR3544","31"
-"21113","2014","NV","Nevada","BRFSS","Obesity / Weight Status","36.8","445","35 - 44","AGEYR3544","32"
-"8593","2014","NH","New Hampshire","BRFSS","Obesity / Weight Status","29.5","608","35 - 44","AGEYR3544","33"
-"11581","2014","NJ","New Jersey","BRFSS","Obesity / Weight Status","29.4","1,526","35 - 44","AGEYR3544","34"
-"34661","2014","NM","New Mexico","BRFSS","Obesity / Weight Status","33.8","944","35 - 44","AGEYR3544","35"
-"28393","2014","NY","New York","BRFSS","Obesity / Weight Status","30.5","795","35 - 44","AGEYR3544","36"
-"6732","2014","NC","North Carolina","BRFSS","Obesity / Weight Status","33.3","866","35 - 44","AGEYR3544","37"
-"5022","2014","ND","North Dakota","BRFSS","Obesity / Weight Status","42.6","798","35 - 44","AGEYR3544","38"
-"30224","2014","OH","Ohio","BRFSS","Obesity / Weight Status","31.6","1,104","35 - 44","AGEYR3544","39"
-"7344","2014","OK","Oklahoma","BRFSS","Obesity / Weight Status","35.7","916","35 - 44","AGEYR3544","40"
-"5324","2014","OR","Oregon","BRFSS","Obesity / Weight Status","29.4","481","35 - 44","AGEYR3544","41"
-"36968","2014","PA","Pennsylvania","BRFSS","Obesity / Weight Status","34.8","1,103","35 - 44","AGEYR3544","42"
-"30108","2014","RI","Rhode Island","BRFSS","Obesity / Weight Status","32.4","675","35 - 44","AGEYR3544","44"
-"22242","2014","SC","South Carolina","BRFSS","Obesity / Weight Status","36.6","1,121","35 - 44","AGEYR3544","45"
-"26609","2014","SD","South Dakota","BRFSS","Obesity / Weight Status","34.2","816","35 - 44","AGEYR3544","46"
-"9605","2014","TN","Tennessee","BRFSS","Obesity / Weight Status","37.1","455","35 - 44","AGEYR3544","47"
-"33839","2014","TX","Texas","BRFSS","Obesity / Weight Status","31.4","1,725","35 - 44","AGEYR3544","48"
-"26560","2014","UT","Utah","BRFSS","Obesity / Weight Status","29.2","2,546","35 - 44","AGEYR3544","49"
-"7985","2014","VT","Vermont","BRFSS","Obesity / Weight Status","28.9","759","35 - 44","AGEYR3544","50"
-"3006","2014","VA","Virginia","BRFSS","Obesity / Weight Status","29.8","1,136","35 - 44","AGEYR3544","51"
-"15392","2014","WA","Washington","BRFSS","Obesity / Weight Status","27.8","1,051","35 - 44","AGEYR3544","53"
-"21903","2014","WV","West Virginia","BRFSS","Obesity / Weight Status","43.7","709","35 - 44","AGEYR3544","54"
-"24646","2014","WI","Wisconsin","BRFSS","Obesity / Weight Status","36.4","781","35 - 44","AGEYR3544","55"
-"9732","2014","WY","Wyoming","BRFSS","Obesity / Weight Status","36.8","546","35 - 44","AGEYR3544","56"
-"1612","2014","GU","Guam","BRFSS","Obesity / Weight Status","30.5","448","35 - 44","AGEYR3544","66"
-"617","2014","PR","Puerto Rico","BRFSS","Obesity / Weight Status","33.5","736","35 - 44","AGEYR3544","72"
+﻿ID,Description,LocationAbbr,LocationDesc,DataSource,Topic,Data_Value,Sample_Size,Stratification1,StratificationId1,LocationDisplayOrder
+532,2014,US,National,BRFSS,Obesity / Weight Status,32.1,49,240,35 - 44,AGEYR3544,0
+20503,2014,AL,Alabama,BRFSS,Obesity / Weight Status,40.9,839,35 - 44,AGEYR3544,1
+25967,2014,AK,Alaska,BRFSS,Obesity / Weight Status,33.6,612,35 - 44,AGEYR3544,2
+36271,2014,AZ,Arizona,BRFSS,Obesity / Weight Status,33.3,1,347,35 - 44,AGEYR3544,4
+24930,2014,AR,Arkansas,BRFSS,Obesity / Weight Status,38,403,35 - 44,AGEYR3544,5
+26103,2014,CA,California,BRFSS,Obesity / Weight Status,28.1,1,108,35 - 44,AGEYR3544,6
+6687,2014,CO,Colorado,BRFSS,Obesity / Weight Status,24.1,1,661,35 - 44,AGEYR3544,8
+38539,2014,CT,Connecticut,BRFSS,Obesity / Weight Status,26.8,815,35 - 44,AGEYR3544,9
+12141,2014,DE,Delaware,BRFSS,Obesity / Weight Status,34.5,391,35 - 44,AGEYR3544,10
+29052,2014,DC,District of Columbia,BRFSS,Obesity / Weight Status,20.6,408,35 - 44,AGEYR3544,11
+7385,2014,FL,Florida,BRFSS,Obesity / Weight Status,31.2,810,35 - 44,AGEYR3544,12
+34507,2014,GA,Georgia,BRFSS,Obesity / Weight Status,33.3,661,35 - 44,AGEYR3544,13
+39258,2014,HI,Hawaii,BRFSS,Obesity / Weight Status,28,843,35 - 44,AGEYR3544,15
+30252,2014,ID,Idaho,BRFSS,Obesity / Weight Status,32.4,593,35 - 44,AGEYR3544,16
+24017,2014,IL,Illinois,BRFSS,Obesity / Weight Status,35,584,35 - 44,AGEYR3544,17
+5509,2014,IN,Indiana,BRFSS,Obesity / Weight Status,35.5,1,194,35 - 44,AGEYR3544,18
+31390,2014,IA,Iowa,BRFSS,Obesity / Weight Status,35.4,842,35 - 44,AGEYR3544,19
+10011,2014,KS,Kansas,BRFSS,Obesity / Weight Status,36.5,1,502,35 - 44,AGEYR3544,20
+4205,2014,KY,Kentucky,BRFSS,Obesity / Weight Status,39.5,1,140,35 - 44,AGEYR3544,21
+21637,2014,LA,Louisiana,BRFSS,Obesity / Weight Status,40.7,727,35 - 44,AGEYR3544,22
+12695,2014,ME,Maine,BRFSS,Obesity / Weight Status,29.5,859,35 - 44,AGEYR3544,23
+5491,2014,MD,Maryland,BRFSS,Obesity / Weight Status,31.1,1,348,35 - 44,AGEYR3544,24
+20579,2014,MA,Massachusetts,BRFSS,Obesity / Weight Status,24.5,1,509,35 - 44,AGEYR3544,25
+18950,2014,MI,Michigan,BRFSS,Obesity / Weight Status,33.3,795,35 - 44,AGEYR3544,26
+14695,2014,MN,Minnesota,BRFSS,Obesity / Weight Status,29.8,2,064,35 - 44,AGEYR3544,27
+24420,2014,MS,Mississippi,BRFSS,Obesity / Weight Status,42.6,440,35 - 44,AGEYR3544,28
+25976,2014,MO,Missouri,BRFSS,Obesity / Weight Status,34.4,673,35 - 44,AGEYR3544,29
+2815,2014,MT,Montana,BRFSS,Obesity / Weight Status,31.3,689,35 - 44,AGEYR3544,30
+17069,2014,NE,Nebraska,BRFSS,Obesity / Weight Status,33.8,2,477,35 - 44,AGEYR3544,31
+21113,2014,NV,Nevada,BRFSS,Obesity / Weight Status,36.8,445,35 - 44,AGEYR3544,32
+8593,2014,NH,New Hampshire,BRFSS,Obesity / Weight Status,29.5,608,35 - 44,AGEYR3544,33
+11581,2014,NJ,New Jersey,BRFSS,Obesity / Weight Status,29.4,1,526,35 - 44,AGEYR3544,34
+34661,2014,NM,New Mexico,BRFSS,Obesity / Weight Status,33.8,944,35 - 44,AGEYR3544,35
+28393,2014,NY,New York,BRFSS,Obesity / Weight Status,30.5,795,35 - 44,AGEYR3544,36
+6732,2014,NC,North Carolina,BRFSS,Obesity / Weight Status,33.3,866,35 - 44,AGEYR3544,37
+5022,2014,ND,North Dakota,BRFSS,Obesity / Weight Status,42.6,798,35 - 44,AGEYR3544,38
+30224,2014,OH,Ohio,BRFSS,Obesity / Weight Status,31.6,1,104,35 - 44,AGEYR3544,39
+7344,2014,OK,Oklahoma,BRFSS,Obesity / Weight Status,35.7,916,35 - 44,AGEYR3544,40
+5324,2014,OR,Oregon,BRFSS,Obesity / Weight Status,29.4,481,35 - 44,AGEYR3544,41
+36968,2014,PA,Pennsylvania,BRFSS,Obesity / Weight Status,34.8,1,103,35 - 44,AGEYR3544,42
+30108,2014,RI,Rhode Island,BRFSS,Obesity / Weight Status,32.4,675,35 - 44,AGEYR3544,44
+22242,2014,SC,South Carolina,BRFSS,Obesity / Weight Status,36.6,1,121,35 - 44,AGEYR3544,45
+26609,2014,SD,South Dakota,BRFSS,Obesity / Weight Status,34.2,816,35 - 44,AGEYR3544,46
+9605,2014,TN,Tennessee,BRFSS,Obesity / Weight Status,37.1,455,35 - 44,AGEYR3544,47
+33839,2014,TX,Texas,BRFSS,Obesity / Weight Status,31.4,1,725,35 - 44,AGEYR3544,48
+26560,2014,UT,Utah,BRFSS,Obesity / Weight Status,29.2,2,546,35 - 44,AGEYR3544,49
+7985,2014,VT,Vermont,BRFSS,Obesity / Weight Status,28.9,759,35 - 44,AGEYR3544,50
+3006,2014,VA,Virginia,BRFSS,Obesity / Weight Status,29.8,1,136,35 - 44,AGEYR3544,51
+15392,2014,WA,Washington,BRFSS,Obesity / Weight Status,27.8,1,051,35 - 44,AGEYR3544,53
+21903,2014,WV,West Virginia,BRFSS,Obesity / Weight Status,43.7,709,35 - 44,AGEYR3544,54
+24646,2014,WI,Wisconsin,BRFSS,Obesity / Weight Status,36.4,781,35 - 44,AGEYR3544,55
+9732,2014,WY,Wyoming,BRFSS,Obesity / Weight Status,36.8,546,35 - 44,AGEYR3544,56
+1612,2014,GU,Guam,BRFSS,Obesity / Weight Status,30.5,448,35 - 44,AGEYR3544,66
+617,2014,PR,Puerto Rico,BRFSS,Obesity / Weight Status,33.5,736,35 - 44,AGEYR3544,72

@@ -1,56 +1,56 @@
-﻿"ID","Description","LocationAbbr","LocationDesc","DataSource","Topic","Data_Value","Sample_Size","Stratification1","StratificationId1","LocationDisplayOrder"
-"61113","2018","US","National","BRFSS","Obesity / Weight Status","29.9","302,781","Non-Hispanic White","RACEWHT","0"
-"61193","2018","AL","Alabama","BRFSS","Obesity / Weight Status","34.2","4,198","Non-Hispanic White","RACEWHT","1"
-"61769","2018","AK","Alaska","BRFSS","Obesity / Weight Status","29.2","1,876","Non-Hispanic White","RACEWHT","2"
-"61796","2018","AZ","Arizona","BRFSS","Obesity / Weight Status","27.5","5,192","Non-Hispanic White","RACEWHT","4"
-"61823","2018","AR","Arkansas","BRFSS","Obesity / Weight Status","35.7","3,819","Non-Hispanic White","RACEWHT","5"
-"61850","2018","CA","California","BRFSS","Obesity / Weight Status","22.8","5,129","Non-Hispanic White","RACEWHT","6"
-"61597","2018","CO","Colorado","BRFSS","Obesity / Weight Status","21.3","6,246","Non-Hispanic White","RACEWHT","8"
-"61624","2018","CT","Connecticut","BRFSS","Obesity / Weight Status","26.1","7,675","Non-Hispanic White","RACEWHT","9"
-"61651","2018","DE","Delaware","BRFSS","Obesity / Weight Status","32.4","3,298","Non-Hispanic White","RACEWHT","10"
-"61862","2018","DC","District of Columbia","BRFSS","Obesity / Weight Status","12.3","1,806","Non-Hispanic White","RACEWHT","11"
-"61889","2018","FL","Florida","BRFSS","Obesity / Weight Status","28","10,321","Non-Hispanic White","RACEWHT","12"
-"61916","2018","GA","Georgia","BRFSS","Obesity / Weight Status","29.7","5,064","Non-Hispanic White","RACEWHT","13"
-"61943","2018","HI","Hawaii","BRFSS","Obesity / Weight Status","18.2","2,534","Non-Hispanic White","RACEWHT","15"
-"61230","2018","ID","Idaho","BRFSS","Obesity / Weight Status","27.9","2,997","Non-Hispanic White","RACEWHT","16"
-"61257","2018","IL","Illinois","BRFSS","Obesity / Weight Status","30.6","3,268","Non-Hispanic White","RACEWHT","17"
-"61284","2018","IN","Indiana","BRFSS","Obesity / Weight Status","33.6","5,746","Non-Hispanic White","RACEWHT","18"
-"61956","2018","IA","Iowa","BRFSS","Obesity / Weight Status","35","7,599","Non-Hispanic White","RACEWHT","19"
-"61983","2018","KS","Kansas","BRFSS","Obesity / Weight Status","33.8","8,548","Non-Hispanic White","RACEWHT","20"
-"62010","2018","KY","Kentucky","BRFSS","Obesity / Weight Status","36.8","6,677","Non-Hispanic White","RACEWHT","21"
-"62220","2018","LA","Louisiana","BRFSS","Obesity / Weight Status","33","3,125","Non-Hispanic White","RACEWHT","22"
-"62247","2018","ME","Maine","BRFSS","Obesity / Weight Status","30.3","9,560","Non-Hispanic White","RACEWHT","23"
-"62274","2018","MD","Maryland","BRFSS","Obesity / Weight Status","28.8","11,319","Non-Hispanic White","RACEWHT","24"
-"62442","2018","MA","Massachusetts","BRFSS","Obesity / Weight Status","26.2","4,820","Non-Hispanic White","RACEWHT","25"
-"62469","2018","MI","Michigan","BRFSS","Obesity / Weight Status","32.4","7,759","Non-Hispanic White","RACEWHT","26"
-"62496","2018","MN","Minnesota","BRFSS","Obesity / Weight Status","30","13,700","Non-Hispanic White","RACEWHT","27"
-"62523","2018","MS","Mississippi","BRFSS","Obesity / Weight Status","36.3","3,161","Non-Hispanic White","RACEWHT","28"
-"62930","2018","MO","Missouri","BRFSS","Obesity / Weight Status","33.1","4,880","Non-Hispanic White","RACEWHT","29"
-"62957","2018","MT","Montana","BRFSS","Obesity / Weight Status","25.9","3,910","Non-Hispanic White","RACEWHT","30"
-"62984","2018","NE","Nebraska","BRFSS","Obesity / Weight Status","33.9","12,136","Non-Hispanic White","RACEWHT","31"
-"62535","2018","NV","Nevada","BRFSS","Obesity / Weight Status","27.6","2,019","Non-Hispanic White","RACEWHT","32"
-"62562","2018","NH","New Hampshire","BRFSS","Obesity / Weight Status","30","4,879","Non-Hispanic White","RACEWHT","33"
-"62589","2018","NJ","New Jersey","BRFSS","Obesity / Weight Status","26.1","1,835","Non-Hispanic White","RACEWHT","34"
-"62616","2018","NM","New Mexico","BRFSS","Obesity / Weight Status","25.5","3,312","Non-Hispanic White","RACEWHT","35"
-"62122","2018","NY","New York","BRFSS","Obesity / Weight Status","27.4","24,554","Non-Hispanic White","RACEWHT","36"
-"62149","2018","NC","North Carolina","BRFSS","Obesity / Weight Status","29.4","2,938","Non-Hispanic White","RACEWHT","37"
-"62176","2018","ND","North Dakota","BRFSS","Obesity / Weight Status","34.9","4,782","Non-Hispanic White","RACEWHT","38"
-"62299","2018","OH","Ohio","BRFSS","Obesity / Weight Status","34","10,426","Non-Hispanic White","RACEWHT","39"
-"62326","2018","OK","Oklahoma","BRFSS","Obesity / Weight Status","34.6","3,680","Non-Hispanic White","RACEWHT","40"
-"62353","2018","OR","Oregon","BRFSS","Obesity / Weight Status","29.6","4,466","Non-Hispanic White","RACEWHT","41"
-"62380","2018","PA","Pennsylvania","BRFSS","Obesity / Weight Status","29.9","4,520","Non-Hispanic White","RACEWHT","42"
-"62642","2018","RI","Rhode Island","BRFSS","Obesity / Weight Status","26.2","4,240","Non-Hispanic White","RACEWHT","44"
-"62669","2018","SC","South Carolina","BRFSS","Obesity / Weight Status","32.1","6,744","Non-Hispanic White","RACEWHT","45"
-"62696","2018","SD","South Dakota","BRFSS","Obesity / Weight Status","29.2","5,282","Non-Hispanic White","RACEWHT","46"
-"62723","2018","TN","Tennessee","BRFSS","Obesity / Weight Status","33.3","3,849","Non-Hispanic White","RACEWHT","47"
-"62750","2018","TX","Texas","BRFSS","Obesity / Weight Status","33.1","6,380","Non-Hispanic White","RACEWHT","48"
-"62777","2018","UT","Utah","BRFSS","Obesity / Weight Status","27.1","8,353","Non-Hispanic White","RACEWHT","49"
-"62804","2018","VT","Vermont","BRFSS","Obesity / Weight Status","28","5,572","Non-Hispanic White","RACEWHT","50"
-"62831","2018","VA","Virginia","BRFSS","Obesity / Weight Status","29.3","6,889","Non-Hispanic White","RACEWHT","51"
-"62858","2018","WA","Washington","BRFSS","Obesity / Weight Status","29.4","9,751","Non-Hispanic White","RACEWHT","53"
-"62885","2018","WV","West Virginia","BRFSS","Obesity / Weight Status","39.9","4,292","Non-Hispanic White","RACEWHT","54"
-"62912","2018","WI","Wisconsin","BRFSS","Obesity / Weight Status","31.4","3,926","Non-Hispanic White","RACEWHT","55"
-"63035","2018","WY","Wyoming","BRFSS","Obesity / Weight Status","28.4","3,729","Non-Hispanic White","RACEWHT","56"
-"63062","2018","GU","Guam","BRFSS","Obesity / Weight Status","26.3","149","Non-Hispanic White","RACEWHT","66"
-"63089","2018","PR","Puerto Rico","BRFSS","Obesity / Weight Status","~","~","Non-Hispanic White","RACEWHT","72"
-"62403","2018","VI","Virgin Islands","BRFSS","Obesity / Weight Status","~","~","Non-Hispanic White","RACEWHT","78"
+﻿ID,Description,LocationAbbr,LocationDesc,DataSource,Topic,Data_Value,Sample_Size,Stratification1,StratificationId1,LocationDisplayOrder
+61113,2018,US,National,BRFSS,Obesity / Weight Status,29.9,302,781,Non-Hispanic White,RACEWHT,0
+61193,2018,AL,Alabama,BRFSS,Obesity / Weight Status,34.2,4,198,Non-Hispanic White,RACEWHT,1
+61769,2018,AK,Alaska,BRFSS,Obesity / Weight Status,29.2,1,876,Non-Hispanic White,RACEWHT,2
+61796,2018,AZ,Arizona,BRFSS,Obesity / Weight Status,27.5,5,192,Non-Hispanic White,RACEWHT,4
+61823,2018,AR,Arkansas,BRFSS,Obesity / Weight Status,35.7,3,819,Non-Hispanic White,RACEWHT,5
+61850,2018,CA,California,BRFSS,Obesity / Weight Status,22.8,5,129,Non-Hispanic White,RACEWHT,6
+61597,2018,CO,Colorado,BRFSS,Obesity / Weight Status,21.3,6,246,Non-Hispanic White,RACEWHT,8
+61624,2018,CT,Connecticut,BRFSS,Obesity / Weight Status,26.1,7,675,Non-Hispanic White,RACEWHT,9
+61651,2018,DE,Delaware,BRFSS,Obesity / Weight Status,32.4,3,298,Non-Hispanic White,RACEWHT,10
+61862,2018,DC,District of Columbia,BRFSS,Obesity / Weight Status,12.3,1,806,Non-Hispanic White,RACEWHT,11
+61889,2018,FL,Florida,BRFSS,Obesity / Weight Status,28,10,321,Non-Hispanic White,RACEWHT,12
+61916,2018,GA,Georgia,BRFSS,Obesity / Weight Status,29.7,5,064,Non-Hispanic White,RACEWHT,13
+61943,2018,HI,Hawaii,BRFSS,Obesity / Weight Status,18.2,2,534,Non-Hispanic White,RACEWHT,15
+61230,2018,ID,Idaho,BRFSS,Obesity / Weight Status,27.9,2,997,Non-Hispanic White,RACEWHT,16
+61257,2018,IL,Illinois,BRFSS,Obesity / Weight Status,30.6,3,268,Non-Hispanic White,RACEWHT,17
+61284,2018,IN,Indiana,BRFSS,Obesity / Weight Status,33.6,5,746,Non-Hispanic White,RACEWHT,18
+61956,2018,IA,Iowa,BRFSS,Obesity / Weight Status,35,7,599,Non-Hispanic White,RACEWHT,19
+61983,2018,KS,Kansas,BRFSS,Obesity / Weight Status,33.8,8,548,Non-Hispanic White,RACEWHT,20
+62010,2018,KY,Kentucky,BRFSS,Obesity / Weight Status,36.8,6,677,Non-Hispanic White,RACEWHT,21
+62220,2018,LA,Louisiana,BRFSS,Obesity / Weight Status,33,3,125,Non-Hispanic White,RACEWHT,22
+62247,2018,ME,Maine,BRFSS,Obesity / Weight Status,30.3,9,560,Non-Hispanic White,RACEWHT,23
+62274,2018,MD,Maryland,BRFSS,Obesity / Weight Status,28.8,11,319,Non-Hispanic White,RACEWHT,24
+62442,2018,MA,Massachusetts,BRFSS,Obesity / Weight Status,26.2,4,820,Non-Hispanic White,RACEWHT,25
+62469,2018,MI,Michigan,BRFSS,Obesity / Weight Status,32.4,7,759,Non-Hispanic White,RACEWHT,26
+62496,2018,MN,Minnesota,BRFSS,Obesity / Weight Status,30,13,700,Non-Hispanic White,RACEWHT,27
+62523,2018,MS,Mississippi,BRFSS,Obesity / Weight Status,36.3,3,161,Non-Hispanic White,RACEWHT,28
+62930,2018,MO,Missouri,BRFSS,Obesity / Weight Status,33.1,4,880,Non-Hispanic White,RACEWHT,29
+62957,2018,MT,Montana,BRFSS,Obesity / Weight Status,25.9,3,910,Non-Hispanic White,RACEWHT,30
+62984,2018,NE,Nebraska,BRFSS,Obesity / Weight Status,33.9,12,136,Non-Hispanic White,RACEWHT,31
+62535,2018,NV,Nevada,BRFSS,Obesity / Weight Status,27.6,2,019,Non-Hispanic White,RACEWHT,32
+62562,2018,NH,New Hampshire,BRFSS,Obesity / Weight Status,30,4,879,Non-Hispanic White,RACEWHT,33
+62589,2018,NJ,New Jersey,BRFSS,Obesity / Weight Status,26.1,1,835,Non-Hispanic White,RACEWHT,34
+62616,2018,NM,New Mexico,BRFSS,Obesity / Weight Status,25.5,3,312,Non-Hispanic White,RACEWHT,35
+62122,2018,NY,New York,BRFSS,Obesity / Weight Status,27.4,24,554,Non-Hispanic White,RACEWHT,36
+62149,2018,NC,North Carolina,BRFSS,Obesity / Weight Status,29.4,2,938,Non-Hispanic White,RACEWHT,37
+62176,2018,ND,North Dakota,BRFSS,Obesity / Weight Status,34.9,4,782,Non-Hispanic White,RACEWHT,38
+62299,2018,OH,Ohio,BRFSS,Obesity / Weight Status,34,10,426,Non-Hispanic White,RACEWHT,39
+62326,2018,OK,Oklahoma,BRFSS,Obesity / Weight Status,34.6,3,680,Non-Hispanic White,RACEWHT,40
+62353,2018,OR,Oregon,BRFSS,Obesity / Weight Status,29.6,4,466,Non-Hispanic White,RACEWHT,41
+62380,2018,PA,Pennsylvania,BRFSS,Obesity / Weight Status,29.9,4,520,Non-Hispanic White,RACEWHT,42
+62642,2018,RI,Rhode Island,BRFSS,Obesity / Weight Status,26.2,4,240,Non-Hispanic White,RACEWHT,44
+62669,2018,SC,South Carolina,BRFSS,Obesity / Weight Status,32.1,6,744,Non-Hispanic White,RACEWHT,45
+62696,2018,SD,South Dakota,BRFSS,Obesity / Weight Status,29.2,5,282,Non-Hispanic White,RACEWHT,46
+62723,2018,TN,Tennessee,BRFSS,Obesity / Weight Status,33.3,3,849,Non-Hispanic White,RACEWHT,47
+62750,2018,TX,Texas,BRFSS,Obesity / Weight Status,33.1,6,380,Non-Hispanic White,RACEWHT,48
+62777,2018,UT,Utah,BRFSS,Obesity / Weight Status,27.1,8,353,Non-Hispanic White,RACEWHT,49
+62804,2018,VT,Vermont,BRFSS,Obesity / Weight Status,28,5,572,Non-Hispanic White,RACEWHT,50
+62831,2018,VA,Virginia,BRFSS,Obesity / Weight Status,29.3,6,889,Non-Hispanic White,RACEWHT,51
+62858,2018,WA,Washington,BRFSS,Obesity / Weight Status,29.4,9,751,Non-Hispanic White,RACEWHT,53
+62885,2018,WV,West Virginia,BRFSS,Obesity / Weight Status,39.9,4,292,Non-Hispanic White,RACEWHT,54
+62912,2018,WI,Wisconsin,BRFSS,Obesity / Weight Status,31.4,3,926,Non-Hispanic White,RACEWHT,55
+63035,2018,WY,Wyoming,BRFSS,Obesity / Weight Status,28.4,3,729,Non-Hispanic White,RACEWHT,56
+63062,2018,GU,Guam,BRFSS,Obesity / Weight Status,26.3,149,Non-Hispanic White,RACEWHT,66
+63089,2018,PR,Puerto Rico,BRFSS,Obesity / Weight Status,~,~,Non-Hispanic White,RACEWHT,72
+62403,2018,VI,Virgin Islands,BRFSS,Obesity / Weight Status,~,~,Non-Hispanic White,RACEWHT,78

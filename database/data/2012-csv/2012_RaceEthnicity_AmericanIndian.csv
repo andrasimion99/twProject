@@ -1,53 +1,53 @@
-﻿"ID","Description","LocationAbbr","LocationDesc","DataSource","Topic","Data_Value","Sample_Size","Stratification1","StratificationId1","LocationDisplayOrder"
-"252","2012","US","National","BRFSS","Obesity / Weight Status","33.7","6,543","American Indian / Alaska Native","RACENAA","0"
-"27606","2012","AL","Alabama","BRFSS","Obesity / Weight Status","26.5","81","American Indian / Alaska Native","RACENAA","1"
-"7993","2012","AK","Alaska","BRFSS","Obesity / Weight Status","31.9","748","American Indian / Alaska Native","RACENAA","2"
-"3159","2012","AZ","Arizona","BRFSS","Obesity / Weight Status","45.8","289","American Indian / Alaska Native","RACENAA","4"
-"4424","2012","AR","Arkansas","BRFSS","Obesity / Weight Status","46","60","American Indian / Alaska Native","RACENAA","5"
-"19530","2012","CA","California","BRFSS","Obesity / Weight Status","17.6","107","American Indian / Alaska Native","RACENAA","6"
-"30029","2012","CO","Colorado","BRFSS","Obesity / Weight Status","28.6","66","American Indian / Alaska Native","RACENAA","8"
-"6233","2012","CT","Connecticut","BRFSS","Obesity / Weight Status","~","~","American Indian / Alaska Native","RACENAA","9"
-"11042","2012","DE","Delaware","BRFSS","Obesity / Weight Status","~","~","American Indian / Alaska Native","RACENAA","10"
-"4470","2012","DC","District of Columbia","BRFSS","Obesity / Weight Status","~","~","American Indian / Alaska Native","RACENAA","11"
-"25926","2012","FL","Florida","BRFSS","Obesity / Weight Status","31.4","52","American Indian / Alaska Native","RACENAA","12"
-"20596","2012","GA","Georgia","BRFSS","Obesity / Weight Status","~","~","American Indian / Alaska Native","RACENAA","13"
-"21511","2012","HI","Hawaii","BRFSS","Obesity / Weight Status","~","~","American Indian / Alaska Native","RACENAA","15"
-"30393","2012","ID","Idaho","BRFSS","Obesity / Weight Status","37.4","57","American Indian / Alaska Native","RACENAA","16"
-"6011","2012","IL","Illinois","BRFSS","Obesity / Weight Status","~","~","American Indian / Alaska Native","RACENAA","17"
-"38942","2012","IN","Indiana","BRFSS","Obesity / Weight Status","~","~","American Indian / Alaska Native","RACENAA","18"
-"33116","2012","IA","Iowa","BRFSS","Obesity / Weight Status","~","~","American Indian / Alaska Native","RACENAA","19"
-"39169","2012","KS","Kansas","BRFSS","Obesity / Weight Status","35.1","90","American Indian / Alaska Native","RACENAA","20"
-"29440","2012","KY","Kentucky","BRFSS","Obesity / Weight Status","42.7","83","American Indian / Alaska Native","RACENAA","21"
-"35102","2012","LA","Louisiana","BRFSS","Obesity / Weight Status","25.2","55","American Indian / Alaska Native","RACENAA","22"
-"18956","2012","ME","Maine","BRFSS","Obesity / Weight Status","37.6","107","American Indian / Alaska Native","RACENAA","23"
-"28714","2012","MD","Maryland","BRFSS","Obesity / Weight Status","38.4","59","American Indian / Alaska Native","RACENAA","24"
-"1312","2012","MA","Massachusetts","BRFSS","Obesity / Weight Status","22","99","American Indian / Alaska Native","RACENAA","25"
-"35714","2012","MI","Michigan","BRFSS","Obesity / Weight Status","33.3","94","American Indian / Alaska Native","RACENAA","26"
-"12253","2012","MN","Minnesota","BRFSS","Obesity / Weight Status","36.9","104","American Indian / Alaska Native","RACENAA","27"
-"36295","2012","MS","Mississippi","BRFSS","Obesity / Weight Status","~","~","American Indian / Alaska Native","RACENAA","28"
-"20377","2012","MO","Missouri","BRFSS","Obesity / Weight Status","~","~","American Indian / Alaska Native","RACENAA","29"
-"22726","2012","MT","Montana","BRFSS","Obesity / Weight Status","40.5","571","American Indian / Alaska Native","RACENAA","30"
-"12662","2012","NE","Nebraska","BRFSS","Obesity / Weight Status","35.6","198","American Indian / Alaska Native","RACENAA","31"
-"20331","2012","NV","Nevada","BRFSS","Obesity / Weight Status","19.8","50","American Indian / Alaska Native","RACENAA","32"
-"25179","2012","NH","New Hampshire","BRFSS","Obesity / Weight Status","~","~","American Indian / Alaska Native","RACENAA","33"
-"24190","2012","NJ","New Jersey","BRFSS","Obesity / Weight Status","16.1","71","American Indian / Alaska Native","RACENAA","34"
-"7290","2012","NM","New Mexico","BRFSS","Obesity / Weight Status","41.8","521","American Indian / Alaska Native","RACENAA","35"
-"35771","2012","NY","New York","BRFSS","Obesity / Weight Status","~","~","American Indian / Alaska Native","RACENAA","36"
-"22356","2012","NC","North Carolina","BRFSS","Obesity / Weight Status","42.4","403","American Indian / Alaska Native","RACENAA","37"
-"22979","2012","ND","North Dakota","BRFSS","Obesity / Weight Status","41.8","122","American Indian / Alaska Native","RACENAA","38"
-"16094","2012","OH","Ohio","BRFSS","Obesity / Weight Status","28.9","87","American Indian / Alaska Native","RACENAA","39"
-"10382","2012","OK","Oklahoma","BRFSS","Obesity / Weight Status","37.5","494","American Indian / Alaska Native","RACENAA","40"
-"24968","2012","OR","Oregon","BRFSS","Obesity / Weight Status","~","~","American Indian / Alaska Native","RACENAA","41"
-"9237","2012","PA","Pennsylvania","BRFSS","Obesity / Weight Status","18.4","90","American Indian / Alaska Native","RACENAA","42"
-"31663","2012","RI","Rhode Island","BRFSS","Obesity / Weight Status","~","~","American Indian / Alaska Native","RACENAA","44"
-"15291","2012","SC","South Carolina","BRFSS","Obesity / Weight Status","44.4","64","American Indian / Alaska Native","RACENAA","45"
-"3746","2012","SD","South Dakota","BRFSS","Obesity / Weight Status","35.8","707","American Indian / Alaska Native","RACENAA","46"
-"21308","2012","TN","Tennessee","BRFSS","Obesity / Weight Status","~","~","American Indian / Alaska Native","RACENAA","47"
-"8644","2012","TX","Texas","BRFSS","Obesity / Weight Status","~","~","American Indian / Alaska Native","RACENAA","48"
-"30691","2012","UT","Utah","BRFSS","Obesity / Weight Status","37.8","76","American Indian / Alaska Native","RACENAA","49"
-"18309","2012","VT","Vermont","BRFSS","Obesity / Weight Status","~","~","American Indian / Alaska Native","RACENAA","50"
-"12668","2012","VA","Virginia","BRFSS","Obesity / Weight Status","39.1","55","American Indian / Alaska Native","RACENAA","51"
-"5253","2012","WA","Washington","BRFSS","Obesity / Weight Status","34.8","147","American Indian / Alaska Native","RACENAA","53"
-"10721","2012","WV","West Virginia","BRFSS","Obesity / Weight Status","~","~","American Indian / Alaska Native","RACENAA","54"
-"24059","2012","WI","Wisconsin","BRFSS","Obesity / Weight Status","36.9","88","American Indian / Alaska Native","RACENAA","55"
-"12976","2012","WY","Wyoming","BRFSS","Obesity / Weight Status","24.1","69","American Indian / Alaska Native","RACENAA","56"
+﻿ID,Description,LocationAbbr,LocationDesc,DataSource,Topic,Data_Value,Sample_Size,Stratification1,StratificationId1,LocationDisplayOrder
+252,2012,US,National,BRFSS,Obesity / Weight Status,33.7,6,543,American Indian / Alaska Native,RACENAA,0
+27606,2012,AL,Alabama,BRFSS,Obesity / Weight Status,26.5,81,American Indian / Alaska Native,RACENAA,1
+7993,2012,AK,Alaska,BRFSS,Obesity / Weight Status,31.9,748,American Indian / Alaska Native,RACENAA,2
+3159,2012,AZ,Arizona,BRFSS,Obesity / Weight Status,45.8,289,American Indian / Alaska Native,RACENAA,4
+4424,2012,AR,Arkansas,BRFSS,Obesity / Weight Status,46,60,American Indian / Alaska Native,RACENAA,5
+19530,2012,CA,California,BRFSS,Obesity / Weight Status,17.6,107,American Indian / Alaska Native,RACENAA,6
+30029,2012,CO,Colorado,BRFSS,Obesity / Weight Status,28.6,66,American Indian / Alaska Native,RACENAA,8
+6233,2012,CT,Connecticut,BRFSS,Obesity / Weight Status,~,~,American Indian / Alaska Native,RACENAA,9
+11042,2012,DE,Delaware,BRFSS,Obesity / Weight Status,~,~,American Indian / Alaska Native,RACENAA,10
+4470,2012,DC,District of Columbia,BRFSS,Obesity / Weight Status,~,~,American Indian / Alaska Native,RACENAA,11
+25926,2012,FL,Florida,BRFSS,Obesity / Weight Status,31.4,52,American Indian / Alaska Native,RACENAA,12
+20596,2012,GA,Georgia,BRFSS,Obesity / Weight Status,~,~,American Indian / Alaska Native,RACENAA,13
+21511,2012,HI,Hawaii,BRFSS,Obesity / Weight Status,~,~,American Indian / Alaska Native,RACENAA,15
+30393,2012,ID,Idaho,BRFSS,Obesity / Weight Status,37.4,57,American Indian / Alaska Native,RACENAA,16
+6011,2012,IL,Illinois,BRFSS,Obesity / Weight Status,~,~,American Indian / Alaska Native,RACENAA,17
+38942,2012,IN,Indiana,BRFSS,Obesity / Weight Status,~,~,American Indian / Alaska Native,RACENAA,18
+33116,2012,IA,Iowa,BRFSS,Obesity / Weight Status,~,~,American Indian / Alaska Native,RACENAA,19
+39169,2012,KS,Kansas,BRFSS,Obesity / Weight Status,35.1,90,American Indian / Alaska Native,RACENAA,20
+29440,2012,KY,Kentucky,BRFSS,Obesity / Weight Status,42.7,83,American Indian / Alaska Native,RACENAA,21
+35102,2012,LA,Louisiana,BRFSS,Obesity / Weight Status,25.2,55,American Indian / Alaska Native,RACENAA,22
+18956,2012,ME,Maine,BRFSS,Obesity / Weight Status,37.6,107,American Indian / Alaska Native,RACENAA,23
+28714,2012,MD,Maryland,BRFSS,Obesity / Weight Status,38.4,59,American Indian / Alaska Native,RACENAA,24
+1312,2012,MA,Massachusetts,BRFSS,Obesity / Weight Status,22,99,American Indian / Alaska Native,RACENAA,25
+35714,2012,MI,Michigan,BRFSS,Obesity / Weight Status,33.3,94,American Indian / Alaska Native,RACENAA,26
+12253,2012,MN,Minnesota,BRFSS,Obesity / Weight Status,36.9,104,American Indian / Alaska Native,RACENAA,27
+36295,2012,MS,Mississippi,BRFSS,Obesity / Weight Status,~,~,American Indian / Alaska Native,RACENAA,28
+20377,2012,MO,Missouri,BRFSS,Obesity / Weight Status,~,~,American Indian / Alaska Native,RACENAA,29
+22726,2012,MT,Montana,BRFSS,Obesity / Weight Status,40.5,571,American Indian / Alaska Native,RACENAA,30
+12662,2012,NE,Nebraska,BRFSS,Obesity / Weight Status,35.6,198,American Indian / Alaska Native,RACENAA,31
+20331,2012,NV,Nevada,BRFSS,Obesity / Weight Status,19.8,50,American Indian / Alaska Native,RACENAA,32
+25179,2012,NH,New Hampshire,BRFSS,Obesity / Weight Status,~,~,American Indian / Alaska Native,RACENAA,33
+24190,2012,NJ,New Jersey,BRFSS,Obesity / Weight Status,16.1,71,American Indian / Alaska Native,RACENAA,34
+7290,2012,NM,New Mexico,BRFSS,Obesity / Weight Status,41.8,521,American Indian / Alaska Native,RACENAA,35
+35771,2012,NY,New York,BRFSS,Obesity / Weight Status,~,~,American Indian / Alaska Native,RACENAA,36
+22356,2012,NC,North Carolina,BRFSS,Obesity / Weight Status,42.4,403,American Indian / Alaska Native,RACENAA,37
+22979,2012,ND,North Dakota,BRFSS,Obesity / Weight Status,41.8,122,American Indian / Alaska Native,RACENAA,38
+16094,2012,OH,Ohio,BRFSS,Obesity / Weight Status,28.9,87,American Indian / Alaska Native,RACENAA,39
+10382,2012,OK,Oklahoma,BRFSS,Obesity / Weight Status,37.5,494,American Indian / Alaska Native,RACENAA,40
+24968,2012,OR,Oregon,BRFSS,Obesity / Weight Status,~,~,American Indian / Alaska Native,RACENAA,41
+9237,2012,PA,Pennsylvania,BRFSS,Obesity / Weight Status,18.4,90,American Indian / Alaska Native,RACENAA,42
+31663,2012,RI,Rhode Island,BRFSS,Obesity / Weight Status,~,~,American Indian / Alaska Native,RACENAA,44
+15291,2012,SC,South Carolina,BRFSS,Obesity / Weight Status,44.4,64,American Indian / Alaska Native,RACENAA,45
+3746,2012,SD,South Dakota,BRFSS,Obesity / Weight Status,35.8,707,American Indian / Alaska Native,RACENAA,46
+21308,2012,TN,Tennessee,BRFSS,Obesity / Weight Status,~,~,American Indian / Alaska Native,RACENAA,47
+8644,2012,TX,Texas,BRFSS,Obesity / Weight Status,~,~,American Indian / Alaska Native,RACENAA,48
+30691,2012,UT,Utah,BRFSS,Obesity / Weight Status,37.8,76,American Indian / Alaska Native,RACENAA,49
+18309,2012,VT,Vermont,BRFSS,Obesity / Weight Status,~,~,American Indian / Alaska Native,RACENAA,50
+12668,2012,VA,Virginia,BRFSS,Obesity / Weight Status,39.1,55,American Indian / Alaska Native,RACENAA,51
+5253,2012,WA,Washington,BRFSS,Obesity / Weight Status,34.8,147,American Indian / Alaska Native,RACENAA,53
+10721,2012,WV,West Virginia,BRFSS,Obesity / Weight Status,~,~,American Indian / Alaska Native,RACENAA,54
+24059,2012,WI,Wisconsin,BRFSS,Obesity / Weight Status,36.9,88,American Indian / Alaska Native,RACENAA,55
+12976,2012,WY,Wyoming,BRFSS,Obesity / Weight Status,24.1,69,American Indian / Alaska Native,RACENAA,56

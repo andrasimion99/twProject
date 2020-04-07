@@ -1,55 +1,55 @@
-﻿"ID","Description","LocationAbbr","LocationDesc","DataSource","Topic","Data_Value","Sample_Size","Stratification1","StratificationId1","LocationDisplayOrder"
-"1376","2014","US","National","BRFSS","Obesity / Weight Status","32.2","25,996","Hispanic","RACEHIS","0"
-"20103","2014","AL","Alabama","BRFSS","Obesity / Weight Status","22.9","70","Hispanic","RACEHIS","1"
-"12826","2014","AK","Alaska","BRFSS","Obesity / Weight Status","29.6","120","Hispanic","RACEHIS","2"
-"7920","2014","AZ","Arizona","BRFSS","Obesity / Weight Status","34","1,814","Hispanic","RACEHIS","4"
-"34335","2014","AR","Arkansas","BRFSS","Obesity / Weight Status","35.2","96","Hispanic","RACEHIS","5"
-"8650","2014","CA","California","BRFSS","Obesity / Weight Status","32.3","2,049","Hispanic","RACEHIS","6"
-"21586","2014","CO","Colorado","BRFSS","Obesity / Weight Status","26.8","1,406","Hispanic","RACEHIS","8"
-"12313","2014","CT","Connecticut","BRFSS","Obesity / Weight Status","27.5","563","Hispanic","RACEHIS","9"
-"33799","2014","DE","Delaware","BRFSS","Obesity / Weight Status","31.3","200","Hispanic","RACEHIS","10"
-"15996","2014","DC","District of Columbia","BRFSS","Obesity / Weight Status","19.9","133","Hispanic","RACEHIS","11"
-"27081","2014","FL","Florida","BRFSS","Obesity / Weight Status","27.2","1,097","Hispanic","RACEHIS","12"
-"15640","2014","GA","Georgia","BRFSS","Obesity / Weight Status","23.3","201","Hispanic","RACEHIS","13"
-"19083","2014","HI","Hawaii","BRFSS","Obesity / Weight Status","32.3","535","Hispanic","RACEHIS","15"
-"36008","2014","ID","Idaho","BRFSS","Obesity / Weight Status","37.6","248","Hispanic","RACEHIS","16"
-"33838","2014","IL","Illinois","BRFSS","Obesity / Weight Status","34.9","391","Hispanic","RACEHIS","17"
-"39265","2014","IN","Indiana","BRFSS","Obesity / Weight Status","30.8","285","Hispanic","RACEHIS","18"
-"15188","2014","IA","Iowa","BRFSS","Obesity / Weight Status","27.9","187","Hispanic","RACEHIS","19"
-"30067","2014","KS","Kansas","BRFSS","Obesity / Weight Status","33","649","Hispanic","RACEHIS","20"
-"25440","2014","KY","Kentucky","BRFSS","Obesity / Weight Status","18.5","103","Hispanic","RACEHIS","21"
-"3643","2014","LA","Louisiana","BRFSS","Obesity / Weight Status","32.9","151","Hispanic","RACEHIS","22"
-"13259","2014","ME","Maine","BRFSS","Obesity / Weight Status","30","61","Hispanic","RACEHIS","23"
-"28871","2014","MD","Maryland","BRFSS","Obesity / Weight Status","22.6","339","Hispanic","RACEHIS","24"
-"29429","2014","MA","Massachusetts","BRFSS","Obesity / Weight Status","32.2","779","Hispanic","RACEHIS","25"
-"17758","2014","MI","Michigan","BRFSS","Obesity / Weight Status","36.8","157","Hispanic","RACEHIS","26"
-"18142","2014","MN","Minnesota","BRFSS","Obesity / Weight Status","34.8","351","Hispanic","RACEHIS","27"
-"50368","2014","MS","Mississippi","BRFSS","Obesity / Weight Status","~","~","Hispanic","RACEHIS","28"
-"9175","2014","MO","Missouri","BRFSS","Obesity / Weight Status","33.3","85","Hispanic","RACEHIS","29"
-"9663","2014","MT","Montana","BRFSS","Obesity / Weight Status","24.8","121","Hispanic","RACEHIS","30"
-"32492","2014","NE","Nebraska","BRFSS","Obesity / Weight Status","31.7","752","Hispanic","RACEHIS","31"
-"29372","2014","NV","Nevada","BRFSS","Obesity / Weight Status","30.3","408","Hispanic","RACEHIS","32"
-"10258","2014","NH","New Hampshire","BRFSS","Obesity / Weight Status","34.2","74","Hispanic","RACEHIS","33"
-"31639","2014","NJ","New Jersey","BRFSS","Obesity / Weight Status","31","1,412","Hispanic","RACEHIS","34"
-"38414","2014","NM","New Mexico","BRFSS","Obesity / Weight Status","31","2,557","Hispanic","RACEHIS","35"
-"5592","2014","NY","New York","BRFSS","Obesity / Weight Status","32.6","769","Hispanic","RACEHIS","36"
-"23791","2014","NC","North Carolina","BRFSS","Obesity / Weight Status","37.5","376","Hispanic","RACEHIS","37"
-"31899","2014","ND","North Dakota","BRFSS","Obesity / Weight Status","40.9","75","Hispanic","RACEHIS","38"
-"18986","2014","OH","Ohio","BRFSS","Obesity / Weight Status","26.5","155","Hispanic","RACEHIS","39"
-"24866","2014","OK","Oklahoma","BRFSS","Obesity / Weight Status","35.5","331","Hispanic","RACEHIS","40"
-"9485","2014","OR","Oregon","BRFSS","Obesity / Weight Status","25.6","204","Hispanic","RACEHIS","41"
-"18292","2014","PA","Pennsylvania","BRFSS","Obesity / Weight Status","38.6","206","Hispanic","RACEHIS","42"
-"39242","2014","RI","Rhode Island","BRFSS","Obesity / Weight Status","27.9","406","Hispanic","RACEHIS","44"
-"8393","2014","SC","South Carolina","BRFSS","Obesity / Weight Status","32.5","217","Hispanic","RACEHIS","45"
-"4607","2014","SD","South Dakota","BRFSS","Obesity / Weight Status","25.6","72","Hispanic","RACEHIS","46"
-"25364","2014","TN","Tennessee","BRFSS","Obesity / Weight Status","38.9","54","Hispanic","RACEHIS","47"
-"32161","2014","TX","Texas","BRFSS","Obesity / Weight Status","35.6","3,558","Hispanic","RACEHIS","48"
-"27261","2014","UT","Utah","BRFSS","Obesity / Weight Status","28.5","978","Hispanic","RACEHIS","49"
-"51210","2014","VT","Vermont","BRFSS","Obesity / Weight Status","~","~","Hispanic","RACEHIS","50"
-"32252","2014","VA","Virginia","BRFSS","Obesity / Weight Status","31.1","294","Hispanic","RACEHIS","51"
-"5852","2014","WA","Washington","BRFSS","Obesity / Weight Status","34.6","451","Hispanic","RACEHIS","53"
-"54680","2014","WV","West Virginia","BRFSS","Obesity / Weight Status","~","~","Hispanic","RACEHIS","54"
-"30073","2014","WI","Wisconsin","BRFSS","Obesity / Weight Status","38.8","132","Hispanic","RACEHIS","55"
-"13629","2014","WY","Wyoming","BRFSS","Obesity / Weight Status","36.5","197","Hispanic","RACEHIS","56"
-"1104","2014","GU","Guam","BRFSS","Obesity / Weight Status","32.4","200","Hispanic","RACEHIS","66"
-"1181","2014","PR","Puerto Rico","BRFSS","Obesity / Weight Status","28.2","5,681","Hispanic","RACEHIS","72"
+﻿ID,Description,LocationAbbr,LocationDesc,DataSource,Topic,Data_Value,Sample_Size,Stratification1,StratificationId1,LocationDisplayOrder
+1376,2014,US,National,BRFSS,Obesity / Weight Status,32.2,25,996,Hispanic,RACEHIS,0
+20103,2014,AL,Alabama,BRFSS,Obesity / Weight Status,22.9,70,Hispanic,RACEHIS,1
+12826,2014,AK,Alaska,BRFSS,Obesity / Weight Status,29.6,120,Hispanic,RACEHIS,2
+7920,2014,AZ,Arizona,BRFSS,Obesity / Weight Status,34,1,814,Hispanic,RACEHIS,4
+34335,2014,AR,Arkansas,BRFSS,Obesity / Weight Status,35.2,96,Hispanic,RACEHIS,5
+8650,2014,CA,California,BRFSS,Obesity / Weight Status,32.3,2,049,Hispanic,RACEHIS,6
+21586,2014,CO,Colorado,BRFSS,Obesity / Weight Status,26.8,1,406,Hispanic,RACEHIS,8
+12313,2014,CT,Connecticut,BRFSS,Obesity / Weight Status,27.5,563,Hispanic,RACEHIS,9
+33799,2014,DE,Delaware,BRFSS,Obesity / Weight Status,31.3,200,Hispanic,RACEHIS,10
+15996,2014,DC,District of Columbia,BRFSS,Obesity / Weight Status,19.9,133,Hispanic,RACEHIS,11
+27081,2014,FL,Florida,BRFSS,Obesity / Weight Status,27.2,1,097,Hispanic,RACEHIS,12
+15640,2014,GA,Georgia,BRFSS,Obesity / Weight Status,23.3,201,Hispanic,RACEHIS,13
+19083,2014,HI,Hawaii,BRFSS,Obesity / Weight Status,32.3,535,Hispanic,RACEHIS,15
+36008,2014,ID,Idaho,BRFSS,Obesity / Weight Status,37.6,248,Hispanic,RACEHIS,16
+33838,2014,IL,Illinois,BRFSS,Obesity / Weight Status,34.9,391,Hispanic,RACEHIS,17
+39265,2014,IN,Indiana,BRFSS,Obesity / Weight Status,30.8,285,Hispanic,RACEHIS,18
+15188,2014,IA,Iowa,BRFSS,Obesity / Weight Status,27.9,187,Hispanic,RACEHIS,19
+30067,2014,KS,Kansas,BRFSS,Obesity / Weight Status,33,649,Hispanic,RACEHIS,20
+25440,2014,KY,Kentucky,BRFSS,Obesity / Weight Status,18.5,103,Hispanic,RACEHIS,21
+3643,2014,LA,Louisiana,BRFSS,Obesity / Weight Status,32.9,151,Hispanic,RACEHIS,22
+13259,2014,ME,Maine,BRFSS,Obesity / Weight Status,30,61,Hispanic,RACEHIS,23
+28871,2014,MD,Maryland,BRFSS,Obesity / Weight Status,22.6,339,Hispanic,RACEHIS,24
+29429,2014,MA,Massachusetts,BRFSS,Obesity / Weight Status,32.2,779,Hispanic,RACEHIS,25
+17758,2014,MI,Michigan,BRFSS,Obesity / Weight Status,36.8,157,Hispanic,RACEHIS,26
+18142,2014,MN,Minnesota,BRFSS,Obesity / Weight Status,34.8,351,Hispanic,RACEHIS,27
+50368,2014,MS,Mississippi,BRFSS,Obesity / Weight Status,~,~,Hispanic,RACEHIS,28
+9175,2014,MO,Missouri,BRFSS,Obesity / Weight Status,33.3,85,Hispanic,RACEHIS,29
+9663,2014,MT,Montana,BRFSS,Obesity / Weight Status,24.8,121,Hispanic,RACEHIS,30
+32492,2014,NE,Nebraska,BRFSS,Obesity / Weight Status,31.7,752,Hispanic,RACEHIS,31
+29372,2014,NV,Nevada,BRFSS,Obesity / Weight Status,30.3,408,Hispanic,RACEHIS,32
+10258,2014,NH,New Hampshire,BRFSS,Obesity / Weight Status,34.2,74,Hispanic,RACEHIS,33
+31639,2014,NJ,New Jersey,BRFSS,Obesity / Weight Status,31,1,412,Hispanic,RACEHIS,34
+38414,2014,NM,New Mexico,BRFSS,Obesity / Weight Status,31,2,557,Hispanic,RACEHIS,35
+5592,2014,NY,New York,BRFSS,Obesity / Weight Status,32.6,769,Hispanic,RACEHIS,36
+23791,2014,NC,North Carolina,BRFSS,Obesity / Weight Status,37.5,376,Hispanic,RACEHIS,37
+31899,2014,ND,North Dakota,BRFSS,Obesity / Weight Status,40.9,75,Hispanic,RACEHIS,38
+18986,2014,OH,Ohio,BRFSS,Obesity / Weight Status,26.5,155,Hispanic,RACEHIS,39
+24866,2014,OK,Oklahoma,BRFSS,Obesity / Weight Status,35.5,331,Hispanic,RACEHIS,40
+9485,2014,OR,Oregon,BRFSS,Obesity / Weight Status,25.6,204,Hispanic,RACEHIS,41
+18292,2014,PA,Pennsylvania,BRFSS,Obesity / Weight Status,38.6,206,Hispanic,RACEHIS,42
+39242,2014,RI,Rhode Island,BRFSS,Obesity / Weight Status,27.9,406,Hispanic,RACEHIS,44
+8393,2014,SC,South Carolina,BRFSS,Obesity / Weight Status,32.5,217,Hispanic,RACEHIS,45
+4607,2014,SD,South Dakota,BRFSS,Obesity / Weight Status,25.6,72,Hispanic,RACEHIS,46
+25364,2014,TN,Tennessee,BRFSS,Obesity / Weight Status,38.9,54,Hispanic,RACEHIS,47
+32161,2014,TX,Texas,BRFSS,Obesity / Weight Status,35.6,3,558,Hispanic,RACEHIS,48
+27261,2014,UT,Utah,BRFSS,Obesity / Weight Status,28.5,978,Hispanic,RACEHIS,49
+51210,2014,VT,Vermont,BRFSS,Obesity / Weight Status,~,~,Hispanic,RACEHIS,50
+32252,2014,VA,Virginia,BRFSS,Obesity / Weight Status,31.1,294,Hispanic,RACEHIS,51
+5852,2014,WA,Washington,BRFSS,Obesity / Weight Status,34.6,451,Hispanic,RACEHIS,53
+54680,2014,WV,West Virginia,BRFSS,Obesity / Weight Status,~,~,Hispanic,RACEHIS,54
+30073,2014,WI,Wisconsin,BRFSS,Obesity / Weight Status,38.8,132,Hispanic,RACEHIS,55
+13629,2014,WY,Wyoming,BRFSS,Obesity / Weight Status,36.5,197,Hispanic,RACEHIS,56
+1104,2014,GU,Guam,BRFSS,Obesity / Weight Status,32.4,200,Hispanic,RACEHIS,66
+1181,2014,PR,Puerto Rico,BRFSS,Obesity / Weight Status,28.2,5,681,Hispanic,RACEHIS,72

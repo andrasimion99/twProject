@@ -1,54 +1,54 @@
-﻿"ID","Description","LocationAbbr","LocationDesc","DataSource","Topic","Data_Value","Sample_Size","Stratification1","StratificationId1","LocationDisplayOrder"
-"219","2013","US","National","BRFSS","Obesity / Weight Status","28.3","457,487","Total","OVERALL","0"
-"23013","2013","AL","Alabama","BRFSS","Obesity / Weight Status","32.4","6,244","Total","OVERALL","1"
-"29605","2013","AK","Alaska","BRFSS","Obesity / Weight Status","28.4","4,396","Total","OVERALL","2"
-"11195","2013","AZ","Arizona","BRFSS","Obesity / Weight Status","26.8","4,029","Total","OVERALL","4"
-"11194","2013","AR","Arkansas","BRFSS","Obesity / Weight Status","34.6","5,023","Total","OVERALL","5"
-"25052","2013","CA","California","BRFSS","Obesity / Weight Status","24.1","10,669","Total","OVERALL","6"
-"14135","2013","CO","Colorado","BRFSS","Obesity / Weight Status","21.3","12,920","Total","OVERALL","8"
-"36723","2013","CT","Connecticut","BRFSS","Obesity / Weight Status","25","7,309","Total","OVERALL","9"
-"33869","2013","DE","Delaware","BRFSS","Obesity / Weight Status","31.1","4,893","Total","OVERALL","10"
-"33299","2013","DC","District of Columbia","BRFSS","Obesity / Weight Status","22.9","4,705","Total","OVERALL","11"
-"22801","2013","FL","Florida","BRFSS","Obesity / Weight Status","26.4","32,552","Total","OVERALL","12"
-"25512","2013","GA","Georgia","BRFSS","Obesity / Weight Status","30.3","7,606","Total","OVERALL","13"
-"18253","2013","HI","Hawaii","BRFSS","Obesity / Weight Status","21.8","7,609","Total","OVERALL","15"
-"15357","2013","ID","Idaho","BRFSS","Obesity / Weight Status","29.6","5,315","Total","OVERALL","16"
-"35200","2013","IL","Illinois","BRFSS","Obesity / Weight Status","29.4","5,490","Total","OVERALL","17"
-"39216","2013","IN","Indiana","BRFSS","Obesity / Weight Status","31.8","9,770","Total","OVERALL","18"
-"31207","2013","IA","Iowa","BRFSS","Obesity / Weight Status","31.3","7,672","Total","OVERALL","19"
-"10698","2013","KS","Kansas","BRFSS","Obesity / Weight Status","30","21,991","Total","OVERALL","20"
-"28619","2013","KY","Kentucky","BRFSS","Obesity / Weight Status","33.2","10,325","Total","OVERALL","21"
-"18723","2013","LA","Louisiana","BRFSS","Obesity / Weight Status","33.1","5,014","Total","OVERALL","22"
-"10701","2013","ME","Maine","BRFSS","Obesity / Weight Status","28.9","7,791","Total","OVERALL","23"
-"29760","2013","MD","Maryland","BRFSS","Obesity / Weight Status","28.3","12,169","Total","OVERALL","24"
-"31772","2013","MA","Massachusetts","BRFSS","Obesity / Weight Status","23.6","13,883","Total","OVERALL","25"
-"25983","2013","MI","Michigan","BRFSS","Obesity / Weight Status","31.5","12,177","Total","OVERALL","26"
-"23635","2013","MN","Minnesota","BRFSS","Obesity / Weight Status","25.5","13,450","Total","OVERALL","27"
-"14379","2013","MS","Mississippi","BRFSS","Obesity / Weight Status","35.1","7,032","Total","OVERALL","28"
-"38135","2013","MO","Missouri","BRFSS","Obesity / Weight Status","30.4","6,783","Total","OVERALL","29"
-"10860","2013","MT","Montana","BRFSS","Obesity / Weight Status","24.6","9,323","Total","OVERALL","30"
-"20327","2013","NE","Nebraska","BRFSS","Obesity / Weight Status","29.6","16,250","Total","OVERALL","31"
-"25095","2013","NV","Nevada","BRFSS","Obesity / Weight Status","26.2","4,871","Total","OVERALL","32"
-"9652","2013","NH","New Hampshire","BRFSS","Obesity / Weight Status","26.7","6,141","Total","OVERALL","33"
-"27917","2013","NJ","New Jersey","BRFSS","Obesity / Weight Status","26.3","12,256","Total","OVERALL","34"
-"11380","2013","NM","New Mexico","BRFSS","Obesity / Weight Status","26.4","8,914","Total","OVERALL","35"
-"1655","2013","NY","New York","BRFSS","Obesity / Weight Status","25.4","8,465","Total","OVERALL","36"
-"15427","2013","NC","North Carolina","BRFSS","Obesity / Weight Status","29.4","8,292","Total","OVERALL","37"
-"1214","2013","ND","North Dakota","BRFSS","Obesity / Weight Status","31","7,413","Total","OVERALL","38"
-"30936","2013","OH","Ohio","BRFSS","Obesity / Weight Status","30.4","11,260","Total","OVERALL","39"
-"25477","2013","OK","Oklahoma","BRFSS","Obesity / Weight Status","32.5","7,875","Total","OVERALL","40"
-"24268","2013","OR","Oregon","BRFSS","Obesity / Weight Status","26.5","5,668","Total","OVERALL","41"
-"8072","2013","PA","Pennsylvania","BRFSS","Obesity / Weight Status","30","10,857","Total","OVERALL","42"
-"25407","2013","RI","Rhode Island","BRFSS","Obesity / Weight Status","27.3","6,191","Total","OVERALL","44"
-"30860","2013","SC","South Carolina","BRFSS","Obesity / Weight Status","31.7","10,227","Total","OVERALL","45"
-"34351","2013","SD","South Dakota","BRFSS","Obesity / Weight Status","29.9","6,531","Total","OVERALL","46"
-"27825","2013","TN","Tennessee","BRFSS","Obesity / Weight Status","33.7","5,452","Total","OVERALL","47"
-"39331","2013","TX","Texas","BRFSS","Obesity / Weight Status","30.9","10,085","Total","OVERALL","48"
-"10536","2013","UT","Utah","BRFSS","Obesity / Weight Status","24.1","12,027","Total","OVERALL","49"
-"14273","2013","VT","Vermont","BRFSS","Obesity / Weight Status","24.7","6,106","Total","OVERALL","50"
-"31418","2013","VA","Virginia","BRFSS","Obesity / Weight Status","27.2","7,941","Total","OVERALL","51"
-"16463","2013","WA","Washington","BRFSS","Obesity / Weight Status","27.2","10,554","Total","OVERALL","53"
-"14310","2013","WV","West Virginia","BRFSS","Obesity / Weight Status","35.1","5,636","Total","OVERALL","54"
-"4120","2013","WI","Wisconsin","BRFSS","Obesity / Weight Status","29.8","6,188","Total","OVERALL","55"
-"12908","2013","WY","Wyoming","BRFSS","Obesity / Weight Status","27.8","6,147","Total","OVERALL","56"
-"1940","2013","PR","Puerto Rico","BRFSS","Obesity / Weight Status","27.9","5,762","Total","OVERALL","72"
+﻿ID,Description,LocationAbbr,LocationDesc,DataSource,Topic,Data_Value,Sample_Size,Stratification1,StratificationId1,LocationDisplayOrder
+219,2013,US,National,BRFSS,Obesity / Weight Status,28.3,457,487,Total,OVERALL,0
+23013,2013,AL,Alabama,BRFSS,Obesity / Weight Status,32.4,6,244,Total,OVERALL,1
+29605,2013,AK,Alaska,BRFSS,Obesity / Weight Status,28.4,4,396,Total,OVERALL,2
+11195,2013,AZ,Arizona,BRFSS,Obesity / Weight Status,26.8,4,029,Total,OVERALL,4
+11194,2013,AR,Arkansas,BRFSS,Obesity / Weight Status,34.6,5,023,Total,OVERALL,5
+25052,2013,CA,California,BRFSS,Obesity / Weight Status,24.1,10,669,Total,OVERALL,6
+14135,2013,CO,Colorado,BRFSS,Obesity / Weight Status,21.3,12,920,Total,OVERALL,8
+36723,2013,CT,Connecticut,BRFSS,Obesity / Weight Status,25,7,309,Total,OVERALL,9
+33869,2013,DE,Delaware,BRFSS,Obesity / Weight Status,31.1,4,893,Total,OVERALL,10
+33299,2013,DC,District of Columbia,BRFSS,Obesity / Weight Status,22.9,4,705,Total,OVERALL,11
+22801,2013,FL,Florida,BRFSS,Obesity / Weight Status,26.4,32,552,Total,OVERALL,12
+25512,2013,GA,Georgia,BRFSS,Obesity / Weight Status,30.3,7,606,Total,OVERALL,13
+18253,2013,HI,Hawaii,BRFSS,Obesity / Weight Status,21.8,7,609,Total,OVERALL,15
+15357,2013,ID,Idaho,BRFSS,Obesity / Weight Status,29.6,5,315,Total,OVERALL,16
+35200,2013,IL,Illinois,BRFSS,Obesity / Weight Status,29.4,5,490,Total,OVERALL,17
+39216,2013,IN,Indiana,BRFSS,Obesity / Weight Status,31.8,9,770,Total,OVERALL,18
+31207,2013,IA,Iowa,BRFSS,Obesity / Weight Status,31.3,7,672,Total,OVERALL,19
+10698,2013,KS,Kansas,BRFSS,Obesity / Weight Status,30,21,991,Total,OVERALL,20
+28619,2013,KY,Kentucky,BRFSS,Obesity / Weight Status,33.2,10,325,Total,OVERALL,21
+18723,2013,LA,Louisiana,BRFSS,Obesity / Weight Status,33.1,5,014,Total,OVERALL,22
+10701,2013,ME,Maine,BRFSS,Obesity / Weight Status,28.9,7,791,Total,OVERALL,23
+29760,2013,MD,Maryland,BRFSS,Obesity / Weight Status,28.3,12,169,Total,OVERALL,24
+31772,2013,MA,Massachusetts,BRFSS,Obesity / Weight Status,23.6,13,883,Total,OVERALL,25
+25983,2013,MI,Michigan,BRFSS,Obesity / Weight Status,31.5,12,177,Total,OVERALL,26
+23635,2013,MN,Minnesota,BRFSS,Obesity / Weight Status,25.5,13,450,Total,OVERALL,27
+14379,2013,MS,Mississippi,BRFSS,Obesity / Weight Status,35.1,7,032,Total,OVERALL,28
+38135,2013,MO,Missouri,BRFSS,Obesity / Weight Status,30.4,6,783,Total,OVERALL,29
+10860,2013,MT,Montana,BRFSS,Obesity / Weight Status,24.6,9,323,Total,OVERALL,30
+20327,2013,NE,Nebraska,BRFSS,Obesity / Weight Status,29.6,16,250,Total,OVERALL,31
+25095,2013,NV,Nevada,BRFSS,Obesity / Weight Status,26.2,4,871,Total,OVERALL,32
+9652,2013,NH,New Hampshire,BRFSS,Obesity / Weight Status,26.7,6,141,Total,OVERALL,33
+27917,2013,NJ,New Jersey,BRFSS,Obesity / Weight Status,26.3,12,256,Total,OVERALL,34
+11380,2013,NM,New Mexico,BRFSS,Obesity / Weight Status,26.4,8,914,Total,OVERALL,35
+1655,2013,NY,New York,BRFSS,Obesity / Weight Status,25.4,8,465,Total,OVERALL,36
+15427,2013,NC,North Carolina,BRFSS,Obesity / Weight Status,29.4,8,292,Total,OVERALL,37
+1214,2013,ND,North Dakota,BRFSS,Obesity / Weight Status,31,7,413,Total,OVERALL,38
+30936,2013,OH,Ohio,BRFSS,Obesity / Weight Status,30.4,11,260,Total,OVERALL,39
+25477,2013,OK,Oklahoma,BRFSS,Obesity / Weight Status,32.5,7,875,Total,OVERALL,40
+24268,2013,OR,Oregon,BRFSS,Obesity / Weight Status,26.5,5,668,Total,OVERALL,41
+8072,2013,PA,Pennsylvania,BRFSS,Obesity / Weight Status,30,10,857,Total,OVERALL,42
+25407,2013,RI,Rhode Island,BRFSS,Obesity / Weight Status,27.3,6,191,Total,OVERALL,44
+30860,2013,SC,South Carolina,BRFSS,Obesity / Weight Status,31.7,10,227,Total,OVERALL,45
+34351,2013,SD,South Dakota,BRFSS,Obesity / Weight Status,29.9,6,531,Total,OVERALL,46
+27825,2013,TN,Tennessee,BRFSS,Obesity / Weight Status,33.7,5,452,Total,OVERALL,47
+39331,2013,TX,Texas,BRFSS,Obesity / Weight Status,30.9,10,085,Total,OVERALL,48
+10536,2013,UT,Utah,BRFSS,Obesity / Weight Status,24.1,12,027,Total,OVERALL,49
+14273,2013,VT,Vermont,BRFSS,Obesity / Weight Status,24.7,6,106,Total,OVERALL,50
+31418,2013,VA,Virginia,BRFSS,Obesity / Weight Status,27.2,7,941,Total,OVERALL,51
+16463,2013,WA,Washington,BRFSS,Obesity / Weight Status,27.2,10,554,Total,OVERALL,53
+14310,2013,WV,West Virginia,BRFSS,Obesity / Weight Status,35.1,5,636,Total,OVERALL,54
+4120,2013,WI,Wisconsin,BRFSS,Obesity / Weight Status,29.8,6,188,Total,OVERALL,55
+12908,2013,WY,Wyoming,BRFSS,Obesity / Weight Status,27.8,6,147,Total,OVERALL,56
+1940,2013,PR,Puerto Rico,BRFSS,Obesity / Weight Status,27.9,5,762,Total,OVERALL,72

@@ -1,56 +1,56 @@
-﻿"ID","Description","LocationAbbr","LocationDesc","DataSource","Topic","Data_Value","Sample_Size","Stratification1","StratificationId1","LocationDisplayOrder"
-"61116","2018","US","National","BRFSS","Obesity / Weight Status","11.5","8,341","Asian","RACEASN","0"
-"61196","2018","AL","Alabama","BRFSS","Obesity / Weight Status","~","~","Asian","RACEASN","1"
-"61772","2018","AK","Alaska","BRFSS","Obesity / Weight Status","28.1","61","Asian","RACEASN","2"
-"61799","2018","AZ","Arizona","BRFSS","Obesity / Weight Status","8.1","88","Asian","RACEASN","4"
-"61826","2018","AR","Arkansas","BRFSS","Obesity / Weight Status","~","~","Asian","RACEASN","5"
-"61573","2018","CA","California","BRFSS","Obesity / Weight Status","10.9","866","Asian","RACEASN","6"
-"61600","2018","CO","Colorado","BRFSS","Obesity / Weight Status","6.4","118","Asian","RACEASN","8"
-"61627","2018","CT","Connecticut","BRFSS","Obesity / Weight Status","10.9","204","Asian","RACEASN","9"
-"61654","2018","DE","Delaware","BRFSS","Obesity / Weight Status","12.6","92","Asian","RACEASN","10"
-"61865","2018","DC","District of Columbia","BRFSS","Obesity / Weight Status","9.5","98","Asian","RACEASN","11"
-"61892","2018","FL","Florida","BRFSS","Obesity / Weight Status","14.5","135","Asian","RACEASN","12"
-"61919","2018","GA","Georgia","BRFSS","Obesity / Weight Status","12.2","166","Asian","RACEASN","13"
-"61946","2018","HI","Hawaii","BRFSS","Obesity / Weight Status","17.5","2,082","Asian","RACEASN","15"
-"61233","2018","ID","Idaho","BRFSS","Obesity / Weight Status","~","~","Asian","RACEASN","16"
-"61260","2018","IL","Illinois","BRFSS","Obesity / Weight Status","10.2","185","Asian","RACEASN","17"
-"61287","2018","IN","Indiana","BRFSS","Obesity / Weight Status","15.2","60","Asian","RACEASN","18"
-"61959","2018","IA","Iowa","BRFSS","Obesity / Weight Status","25.4","78","Asian","RACEASN","19"
-"61986","2018","KS","Kansas","BRFSS","Obesity / Weight Status","16.4","108","Asian","RACEASN","20"
-"62013","2018","KY","Kentucky","BRFSS","Obesity / Weight Status","~","~","Asian","RACEASN","21"
-"62223","2018","LA","Louisiana","BRFSS","Obesity / Weight Status","~","~","Asian","RACEASN","22"
-"62250","2018","ME","Maine","BRFSS","Obesity / Weight Status","~","~","Asian","RACEASN","23"
-"62277","2018","MD","Maryland","BRFSS","Obesity / Weight Status","12.8","335","Asian","RACEASN","24"
-"62445","2018","MA","Massachusetts","BRFSS","Obesity / Weight Status","6.5","188","Asian","RACEASN","25"
-"62472","2018","MI","Michigan","BRFSS","Obesity / Weight Status","8","156","Asian","RACEASN","26"
-"62499","2018","MN","Minnesota","BRFSS","Obesity / Weight Status","20.1","327","Asian","RACEASN","27"
-"62526","2018","MS","Mississippi","BRFSS","Obesity / Weight Status","~","~","Asian","RACEASN","28"
-"62933","2018","MO","Missouri","BRFSS","Obesity / Weight Status","~","~","Asian","RACEASN","29"
-"62960","2018","MT","Montana","BRFSS","Obesity / Weight Status","~","~","Asian","RACEASN","30"
-"62987","2018","NE","Nebraska","BRFSS","Obesity / Weight Status","8.3","69","Asian","RACEASN","31"
-"62538","2018","NV","Nevada","BRFSS","Obesity / Weight Status","14.8","78","Asian","RACEASN","32"
-"62565","2018","NH","New Hampshire","BRFSS","Obesity / Weight Status","~","~","Asian","RACEASN","33"
-"62592","2018","NJ","New Jersey","BRFSS","Obesity / Weight Status","12.3","138","Asian","RACEASN","34"
-"62619","2018","NM","New Mexico","BRFSS","Obesity / Weight Status","~","~","Asian","RACEASN","35"
-"62125","2018","NY","New York","BRFSS","Obesity / Weight Status","12.4","845","Asian","RACEASN","36"
-"62152","2018","NC","North Carolina","BRFSS","Obesity / Weight Status","~","~","Asian","RACEASN","37"
-"62179","2018","ND","North Dakota","BRFSS","Obesity / Weight Status","~","~","Asian","RACEASN","38"
-"62302","2018","OH","Ohio","BRFSS","Obesity / Weight Status","7.3","84","Asian","RACEASN","39"
-"62329","2018","OK","Oklahoma","BRFSS","Obesity / Weight Status","2.6","51","Asian","RACEASN","40"
-"62356","2018","OR","Oregon","BRFSS","Obesity / Weight Status","9.8","80","Asian","RACEASN","41"
-"62383","2018","PA","Pennsylvania","BRFSS","Obesity / Weight Status","7.6","125","Asian","RACEASN","42"
-"62645","2018","RI","Rhode Island","BRFSS","Obesity / Weight Status","10.9","64","Asian","RACEASN","44"
-"62672","2018","SC","South Carolina","BRFSS","Obesity / Weight Status","26.6","53","Asian","RACEASN","45"
-"62699","2018","SD","South Dakota","BRFSS","Obesity / Weight Status","~","~","Asian","RACEASN","46"
-"62726","2018","TN","Tennessee","BRFSS","Obesity / Weight Status","~","~","Asian","RACEASN","47"
-"62753","2018","TX","Texas","BRFSS","Obesity / Weight Status","10.1","215","Asian","RACEASN","48"
-"62780","2018","UT","Utah","BRFSS","Obesity / Weight Status","15.3","105","Asian","RACEASN","49"
-"62807","2018","VT","Vermont","BRFSS","Obesity / Weight Status","~","~","Asian","RACEASN","50"
-"62834","2018","VA","Virginia","BRFSS","Obesity / Weight Status","13.4","202","Asian","RACEASN","51"
-"62861","2018","WA","Washington","BRFSS","Obesity / Weight Status","9.8","352","Asian","RACEASN","53"
-"62888","2018","WV","West Virginia","BRFSS","Obesity / Weight Status","~","~","Asian","RACEASN","54"
-"63011","2018","WI","Wisconsin","BRFSS","Obesity / Weight Status","~","~","Asian","RACEASN","55"
-"63038","2018","WY","Wyoming","BRFSS","Obesity / Weight Status","~","~","Asian","RACEASN","56"
-"63065","2018","GU","Guam","BRFSS","Obesity / Weight Status","13","484","Asian","RACEASN","66"
-"63092","2018","PR","Puerto Rico","BRFSS","Obesity / Weight Status","~","~","Asian","RACEASN","72"
-"62406","2018","VI","Virgin Islands","BRFSS","Obesity / Weight Status","~","~","Asian","RACEASN","78"
+﻿ID,Description,LocationAbbr,LocationDesc,DataSource,Topic,Data_Value,Sample_Size,Stratification1,StratificationId1,LocationDisplayOrder
+61116,2018,US,National,BRFSS,Obesity / Weight Status,11.5,8,341,Asian,RACEASN,0
+61196,2018,AL,Alabama,BRFSS,Obesity / Weight Status,~,~,Asian,RACEASN,1
+61772,2018,AK,Alaska,BRFSS,Obesity / Weight Status,28.1,61,Asian,RACEASN,2
+61799,2018,AZ,Arizona,BRFSS,Obesity / Weight Status,8.1,88,Asian,RACEASN,4
+61826,2018,AR,Arkansas,BRFSS,Obesity / Weight Status,~,~,Asian,RACEASN,5
+61573,2018,CA,California,BRFSS,Obesity / Weight Status,10.9,866,Asian,RACEASN,6
+61600,2018,CO,Colorado,BRFSS,Obesity / Weight Status,6.4,118,Asian,RACEASN,8
+61627,2018,CT,Connecticut,BRFSS,Obesity / Weight Status,10.9,204,Asian,RACEASN,9
+61654,2018,DE,Delaware,BRFSS,Obesity / Weight Status,12.6,92,Asian,RACEASN,10
+61865,2018,DC,District of Columbia,BRFSS,Obesity / Weight Status,9.5,98,Asian,RACEASN,11
+61892,2018,FL,Florida,BRFSS,Obesity / Weight Status,14.5,135,Asian,RACEASN,12
+61919,2018,GA,Georgia,BRFSS,Obesity / Weight Status,12.2,166,Asian,RACEASN,13
+61946,2018,HI,Hawaii,BRFSS,Obesity / Weight Status,17.5,2,082,Asian,RACEASN,15
+61233,2018,ID,Idaho,BRFSS,Obesity / Weight Status,~,~,Asian,RACEASN,16
+61260,2018,IL,Illinois,BRFSS,Obesity / Weight Status,10.2,185,Asian,RACEASN,17
+61287,2018,IN,Indiana,BRFSS,Obesity / Weight Status,15.2,60,Asian,RACEASN,18
+61959,2018,IA,Iowa,BRFSS,Obesity / Weight Status,25.4,78,Asian,RACEASN,19
+61986,2018,KS,Kansas,BRFSS,Obesity / Weight Status,16.4,108,Asian,RACEASN,20
+62013,2018,KY,Kentucky,BRFSS,Obesity / Weight Status,~,~,Asian,RACEASN,21
+62223,2018,LA,Louisiana,BRFSS,Obesity / Weight Status,~,~,Asian,RACEASN,22
+62250,2018,ME,Maine,BRFSS,Obesity / Weight Status,~,~,Asian,RACEASN,23
+62277,2018,MD,Maryland,BRFSS,Obesity / Weight Status,12.8,335,Asian,RACEASN,24
+62445,2018,MA,Massachusetts,BRFSS,Obesity / Weight Status,6.5,188,Asian,RACEASN,25
+62472,2018,MI,Michigan,BRFSS,Obesity / Weight Status,8,156,Asian,RACEASN,26
+62499,2018,MN,Minnesota,BRFSS,Obesity / Weight Status,20.1,327,Asian,RACEASN,27
+62526,2018,MS,Mississippi,BRFSS,Obesity / Weight Status,~,~,Asian,RACEASN,28
+62933,2018,MO,Missouri,BRFSS,Obesity / Weight Status,~,~,Asian,RACEASN,29
+62960,2018,MT,Montana,BRFSS,Obesity / Weight Status,~,~,Asian,RACEASN,30
+62987,2018,NE,Nebraska,BRFSS,Obesity / Weight Status,8.3,69,Asian,RACEASN,31
+62538,2018,NV,Nevada,BRFSS,Obesity / Weight Status,14.8,78,Asian,RACEASN,32
+62565,2018,NH,New Hampshire,BRFSS,Obesity / Weight Status,~,~,Asian,RACEASN,33
+62592,2018,NJ,New Jersey,BRFSS,Obesity / Weight Status,12.3,138,Asian,RACEASN,34
+62619,2018,NM,New Mexico,BRFSS,Obesity / Weight Status,~,~,Asian,RACEASN,35
+62125,2018,NY,New York,BRFSS,Obesity / Weight Status,12.4,845,Asian,RACEASN,36
+62152,2018,NC,North Carolina,BRFSS,Obesity / Weight Status,~,~,Asian,RACEASN,37
+62179,2018,ND,North Dakota,BRFSS,Obesity / Weight Status,~,~,Asian,RACEASN,38
+62302,2018,OH,Ohio,BRFSS,Obesity / Weight Status,7.3,84,Asian,RACEASN,39
+62329,2018,OK,Oklahoma,BRFSS,Obesity / Weight Status,2.6,51,Asian,RACEASN,40
+62356,2018,OR,Oregon,BRFSS,Obesity / Weight Status,9.8,80,Asian,RACEASN,41
+62383,2018,PA,Pennsylvania,BRFSS,Obesity / Weight Status,7.6,125,Asian,RACEASN,42
+62645,2018,RI,Rhode Island,BRFSS,Obesity / Weight Status,10.9,64,Asian,RACEASN,44
+62672,2018,SC,South Carolina,BRFSS,Obesity / Weight Status,26.6,53,Asian,RACEASN,45
+62699,2018,SD,South Dakota,BRFSS,Obesity / Weight Status,~,~,Asian,RACEASN,46
+62726,2018,TN,Tennessee,BRFSS,Obesity / Weight Status,~,~,Asian,RACEASN,47
+62753,2018,TX,Texas,BRFSS,Obesity / Weight Status,10.1,215,Asian,RACEASN,48
+62780,2018,UT,Utah,BRFSS,Obesity / Weight Status,15.3,105,Asian,RACEASN,49
+62807,2018,VT,Vermont,BRFSS,Obesity / Weight Status,~,~,Asian,RACEASN,50
+62834,2018,VA,Virginia,BRFSS,Obesity / Weight Status,13.4,202,Asian,RACEASN,51
+62861,2018,WA,Washington,BRFSS,Obesity / Weight Status,9.8,352,Asian,RACEASN,53
+62888,2018,WV,West Virginia,BRFSS,Obesity / Weight Status,~,~,Asian,RACEASN,54
+63011,2018,WI,Wisconsin,BRFSS,Obesity / Weight Status,~,~,Asian,RACEASN,55
+63038,2018,WY,Wyoming,BRFSS,Obesity / Weight Status,~,~,Asian,RACEASN,56
+63065,2018,GU,Guam,BRFSS,Obesity / Weight Status,13,484,Asian,RACEASN,66
+63092,2018,PR,Puerto Rico,BRFSS,Obesity / Weight Status,~,~,Asian,RACEASN,72
+62406,2018,VI,Virgin Islands,BRFSS,Obesity / Weight Status,~,~,Asian,RACEASN,78

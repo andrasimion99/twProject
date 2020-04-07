@@ -1,53 +1,53 @@
-﻿"ID","Description","LocationAbbr","LocationDesc","DataSource","Topic","Data_Value","Sample_Size","Stratification1","StratificationId1","LocationDisplayOrder"
-"482","2011","US","National","BRFSS","Obesity / Weight Status","29.7","138,994","High school graduate","EDUHSGRAD","0"
-"8733","2011","AL","Alabama","BRFSS","Obesity / Weight Status","32.8","2,402","High school graduate","EDUHSGRAD","1"
-"26947","2011","AK","Alaska","BRFSS","Obesity / Weight Status","33.1","981","High school graduate","EDUHSGRAD","2"
-"21664","2011","AZ","Arizona","BRFSS","Obesity / Weight Status","25.2","1,655","High school graduate","EDUHSGRAD","4"
-"33333","2011","AR","Arkansas","BRFSS","Obesity / Weight Status","33","1,645","High school graduate","EDUHSGRAD","5"
-"30272","2011","CA","California","BRFSS","Obesity / Weight Status","26.4","3,146","High school graduate","EDUHSGRAD","6"
-"4808","2011","CO","Colorado","BRFSS","Obesity / Weight Status","23.5","3,163","High school graduate","EDUHSGRAD","8"
-"3587","2011","CT","Connecticut","BRFSS","Obesity / Weight Status","29","1,579","High school graduate","EDUHSGRAD","9"
-"24674","2011","DE","Delaware","BRFSS","Obesity / Weight Status","27.9","1,374","High school graduate","EDUHSGRAD","10"
-"8269","2011","DC","District of Columbia","BRFSS","Obesity / Weight Status","33","750","High school graduate","EDUHSGRAD","11"
-"7182","2011","FL","Florida","BRFSS","Obesity / Weight Status","27.5","3,594","High school graduate","EDUHSGRAD","12"
-"24815","2011","GA","Georgia","BRFSS","Obesity / Weight Status","29.5","2,685","High school graduate","EDUHSGRAD","13"
-"38535","2011","HI","Hawaii","BRFSS","Obesity / Weight Status","24.9","2,023","High school graduate","EDUHSGRAD","15"
-"31770","2011","ID","Idaho","BRFSS","Obesity / Weight Status","28.2","1,721","High school graduate","EDUHSGRAD","16"
-"28088","2011","IL","Illinois","BRFSS","Obesity / Weight Status","29","1,588","High school graduate","EDUHSGRAD","17"
-"23830","2011","IN","Indiana","BRFSS","Obesity / Weight Status","32.3","2,992","High school graduate","EDUHSGRAD","18"
-"12554","2011","IA","Iowa","BRFSS","Obesity / Weight Status","33","2,393","High school graduate","EDUHSGRAD","19"
-"8304","2011","KS","Kansas","BRFSS","Obesity / Weight Status","31.5","5,567","High school graduate","EDUHSGRAD","20"
-"29823","2011","KY","Kentucky","BRFSS","Obesity / Weight Status","31.4","3,594","High school graduate","EDUHSGRAD","21"
-"23890","2011","LA","Louisiana","BRFSS","Obesity / Weight Status","33.6","3,569","High school graduate","EDUHSGRAD","22"
-"18519","2011","ME","Maine","BRFSS","Obesity / Weight Status","31.4","4,068","High school graduate","EDUHSGRAD","23"
-"34289","2011","MD","Maryland","BRFSS","Obesity / Weight Status","32.6","2,514","High school graduate","EDUHSGRAD","24"
-"1717","2011","MA","Massachusetts","BRFSS","Obesity / Weight Status","25.2","5,314","High school graduate","EDUHSGRAD","25"
-"2359","2011","MI","Michigan","BRFSS","Obesity / Weight Status","32.1","3,299","High school graduate","EDUHSGRAD","26"
-"2251","2011","MN","Minnesota","BRFSS","Obesity / Weight Status","28.9","3,547","High school graduate","EDUHSGRAD","27"
-"37812","2011","MS","Mississippi","BRFSS","Obesity / Weight Status","34.7","2,804","High school graduate","EDUHSGRAD","28"
-"10333","2011","MO","Missouri","BRFSS","Obesity / Weight Status","30.3","2,148","High school graduate","EDUHSGRAD","29"
-"33735","2011","MT","Montana","BRFSS","Obesity / Weight Status","27.8","3,184","High school graduate","EDUHSGRAD","30"
-"1269","2011","NE","Nebraska","BRFSS","Obesity / Weight Status","30.3","8,615","High school graduate","EDUHSGRAD","31"
-"29039","2011","NV","Nevada","BRFSS","Obesity / Weight Status","23.1","1,448","High school graduate","EDUHSGRAD","32"
-"26166","2011","NH","New Hampshire","BRFSS","Obesity / Weight Status","29.3","1,762","High school graduate","EDUHSGRAD","33"
-"22670","2011","NJ","New Jersey","BRFSS","Obesity / Weight Status","26.9","3,838","High school graduate","EDUHSGRAD","34"
-"17895","2011","NM","New Mexico","BRFSS","Obesity / Weight Status","27.8","2,540","High school graduate","EDUHSGRAD","35"
-"15635","2011","NY","New York","BRFSS","Obesity / Weight Status","26.9","1,764","High school graduate","EDUHSGRAD","36"
-"9741","2011","NC","North Carolina","BRFSS","Obesity / Weight Status","31.1","3,092","High school graduate","EDUHSGRAD","37"
-"22540","2011","ND","North Dakota","BRFSS","Obesity / Weight Status","28","1,458","High school graduate","EDUHSGRAD","38"
-"26717","2011","OH","Ohio","BRFSS","Obesity / Weight Status","32.1","3,326","High school graduate","EDUHSGRAD","39"
-"7624","2011","OK","Oklahoma","BRFSS","Obesity / Weight Status","33.8","2,640","High school graduate","EDUHSGRAD","40"
-"13987","2011","OR","Oregon","BRFSS","Obesity / Weight Status","27.8","1,638","High school graduate","EDUHSGRAD","41"
-"17444","2011","PA","Pennsylvania","BRFSS","Obesity / Weight Status","31.6","4,075","High school graduate","EDUHSGRAD","42"
-"3692","2011","RI","Rhode Island","BRFSS","Obesity / Weight Status","27","1,766","High school graduate","EDUHSGRAD","44"
-"38380","2011","SC","South Carolina","BRFSS","Obesity / Weight Status","31.8","3,900","High school graduate","EDUHSGRAD","45"
-"17783","2011","SD","South Dakota","BRFSS","Obesity / Weight Status","29.7","2,406","High school graduate","EDUHSGRAD","46"
-"31995","2011","TN","Tennessee","BRFSS","Obesity / Weight Status","32.4","1,893","High school graduate","EDUHSGRAD","47"
-"14929","2011","TX","Texas","BRFSS","Obesity / Weight Status","32.5","3,540","High school graduate","EDUHSGRAD","48"
-"29679","2011","UT","Utah","BRFSS","Obesity / Weight Status","24.5","3,262","High school graduate","EDUHSGRAD","49"
-"1633","2011","VT","Vermont","BRFSS","Obesity / Weight Status","33.1","1,945","High school graduate","EDUHSGRAD","50"
-"33178","2011","VA","Virginia","BRFSS","Obesity / Weight Status","32.4","1,691","High school graduate","EDUHSGRAD","51"
-"6347","2011","WA","Washington","BRFSS","Obesity / Weight Status","29.3","3,259","High school graduate","EDUHSGRAD","53"
-"34533","2011","WV","West Virginia","BRFSS","Obesity / Weight Status","33.3","1,995","High school graduate","EDUHSGRAD","54"
-"30682","2011","WI","Wisconsin","BRFSS","Obesity / Weight Status","30.3","1,789","High school graduate","EDUHSGRAD","55"
-"4711","2011","WY","Wyoming","BRFSS","Obesity / Weight Status","26.6","2,053","High school graduate","EDUHSGRAD","56"
+﻿ID,Description,LocationAbbr,LocationDesc,DataSource,Topic,Data_Value,Sample_Size,Stratification1,StratificationId1,LocationDisplayOrder
+482,2011,US,National,BRFSS,Obesity / Weight Status,29.7,138,994,High school graduate,EDUHSGRAD,0
+8733,2011,AL,Alabama,BRFSS,Obesity / Weight Status,32.8,2,402,High school graduate,EDUHSGRAD,1
+26947,2011,AK,Alaska,BRFSS,Obesity / Weight Status,33.1,981,High school graduate,EDUHSGRAD,2
+21664,2011,AZ,Arizona,BRFSS,Obesity / Weight Status,25.2,1,655,High school graduate,EDUHSGRAD,4
+33333,2011,AR,Arkansas,BRFSS,Obesity / Weight Status,33,1,645,High school graduate,EDUHSGRAD,5
+30272,2011,CA,California,BRFSS,Obesity / Weight Status,26.4,3,146,High school graduate,EDUHSGRAD,6
+4808,2011,CO,Colorado,BRFSS,Obesity / Weight Status,23.5,3,163,High school graduate,EDUHSGRAD,8
+3587,2011,CT,Connecticut,BRFSS,Obesity / Weight Status,29,1,579,High school graduate,EDUHSGRAD,9
+24674,2011,DE,Delaware,BRFSS,Obesity / Weight Status,27.9,1,374,High school graduate,EDUHSGRAD,10
+8269,2011,DC,District of Columbia,BRFSS,Obesity / Weight Status,33,750,High school graduate,EDUHSGRAD,11
+7182,2011,FL,Florida,BRFSS,Obesity / Weight Status,27.5,3,594,High school graduate,EDUHSGRAD,12
+24815,2011,GA,Georgia,BRFSS,Obesity / Weight Status,29.5,2,685,High school graduate,EDUHSGRAD,13
+38535,2011,HI,Hawaii,BRFSS,Obesity / Weight Status,24.9,2,023,High school graduate,EDUHSGRAD,15
+31770,2011,ID,Idaho,BRFSS,Obesity / Weight Status,28.2,1,721,High school graduate,EDUHSGRAD,16
+28088,2011,IL,Illinois,BRFSS,Obesity / Weight Status,29,1,588,High school graduate,EDUHSGRAD,17
+23830,2011,IN,Indiana,BRFSS,Obesity / Weight Status,32.3,2,992,High school graduate,EDUHSGRAD,18
+12554,2011,IA,Iowa,BRFSS,Obesity / Weight Status,33,2,393,High school graduate,EDUHSGRAD,19
+8304,2011,KS,Kansas,BRFSS,Obesity / Weight Status,31.5,5,567,High school graduate,EDUHSGRAD,20
+29823,2011,KY,Kentucky,BRFSS,Obesity / Weight Status,31.4,3,594,High school graduate,EDUHSGRAD,21
+23890,2011,LA,Louisiana,BRFSS,Obesity / Weight Status,33.6,3,569,High school graduate,EDUHSGRAD,22
+18519,2011,ME,Maine,BRFSS,Obesity / Weight Status,31.4,4,068,High school graduate,EDUHSGRAD,23
+34289,2011,MD,Maryland,BRFSS,Obesity / Weight Status,32.6,2,514,High school graduate,EDUHSGRAD,24
+1717,2011,MA,Massachusetts,BRFSS,Obesity / Weight Status,25.2,5,314,High school graduate,EDUHSGRAD,25
+2359,2011,MI,Michigan,BRFSS,Obesity / Weight Status,32.1,3,299,High school graduate,EDUHSGRAD,26
+2251,2011,MN,Minnesota,BRFSS,Obesity / Weight Status,28.9,3,547,High school graduate,EDUHSGRAD,27
+37812,2011,MS,Mississippi,BRFSS,Obesity / Weight Status,34.7,2,804,High school graduate,EDUHSGRAD,28
+10333,2011,MO,Missouri,BRFSS,Obesity / Weight Status,30.3,2,148,High school graduate,EDUHSGRAD,29
+33735,2011,MT,Montana,BRFSS,Obesity / Weight Status,27.8,3,184,High school graduate,EDUHSGRAD,30
+1269,2011,NE,Nebraska,BRFSS,Obesity / Weight Status,30.3,8,615,High school graduate,EDUHSGRAD,31
+29039,2011,NV,Nevada,BRFSS,Obesity / Weight Status,23.1,1,448,High school graduate,EDUHSGRAD,32
+26166,2011,NH,New Hampshire,BRFSS,Obesity / Weight Status,29.3,1,762,High school graduate,EDUHSGRAD,33
+22670,2011,NJ,New Jersey,BRFSS,Obesity / Weight Status,26.9,3,838,High school graduate,EDUHSGRAD,34
+17895,2011,NM,New Mexico,BRFSS,Obesity / Weight Status,27.8,2,540,High school graduate,EDUHSGRAD,35
+15635,2011,NY,New York,BRFSS,Obesity / Weight Status,26.9,1,764,High school graduate,EDUHSGRAD,36
+9741,2011,NC,North Carolina,BRFSS,Obesity / Weight Status,31.1,3,092,High school graduate,EDUHSGRAD,37
+22540,2011,ND,North Dakota,BRFSS,Obesity / Weight Status,28,1,458,High school graduate,EDUHSGRAD,38
+26717,2011,OH,Ohio,BRFSS,Obesity / Weight Status,32.1,3,326,High school graduate,EDUHSGRAD,39
+7624,2011,OK,Oklahoma,BRFSS,Obesity / Weight Status,33.8,2,640,High school graduate,EDUHSGRAD,40
+13987,2011,OR,Oregon,BRFSS,Obesity / Weight Status,27.8,1,638,High school graduate,EDUHSGRAD,41
+17444,2011,PA,Pennsylvania,BRFSS,Obesity / Weight Status,31.6,4,075,High school graduate,EDUHSGRAD,42
+3692,2011,RI,Rhode Island,BRFSS,Obesity / Weight Status,27,1,766,High school graduate,EDUHSGRAD,44
+38380,2011,SC,South Carolina,BRFSS,Obesity / Weight Status,31.8,3,900,High school graduate,EDUHSGRAD,45
+17783,2011,SD,South Dakota,BRFSS,Obesity / Weight Status,29.7,2,406,High school graduate,EDUHSGRAD,46
+31995,2011,TN,Tennessee,BRFSS,Obesity / Weight Status,32.4,1,893,High school graduate,EDUHSGRAD,47
+14929,2011,TX,Texas,BRFSS,Obesity / Weight Status,32.5,3,540,High school graduate,EDUHSGRAD,48
+29679,2011,UT,Utah,BRFSS,Obesity / Weight Status,24.5,3,262,High school graduate,EDUHSGRAD,49
+1633,2011,VT,Vermont,BRFSS,Obesity / Weight Status,33.1,1,945,High school graduate,EDUHSGRAD,50
+33178,2011,VA,Virginia,BRFSS,Obesity / Weight Status,32.4,1,691,High school graduate,EDUHSGRAD,51
+6347,2011,WA,Washington,BRFSS,Obesity / Weight Status,29.3,3,259,High school graduate,EDUHSGRAD,53
+34533,2011,WV,West Virginia,BRFSS,Obesity / Weight Status,33.3,1,995,High school graduate,EDUHSGRAD,54
+30682,2011,WI,Wisconsin,BRFSS,Obesity / Weight Status,30.3,1,789,High school graduate,EDUHSGRAD,55
+4711,2011,WY,Wyoming,BRFSS,Obesity / Weight Status,26.6,2,053,High school graduate,EDUHSGRAD,56

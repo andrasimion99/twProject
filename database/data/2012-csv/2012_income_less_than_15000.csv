@@ -1,53 +1,53 @@
-﻿"ID","Description","LocationAbbr","LocationDesc","DataSource","Topic","Data_Value","Sample_Size","Stratification1","StratificationId1","LocationDisplayOrder"
-"261","2012","US","National","BRFSS","Obesity / Weight Status","33.1","46,419","Less than $15,000","INCLESS15","0"
-"20409","2012","AL","Alabama","BRFSS","Obesity / Weight Status","40.8","1,225","Less than $15,000","INCLESS15","1"
-"28696","2012","AK","Alaska","BRFSS","Obesity / Weight Status","29.4","357","Less than $15,000","INCLESS15","2"
-"39883","2012","AZ","Arizona","BRFSS","Obesity / Weight Status","31.1","848","Less than $15,000","INCLESS15","4"
-"22603","2012","AR","Arkansas","BRFSS","Obesity / Weight Status","37.6","773","Less than $15,000","INCLESS15","5"
-"25168","2012","CA","California","BRFSS","Obesity / Weight Status","29.9","2,152","Less than $15,000","INCLESS15","6"
-"25116","2012","CO","Colorado","BRFSS","Obesity / Weight Status","23.7","953","Less than $15,000","INCLESS15","8"
-"21975","2012","CT","Connecticut","BRFSS","Obesity / Weight Status","35.5","602","Less than $15,000","INCLESS15","9"
-"17643","2012","DE","Delaware","BRFSS","Obesity / Weight Status","32","593","Less than $15,000","INCLESS15","10"
-"32052","2012","DC","District of Columbia","BRFSS","Obesity / Weight Status","26.8","369","Less than $15,000","INCLESS15","11"
-"15725","2012","FL","Florida","BRFSS","Obesity / Weight Status","28.5","882","Less than $15,000","INCLESS15","12"
-"8201","2012","GA","Georgia","BRFSS","Obesity / Weight Status","32.4","723","Less than $15,000","INCLESS15","13"
-"19107","2012","HI","Hawaii","BRFSS","Obesity / Weight Status","27.3","680","Less than $15,000","INCLESS15","15"
-"26572","2012","ID","Idaho","BRFSS","Obesity / Weight Status","28","623","Less than $15,000","INCLESS15","16"
-"13765","2012","IL","Illinois","BRFSS","Obesity / Weight Status","34.7","486","Less than $15,000","INCLESS15","17"
-"16825","2012","IN","Indiana","BRFSS","Obesity / Weight Status","36.9","964","Less than $15,000","INCLESS15","18"
-"30182","2012","IA","Iowa","BRFSS","Obesity / Weight Status","37.4","547","Less than $15,000","INCLESS15","19"
-"9264","2012","KS","Kansas","BRFSS","Obesity / Weight Status","36.5","875","Less than $15,000","INCLESS15","20"
-"23891","2012","KY","Kentucky","BRFSS","Obesity / Weight Status","34.1","1,562","Less than $15,000","INCLESS15","21"
-"5070","2012","LA","Louisiana","BRFSS","Obesity / Weight Status","44.5","1,398","Less than $15,000","INCLESS15","22"
-"24639","2012","ME","Maine","BRFSS","Obesity / Weight Status","34.8","1,121","Less than $15,000","INCLESS15","23"
-"7678","2012","MD","Maryland","BRFSS","Obesity / Weight Status","30.3","714","Less than $15,000","INCLESS15","24"
-"23072","2012","MA","Massachusetts","BRFSS","Obesity / Weight Status","29.7","1,937","Less than $15,000","INCLESS15","25"
-"18564","2012","MI","Michigan","BRFSS","Obesity / Weight Status","35.5","1,011","Less than $15,000","INCLESS15","26"
-"7463","2012","MN","Minnesota","BRFSS","Obesity / Weight Status","27.2","789","Less than $15,000","INCLESS15","27"
-"34906","2012","MS","Mississippi","BRFSS","Obesity / Weight Status","40.5","1,321","Less than $15,000","INCLESS15","28"
-"11514","2012","MO","Missouri","BRFSS","Obesity / Weight Status","31.7","800","Less than $15,000","INCLESS15","29"
-"5860","2012","MT","Montana","BRFSS","Obesity / Weight Status","30.4","1,008","Less than $15,000","INCLESS15","30"
-"31693","2012","NE","Nebraska","BRFSS","Obesity / Weight Status","29.4","1,641","Less than $15,000","INCLESS15","31"
-"38743","2012","NV","Nevada","BRFSS","Obesity / Weight Status","25.6","396","Less than $15,000","INCLESS15","32"
-"31984","2012","NH","New Hampshire","BRFSS","Obesity / Weight Status","33.8","539","Less than $15,000","INCLESS15","33"
-"3633","2012","NJ","New Jersey","BRFSS","Obesity / Weight Status","30","1,052","Less than $15,000","INCLESS15","34"
-"22448","2012","NM","New Mexico","BRFSS","Obesity / Weight Status","31.4","1,117","Less than $15,000","INCLESS15","35"
-"29292","2012","NY","New York","BRFSS","Obesity / Weight Status","32.2","592","Less than $15,000","INCLESS15","36"
-"14942","2012","NC","North Carolina","BRFSS","Obesity / Weight Status","32.9","1,368","Less than $15,000","INCLESS15","37"
-"20734","2012","ND","North Dakota","BRFSS","Obesity / Weight Status","30.9","334","Less than $15,000","INCLESS15","38"
-"16336","2012","OH","Ohio","BRFSS","Obesity / Weight Status","33.5","1,253","Less than $15,000","INCLESS15","39"
-"15842","2012","OK","Oklahoma","BRFSS","Obesity / Weight Status","35","1,083","Less than $15,000","INCLESS15","40"
-"2821","2012","OR","Oregon","BRFSS","Obesity / Weight Status","38.1","526","Less than $15,000","INCLESS15","41"
-"4815","2012","PA","Pennsylvania","BRFSS","Obesity / Weight Status","35.4","1,949","Less than $15,000","INCLESS15","42"
-"6529","2012","RI","Rhode Island","BRFSS","Obesity / Weight Status","27.2","470","Less than $15,000","INCLESS15","44"
-"12005","2012","SC","South Carolina","BRFSS","Obesity / Weight Status","39.1","1,626","Less than $15,000","INCLESS15","45"
-"18269","2012","SD","South Dakota","BRFSS","Obesity / Weight Status","35.9","660","Less than $15,000","INCLESS15","46"
-"21872","2012","TN","Tennessee","BRFSS","Obesity / Weight Status","34.1","831","Less than $15,000","INCLESS15","47"
-"35215","2012","TX","Texas","BRFSS","Obesity / Weight Status","36.1","1,060","Less than $15,000","INCLESS15","48"
-"22250","2012","UT","Utah","BRFSS","Obesity / Weight Status","24.1","799","Less than $15,000","INCLESS15","49"
-"20609","2012","VT","Vermont","BRFSS","Obesity / Weight Status","29.1","520","Less than $15,000","INCLESS15","50"
-"31760","2012","VA","Virginia","BRFSS","Obesity / Weight Status","40.6","523","Less than $15,000","INCLESS15","51"
-"21567","2012","WA","Washington","BRFSS","Obesity / Weight Status","34.2","1,157","Less than $15,000","INCLESS15","53"
-"29225","2012","WV","West Virginia","BRFSS","Obesity / Weight Status","34.5","678","Less than $15,000","INCLESS15","54"
-"30279","2012","WI","Wisconsin","BRFSS","Obesity / Weight Status","33","463","Less than $15,000","INCLESS15","55"
-"5638","2012","WY","Wyoming","BRFSS","Obesity / Weight Status","25.2","469","Less than $15,000","INCLESS15","56"
+﻿ID,Description,LocationAbbr,LocationDesc,DataSource,Topic,Data_Value,Sample_Size,Stratification1,StratificationId1,LocationDisplayOrder
+261,2012,US,National,BRFSS,Obesity / Weight Status,33.1,46,419,Less than $15,000,INCLESS15,0
+20409,2012,AL,Alabama,BRFSS,Obesity / Weight Status,40.8,1,225,Less than $15,000,INCLESS15,1
+28696,2012,AK,Alaska,BRFSS,Obesity / Weight Status,29.4,357,Less than $15,000,INCLESS15,2
+39883,2012,AZ,Arizona,BRFSS,Obesity / Weight Status,31.1,848,Less than $15,000,INCLESS15,4
+22603,2012,AR,Arkansas,BRFSS,Obesity / Weight Status,37.6,773,Less than $15,000,INCLESS15,5
+25168,2012,CA,California,BRFSS,Obesity / Weight Status,29.9,2,152,Less than $15,000,INCLESS15,6
+25116,2012,CO,Colorado,BRFSS,Obesity / Weight Status,23.7,953,Less than $15,000,INCLESS15,8
+21975,2012,CT,Connecticut,BRFSS,Obesity / Weight Status,35.5,602,Less than $15,000,INCLESS15,9
+17643,2012,DE,Delaware,BRFSS,Obesity / Weight Status,32,593,Less than $15,000,INCLESS15,10
+32052,2012,DC,District of Columbia,BRFSS,Obesity / Weight Status,26.8,369,Less than $15,000,INCLESS15,11
+15725,2012,FL,Florida,BRFSS,Obesity / Weight Status,28.5,882,Less than $15,000,INCLESS15,12
+8201,2012,GA,Georgia,BRFSS,Obesity / Weight Status,32.4,723,Less than $15,000,INCLESS15,13
+19107,2012,HI,Hawaii,BRFSS,Obesity / Weight Status,27.3,680,Less than $15,000,INCLESS15,15
+26572,2012,ID,Idaho,BRFSS,Obesity / Weight Status,28,623,Less than $15,000,INCLESS15,16
+13765,2012,IL,Illinois,BRFSS,Obesity / Weight Status,34.7,486,Less than $15,000,INCLESS15,17
+16825,2012,IN,Indiana,BRFSS,Obesity / Weight Status,36.9,964,Less than $15,000,INCLESS15,18
+30182,2012,IA,Iowa,BRFSS,Obesity / Weight Status,37.4,547,Less than $15,000,INCLESS15,19
+9264,2012,KS,Kansas,BRFSS,Obesity / Weight Status,36.5,875,Less than $15,000,INCLESS15,20
+23891,2012,KY,Kentucky,BRFSS,Obesity / Weight Status,34.1,1,562,Less than $15,000,INCLESS15,21
+5070,2012,LA,Louisiana,BRFSS,Obesity / Weight Status,44.5,1,398,Less than $15,000,INCLESS15,22
+24639,2012,ME,Maine,BRFSS,Obesity / Weight Status,34.8,1,121,Less than $15,000,INCLESS15,23
+7678,2012,MD,Maryland,BRFSS,Obesity / Weight Status,30.3,714,Less than $15,000,INCLESS15,24
+23072,2012,MA,Massachusetts,BRFSS,Obesity / Weight Status,29.7,1,937,Less than $15,000,INCLESS15,25
+18564,2012,MI,Michigan,BRFSS,Obesity / Weight Status,35.5,1,011,Less than $15,000,INCLESS15,26
+7463,2012,MN,Minnesota,BRFSS,Obesity / Weight Status,27.2,789,Less than $15,000,INCLESS15,27
+34906,2012,MS,Mississippi,BRFSS,Obesity / Weight Status,40.5,1,321,Less than $15,000,INCLESS15,28
+11514,2012,MO,Missouri,BRFSS,Obesity / Weight Status,31.7,800,Less than $15,000,INCLESS15,29
+5860,2012,MT,Montana,BRFSS,Obesity / Weight Status,30.4,1,008,Less than $15,000,INCLESS15,30
+31693,2012,NE,Nebraska,BRFSS,Obesity / Weight Status,29.4,1,641,Less than $15,000,INCLESS15,31
+38743,2012,NV,Nevada,BRFSS,Obesity / Weight Status,25.6,396,Less than $15,000,INCLESS15,32
+31984,2012,NH,New Hampshire,BRFSS,Obesity / Weight Status,33.8,539,Less than $15,000,INCLESS15,33
+3633,2012,NJ,New Jersey,BRFSS,Obesity / Weight Status,30,1,052,Less than $15,000,INCLESS15,34
+22448,2012,NM,New Mexico,BRFSS,Obesity / Weight Status,31.4,1,117,Less than $15,000,INCLESS15,35
+29292,2012,NY,New York,BRFSS,Obesity / Weight Status,32.2,592,Less than $15,000,INCLESS15,36
+14942,2012,NC,North Carolina,BRFSS,Obesity / Weight Status,32.9,1,368,Less than $15,000,INCLESS15,37
+20734,2012,ND,North Dakota,BRFSS,Obesity / Weight Status,30.9,334,Less than $15,000,INCLESS15,38
+16336,2012,OH,Ohio,BRFSS,Obesity / Weight Status,33.5,1,253,Less than $15,000,INCLESS15,39
+15842,2012,OK,Oklahoma,BRFSS,Obesity / Weight Status,35,1,083,Less than $15,000,INCLESS15,40
+2821,2012,OR,Oregon,BRFSS,Obesity / Weight Status,38.1,526,Less than $15,000,INCLESS15,41
+4815,2012,PA,Pennsylvania,BRFSS,Obesity / Weight Status,35.4,1,949,Less than $15,000,INCLESS15,42
+6529,2012,RI,Rhode Island,BRFSS,Obesity / Weight Status,27.2,470,Less than $15,000,INCLESS15,44
+12005,2012,SC,South Carolina,BRFSS,Obesity / Weight Status,39.1,1,626,Less than $15,000,INCLESS15,45
+18269,2012,SD,South Dakota,BRFSS,Obesity / Weight Status,35.9,660,Less than $15,000,INCLESS15,46
+21872,2012,TN,Tennessee,BRFSS,Obesity / Weight Status,34.1,831,Less than $15,000,INCLESS15,47
+35215,2012,TX,Texas,BRFSS,Obesity / Weight Status,36.1,1,060,Less than $15,000,INCLESS15,48
+22250,2012,UT,Utah,BRFSS,Obesity / Weight Status,24.1,799,Less than $15,000,INCLESS15,49
+20609,2012,VT,Vermont,BRFSS,Obesity / Weight Status,29.1,520,Less than $15,000,INCLESS15,50
+31760,2012,VA,Virginia,BRFSS,Obesity / Weight Status,40.6,523,Less than $15,000,INCLESS15,51
+21567,2012,WA,Washington,BRFSS,Obesity / Weight Status,34.2,1,157,Less than $15,000,INCLESS15,53
+29225,2012,WV,West Virginia,BRFSS,Obesity / Weight Status,34.5,678,Less than $15,000,INCLESS15,54
+30279,2012,WI,Wisconsin,BRFSS,Obesity / Weight Status,33,463,Less than $15,000,INCLESS15,55
+5638,2012,WY,Wyoming,BRFSS,Obesity / Weight Status,25.2,469,Less than $15,000,INCLESS15,56

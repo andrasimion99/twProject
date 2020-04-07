@@ -1,56 +1,56 @@
-﻿"ID","Description","LocationAbbr","LocationDesc","DataSource","Topic","Data_Value","Sample_Size","Stratification1","StratificationId1","LocationDisplayOrder"
-"50470","2017","US","National","BRFSS","Obesity / Weight Status","35.6","27,768","Less than high school","EDUHS","0"
-"53512","2017","AL","Alabama","BRFSS","Obesity / Weight Status","41.2","750","Less than high school","EDUHS","1"
-"47880","2017","AK","Alaska","BRFSS","Obesity / Weight Status","37.3","193","Less than high school","EDUHS","2"
-"49813","2017","AZ","Arizona","BRFSS","Obesity / Weight Status","33.9","870","Less than high school","EDUHS","4"
-"50704","2017","AR","Arkansas","BRFSS","Obesity / Weight Status","38.7","439","Less than high school","EDUHS","5"
-"54736","2017","CA","California","BRFSS","Obesity / Weight Status","34","920","Less than high school","EDUHS","6"
-"50901","2017","CO","Colorado","BRFSS","Obesity / Weight Status","27.7","426","Less than high school","EDUHS","8"
-"53858","2017","CT","Connecticut","BRFSS","Obesity / Weight Status","33","419","Less than high school","EDUHS","9"
-"44939","2017","DE","Delaware","BRFSS","Obesity / Weight Status","35.2","312","Less than high school","EDUHS","10"
-"55384","2017","DC","District of Columbia","BRFSS","Obesity / Weight Status","34.8","227","Less than high school","EDUHS","11"
-"50244","2017","FL","Florida","BRFSS","Obesity / Weight Status","32.5","2,019","Less than high school","EDUHS","12"
-"49482","2017","GA","Georgia","BRFSS","Obesity / Weight Status","35","554","Less than high school","EDUHS","13"
-"53686","2017","HI","Hawaii","BRFSS","Obesity / Weight Status","30","269","Less than high school","EDUHS","15"
-"52432","2017","ID","Idaho","BRFSS","Obesity / Weight Status","30.9","290","Less than high school","EDUHS","16"
-"54865","2017","IL","Illinois","BRFSS","Obesity / Weight Status","35.8","320","Less than high school","EDUHS","17"
-"53465","2017","IN","Indiana","BRFSS","Obesity / Weight Status","33.9","968","Less than high school","EDUHS","18"
-"48978","2017","IA","Iowa","BRFSS","Obesity / Weight Status","39.5","325","Less than high school","EDUHS","19"
-"49736","2017","KS","Kansas","BRFSS","Obesity / Weight Status","35.9","859","Less than high school","EDUHS","20"
-"50810","2017","KY","Kentucky","BRFSS","Obesity / Weight Status","37","747","Less than high school","EDUHS","21"
-"46360","2017","LA","Louisiana","BRFSS","Obesity / Weight Status","36.4","437","Less than high school","EDUHS","22"
-"51543","2017","ME","Maine","BRFSS","Obesity / Weight Status","29.3","401","Less than high school","EDUHS","23"
-"48451","2017","MD","Maryland","BRFSS","Obesity / Weight Status","39.9","614","Less than high school","EDUHS","24"
-"50043","2017","MA","Massachusetts","BRFSS","Obesity / Weight Status","33.7","304","Less than high school","EDUHS","25"
-"53654","2017","MI","Michigan","BRFSS","Obesity / Weight Status","36.9","484","Less than high school","EDUHS","26"
-"54101","2017","MN","Minnesota","BRFSS","Obesity / Weight Status","31.7","573","Less than high school","EDUHS","27"
-"52618","2017","MS","Mississippi","BRFSS","Obesity / Weight Status","42.8","509","Less than high school","EDUHS","28"
-"55531","2017","MO","Missouri","BRFSS","Obesity / Weight Status","32.9","608","Less than high school","EDUHS","29"
-"50346","2017","MT","Montana","BRFSS","Obesity / Weight Status","28.4","342","Less than high school","EDUHS","30"
-"51757","2017","NE","Nebraska","BRFSS","Obesity / Weight Status","35.3","854","Less than high school","EDUHS","31"
-"47660","2017","NV","Nevada","BRFSS","Obesity / Weight Status","27","268","Less than high school","EDUHS","32"
-"50535","2017","NH","New Hampshire","BRFSS","Obesity / Weight Status","36.3","219","Less than high school","EDUHS","33"
-"52125","2017","NJ","New Jersey","BRFSS","Obesity / Weight Status","36.3","590","Less than high school","EDUHS","34"
-"50049","2017","NM","New Mexico","BRFSS","Obesity / Weight Status","33.6","662","Less than high school","EDUHS","35"
-"49154","2017","NY","New York","BRFSS","Obesity / Weight Status","33.3","970","Less than high school","EDUHS","36"
-"46429","2017","NC","North Carolina","BRFSS","Obesity / Weight Status","35.5","442","Less than high school","EDUHS","37"
-"55927","2017","ND","North Dakota","BRFSS","Obesity / Weight Status","30.8","376","Less than high school","EDUHS","38"
-"55225","2017","OH","Ohio","BRFSS","Obesity / Weight Status","39.2","743","Less than high school","EDUHS","39"
-"49709","2017","OK","Oklahoma","BRFSS","Obesity / Weight Status","37.9","441","Less than high school","EDUHS","40"
-"58554","2017","OR","Oregon","BRFSS","Obesity / Weight Status","37.9","258","Less than high school","EDUHS","41"
-"45453","2017","PA","Pennsylvania","BRFSS","Obesity / Weight Status","36.1","311","Less than high school","EDUHS","42"
-"53700","2017","RI","Rhode Island","BRFSS","Obesity / Weight Status","37.6","314","Less than high school","EDUHS","44"
-"49373","2017","SC","South Carolina","BRFSS","Obesity / Weight Status","34","1,047","Less than high school","EDUHS","45"
-"55066","2017","SD","South Dakota","BRFSS","Obesity / Weight Status","40.2","465","Less than high school","EDUHS","46"
-"58072","2017","TN","Tennessee","BRFSS","Obesity / Weight Status","35.6","526","Less than high school","EDUHS","47"
-"53861","2017","TX","Texas","BRFSS","Obesity / Weight Status","40.5","1,296","Less than high school","EDUHS","48"
-"56930","2017","UT","Utah","BRFSS","Obesity / Weight Status","25.1","379","Less than high school","EDUHS","49"
-"47131","2017","VT","Vermont","BRFSS","Obesity / Weight Status","41.2","238","Less than high school","EDUHS","50"
-"56260","2017","VA","Virginia","BRFSS","Obesity / Weight Status","39.5","576","Less than high school","EDUHS","51"
-"45575","2017","WA","Washington","BRFSS","Obesity / Weight Status","34.2","621","Less than high school","EDUHS","53"
-"49642","2017","WV","West Virginia","BRFSS","Obesity / Weight Status","38.5","569","Less than high school","EDUHS","54"
-"58110","2017","WI","Wisconsin","BRFSS","Obesity / Weight Status","37.5","245","Less than high school","EDUHS","55"
-"52352","2017","WY","Wyoming","BRFSS","Obesity / Weight Status","19.1","179","Less than high school","EDUHS","56"
-"52708","2017","GU","Guam","BRFSS","Obesity / Weight Status","40.5","119","Less than high school","EDUHS","66"
-"53504","2017","PR","Puerto Rico","BRFSS","Obesity / Weight Status","39","772","Less than high school","EDUHS","72"
-"57638","2017","VI","Virgin Islands","BRFSS","Obesity / Weight Status","~","~","Less than high school","EDUHS","78"
+﻿ID,Description,LocationAbbr,LocationDesc,DataSource,Topic,Data_Value,Sample_Size,Stratification1,StratificationId1,LocationDisplayOrder
+50470,2017,US,National,BRFSS,Obesity / Weight Status,35.6,27,768,Less than high school,EDUHS,0
+53512,2017,AL,Alabama,BRFSS,Obesity / Weight Status,41.2,750,Less than high school,EDUHS,1
+47880,2017,AK,Alaska,BRFSS,Obesity / Weight Status,37.3,193,Less than high school,EDUHS,2
+49813,2017,AZ,Arizona,BRFSS,Obesity / Weight Status,33.9,870,Less than high school,EDUHS,4
+50704,2017,AR,Arkansas,BRFSS,Obesity / Weight Status,38.7,439,Less than high school,EDUHS,5
+54736,2017,CA,California,BRFSS,Obesity / Weight Status,34,920,Less than high school,EDUHS,6
+50901,2017,CO,Colorado,BRFSS,Obesity / Weight Status,27.7,426,Less than high school,EDUHS,8
+53858,2017,CT,Connecticut,BRFSS,Obesity / Weight Status,33,419,Less than high school,EDUHS,9
+44939,2017,DE,Delaware,BRFSS,Obesity / Weight Status,35.2,312,Less than high school,EDUHS,10
+55384,2017,DC,District of Columbia,BRFSS,Obesity / Weight Status,34.8,227,Less than high school,EDUHS,11
+50244,2017,FL,Florida,BRFSS,Obesity / Weight Status,32.5,2,019,Less than high school,EDUHS,12
+49482,2017,GA,Georgia,BRFSS,Obesity / Weight Status,35,554,Less than high school,EDUHS,13
+53686,2017,HI,Hawaii,BRFSS,Obesity / Weight Status,30,269,Less than high school,EDUHS,15
+52432,2017,ID,Idaho,BRFSS,Obesity / Weight Status,30.9,290,Less than high school,EDUHS,16
+54865,2017,IL,Illinois,BRFSS,Obesity / Weight Status,35.8,320,Less than high school,EDUHS,17
+53465,2017,IN,Indiana,BRFSS,Obesity / Weight Status,33.9,968,Less than high school,EDUHS,18
+48978,2017,IA,Iowa,BRFSS,Obesity / Weight Status,39.5,325,Less than high school,EDUHS,19
+49736,2017,KS,Kansas,BRFSS,Obesity / Weight Status,35.9,859,Less than high school,EDUHS,20
+50810,2017,KY,Kentucky,BRFSS,Obesity / Weight Status,37,747,Less than high school,EDUHS,21
+46360,2017,LA,Louisiana,BRFSS,Obesity / Weight Status,36.4,437,Less than high school,EDUHS,22
+51543,2017,ME,Maine,BRFSS,Obesity / Weight Status,29.3,401,Less than high school,EDUHS,23
+48451,2017,MD,Maryland,BRFSS,Obesity / Weight Status,39.9,614,Less than high school,EDUHS,24
+50043,2017,MA,Massachusetts,BRFSS,Obesity / Weight Status,33.7,304,Less than high school,EDUHS,25
+53654,2017,MI,Michigan,BRFSS,Obesity / Weight Status,36.9,484,Less than high school,EDUHS,26
+54101,2017,MN,Minnesota,BRFSS,Obesity / Weight Status,31.7,573,Less than high school,EDUHS,27
+52618,2017,MS,Mississippi,BRFSS,Obesity / Weight Status,42.8,509,Less than high school,EDUHS,28
+55531,2017,MO,Missouri,BRFSS,Obesity / Weight Status,32.9,608,Less than high school,EDUHS,29
+50346,2017,MT,Montana,BRFSS,Obesity / Weight Status,28.4,342,Less than high school,EDUHS,30
+51757,2017,NE,Nebraska,BRFSS,Obesity / Weight Status,35.3,854,Less than high school,EDUHS,31
+47660,2017,NV,Nevada,BRFSS,Obesity / Weight Status,27,268,Less than high school,EDUHS,32
+50535,2017,NH,New Hampshire,BRFSS,Obesity / Weight Status,36.3,219,Less than high school,EDUHS,33
+52125,2017,NJ,New Jersey,BRFSS,Obesity / Weight Status,36.3,590,Less than high school,EDUHS,34
+50049,2017,NM,New Mexico,BRFSS,Obesity / Weight Status,33.6,662,Less than high school,EDUHS,35
+49154,2017,NY,New York,BRFSS,Obesity / Weight Status,33.3,970,Less than high school,EDUHS,36
+46429,2017,NC,North Carolina,BRFSS,Obesity / Weight Status,35.5,442,Less than high school,EDUHS,37
+55927,2017,ND,North Dakota,BRFSS,Obesity / Weight Status,30.8,376,Less than high school,EDUHS,38
+55225,2017,OH,Ohio,BRFSS,Obesity / Weight Status,39.2,743,Less than high school,EDUHS,39
+49709,2017,OK,Oklahoma,BRFSS,Obesity / Weight Status,37.9,441,Less than high school,EDUHS,40
+58554,2017,OR,Oregon,BRFSS,Obesity / Weight Status,37.9,258,Less than high school,EDUHS,41
+45453,2017,PA,Pennsylvania,BRFSS,Obesity / Weight Status,36.1,311,Less than high school,EDUHS,42
+53700,2017,RI,Rhode Island,BRFSS,Obesity / Weight Status,37.6,314,Less than high school,EDUHS,44
+49373,2017,SC,South Carolina,BRFSS,Obesity / Weight Status,34,1,047,Less than high school,EDUHS,45
+55066,2017,SD,South Dakota,BRFSS,Obesity / Weight Status,40.2,465,Less than high school,EDUHS,46
+58072,2017,TN,Tennessee,BRFSS,Obesity / Weight Status,35.6,526,Less than high school,EDUHS,47
+53861,2017,TX,Texas,BRFSS,Obesity / Weight Status,40.5,1,296,Less than high school,EDUHS,48
+56930,2017,UT,Utah,BRFSS,Obesity / Weight Status,25.1,379,Less than high school,EDUHS,49
+47131,2017,VT,Vermont,BRFSS,Obesity / Weight Status,41.2,238,Less than high school,EDUHS,50
+56260,2017,VA,Virginia,BRFSS,Obesity / Weight Status,39.5,576,Less than high school,EDUHS,51
+45575,2017,WA,Washington,BRFSS,Obesity / Weight Status,34.2,621,Less than high school,EDUHS,53
+49642,2017,WV,West Virginia,BRFSS,Obesity / Weight Status,38.5,569,Less than high school,EDUHS,54
+58110,2017,WI,Wisconsin,BRFSS,Obesity / Weight Status,37.5,245,Less than high school,EDUHS,55
+52352,2017,WY,Wyoming,BRFSS,Obesity / Weight Status,19.1,179,Less than high school,EDUHS,56
+52708,2017,GU,Guam,BRFSS,Obesity / Weight Status,40.5,119,Less than high school,EDUHS,66
+53504,2017,PR,Puerto Rico,BRFSS,Obesity / Weight Status,39,772,Less than high school,EDUHS,72
+57638,2017,VI,Virgin Islands,BRFSS,Obesity / Weight Status,~,~,Less than high school,EDUHS,78

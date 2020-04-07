@@ -1,55 +1,55 @@
-﻿"ID","Description","LocationAbbr","LocationDesc","DataSource","Topic","Data_Value","Sample_Size","Stratification1","StratificationId1","LocationDisplayOrder"
-"974","2015","US","National","BRFSS","Obesity / Weight Status","28.6","221,909","Female","FEMALE","0"
-"19808","2015","AL","Alabama","BRFSS","Obesity / Weight Status","36.4","4,425","Female","FEMALE","1"
-"18775","2015","AK","Alaska","BRFSS","Obesity / Weight Status","30.5","1,792","Female","FEMALE","2"
-"16287","2015","AZ","Arizona","BRFSS","Obesity / Weight Status","27.1","4,083","Female","FEMALE","4"
-"30039","2015","AR","Arkansas","BRFSS","Obesity / Weight Status","33.9","2,974","Female","FEMALE","5"
-"10825","2015","CA","California","BRFSS","Obesity / Weight Status","23.7","5,718","Female","FEMALE","6"
-"2692","2015","CO","Colorado","BRFSS","Obesity / Weight Status","20.2","6,562","Female","FEMALE","8"
-"25434","2015","CT","Connecticut","BRFSS","Obesity / Weight Status","23.9","6,065","Female","FEMALE","9"
-"12175","2015","DE","Delaware","BRFSS","Obesity / Weight Status","31.2","2,012","Female","FEMALE","10"
-"29383","2015","DC","District of Columbia","BRFSS","Obesity / Weight Status","26.4","2,169","Female","FEMALE","11"
-"33804","2015","FL","Florida","BRFSS","Obesity / Weight Status","25.9","5,090","Female","FEMALE","12"
-"25253","2015","GA","Georgia","BRFSS","Obesity / Weight Status","32.3","2,517","Female","FEMALE","13"
-"9943","2015","HI","Hawaii","BRFSS","Obesity / Weight Status","19.7","3,533","Female","FEMALE","15"
-"3350","2015","ID","Idaho","BRFSS","Obesity / Weight Status","27.3","2,938","Female","FEMALE","16"
-"28776","2015","IL","Illinois","BRFSS","Obesity / Weight Status","31.9","2,815","Female","FEMALE","17"
-"20325","2015","IN","Indiana","BRFSS","Obesity / Weight Status","30.7","3,153","Female","FEMALE","18"
-"1893","2015","IA","Iowa","BRFSS","Obesity / Weight Status","29.3","3,025","Female","FEMALE","19"
-"16064","2015","KS","Kansas","BRFSS","Obesity / Weight Status","33.3","11,261","Female","FEMALE","20"
-"15670","2015","KY","Kentucky","BRFSS","Obesity / Weight Status","32.9","4,952","Female","FEMALE","21"
-"38549","2015","LA","Louisiana","BRFSS","Obesity / Weight Status","36.5","2,589","Female","FEMALE","22"
-"27302","2015","ME","Maine","BRFSS","Obesity / Weight Status","30.9","4,937","Female","FEMALE","23"
-"5425","2015","MD","Maryland","BRFSS","Obesity / Weight Status","29.8","6,696","Female","FEMALE","24"
-"23844","2015","MA","Massachusetts","BRFSS","Obesity / Weight Status","23","4,388","Female","FEMALE","25"
-"29310","2015","MI","Michigan","BRFSS","Obesity / Weight Status","30.6","4,602","Female","FEMALE","26"
-"31419","2015","MN","Minnesota","BRFSS","Obesity / Weight Status","24.3","8,083","Female","FEMALE","27"
-"5726","2015","MS","Mississippi","BRFSS","Obesity / Weight Status","37.2","3,612","Female","FEMALE","28"
-"13285","2015","MO","Missouri","BRFSS","Obesity / Weight Status","31.2","3,814","Female","FEMALE","29"
-"31732","2015","MT","Montana","BRFSS","Obesity / Weight Status","23.4","2,961","Female","FEMALE","30"
-"13521","2015","NE","Nebraska","BRFSS","Obesity / Weight Status","29.8","8,942","Female","FEMALE","31"
-"10750","2015","NV","Nevada","BRFSS","Obesity / Weight Status","25.4","1,538","Female","FEMALE","32"
-"29365","2015","NH","New Hampshire","BRFSS","Obesity / Weight Status","24.6","3,604","Female","FEMALE","33"
-"34013","2015","NJ","New Jersey","BRFSS","Obesity / Weight Status","23.7","5,782","Female","FEMALE","34"
-"34405","2015","NM","New Mexico","BRFSS","Obesity / Weight Status","28.5","3,493","Female","FEMALE","35"
-"6399","2015","NY","New York","BRFSS","Obesity / Weight Status","24.3","6,364","Female","FEMALE","36"
-"25526","2015","NC","North Carolina","BRFSS","Obesity / Weight Status","31.3","3,310","Female","FEMALE","37"
-"25015","2015","ND","North Dakota","BRFSS","Obesity / Weight Status","27.1","2,446","Female","FEMALE","38"
-"27640","2015","OH","Ohio","BRFSS","Obesity / Weight Status","28.4","6,327","Female","FEMALE","39"
-"12014","2015","OK","Oklahoma","BRFSS","Obesity / Weight Status","34","3,847","Female","FEMALE","40"
-"8219","2015","OR","Oregon","BRFSS","Obesity / Weight Status","28.9","2,643","Female","FEMALE","41"
-"15696","2015","PA","Pennsylvania","BRFSS","Obesity / Weight Status","30.1","2,885","Female","FEMALE","42"
-"6398","2015","RI","Rhode Island","BRFSS","Obesity / Weight Status","24.1","3,234","Female","FEMALE","44"
-"21798","2015","SC","South Carolina","BRFSS","Obesity / Weight Status","33.1","6,129","Female","FEMALE","45"
-"23704","2015","SD","South Dakota","BRFSS","Obesity / Weight Status","28.5","3,782","Female","FEMALE","46"
-"19108","2015","TN","Tennessee","BRFSS","Obesity / Weight Status","34.5","3,241","Female","FEMALE","47"
-"4386","2015","TX","Texas","BRFSS","Obesity / Weight Status","33.1","7,707","Female","FEMALE","48"
-"23137","2015","UT","Utah","BRFSS","Obesity / Weight Status","24","5,359","Female","FEMALE","49"
-"12688","2015","VT","Vermont","BRFSS","Obesity / Weight Status","25.6","3,228","Female","FEMALE","50"
-"39167","2015","VA","Virginia","BRFSS","Obesity / Weight Status","29.7","4,523","Female","FEMALE","51"
-"23187","2015","WA","Washington","BRFSS","Obesity / Weight Status","25.9","7,942","Female","FEMALE","53"
-"24928","2015","WV","West Virginia","BRFSS","Obesity / Weight Status","33.8","2,903","Female","FEMALE","54"
-"11177","2015","WI","Wisconsin","BRFSS","Obesity / Weight Status","30.1","3,107","Female","FEMALE","55"
-"14783","2015","WY","Wyoming","BRFSS","Obesity / Weight Status","27.8","2,807","Female","FEMALE","56"
-"1061","2015","GU","Guam","BRFSS","Obesity / Weight Status","29.6","827","Female","FEMALE","66"
-"1048","2015","PR","Puerto Rico","BRFSS","Obesity / Weight Status","31.1","3,240","Female","FEMALE","72"
+﻿ID,Description,LocationAbbr,LocationDesc,DataSource,Topic,Data_Value,Sample_Size,Stratification1,StratificationId1,LocationDisplayOrder
+974,2015,US,National,BRFSS,Obesity / Weight Status,28.6,221,909,Female,FEMALE,0
+19808,2015,AL,Alabama,BRFSS,Obesity / Weight Status,36.4,4,425,Female,FEMALE,1
+18775,2015,AK,Alaska,BRFSS,Obesity / Weight Status,30.5,1,792,Female,FEMALE,2
+16287,2015,AZ,Arizona,BRFSS,Obesity / Weight Status,27.1,4,083,Female,FEMALE,4
+30039,2015,AR,Arkansas,BRFSS,Obesity / Weight Status,33.9,2,974,Female,FEMALE,5
+10825,2015,CA,California,BRFSS,Obesity / Weight Status,23.7,5,718,Female,FEMALE,6
+2692,2015,CO,Colorado,BRFSS,Obesity / Weight Status,20.2,6,562,Female,FEMALE,8
+25434,2015,CT,Connecticut,BRFSS,Obesity / Weight Status,23.9,6,065,Female,FEMALE,9
+12175,2015,DE,Delaware,BRFSS,Obesity / Weight Status,31.2,2,012,Female,FEMALE,10
+29383,2015,DC,District of Columbia,BRFSS,Obesity / Weight Status,26.4,2,169,Female,FEMALE,11
+33804,2015,FL,Florida,BRFSS,Obesity / Weight Status,25.9,5,090,Female,FEMALE,12
+25253,2015,GA,Georgia,BRFSS,Obesity / Weight Status,32.3,2,517,Female,FEMALE,13
+9943,2015,HI,Hawaii,BRFSS,Obesity / Weight Status,19.7,3,533,Female,FEMALE,15
+3350,2015,ID,Idaho,BRFSS,Obesity / Weight Status,27.3,2,938,Female,FEMALE,16
+28776,2015,IL,Illinois,BRFSS,Obesity / Weight Status,31.9,2,815,Female,FEMALE,17
+20325,2015,IN,Indiana,BRFSS,Obesity / Weight Status,30.7,3,153,Female,FEMALE,18
+1893,2015,IA,Iowa,BRFSS,Obesity / Weight Status,29.3,3,025,Female,FEMALE,19
+16064,2015,KS,Kansas,BRFSS,Obesity / Weight Status,33.3,11,261,Female,FEMALE,20
+15670,2015,KY,Kentucky,BRFSS,Obesity / Weight Status,32.9,4,952,Female,FEMALE,21
+38549,2015,LA,Louisiana,BRFSS,Obesity / Weight Status,36.5,2,589,Female,FEMALE,22
+27302,2015,ME,Maine,BRFSS,Obesity / Weight Status,30.9,4,937,Female,FEMALE,23
+5425,2015,MD,Maryland,BRFSS,Obesity / Weight Status,29.8,6,696,Female,FEMALE,24
+23844,2015,MA,Massachusetts,BRFSS,Obesity / Weight Status,23,4,388,Female,FEMALE,25
+29310,2015,MI,Michigan,BRFSS,Obesity / Weight Status,30.6,4,602,Female,FEMALE,26
+31419,2015,MN,Minnesota,BRFSS,Obesity / Weight Status,24.3,8,083,Female,FEMALE,27
+5726,2015,MS,Mississippi,BRFSS,Obesity / Weight Status,37.2,3,612,Female,FEMALE,28
+13285,2015,MO,Missouri,BRFSS,Obesity / Weight Status,31.2,3,814,Female,FEMALE,29
+31732,2015,MT,Montana,BRFSS,Obesity / Weight Status,23.4,2,961,Female,FEMALE,30
+13521,2015,NE,Nebraska,BRFSS,Obesity / Weight Status,29.8,8,942,Female,FEMALE,31
+10750,2015,NV,Nevada,BRFSS,Obesity / Weight Status,25.4,1,538,Female,FEMALE,32
+29365,2015,NH,New Hampshire,BRFSS,Obesity / Weight Status,24.6,3,604,Female,FEMALE,33
+34013,2015,NJ,New Jersey,BRFSS,Obesity / Weight Status,23.7,5,782,Female,FEMALE,34
+34405,2015,NM,New Mexico,BRFSS,Obesity / Weight Status,28.5,3,493,Female,FEMALE,35
+6399,2015,NY,New York,BRFSS,Obesity / Weight Status,24.3,6,364,Female,FEMALE,36
+25526,2015,NC,North Carolina,BRFSS,Obesity / Weight Status,31.3,3,310,Female,FEMALE,37
+25015,2015,ND,North Dakota,BRFSS,Obesity / Weight Status,27.1,2,446,Female,FEMALE,38
+27640,2015,OH,Ohio,BRFSS,Obesity / Weight Status,28.4,6,327,Female,FEMALE,39
+12014,2015,OK,Oklahoma,BRFSS,Obesity / Weight Status,34,3,847,Female,FEMALE,40
+8219,2015,OR,Oregon,BRFSS,Obesity / Weight Status,28.9,2,643,Female,FEMALE,41
+15696,2015,PA,Pennsylvania,BRFSS,Obesity / Weight Status,30.1,2,885,Female,FEMALE,42
+6398,2015,RI,Rhode Island,BRFSS,Obesity / Weight Status,24.1,3,234,Female,FEMALE,44
+21798,2015,SC,South Carolina,BRFSS,Obesity / Weight Status,33.1,6,129,Female,FEMALE,45
+23704,2015,SD,South Dakota,BRFSS,Obesity / Weight Status,28.5,3,782,Female,FEMALE,46
+19108,2015,TN,Tennessee,BRFSS,Obesity / Weight Status,34.5,3,241,Female,FEMALE,47
+4386,2015,TX,Texas,BRFSS,Obesity / Weight Status,33.1,7,707,Female,FEMALE,48
+23137,2015,UT,Utah,BRFSS,Obesity / Weight Status,24,5,359,Female,FEMALE,49
+12688,2015,VT,Vermont,BRFSS,Obesity / Weight Status,25.6,3,228,Female,FEMALE,50
+39167,2015,VA,Virginia,BRFSS,Obesity / Weight Status,29.7,4,523,Female,FEMALE,51
+23187,2015,WA,Washington,BRFSS,Obesity / Weight Status,25.9,7,942,Female,FEMALE,53
+24928,2015,WV,West Virginia,BRFSS,Obesity / Weight Status,33.8,2,903,Female,FEMALE,54
+11177,2015,WI,Wisconsin,BRFSS,Obesity / Weight Status,30.1,3,107,Female,FEMALE,55
+14783,2015,WY,Wyoming,BRFSS,Obesity / Weight Status,27.8,2,807,Female,FEMALE,56
+1061,2015,GU,Guam,BRFSS,Obesity / Weight Status,29.6,827,Female,FEMALE,66
+1048,2015,PR,Puerto Rico,BRFSS,Obesity / Weight Status,31.1,3,240,Female,FEMALE,72

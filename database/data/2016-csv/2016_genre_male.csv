@@ -1,56 +1,56 @@
-﻿"ID","Description","LocationAbbr","LocationDesc","DataSource","Topic","Data_Value","Sample_Size","Stratification1","StratificationId1","LocationDisplayOrder"
-"41765","2016","US","National","BRFSS","Obesity / Weight Status","29.6","198,440","Male","MALE","0"
-"39636","2016","AL","Alabama","BRFSS","Obesity / Weight Status","36.2","2,711","Male","MALE","1"
-"41064","2016","AK","Alaska","BRFSS","Obesity / Weight Status","32.3","1,334","Male","MALE","2"
-"40939","2016","AZ","Arizona","BRFSS","Obesity / Weight Status","30.2","4,358","Male","MALE","4"
-"40340","2016","AR","Arkansas","BRFSS","Obesity / Weight Status","32.1","1,918","Male","MALE","5"
-"43828","2016","CA","California","BRFSS","Obesity / Weight Status","24.9","5,098","Male","MALE","6"
-"41757","2016","CO","Colorado","BRFSS","Obesity / Weight Status","22.4","6,482","Male","MALE","8"
-"44266","2016","CT","Connecticut","BRFSS","Obesity / Weight Status","26.9","4,477","Male","MALE","9"
-"40336","2016","DE","Delaware","BRFSS","Obesity / Weight Status","30.7","1,713","Male","MALE","10"
-"42812","2016","DC","District of Columbia","BRFSS","Obesity / Weight Status","18","1,522","Male","MALE","11"
-"39578","2016","FL","Florida","BRFSS","Obesity / Weight Status","28.3","14,638","Male","MALE","12"
-"43830","2016","GA","Georgia","BRFSS","Obesity / Weight Status","29.8","2,090","Male","MALE","13"
-"43921","2016","HI","Hawaii","BRFSS","Obesity / Weight Status","26.1","3,655","Male","MALE","15"
-"43006","2016","ID","Idaho","BRFSS","Obesity / Weight Status","28.1","2,129","Male","MALE","16"
-"40990","2016","IL","Illinois","BRFSS","Obesity / Weight Status","32.3","2,026","Male","MALE","17"
-"40242","2016","IN","Indiana","BRFSS","Obesity / Weight Status","32.3","4,423","Male","MALE","18"
-"42764","2016","IA","Iowa","BRFSS","Obesity / Weight Status","33.8","3,095","Male","MALE","19"
-"42735","2016","KS","Kansas","BRFSS","Obesity / Weight Status","31.4","5,071","Male","MALE","20"
-"44194","2016","KY","Kentucky","BRFSS","Obesity / Weight Status","33.1","4,061","Male","MALE","21"
-"40147","2016","LA","Louisiana","BRFSS","Obesity / Weight Status","34.5","1,895","Male","MALE","22"
-"43528","2016","ME","Maine","BRFSS","Obesity / Weight Status","30.3","4,199","Male","MALE","23"
-"39895","2016","MD","Maryland","BRFSS","Obesity / Weight Status","28.3","7,189","Male","MALE","24"
-"41377","2016","MA","Massachusetts","BRFSS","Obesity / Weight Status","25.9","3,704","Male","MALE","25"
-"42757","2016","MI","Michigan","BRFSS","Obesity / Weight Status","32.4","5,182","Male","MALE","26"
-"44090","2016","MN","Minnesota","BRFSS","Obesity / Weight Status","29.5","7,658","Male","MALE","27"
-"39983","2016","MS","Mississippi","BRFSS","Obesity / Weight Status","35.2","1,904","Male","MALE","28"
-"40249","2016","MO","Missouri","BRFSS","Obesity / Weight Status","32","2,948","Male","MALE","29"
-"43383","2016","MT","Montana","BRFSS","Obesity / Weight Status","25","2,625","Male","MALE","30"
-"40452","2016","NE","Nebraska","BRFSS","Obesity / Weight Status","32.6","6,460","Male","MALE","31"
-"42514","2016","NV","Nevada","BRFSS","Obesity / Weight Status","25.8","1,866","Male","MALE","32"
-"39695","2016","NH","New Hampshire","BRFSS","Obesity / Weight Status","26.6","2,732","Male","MALE","33"
-"43287","2016","NJ","New Jersey","BRFSS","Obesity / Weight Status","29.1","3,083","Male","MALE","34"
-"43871","2016","NM","New Mexico","BRFSS","Obesity / Weight Status","29.1","2,485","Male","MALE","35"
-"39685","2016","NY","New York","BRFSS","Obesity / Weight Status","25.9","14,316","Male","MALE","36"
-"43145","2016","NC","North Carolina","BRFSS","Obesity / Weight Status","30.3","2,837","Male","MALE","37"
-"39776","2016","ND","North Dakota","BRFSS","Obesity / Weight Status","32.2","2,541","Male","MALE","38"
-"41098","2016","OH","Ohio","BRFSS","Obesity / Weight Status","30.9","4,972","Male","MALE","39"
-"39961","2016","OK","Oklahoma","BRFSS","Obesity / Weight Status","33.3","2,710","Male","MALE","40"
-"43988","2016","OR","Oregon","BRFSS","Obesity / Weight Status","28.7","2,312","Male","MALE","41"
-"40986","2016","PA","Pennsylvania","BRFSS","Obesity / Weight Status","31.3","3,052","Male","MALE","42"
-"41171","2016","RI","Rhode Island","BRFSS","Obesity / Weight Status","28","2,131","Male","MALE","44"
-"43867","2016","SC","South Carolina","BRFSS","Obesity / Weight Status","31","4,464","Male","MALE","45"
-"42528","2016","SD","South Dakota","BRFSS","Obesity / Weight Status","32.3","2,438","Male","MALE","46"
-"42013","2016","TN","Tennessee","BRFSS","Obesity / Weight Status","36.2","2,515","Male","MALE","47"
-"40525","2016","TX","Texas","BRFSS","Obesity / Weight Status","32.8","4,595","Male","MALE","48"
-"40176","2016","UT","Utah","BRFSS","Obesity / Weight Status","25.6","4,872","Male","MALE","49"
-"39709","2016","VT","Vermont","BRFSS","Obesity / Weight Status","27.9","2,811","Male","MALE","50"
-"41256","2016","VA","Virginia","BRFSS","Obesity / Weight Status","28.5","3,758","Male","MALE","51"
-"43982","2016","WA","Washington","BRFSS","Obesity / Weight Status","29.5","6,152","Male","MALE","53"
-"39928","2016","WV","West Virginia","BRFSS","Obesity / Weight Status","37.9","3,040","Male","MALE","54"
-"41052","2016","WI","Wisconsin","BRFSS","Obesity / Weight Status","31.5","2,286","Male","MALE","55"
-"41888","2016","WY","Wyoming","BRFSS","Obesity / Weight Status","28.2","1,907","Male","MALE","56"
-"42257","2016","GU","Guam","BRFSS","Obesity / Weight Status","29.2","672","Male","MALE","66"
-"42531","2016","PR","Puerto Rico","BRFSS","Obesity / Weight Status","30","2,105","Male","MALE","72"
-"41666","2016","VI","Virgin Islands","BRFSS","Obesity / Weight Status","22.2","468","Male","MALE","78"
+﻿ID,Description,LocationAbbr,LocationDesc,DataSource,Topic,Data_Value,Sample_Size,Stratification1,StratificationId1,LocationDisplayOrder
+41765,2016,US,National,BRFSS,Obesity / Weight Status,29.6,198,440,Male,MALE,0
+39636,2016,AL,Alabama,BRFSS,Obesity / Weight Status,36.2,2,711,Male,MALE,1
+41064,2016,AK,Alaska,BRFSS,Obesity / Weight Status,32.3,1,334,Male,MALE,2
+40939,2016,AZ,Arizona,BRFSS,Obesity / Weight Status,30.2,4,358,Male,MALE,4
+40340,2016,AR,Arkansas,BRFSS,Obesity / Weight Status,32.1,1,918,Male,MALE,5
+43828,2016,CA,California,BRFSS,Obesity / Weight Status,24.9,5,098,Male,MALE,6
+41757,2016,CO,Colorado,BRFSS,Obesity / Weight Status,22.4,6,482,Male,MALE,8
+44266,2016,CT,Connecticut,BRFSS,Obesity / Weight Status,26.9,4,477,Male,MALE,9
+40336,2016,DE,Delaware,BRFSS,Obesity / Weight Status,30.7,1,713,Male,MALE,10
+42812,2016,DC,District of Columbia,BRFSS,Obesity / Weight Status,18,1,522,Male,MALE,11
+39578,2016,FL,Florida,BRFSS,Obesity / Weight Status,28.3,14,638,Male,MALE,12
+43830,2016,GA,Georgia,BRFSS,Obesity / Weight Status,29.8,2,090,Male,MALE,13
+43921,2016,HI,Hawaii,BRFSS,Obesity / Weight Status,26.1,3,655,Male,MALE,15
+43006,2016,ID,Idaho,BRFSS,Obesity / Weight Status,28.1,2,129,Male,MALE,16
+40990,2016,IL,Illinois,BRFSS,Obesity / Weight Status,32.3,2,026,Male,MALE,17
+40242,2016,IN,Indiana,BRFSS,Obesity / Weight Status,32.3,4,423,Male,MALE,18
+42764,2016,IA,Iowa,BRFSS,Obesity / Weight Status,33.8,3,095,Male,MALE,19
+42735,2016,KS,Kansas,BRFSS,Obesity / Weight Status,31.4,5,071,Male,MALE,20
+44194,2016,KY,Kentucky,BRFSS,Obesity / Weight Status,33.1,4,061,Male,MALE,21
+40147,2016,LA,Louisiana,BRFSS,Obesity / Weight Status,34.5,1,895,Male,MALE,22
+43528,2016,ME,Maine,BRFSS,Obesity / Weight Status,30.3,4,199,Male,MALE,23
+39895,2016,MD,Maryland,BRFSS,Obesity / Weight Status,28.3,7,189,Male,MALE,24
+41377,2016,MA,Massachusetts,BRFSS,Obesity / Weight Status,25.9,3,704,Male,MALE,25
+42757,2016,MI,Michigan,BRFSS,Obesity / Weight Status,32.4,5,182,Male,MALE,26
+44090,2016,MN,Minnesota,BRFSS,Obesity / Weight Status,29.5,7,658,Male,MALE,27
+39983,2016,MS,Mississippi,BRFSS,Obesity / Weight Status,35.2,1,904,Male,MALE,28
+40249,2016,MO,Missouri,BRFSS,Obesity / Weight Status,32,2,948,Male,MALE,29
+43383,2016,MT,Montana,BRFSS,Obesity / Weight Status,25,2,625,Male,MALE,30
+40452,2016,NE,Nebraska,BRFSS,Obesity / Weight Status,32.6,6,460,Male,MALE,31
+42514,2016,NV,Nevada,BRFSS,Obesity / Weight Status,25.8,1,866,Male,MALE,32
+39695,2016,NH,New Hampshire,BRFSS,Obesity / Weight Status,26.6,2,732,Male,MALE,33
+43287,2016,NJ,New Jersey,BRFSS,Obesity / Weight Status,29.1,3,083,Male,MALE,34
+43871,2016,NM,New Mexico,BRFSS,Obesity / Weight Status,29.1,2,485,Male,MALE,35
+39685,2016,NY,New York,BRFSS,Obesity / Weight Status,25.9,14,316,Male,MALE,36
+43145,2016,NC,North Carolina,BRFSS,Obesity / Weight Status,30.3,2,837,Male,MALE,37
+39776,2016,ND,North Dakota,BRFSS,Obesity / Weight Status,32.2,2,541,Male,MALE,38
+41098,2016,OH,Ohio,BRFSS,Obesity / Weight Status,30.9,4,972,Male,MALE,39
+39961,2016,OK,Oklahoma,BRFSS,Obesity / Weight Status,33.3,2,710,Male,MALE,40
+43988,2016,OR,Oregon,BRFSS,Obesity / Weight Status,28.7,2,312,Male,MALE,41
+40986,2016,PA,Pennsylvania,BRFSS,Obesity / Weight Status,31.3,3,052,Male,MALE,42
+41171,2016,RI,Rhode Island,BRFSS,Obesity / Weight Status,28,2,131,Male,MALE,44
+43867,2016,SC,South Carolina,BRFSS,Obesity / Weight Status,31,4,464,Male,MALE,45
+42528,2016,SD,South Dakota,BRFSS,Obesity / Weight Status,32.3,2,438,Male,MALE,46
+42013,2016,TN,Tennessee,BRFSS,Obesity / Weight Status,36.2,2,515,Male,MALE,47
+40525,2016,TX,Texas,BRFSS,Obesity / Weight Status,32.8,4,595,Male,MALE,48
+40176,2016,UT,Utah,BRFSS,Obesity / Weight Status,25.6,4,872,Male,MALE,49
+39709,2016,VT,Vermont,BRFSS,Obesity / Weight Status,27.9,2,811,Male,MALE,50
+41256,2016,VA,Virginia,BRFSS,Obesity / Weight Status,28.5,3,758,Male,MALE,51
+43982,2016,WA,Washington,BRFSS,Obesity / Weight Status,29.5,6,152,Male,MALE,53
+39928,2016,WV,West Virginia,BRFSS,Obesity / Weight Status,37.9,3,040,Male,MALE,54
+41052,2016,WI,Wisconsin,BRFSS,Obesity / Weight Status,31.5,2,286,Male,MALE,55
+41888,2016,WY,Wyoming,BRFSS,Obesity / Weight Status,28.2,1,907,Male,MALE,56
+42257,2016,GU,Guam,BRFSS,Obesity / Weight Status,29.2,672,Male,MALE,66
+42531,2016,PR,Puerto Rico,BRFSS,Obesity / Weight Status,30,2,105,Male,MALE,72
+41666,2016,VI,Virgin Islands,BRFSS,Obesity / Weight Status,22.2,468,Male,MALE,78

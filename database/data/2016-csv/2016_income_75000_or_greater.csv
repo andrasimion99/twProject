@@ -1,56 +1,56 @@
-﻿"ID","Description","LocationAbbr","LocationDesc","DataSource","Topic","Data_Value","Sample_Size","Stratification1","StratificationId1","LocationDisplayOrder"
-"43832","2016","US","National","BRFSS","Obesity / Weight Status","25.4","120,901","$75,000 or greater","INC75PLUS","0"
-"43625","2016","AL","Alabama","BRFSS","Obesity / Weight Status","34.5","1,306","$75,000 or greater","INC75PLUS","1"
-"43084","2016","AK","Alaska","BRFSS","Obesity / Weight Status","30.3","1,045","$75,000 or greater","INC75PLUS","2"
-"42100","2016","AZ","Arizona","BRFSS","Obesity / Weight Status","25.8","2,507","$75,000 or greater","INC75PLUS","4"
-"42942","2016","AR","Arkansas","BRFSS","Obesity / Weight Status","35.4","884","$75,000 or greater","INC75PLUS","5"
-"40784","2016","CA","California","BRFSS","Obesity / Weight Status","20","3,595","$75,000 or greater","INC75PLUS","6"
-"40359","2016","CO","Colorado","BRFSS","Obesity / Weight Status","20.6","4,742","$75,000 or greater","INC75PLUS","8"
-"40580","2016","CT","Connecticut","BRFSS","Obesity / Weight Status","21.5","3,953","$75,000 or greater","INC75PLUS","9"
-"42982","2016","DE","Delaware","BRFSS","Obesity / Weight Status","28.4","963","$75,000 or greater","INC75PLUS","10"
-"39989","2016","DC","District of Columbia","BRFSS","Obesity / Weight Status","14.8","1,258","$75,000 or greater","INC75PLUS","11"
-"43260","2016","FL","Florida","BRFSS","Obesity / Weight Status","25.4","6,593","$75,000 or greater","INC75PLUS","12"
-"40016","2016","GA","Georgia","BRFSS","Obesity / Weight Status","27","1,187","$75,000 or greater","INC75PLUS","13"
-"41158","2016","HI","Hawaii","BRFSS","Obesity / Weight Status","22.3","2,407","$75,000 or greater","INC75PLUS","15"
-"44202","2016","ID","Idaho","BRFSS","Obesity / Weight Status","25.7","1,077","$75,000 or greater","INC75PLUS","16"
-"41265","2016","IL","Illinois","BRFSS","Obesity / Weight Status","28.7","1,516","$75,000 or greater","INC75PLUS","17"
-"40685","2016","IN","Indiana","BRFSS","Obesity / Weight Status","28.7","2,519","$75,000 or greater","INC75PLUS","18"
-"43001","2016","IA","Iowa","BRFSS","Obesity / Weight Status","28.6","1,853","$75,000 or greater","INC75PLUS","19"
-"42632","2016","KS","Kansas","BRFSS","Obesity / Weight Status","27.3","3,005","$75,000 or greater","INC75PLUS","20"
-"39637","2016","KY","Kentucky","BRFSS","Obesity / Weight Status","30.2","2,150","$75,000 or greater","INC75PLUS","21"
-"39661","2016","LA","Louisiana","BRFSS","Obesity / Weight Status","33.5","1,080","$75,000 or greater","INC75PLUS","22"
-"42714","2016","ME","Maine","BRFSS","Obesity / Weight Status","25.1","2,432","$75,000 or greater","INC75PLUS","23"
-"42022","2016","MD","Maryland","BRFSS","Obesity / Weight Status","27.6","6,338","$75,000 or greater","INC75PLUS","24"
-"41839","2016","MA","Massachusetts","BRFSS","Obesity / Weight Status","20.1","2,710","$75,000 or greater","INC75PLUS","25"
-"42963","2016","MI","Michigan","BRFSS","Obesity / Weight Status","27.7","2,913","$75,000 or greater","INC75PLUS","26"
-"44068","2016","MN","Minnesota","BRFSS","Obesity / Weight Status","24.3","5,207","$75,000 or greater","INC75PLUS","27"
-"43450","2016","MS","Mississippi","BRFSS","Obesity / Weight Status","32.4","767","$75,000 or greater","INC75PLUS","28"
-"42232","2016","MO","Missouri","BRFSS","Obesity / Weight Status","28.1","1,444","$75,000 or greater","INC75PLUS","29"
-"40501","2016","MT","Montana","BRFSS","Obesity / Weight Status","23.9","1,085","$75,000 or greater","INC75PLUS","30"
-"41669","2016","NE","Nebraska","BRFSS","Obesity / Weight Status","29.6","3,572","$75,000 or greater","INC75PLUS","31"
-"42006","2016","NV","Nevada","BRFSS","Obesity / Weight Status","21.7","1,070","$75,000 or greater","INC75PLUS","32"
-"41078","2016","NH","New Hampshire","BRFSS","Obesity / Weight Status","23.4","1,854","$75,000 or greater","INC75PLUS","33"
-"43342","2016","NJ","New Jersey","BRFSS","Obesity / Weight Status","24.2","2,401","$75,000 or greater","INC75PLUS","34"
-"43758","2016","NM","New Mexico","BRFSS","Obesity / Weight Status","25.9","1,171","$75,000 or greater","INC75PLUS","35"
-"42044","2016","NY","New York","BRFSS","Obesity / Weight Status","20.9","8,551","$75,000 or greater","INC75PLUS","36"
-"42899","2016","NC","North Carolina","BRFSS","Obesity / Weight Status","27.6","1,388","$75,000 or greater","INC75PLUS","37"
-"42665","2016","ND","North Dakota","BRFSS","Obesity / Weight Status","30.2","1,755","$75,000 or greater","INC75PLUS","38"
-"41218","2016","OH","Ohio","BRFSS","Obesity / Weight Status","26.8","2,637","$75,000 or greater","INC75PLUS","39"
-"39934","2016","OK","Oklahoma","BRFSS","Obesity / Weight Status","29.9","1,385","$75,000 or greater","INC75PLUS","40"
-"41207","2016","OR","Oregon","BRFSS","Obesity / Weight Status","24.5","1,424","$75,000 or greater","INC75PLUS","41"
-"41386","2016","PA","Pennsylvania","BRFSS","Obesity / Weight Status","25.2","1,914","$75,000 or greater","INC75PLUS","42"
-"41768","2016","RI","Rhode Island","BRFSS","Obesity / Weight Status","22.4","1,541","$75,000 or greater","INC75PLUS","44"
-"41309","2016","SC","South Carolina","BRFSS","Obesity / Weight Status","26.9","2,251","$75,000 or greater","INC75PLUS","45"
-"41811","2016","SD","South Dakota","BRFSS","Obesity / Weight Status","31.6","1,394","$75,000 or greater","INC75PLUS","46"
-"39740","2016","TN","Tennessee","BRFSS","Obesity / Weight Status","31.8","1,164","$75,000 or greater","INC75PLUS","47"
-"41909","2016","TX","Texas","BRFSS","Obesity / Weight Status","30.3","2,960","$75,000 or greater","INC75PLUS","48"
-"42622","2016","UT","Utah","BRFSS","Obesity / Weight Status","23.9","3,288","$75,000 or greater","INC75PLUS","49"
-"42342","2016","VT","Vermont","BRFSS","Obesity / Weight Status","24.1","1,691","$75,000 or greater","INC75PLUS","50"
-"40238","2016","VA","Virginia","BRFSS","Obesity / Weight Status","25.1","2,741","$75,000 or greater","INC75PLUS","51"
-"42969","2016","WA","Washington","BRFSS","Obesity / Weight Status","24.9","4,336","$75,000 or greater","INC75PLUS","53"
-"42160","2016","WV","West Virginia","BRFSS","Obesity / Weight Status","33.5","1,323","$75,000 or greater","INC75PLUS","54"
-"41707","2016","WI","Wisconsin","BRFSS","Obesity / Weight Status","27.8","1,377","$75,000 or greater","INC75PLUS","55"
-"43522","2016","WY","Wyoming","BRFSS","Obesity / Weight Status","24.2","1,177","$75,000 or greater","INC75PLUS","56"
-"40809","2016","GU","Guam","BRFSS","Obesity / Weight Status","27.5","322","$75,000 or greater","INC75PLUS","66"
-"43254","2016","PR","Puerto Rico","BRFSS","Obesity / Weight Status","20.5","167","$75,000 or greater","INC75PLUS","72"
-"41104","2016","VI","Virgin Islands","BRFSS","Obesity / Weight Status","32.6","206","$75,000 or greater","INC75PLUS","78"
+﻿ID,Description,LocationAbbr,LocationDesc,DataSource,Topic,Data_Value,Sample_Size,Stratification1,StratificationId1,LocationDisplayOrder
+43832,2016,US,National,BRFSS,Obesity / Weight Status,25.4,120,901,$75,000 or greater,INC75PLUS,0
+43625,2016,AL,Alabama,BRFSS,Obesity / Weight Status,34.5,1,306,$75,000 or greater,INC75PLUS,1
+43084,2016,AK,Alaska,BRFSS,Obesity / Weight Status,30.3,1,045,$75,000 or greater,INC75PLUS,2
+42100,2016,AZ,Arizona,BRFSS,Obesity / Weight Status,25.8,2,507,$75,000 or greater,INC75PLUS,4
+42942,2016,AR,Arkansas,BRFSS,Obesity / Weight Status,35.4,884,$75,000 or greater,INC75PLUS,5
+40784,2016,CA,California,BRFSS,Obesity / Weight Status,20,3,595,$75,000 or greater,INC75PLUS,6
+40359,2016,CO,Colorado,BRFSS,Obesity / Weight Status,20.6,4,742,$75,000 or greater,INC75PLUS,8
+40580,2016,CT,Connecticut,BRFSS,Obesity / Weight Status,21.5,3,953,$75,000 or greater,INC75PLUS,9
+42982,2016,DE,Delaware,BRFSS,Obesity / Weight Status,28.4,963,$75,000 or greater,INC75PLUS,10
+39989,2016,DC,District of Columbia,BRFSS,Obesity / Weight Status,14.8,1,258,$75,000 or greater,INC75PLUS,11
+43260,2016,FL,Florida,BRFSS,Obesity / Weight Status,25.4,6,593,$75,000 or greater,INC75PLUS,12
+40016,2016,GA,Georgia,BRFSS,Obesity / Weight Status,27,1,187,$75,000 or greater,INC75PLUS,13
+41158,2016,HI,Hawaii,BRFSS,Obesity / Weight Status,22.3,2,407,$75,000 or greater,INC75PLUS,15
+44202,2016,ID,Idaho,BRFSS,Obesity / Weight Status,25.7,1,077,$75,000 or greater,INC75PLUS,16
+41265,2016,IL,Illinois,BRFSS,Obesity / Weight Status,28.7,1,516,$75,000 or greater,INC75PLUS,17
+40685,2016,IN,Indiana,BRFSS,Obesity / Weight Status,28.7,2,519,$75,000 or greater,INC75PLUS,18
+43001,2016,IA,Iowa,BRFSS,Obesity / Weight Status,28.6,1,853,$75,000 or greater,INC75PLUS,19
+42632,2016,KS,Kansas,BRFSS,Obesity / Weight Status,27.3,3,005,$75,000 or greater,INC75PLUS,20
+39637,2016,KY,Kentucky,BRFSS,Obesity / Weight Status,30.2,2,150,$75,000 or greater,INC75PLUS,21
+39661,2016,LA,Louisiana,BRFSS,Obesity / Weight Status,33.5,1,080,$75,000 or greater,INC75PLUS,22
+42714,2016,ME,Maine,BRFSS,Obesity / Weight Status,25.1,2,432,$75,000 or greater,INC75PLUS,23
+42022,2016,MD,Maryland,BRFSS,Obesity / Weight Status,27.6,6,338,$75,000 or greater,INC75PLUS,24
+41839,2016,MA,Massachusetts,BRFSS,Obesity / Weight Status,20.1,2,710,$75,000 or greater,INC75PLUS,25
+42963,2016,MI,Michigan,BRFSS,Obesity / Weight Status,27.7,2,913,$75,000 or greater,INC75PLUS,26
+44068,2016,MN,Minnesota,BRFSS,Obesity / Weight Status,24.3,5,207,$75,000 or greater,INC75PLUS,27
+43450,2016,MS,Mississippi,BRFSS,Obesity / Weight Status,32.4,767,$75,000 or greater,INC75PLUS,28
+42232,2016,MO,Missouri,BRFSS,Obesity / Weight Status,28.1,1,444,$75,000 or greater,INC75PLUS,29
+40501,2016,MT,Montana,BRFSS,Obesity / Weight Status,23.9,1,085,$75,000 or greater,INC75PLUS,30
+41669,2016,NE,Nebraska,BRFSS,Obesity / Weight Status,29.6,3,572,$75,000 or greater,INC75PLUS,31
+42006,2016,NV,Nevada,BRFSS,Obesity / Weight Status,21.7,1,070,$75,000 or greater,INC75PLUS,32
+41078,2016,NH,New Hampshire,BRFSS,Obesity / Weight Status,23.4,1,854,$75,000 or greater,INC75PLUS,33
+43342,2016,NJ,New Jersey,BRFSS,Obesity / Weight Status,24.2,2,401,$75,000 or greater,INC75PLUS,34
+43758,2016,NM,New Mexico,BRFSS,Obesity / Weight Status,25.9,1,171,$75,000 or greater,INC75PLUS,35
+42044,2016,NY,New York,BRFSS,Obesity / Weight Status,20.9,8,551,$75,000 or greater,INC75PLUS,36
+42899,2016,NC,North Carolina,BRFSS,Obesity / Weight Status,27.6,1,388,$75,000 or greater,INC75PLUS,37
+42665,2016,ND,North Dakota,BRFSS,Obesity / Weight Status,30.2,1,755,$75,000 or greater,INC75PLUS,38
+41218,2016,OH,Ohio,BRFSS,Obesity / Weight Status,26.8,2,637,$75,000 or greater,INC75PLUS,39
+39934,2016,OK,Oklahoma,BRFSS,Obesity / Weight Status,29.9,1,385,$75,000 or greater,INC75PLUS,40
+41207,2016,OR,Oregon,BRFSS,Obesity / Weight Status,24.5,1,424,$75,000 or greater,INC75PLUS,41
+41386,2016,PA,Pennsylvania,BRFSS,Obesity / Weight Status,25.2,1,914,$75,000 or greater,INC75PLUS,42
+41768,2016,RI,Rhode Island,BRFSS,Obesity / Weight Status,22.4,1,541,$75,000 or greater,INC75PLUS,44
+41309,2016,SC,South Carolina,BRFSS,Obesity / Weight Status,26.9,2,251,$75,000 or greater,INC75PLUS,45
+41811,2016,SD,South Dakota,BRFSS,Obesity / Weight Status,31.6,1,394,$75,000 or greater,INC75PLUS,46
+39740,2016,TN,Tennessee,BRFSS,Obesity / Weight Status,31.8,1,164,$75,000 or greater,INC75PLUS,47
+41909,2016,TX,Texas,BRFSS,Obesity / Weight Status,30.3,2,960,$75,000 or greater,INC75PLUS,48
+42622,2016,UT,Utah,BRFSS,Obesity / Weight Status,23.9,3,288,$75,000 or greater,INC75PLUS,49
+42342,2016,VT,Vermont,BRFSS,Obesity / Weight Status,24.1,1,691,$75,000 or greater,INC75PLUS,50
+40238,2016,VA,Virginia,BRFSS,Obesity / Weight Status,25.1,2,741,$75,000 or greater,INC75PLUS,51
+42969,2016,WA,Washington,BRFSS,Obesity / Weight Status,24.9,4,336,$75,000 or greater,INC75PLUS,53
+42160,2016,WV,West Virginia,BRFSS,Obesity / Weight Status,33.5,1,323,$75,000 or greater,INC75PLUS,54
+41707,2016,WI,Wisconsin,BRFSS,Obesity / Weight Status,27.8,1,377,$75,000 or greater,INC75PLUS,55
+43522,2016,WY,Wyoming,BRFSS,Obesity / Weight Status,24.2,1,177,$75,000 or greater,INC75PLUS,56
+40809,2016,GU,Guam,BRFSS,Obesity / Weight Status,27.5,322,$75,000 or greater,INC75PLUS,66
+43254,2016,PR,Puerto Rico,BRFSS,Obesity / Weight Status,20.5,167,$75,000 or greater,INC75PLUS,72
+41104,2016,VI,Virgin Islands,BRFSS,Obesity / Weight Status,32.6,206,$75,000 or greater,INC75PLUS,78

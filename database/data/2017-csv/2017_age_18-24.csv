@@ -1,56 +1,56 @@
-﻿"ID","Description","LocationAbbr","LocationDesc","DataSource","Topic","Data_Value","Sample_Size","Stratification1","StratificationId1","LocationDisplayOrder"
-"50820","2017","US","National","BRFSS","Obesity / Weight Status","16.5","23,516","18 - 24","AGEYR1824","0"
-"51924","2017","AL","Alabama","BRFSS","Obesity / Weight Status","20.7","315","18 - 24","AGEYR1824","1"
-"52152","2017","AK","Alaska","BRFSS","Obesity / Weight Status","23","157","18 - 24","AGEYR1824","2"
-"46585","2017","AZ","Arizona","BRFSS","Obesity / Weight Status","18.2","775","18 - 24","AGEYR1824","4"
-"48544","2017","AR","Arkansas","BRFSS","Obesity / Weight Status","13.3","138","18 - 24","AGEYR1824","5"
-"44613","2017","CA","California","BRFSS","Obesity / Weight Status","12.7","797","18 - 24","AGEYR1824","6"
-"55787","2017","CO","Colorado","BRFSS","Obesity / Weight Status","13.1","543","18 - 24","AGEYR1824","8"
-"47138","2017","CT","Connecticut","BRFSS","Obesity / Weight Status","16.2","413","18 - 24","AGEYR1824","9"
-"47376","2017","DE","Delaware","BRFSS","Obesity / Weight Status","15.5","215","18 - 24","AGEYR1824","10"
-"52123","2017","DC","District of Columbia","BRFSS","Obesity / Weight Status","16","216","18 - 24","AGEYR1824","11"
-"46859","2017","FL","Florida","BRFSS","Obesity / Weight Status","17.1","1,213","18 - 24","AGEYR1824","12"
-"47900","2017","GA","Georgia","BRFSS","Obesity / Weight Status","16.9","349","18 - 24","AGEYR1824","13"
-"46222","2017","HI","Hawaii","BRFSS","Obesity / Weight Status","15.9","467","18 - 24","AGEYR1824","15"
-"51920","2017","ID","Idaho","BRFSS","Obesity / Weight Status","16.2","288","18 - 24","AGEYR1824","16"
-"56852","2017","IL","Illinois","BRFSS","Obesity / Weight Status","13.6","331","18 - 24","AGEYR1824","17"
-"56172","2017","IN","Indiana","BRFSS","Obesity / Weight Status","20.5","630","18 - 24","AGEYR1824","18"
-"55578","2017","IA","Iowa","BRFSS","Obesity / Weight Status","22.6","473","18 - 24","AGEYR1824","19"
-"47096","2017","KS","Kansas","BRFSS","Obesity / Weight Status","21.9","1,329","18 - 24","AGEYR1824","20"
-"45491","2017","KY","Kentucky","BRFSS","Obesity / Weight Status","20.3","552","18 - 24","AGEYR1824","21"
-"46266","2017","LA","Louisiana","BRFSS","Obesity / Weight Status","21","295","18 - 24","AGEYR1824","22"
-"49286","2017","ME","Maine","BRFSS","Obesity / Weight Status","12.9","328","18 - 24","AGEYR1824","23"
-"53551","2017","MD","Maryland","BRFSS","Obesity / Weight Status","18.4","437","18 - 24","AGEYR1824","24"
-"45080","2017","MA","Massachusetts","BRFSS","Obesity / Weight Status","9.5","400","18 - 24","AGEYR1824","25"
-"57980","2017","MI","Michigan","BRFSS","Obesity / Weight Status","18.1","757","18 - 24","AGEYR1824","26"
-"46235","2017","MN","Minnesota","BRFSS","Obesity / Weight Status","15.2","1,019","18 - 24","AGEYR1824","27"
-"46394","2017","MS","Mississippi","BRFSS","Obesity / Weight Status","24.2","206","18 - 24","AGEYR1824","28"
-"55966","2017","MO","Missouri","BRFSS","Obesity / Weight Status","19.4","459","18 - 24","AGEYR1824","29"
-"55660","2017","MT","Montana","BRFSS","Obesity / Weight Status","14.2","327","18 - 24","AGEYR1824","30"
-"47889","2017","NE","Nebraska","BRFSS","Obesity / Weight Status","18","912","18 - 24","AGEYR1824","31"
-"54303","2017","NV","Nevada","BRFSS","Obesity / Weight Status","17.4","205","18 - 24","AGEYR1824","32"
-"52535","2017","NH","New Hampshire","BRFSS","Obesity / Weight Status","17.1","167","18 - 24","AGEYR1824","33"
-"48489","2017","NJ","New Jersey","BRFSS","Obesity / Weight Status","15.3","440","18 - 24","AGEYR1824","34"
-"55521","2017","NM","New Mexico","BRFSS","Obesity / Weight Status","17.1","305","18 - 24","AGEYR1824","35"
-"51511","2017","NY","New York","BRFSS","Obesity / Weight Status","12.3","752","18 - 24","AGEYR1824","36"
-"50838","2017","NC","North Carolina","BRFSS","Obesity / Weight Status","15.6","339","18 - 24","AGEYR1824","37"
-"44168","2017","ND","North Dakota","BRFSS","Obesity / Weight Status","21.5","356","18 - 24","AGEYR1824","38"
-"58605","2017","OH","Ohio","BRFSS","Obesity / Weight Status","18.9","553","18 - 24","AGEYR1824","39"
-"54469","2017","OK","Oklahoma","BRFSS","Obesity / Weight Status","28.2","303","18 - 24","AGEYR1824","40"
-"56855","2017","OR","Oregon","BRFSS","Obesity / Weight Status","17.9","315","18 - 24","AGEYR1824","41"
-"53401","2017","PA","Pennsylvania","BRFSS","Obesity / Weight Status","15.9","483","18 - 24","AGEYR1824","42"
-"47919","2017","RI","Rhode Island","BRFSS","Obesity / Weight Status","15.8","223","18 - 24","AGEYR1824","44"
-"48486","2017","SC","South Carolina","BRFSS","Obesity / Weight Status","22.3","411","18 - 24","AGEYR1824","45"
-"53912","2017","SD","South Dakota","BRFSS","Obesity / Weight Status","19.3","331","18 - 24","AGEYR1824","46"
-"49050","2017","TN","Tennessee","BRFSS","Obesity / Weight Status","15.6","301","18 - 24","AGEYR1824","47"
-"56696","2017","TX","Texas","BRFSS","Obesity / Weight Status","16.4","616","18 - 24","AGEYR1824","48"
-"52196","2017","UT","Utah","BRFSS","Obesity / Weight Status","13.3","896","18 - 24","AGEYR1824","49"
-"54519","2017","VT","Vermont","BRFSS","Obesity / Weight Status","14.3","280","18 - 24","AGEYR1824","50"
-"55068","2017","VA","Virginia","BRFSS","Obesity / Weight Status","17.7","459","18 - 24","AGEYR1824","51"
-"47303","2017","WA","Washington","BRFSS","Obesity / Weight Status","17.3","703","18 - 24","AGEYR1824","53"
-"44470","2017","WV","West Virginia","BRFSS","Obesity / Weight Status","24.5","199","18 - 24","AGEYR1824","54"
-"49261","2017","WI","Wisconsin","BRFSS","Obesity / Weight Status","22.5","332","18 - 24","AGEYR1824","55"
-"58250","2017","WY","Wyoming","BRFSS","Obesity / Weight Status","13","206","18 - 24","AGEYR1824","56"
-"48820","2017","GU","Guam","BRFSS","Obesity / Weight Status","14.5","155","18 - 24","AGEYR1824","66"
-"45906","2017","PR","Puerto Rico","BRFSS","Obesity / Weight Status","14.4","314","18 - 24","AGEYR1824","72"
-"49879","2017","VI","Virgin Islands","BRFSS","Obesity / Weight Status","~","~","18 - 24","AGEYR1824","78"
+﻿ID,Description,LocationAbbr,LocationDesc,DataSource,Topic,Data_Value,Sample_Size,Stratification1,StratificationId1,LocationDisplayOrder
+50820,2017,US,National,BRFSS,Obesity / Weight Status,16.5,23,516,18 - 24,AGEYR1824,0
+51924,2017,AL,Alabama,BRFSS,Obesity / Weight Status,20.7,315,18 - 24,AGEYR1824,1
+52152,2017,AK,Alaska,BRFSS,Obesity / Weight Status,23,157,18 - 24,AGEYR1824,2
+46585,2017,AZ,Arizona,BRFSS,Obesity / Weight Status,18.2,775,18 - 24,AGEYR1824,4
+48544,2017,AR,Arkansas,BRFSS,Obesity / Weight Status,13.3,138,18 - 24,AGEYR1824,5
+44613,2017,CA,California,BRFSS,Obesity / Weight Status,12.7,797,18 - 24,AGEYR1824,6
+55787,2017,CO,Colorado,BRFSS,Obesity / Weight Status,13.1,543,18 - 24,AGEYR1824,8
+47138,2017,CT,Connecticut,BRFSS,Obesity / Weight Status,16.2,413,18 - 24,AGEYR1824,9
+47376,2017,DE,Delaware,BRFSS,Obesity / Weight Status,15.5,215,18 - 24,AGEYR1824,10
+52123,2017,DC,District of Columbia,BRFSS,Obesity / Weight Status,16,216,18 - 24,AGEYR1824,11
+46859,2017,FL,Florida,BRFSS,Obesity / Weight Status,17.1,1,213,18 - 24,AGEYR1824,12
+47900,2017,GA,Georgia,BRFSS,Obesity / Weight Status,16.9,349,18 - 24,AGEYR1824,13
+46222,2017,HI,Hawaii,BRFSS,Obesity / Weight Status,15.9,467,18 - 24,AGEYR1824,15
+51920,2017,ID,Idaho,BRFSS,Obesity / Weight Status,16.2,288,18 - 24,AGEYR1824,16
+56852,2017,IL,Illinois,BRFSS,Obesity / Weight Status,13.6,331,18 - 24,AGEYR1824,17
+56172,2017,IN,Indiana,BRFSS,Obesity / Weight Status,20.5,630,18 - 24,AGEYR1824,18
+55578,2017,IA,Iowa,BRFSS,Obesity / Weight Status,22.6,473,18 - 24,AGEYR1824,19
+47096,2017,KS,Kansas,BRFSS,Obesity / Weight Status,21.9,1,329,18 - 24,AGEYR1824,20
+45491,2017,KY,Kentucky,BRFSS,Obesity / Weight Status,20.3,552,18 - 24,AGEYR1824,21
+46266,2017,LA,Louisiana,BRFSS,Obesity / Weight Status,21,295,18 - 24,AGEYR1824,22
+49286,2017,ME,Maine,BRFSS,Obesity / Weight Status,12.9,328,18 - 24,AGEYR1824,23
+53551,2017,MD,Maryland,BRFSS,Obesity / Weight Status,18.4,437,18 - 24,AGEYR1824,24
+45080,2017,MA,Massachusetts,BRFSS,Obesity / Weight Status,9.5,400,18 - 24,AGEYR1824,25
+57980,2017,MI,Michigan,BRFSS,Obesity / Weight Status,18.1,757,18 - 24,AGEYR1824,26
+46235,2017,MN,Minnesota,BRFSS,Obesity / Weight Status,15.2,1,019,18 - 24,AGEYR1824,27
+46394,2017,MS,Mississippi,BRFSS,Obesity / Weight Status,24.2,206,18 - 24,AGEYR1824,28
+55966,2017,MO,Missouri,BRFSS,Obesity / Weight Status,19.4,459,18 - 24,AGEYR1824,29
+55660,2017,MT,Montana,BRFSS,Obesity / Weight Status,14.2,327,18 - 24,AGEYR1824,30
+47889,2017,NE,Nebraska,BRFSS,Obesity / Weight Status,18,912,18 - 24,AGEYR1824,31
+54303,2017,NV,Nevada,BRFSS,Obesity / Weight Status,17.4,205,18 - 24,AGEYR1824,32
+52535,2017,NH,New Hampshire,BRFSS,Obesity / Weight Status,17.1,167,18 - 24,AGEYR1824,33
+48489,2017,NJ,New Jersey,BRFSS,Obesity / Weight Status,15.3,440,18 - 24,AGEYR1824,34
+55521,2017,NM,New Mexico,BRFSS,Obesity / Weight Status,17.1,305,18 - 24,AGEYR1824,35
+51511,2017,NY,New York,BRFSS,Obesity / Weight Status,12.3,752,18 - 24,AGEYR1824,36
+50838,2017,NC,North Carolina,BRFSS,Obesity / Weight Status,15.6,339,18 - 24,AGEYR1824,37
+44168,2017,ND,North Dakota,BRFSS,Obesity / Weight Status,21.5,356,18 - 24,AGEYR1824,38
+58605,2017,OH,Ohio,BRFSS,Obesity / Weight Status,18.9,553,18 - 24,AGEYR1824,39
+54469,2017,OK,Oklahoma,BRFSS,Obesity / Weight Status,28.2,303,18 - 24,AGEYR1824,40
+56855,2017,OR,Oregon,BRFSS,Obesity / Weight Status,17.9,315,18 - 24,AGEYR1824,41
+53401,2017,PA,Pennsylvania,BRFSS,Obesity / Weight Status,15.9,483,18 - 24,AGEYR1824,42
+47919,2017,RI,Rhode Island,BRFSS,Obesity / Weight Status,15.8,223,18 - 24,AGEYR1824,44
+48486,2017,SC,South Carolina,BRFSS,Obesity / Weight Status,22.3,411,18 - 24,AGEYR1824,45
+53912,2017,SD,South Dakota,BRFSS,Obesity / Weight Status,19.3,331,18 - 24,AGEYR1824,46
+49050,2017,TN,Tennessee,BRFSS,Obesity / Weight Status,15.6,301,18 - 24,AGEYR1824,47
+56696,2017,TX,Texas,BRFSS,Obesity / Weight Status,16.4,616,18 - 24,AGEYR1824,48
+52196,2017,UT,Utah,BRFSS,Obesity / Weight Status,13.3,896,18 - 24,AGEYR1824,49
+54519,2017,VT,Vermont,BRFSS,Obesity / Weight Status,14.3,280,18 - 24,AGEYR1824,50
+55068,2017,VA,Virginia,BRFSS,Obesity / Weight Status,17.7,459,18 - 24,AGEYR1824,51
+47303,2017,WA,Washington,BRFSS,Obesity / Weight Status,17.3,703,18 - 24,AGEYR1824,53
+44470,2017,WV,West Virginia,BRFSS,Obesity / Weight Status,24.5,199,18 - 24,AGEYR1824,54
+49261,2017,WI,Wisconsin,BRFSS,Obesity / Weight Status,22.5,332,18 - 24,AGEYR1824,55
+58250,2017,WY,Wyoming,BRFSS,Obesity / Weight Status,13,206,18 - 24,AGEYR1824,56
+48820,2017,GU,Guam,BRFSS,Obesity / Weight Status,14.5,155,18 - 24,AGEYR1824,66
+45906,2017,PR,Puerto Rico,BRFSS,Obesity / Weight Status,14.4,314,18 - 24,AGEYR1824,72
+49879,2017,VI,Virgin Islands,BRFSS,Obesity / Weight Status,~,~,18 - 24,AGEYR1824,78

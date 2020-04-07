@@ -1,56 +1,56 @@
-﻿"ID","Description","LocationAbbr","LocationDesc","DataSource","Topic","Data_Value","Sample_Size","Stratification1","StratificationId1","LocationDisplayOrder"
-"61107","2018","US","National","BRFSS","Obesity / Weight Status","35.6","52,704","$15,000 - $24,999","INC1525","0"
-"61187","2018","AL","Alabama","BRFSS","Obesity / Weight Status","38.4","937","$15,000 - $24,999","INC1525","1"
-"61763","2018","AK","Alaska","BRFSS","Obesity / Weight Status","25.2","292","$15,000 - $24,999","INC1525","2"
-"61790","2018","AZ","Arizona","BRFSS","Obesity / Weight Status","35.1","1,141","$15,000 - $24,999","INC1525","4"
-"61817","2018","AR","Arkansas","BRFSS","Obesity / Weight Status","37.3","903","$15,000 - $24,999","INC1525","5"
-"61844","2018","CA","California","BRFSS","Obesity / Weight Status","32","1,223","$15,000 - $24,999","INC1525","6"
-"61591","2018","CO","Colorado","BRFSS","Obesity / Weight Status","28.4","892","$15,000 - $24,999","INC1525","8"
-"61618","2018","CT","Connecticut","BRFSS","Obesity / Weight Status","29.9","963","$15,000 - $24,999","INC1525","9"
-"61645","2018","DE","Delaware","BRFSS","Obesity / Weight Status","37.4","688","$15,000 - $24,999","INC1525","10"
-"61856","2018","DC","District of Columbia","BRFSS","Obesity / Weight Status","36.1","427","$15,000 - $24,999","INC1525","11"
-"61883","2018","FL","Florida","BRFSS","Obesity / Weight Status","36.1","2,422","$15,000 - $24,999","INC1525","12"
-"61910","2018","GA","Georgia","BRFSS","Obesity / Weight Status","35.6","1,228","$15,000 - $24,999","INC1525","13"
-"61937","2018","HI","Hawaii","BRFSS","Obesity / Weight Status","28.7","1,022","$15,000 - $24,999","INC1525","15"
-"61224","2018","ID","Idaho","BRFSS","Obesity / Weight Status","32.9","500","$15,000 - $24,999","INC1525","16"
-"61251","2018","IL","Illinois","BRFSS","Obesity / Weight Status","39.6","693","$15,000 - $24,999","INC1525","17"
-"61278","2018","IN","Indiana","BRFSS","Obesity / Weight Status","37.4","960","$15,000 - $24,999","INC1525","18"
-"61950","2018","IA","Iowa","BRFSS","Obesity / Weight Status","41","1,056","$15,000 - $24,999","INC1525","19"
-"61977","2018","KS","Kansas","BRFSS","Obesity / Weight Status","38.3","1,213","$15,000 - $24,999","INC1525","20"
-"62004","2018","KY","Kentucky","BRFSS","Obesity / Weight Status","41.3","1,074","$15,000 - $24,999","INC1525","21"
-"62214","2018","LA","Louisiana","BRFSS","Obesity / Weight Status","41.5","734","$15,000 - $24,999","INC1525","22"
-"62241","2018","ME","Maine","BRFSS","Obesity / Weight Status","35.4","1,363","$15,000 - $24,999","INC1525","23"
-"62268","2018","MD","Maryland","BRFSS","Obesity / Weight Status","35.2","1,559","$15,000 - $24,999","INC1525","24"
-"62295","2018","MA","Massachusetts","BRFSS","Obesity / Weight Status","32.5","493","$15,000 - $24,999","INC1525","25"
-"62463","2018","MI","Michigan","BRFSS","Obesity / Weight Status","40.1","1,197","$15,000 - $24,999","INC1525","26"
-"62490","2018","MN","Minnesota","BRFSS","Obesity / Weight Status","32.6","1,681","$15,000 - $24,999","INC1525","27"
-"62517","2018","MS","Mississippi","BRFSS","Obesity / Weight Status","44","1,099","$15,000 - $24,999","INC1525","28"
-"62924","2018","MO","Missouri","BRFSS","Obesity / Weight Status","36.7","827","$15,000 - $24,999","INC1525","29"
-"62951","2018","MT","Montana","BRFSS","Obesity / Weight Status","26.5","689","$15,000 - $24,999","INC1525","30"
-"62978","2018","NE","Nebraska","BRFSS","Obesity / Weight Status","38.8","1,911","$15,000 - $24,999","INC1525","31"
-"63005","2018","NV","Nevada","BRFSS","Obesity / Weight Status","27.9","377","$15,000 - $24,999","INC1525","32"
-"62556","2018","NH","New Hampshire","BRFSS","Obesity / Weight Status","39","604","$15,000 - $24,999","INC1525","33"
-"62583","2018","NJ","New Jersey","BRFSS","Obesity / Weight Status","31.8","314","$15,000 - $24,999","INC1525","34"
-"62610","2018","NM","New Mexico","BRFSS","Obesity / Weight Status","38","1,160","$15,000 - $24,999","INC1525","35"
-"62116","2018","NY","New York","BRFSS","Obesity / Weight Status","30.7","4,506","$15,000 - $24,999","INC1525","36"
-"62143","2018","NC","North Carolina","BRFSS","Obesity / Weight Status","35","641","$15,000 - $24,999","INC1525","37"
-"62170","2018","ND","North Dakota","BRFSS","Obesity / Weight Status","38.1","596","$15,000 - $24,999","INC1525","38"
-"62197","2018","OH","Ohio","BRFSS","Obesity / Weight Status","38.2","1,965","$15,000 - $24,999","INC1525","39"
-"62320","2018","OK","Oklahoma","BRFSS","Obesity / Weight Status","38.3","724","$15,000 - $24,999","INC1525","40"
-"62347","2018","OR","Oregon","BRFSS","Obesity / Weight Status","33.7","731","$15,000 - $24,999","INC1525","41"
-"62374","2018","PA","Pennsylvania","BRFSS","Obesity / Weight Status","32.1","722","$15,000 - $24,999","INC1525","42"
-"62636","2018","RI","Rhode Island","BRFSS","Obesity / Weight Status","32","661","$15,000 - $24,999","INC1525","44"
-"62663","2018","SC","South Carolina","BRFSS","Obesity / Weight Status","39.2","1,561","$15,000 - $24,999","INC1525","45"
-"62690","2018","SD","South Dakota","BRFSS","Obesity / Weight Status","34.5","738","$15,000 - $24,999","INC1525","46"
-"62717","2018","TN","Tennessee","BRFSS","Obesity / Weight Status","38.1","772","$15,000 - $24,999","INC1525","47"
-"62744","2018","TX","Texas","BRFSS","Obesity / Weight Status","38.1","1,415","$15,000 - $24,999","INC1525","48"
-"62771","2018","UT","Utah","BRFSS","Obesity / Weight Status","29.7","897","$15,000 - $24,999","INC1525","49"
-"62798","2018","VT","Vermont","BRFSS","Obesity / Weight Status","31.6","724","$15,000 - $24,999","INC1525","50"
-"62825","2018","VA","Virginia","BRFSS","Obesity / Weight Status","38.6","1,138","$15,000 - $24,999","INC1525","51"
-"62852","2018","WA","Washington","BRFSS","Obesity / Weight Status","30.6","1,293","$15,000 - $24,999","INC1525","53"
-"62879","2018","WV","West Virginia","BRFSS","Obesity / Weight Status","42.5","794","$15,000 - $24,999","INC1525","54"
-"62906","2018","WI","Wisconsin","BRFSS","Obesity / Weight Status","35.2","594","$15,000 - $24,999","INC1525","55"
-"63029","2018","WY","Wyoming","BRFSS","Obesity / Weight Status","30.9","590","$15,000 - $24,999","INC1525","56"
-"63056","2018","GU","Guam","BRFSS","Obesity / Weight Status","31.5","239","$15,000 - $24,999","INC1525","66"
-"63083","2018","PR","Puerto Rico","BRFSS","Obesity / Weight Status","33.2","1,244","$15,000 - $24,999","INC1525","72"
-"62397","2018","VI","Virgin Islands","BRFSS","Obesity / Weight Status","~","~","$15,000 - $24,999","INC1525","78"
+﻿ID,Description,LocationAbbr,LocationDesc,DataSource,Topic,Data_Value,Sample_Size,Stratification1,StratificationId1,LocationDisplayOrder
+61107,2018,US,National,BRFSS,Obesity / Weight Status,35.6,52,704,$15,000 - $24,999,INC1525,0
+61187,2018,AL,Alabama,BRFSS,Obesity / Weight Status,38.4,937,$15,000 - $24,999,INC1525,1
+61763,2018,AK,Alaska,BRFSS,Obesity / Weight Status,25.2,292,$15,000 - $24,999,INC1525,2
+61790,2018,AZ,Arizona,BRFSS,Obesity / Weight Status,35.1,1,141,$15,000 - $24,999,INC1525,4
+61817,2018,AR,Arkansas,BRFSS,Obesity / Weight Status,37.3,903,$15,000 - $24,999,INC1525,5
+61844,2018,CA,California,BRFSS,Obesity / Weight Status,32,1,223,$15,000 - $24,999,INC1525,6
+61591,2018,CO,Colorado,BRFSS,Obesity / Weight Status,28.4,892,$15,000 - $24,999,INC1525,8
+61618,2018,CT,Connecticut,BRFSS,Obesity / Weight Status,29.9,963,$15,000 - $24,999,INC1525,9
+61645,2018,DE,Delaware,BRFSS,Obesity / Weight Status,37.4,688,$15,000 - $24,999,INC1525,10
+61856,2018,DC,District of Columbia,BRFSS,Obesity / Weight Status,36.1,427,$15,000 - $24,999,INC1525,11
+61883,2018,FL,Florida,BRFSS,Obesity / Weight Status,36.1,2,422,$15,000 - $24,999,INC1525,12
+61910,2018,GA,Georgia,BRFSS,Obesity / Weight Status,35.6,1,228,$15,000 - $24,999,INC1525,13
+61937,2018,HI,Hawaii,BRFSS,Obesity / Weight Status,28.7,1,022,$15,000 - $24,999,INC1525,15
+61224,2018,ID,Idaho,BRFSS,Obesity / Weight Status,32.9,500,$15,000 - $24,999,INC1525,16
+61251,2018,IL,Illinois,BRFSS,Obesity / Weight Status,39.6,693,$15,000 - $24,999,INC1525,17
+61278,2018,IN,Indiana,BRFSS,Obesity / Weight Status,37.4,960,$15,000 - $24,999,INC1525,18
+61950,2018,IA,Iowa,BRFSS,Obesity / Weight Status,41,1,056,$15,000 - $24,999,INC1525,19
+61977,2018,KS,Kansas,BRFSS,Obesity / Weight Status,38.3,1,213,$15,000 - $24,999,INC1525,20
+62004,2018,KY,Kentucky,BRFSS,Obesity / Weight Status,41.3,1,074,$15,000 - $24,999,INC1525,21
+62214,2018,LA,Louisiana,BRFSS,Obesity / Weight Status,41.5,734,$15,000 - $24,999,INC1525,22
+62241,2018,ME,Maine,BRFSS,Obesity / Weight Status,35.4,1,363,$15,000 - $24,999,INC1525,23
+62268,2018,MD,Maryland,BRFSS,Obesity / Weight Status,35.2,1,559,$15,000 - $24,999,INC1525,24
+62295,2018,MA,Massachusetts,BRFSS,Obesity / Weight Status,32.5,493,$15,000 - $24,999,INC1525,25
+62463,2018,MI,Michigan,BRFSS,Obesity / Weight Status,40.1,1,197,$15,000 - $24,999,INC1525,26
+62490,2018,MN,Minnesota,BRFSS,Obesity / Weight Status,32.6,1,681,$15,000 - $24,999,INC1525,27
+62517,2018,MS,Mississippi,BRFSS,Obesity / Weight Status,44,1,099,$15,000 - $24,999,INC1525,28
+62924,2018,MO,Missouri,BRFSS,Obesity / Weight Status,36.7,827,$15,000 - $24,999,INC1525,29
+62951,2018,MT,Montana,BRFSS,Obesity / Weight Status,26.5,689,$15,000 - $24,999,INC1525,30
+62978,2018,NE,Nebraska,BRFSS,Obesity / Weight Status,38.8,1,911,$15,000 - $24,999,INC1525,31
+63005,2018,NV,Nevada,BRFSS,Obesity / Weight Status,27.9,377,$15,000 - $24,999,INC1525,32
+62556,2018,NH,New Hampshire,BRFSS,Obesity / Weight Status,39,604,$15,000 - $24,999,INC1525,33
+62583,2018,NJ,New Jersey,BRFSS,Obesity / Weight Status,31.8,314,$15,000 - $24,999,INC1525,34
+62610,2018,NM,New Mexico,BRFSS,Obesity / Weight Status,38,1,160,$15,000 - $24,999,INC1525,35
+62116,2018,NY,New York,BRFSS,Obesity / Weight Status,30.7,4,506,$15,000 - $24,999,INC1525,36
+62143,2018,NC,North Carolina,BRFSS,Obesity / Weight Status,35,641,$15,000 - $24,999,INC1525,37
+62170,2018,ND,North Dakota,BRFSS,Obesity / Weight Status,38.1,596,$15,000 - $24,999,INC1525,38
+62197,2018,OH,Ohio,BRFSS,Obesity / Weight Status,38.2,1,965,$15,000 - $24,999,INC1525,39
+62320,2018,OK,Oklahoma,BRFSS,Obesity / Weight Status,38.3,724,$15,000 - $24,999,INC1525,40
+62347,2018,OR,Oregon,BRFSS,Obesity / Weight Status,33.7,731,$15,000 - $24,999,INC1525,41
+62374,2018,PA,Pennsylvania,BRFSS,Obesity / Weight Status,32.1,722,$15,000 - $24,999,INC1525,42
+62636,2018,RI,Rhode Island,BRFSS,Obesity / Weight Status,32,661,$15,000 - $24,999,INC1525,44
+62663,2018,SC,South Carolina,BRFSS,Obesity / Weight Status,39.2,1,561,$15,000 - $24,999,INC1525,45
+62690,2018,SD,South Dakota,BRFSS,Obesity / Weight Status,34.5,738,$15,000 - $24,999,INC1525,46
+62717,2018,TN,Tennessee,BRFSS,Obesity / Weight Status,38.1,772,$15,000 - $24,999,INC1525,47
+62744,2018,TX,Texas,BRFSS,Obesity / Weight Status,38.1,1,415,$15,000 - $24,999,INC1525,48
+62771,2018,UT,Utah,BRFSS,Obesity / Weight Status,29.7,897,$15,000 - $24,999,INC1525,49
+62798,2018,VT,Vermont,BRFSS,Obesity / Weight Status,31.6,724,$15,000 - $24,999,INC1525,50
+62825,2018,VA,Virginia,BRFSS,Obesity / Weight Status,38.6,1,138,$15,000 - $24,999,INC1525,51
+62852,2018,WA,Washington,BRFSS,Obesity / Weight Status,30.6,1,293,$15,000 - $24,999,INC1525,53
+62879,2018,WV,West Virginia,BRFSS,Obesity / Weight Status,42.5,794,$15,000 - $24,999,INC1525,54
+62906,2018,WI,Wisconsin,BRFSS,Obesity / Weight Status,35.2,594,$15,000 - $24,999,INC1525,55
+63029,2018,WY,Wyoming,BRFSS,Obesity / Weight Status,30.9,590,$15,000 - $24,999,INC1525,56
+63056,2018,GU,Guam,BRFSS,Obesity / Weight Status,31.5,239,$15,000 - $24,999,INC1525,66
+63083,2018,PR,Puerto Rico,BRFSS,Obesity / Weight Status,33.2,1,244,$15,000 - $24,999,INC1525,72
+62397,2018,VI,Virgin Islands,BRFSS,Obesity / Weight Status,~,~,$15,000 - $24,999,INC1525,78

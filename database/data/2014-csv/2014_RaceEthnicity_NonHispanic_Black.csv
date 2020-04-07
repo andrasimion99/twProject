@@ -1,55 +1,55 @@
-﻿"ID","Description","LocationAbbr","LocationDesc","DataSource","Topic","Data_Value","Sample_Size","Stratification1","StratificationId1","LocationDisplayOrder"
-"454","2014","US","National","BRFSS","Obesity / Weight Status","38.9","32,434","Non-Hispanic Black","RACEBLK","0"
-"12193","2014","AL","Alabama","BRFSS","Obesity / Weight Status","41.9","2,029","Non-Hispanic Black","RACEBLK","1"
-"8151","2014","AK","Alaska","BRFSS","Obesity / Weight Status","42.3","54","Non-Hispanic Black","RACEBLK","2"
-"9976","2014","AZ","Arizona","BRFSS","Obesity / Weight Status","36.7","381","Non-Hispanic Black","RACEBLK","4"
-"25527","2014","AR","Arkansas","BRFSS","Obesity / Weight Status","45.1","723","Non-Hispanic Black","RACEBLK","5"
-"20105","2014","CA","California","BRFSS","Obesity / Weight Status","32.7","417","Non-Hispanic Black","RACEBLK","6"
-"14225","2014","CO","Colorado","BRFSS","Obesity / Weight Status","30.5","282","Non-Hispanic Black","RACEBLK","8"
-"28594","2014","CT","Connecticut","BRFSS","Obesity / Weight Status","37.3","521","Non-Hispanic Black","RACEBLK","9"
-"9303","2014","DE","Delaware","BRFSS","Obesity / Weight Status","37.7","565","Non-Hispanic Black","RACEBLK","10"
-"4812","2014","DC","District of Columbia","BRFSS","Obesity / Weight Status","33.9","1,734","Non-Hispanic Black","RACEBLK","11"
-"34974","2014","FL","Florida","BRFSS","Obesity / Weight Status","36.3","804","Non-Hispanic Black","RACEBLK","12"
-"19196","2014","GA","Georgia","BRFSS","Obesity / Weight Status","37.8","1,421","Non-Hispanic Black","RACEBLK","13"
-"29110","2014","HI","Hawaii","BRFSS","Obesity / Weight Status","34.3","61","Non-Hispanic Black","RACEBLK","15"
-"46389","2014","ID","Idaho","BRFSS","Obesity / Weight Status","~","~","Non-Hispanic Black","RACEBLK","16"
-"22016","2014","IL","Illinois","BRFSS","Obesity / Weight Status","43.8","491","Non-Hispanic Black","RACEBLK","17"
-"17565","2014","IN","Indiana","BRFSS","Obesity / Weight Status","42.1","581","Non-Hispanic Black","RACEBLK","18"
-"36041","2014","IA","Iowa","BRFSS","Obesity / Weight Status","31.4","110","Non-Hispanic Black","RACEBLK","19"
-"10977","2014","KS","Kansas","BRFSS","Obesity / Weight Status","42.1","481","Non-Hispanic Black","RACEBLK","20"
-"29945","2014","KY","Kentucky","BRFSS","Obesity / Weight Status","42.9","950","Non-Hispanic Black","RACEBLK","21"
-"5914","2014","LA","Louisiana","BRFSS","Obesity / Weight Status","43.4","1,714","Non-Hispanic Black","RACEBLK","22"
-"49042","2014","ME","Maine","BRFSS","Obesity / Weight Status","~","~","Non-Hispanic Black","RACEBLK","23"
-"15860","2014","MD","Maryland","BRFSS","Obesity / Weight Status","39.1","2,327","Non-Hispanic Black","RACEBLK","24"
-"12816","2014","MA","Massachusetts","BRFSS","Obesity / Weight Status","34.8","695","Non-Hispanic Black","RACEBLK","25"
-"15346","2014","MI","Michigan","BRFSS","Obesity / Weight Status","33.6","787","Non-Hispanic Black","RACEBLK","26"
-"16242","2014","MN","Minnesota","BRFSS","Obesity / Weight Status","32.7","398","Non-Hispanic Black","RACEBLK","27"
-"36167","2014","MS","Mississippi","BRFSS","Obesity / Weight Status","43.4","1,407","Non-Hispanic Black","RACEBLK","28"
-"14564","2014","MO","Missouri","BRFSS","Obesity / Weight Status","39.5","857","Non-Hispanic Black","RACEBLK","29"
-"54773","2014","MT","Montana","BRFSS","Obesity / Weight Status","~","~","Non-Hispanic Black","RACEBLK","30"
-"17198","2014","NE","Nebraska","BRFSS","Obesity / Weight Status","37.3","367","Non-Hispanic Black","RACEBLK","31"
-"30833","2014","NV","Nevada","BRFSS","Obesity / Weight Status","38.1","155","Non-Hispanic Black","RACEBLK","32"
-"53517","2014","NH","New Hampshire","BRFSS","Obesity / Weight Status","~","~","Non-Hispanic Black","RACEBLK","33"
-"4627","2014","NJ","New Jersey","BRFSS","Obesity / Weight Status","38.4","1,414","Non-Hispanic Black","RACEBLK","34"
-"34836","2014","NM","New Mexico","BRFSS","Obesity / Weight Status","37.7","101","Non-Hispanic Black","RACEBLK","35"
-"31498","2014","NY","New York","BRFSS","Obesity / Weight Status","31.7","804","Non-Hispanic Black","RACEBLK","36"
-"7646","2014","NC","North Carolina","BRFSS","Obesity / Weight Status","39.1","1,247","Non-Hispanic Black","RACEBLK","37"
-"46886","2014","ND","North Dakota","BRFSS","Obesity / Weight Status","~","~","Non-Hispanic Black","RACEBLK","38"
-"18271","2014","OH","Ohio","BRFSS","Obesity / Weight Status","41.9","640","Non-Hispanic Black","RACEBLK","39"
-"32087","2014","OK","Oklahoma","BRFSS","Obesity / Weight Status","33.4","448","Non-Hispanic Black","RACEBLK","40"
-"46892","2014","OR","Oregon","BRFSS","Obesity / Weight Status","~","~","Non-Hispanic Black","RACEBLK","41"
-"36866","2014","PA","Pennsylvania","BRFSS","Obesity / Weight Status","37.1","806","Non-Hispanic Black","RACEBLK","42"
-"36470","2014","RI","Rhode Island","BRFSS","Obesity / Weight Status","34.7","214","Non-Hispanic Black","RACEBLK","44"
-"12042","2014","SC","South Carolina","BRFSS","Obesity / Weight Status","42.7","2,575","Non-Hispanic Black","RACEBLK","45"
-"45426","2014","SD","South Dakota","BRFSS","Obesity / Weight Status","~","~","Non-Hispanic Black","RACEBLK","46"
-"8860","2014","TN","Tennessee","BRFSS","Obesity / Weight Status","40.7","584","Non-Hispanic Black","RACEBLK","47"
-"29002","2014","TX","Texas","BRFSS","Obesity / Weight Status","46.5","1,026","Non-Hispanic Black","RACEBLK","48"
-"6401","2014","UT","Utah","BRFSS","Obesity / Weight Status","29.4","61","Non-Hispanic Black","RACEBLK","49"
-"53875","2014","VT","Vermont","BRFSS","Obesity / Weight Status","~","~","Non-Hispanic Black","RACEBLK","50"
-"10491","2014","VA","Virginia","BRFSS","Obesity / Weight Status","38.9","1,395","Non-Hispanic Black","RACEBLK","51"
-"19399","2014","WA","Washington","BRFSS","Obesity / Weight Status","33.5","163","Non-Hispanic Black","RACEBLK","53"
-"16940","2014","WV","West Virginia","BRFSS","Obesity / Weight Status","46","128","Non-Hispanic Black","RACEBLK","54"
-"8212","2014","WI","Wisconsin","BRFSS","Obesity / Weight Status","44.5","262","Non-Hispanic Black","RACEBLK","55"
-"51713","2014","WY","Wyoming","BRFSS","Obesity / Weight Status","~","~","Non-Hispanic Black","RACEBLK","56"
-"50776","2014","GU","Guam","BRFSS","Obesity / Weight Status","~","~","Non-Hispanic Black","RACEBLK","66"
-"44667","2014","PR","Puerto Rico","BRFSS","Obesity / Weight Status","~","~","Non-Hispanic Black","RACEBLK","72"
+﻿ID,Description,LocationAbbr,LocationDesc,DataSource,Topic,Data_Value,Sample_Size,Stratification1,StratificationId1,LocationDisplayOrder
+454,2014,US,National,BRFSS,Obesity / Weight Status,38.9,32,434,Non-Hispanic Black,RACEBLK,0
+12193,2014,AL,Alabama,BRFSS,Obesity / Weight Status,41.9,2,029,Non-Hispanic Black,RACEBLK,1
+8151,2014,AK,Alaska,BRFSS,Obesity / Weight Status,42.3,54,Non-Hispanic Black,RACEBLK,2
+9976,2014,AZ,Arizona,BRFSS,Obesity / Weight Status,36.7,381,Non-Hispanic Black,RACEBLK,4
+25527,2014,AR,Arkansas,BRFSS,Obesity / Weight Status,45.1,723,Non-Hispanic Black,RACEBLK,5
+20105,2014,CA,California,BRFSS,Obesity / Weight Status,32.7,417,Non-Hispanic Black,RACEBLK,6
+14225,2014,CO,Colorado,BRFSS,Obesity / Weight Status,30.5,282,Non-Hispanic Black,RACEBLK,8
+28594,2014,CT,Connecticut,BRFSS,Obesity / Weight Status,37.3,521,Non-Hispanic Black,RACEBLK,9
+9303,2014,DE,Delaware,BRFSS,Obesity / Weight Status,37.7,565,Non-Hispanic Black,RACEBLK,10
+4812,2014,DC,District of Columbia,BRFSS,Obesity / Weight Status,33.9,1,734,Non-Hispanic Black,RACEBLK,11
+34974,2014,FL,Florida,BRFSS,Obesity / Weight Status,36.3,804,Non-Hispanic Black,RACEBLK,12
+19196,2014,GA,Georgia,BRFSS,Obesity / Weight Status,37.8,1,421,Non-Hispanic Black,RACEBLK,13
+29110,2014,HI,Hawaii,BRFSS,Obesity / Weight Status,34.3,61,Non-Hispanic Black,RACEBLK,15
+46389,2014,ID,Idaho,BRFSS,Obesity / Weight Status,~,~,Non-Hispanic Black,RACEBLK,16
+22016,2014,IL,Illinois,BRFSS,Obesity / Weight Status,43.8,491,Non-Hispanic Black,RACEBLK,17
+17565,2014,IN,Indiana,BRFSS,Obesity / Weight Status,42.1,581,Non-Hispanic Black,RACEBLK,18
+36041,2014,IA,Iowa,BRFSS,Obesity / Weight Status,31.4,110,Non-Hispanic Black,RACEBLK,19
+10977,2014,KS,Kansas,BRFSS,Obesity / Weight Status,42.1,481,Non-Hispanic Black,RACEBLK,20
+29945,2014,KY,Kentucky,BRFSS,Obesity / Weight Status,42.9,950,Non-Hispanic Black,RACEBLK,21
+5914,2014,LA,Louisiana,BRFSS,Obesity / Weight Status,43.4,1,714,Non-Hispanic Black,RACEBLK,22
+49042,2014,ME,Maine,BRFSS,Obesity / Weight Status,~,~,Non-Hispanic Black,RACEBLK,23
+15860,2014,MD,Maryland,BRFSS,Obesity / Weight Status,39.1,2,327,Non-Hispanic Black,RACEBLK,24
+12816,2014,MA,Massachusetts,BRFSS,Obesity / Weight Status,34.8,695,Non-Hispanic Black,RACEBLK,25
+15346,2014,MI,Michigan,BRFSS,Obesity / Weight Status,33.6,787,Non-Hispanic Black,RACEBLK,26
+16242,2014,MN,Minnesota,BRFSS,Obesity / Weight Status,32.7,398,Non-Hispanic Black,RACEBLK,27
+36167,2014,MS,Mississippi,BRFSS,Obesity / Weight Status,43.4,1,407,Non-Hispanic Black,RACEBLK,28
+14564,2014,MO,Missouri,BRFSS,Obesity / Weight Status,39.5,857,Non-Hispanic Black,RACEBLK,29
+54773,2014,MT,Montana,BRFSS,Obesity / Weight Status,~,~,Non-Hispanic Black,RACEBLK,30
+17198,2014,NE,Nebraska,BRFSS,Obesity / Weight Status,37.3,367,Non-Hispanic Black,RACEBLK,31
+30833,2014,NV,Nevada,BRFSS,Obesity / Weight Status,38.1,155,Non-Hispanic Black,RACEBLK,32
+53517,2014,NH,New Hampshire,BRFSS,Obesity / Weight Status,~,~,Non-Hispanic Black,RACEBLK,33
+4627,2014,NJ,New Jersey,BRFSS,Obesity / Weight Status,38.4,1,414,Non-Hispanic Black,RACEBLK,34
+34836,2014,NM,New Mexico,BRFSS,Obesity / Weight Status,37.7,101,Non-Hispanic Black,RACEBLK,35
+31498,2014,NY,New York,BRFSS,Obesity / Weight Status,31.7,804,Non-Hispanic Black,RACEBLK,36
+7646,2014,NC,North Carolina,BRFSS,Obesity / Weight Status,39.1,1,247,Non-Hispanic Black,RACEBLK,37
+46886,2014,ND,North Dakota,BRFSS,Obesity / Weight Status,~,~,Non-Hispanic Black,RACEBLK,38
+18271,2014,OH,Ohio,BRFSS,Obesity / Weight Status,41.9,640,Non-Hispanic Black,RACEBLK,39
+32087,2014,OK,Oklahoma,BRFSS,Obesity / Weight Status,33.4,448,Non-Hispanic Black,RACEBLK,40
+46892,2014,OR,Oregon,BRFSS,Obesity / Weight Status,~,~,Non-Hispanic Black,RACEBLK,41
+36866,2014,PA,Pennsylvania,BRFSS,Obesity / Weight Status,37.1,806,Non-Hispanic Black,RACEBLK,42
+36470,2014,RI,Rhode Island,BRFSS,Obesity / Weight Status,34.7,214,Non-Hispanic Black,RACEBLK,44
+12042,2014,SC,South Carolina,BRFSS,Obesity / Weight Status,42.7,2,575,Non-Hispanic Black,RACEBLK,45
+45426,2014,SD,South Dakota,BRFSS,Obesity / Weight Status,~,~,Non-Hispanic Black,RACEBLK,46
+8860,2014,TN,Tennessee,BRFSS,Obesity / Weight Status,40.7,584,Non-Hispanic Black,RACEBLK,47
+29002,2014,TX,Texas,BRFSS,Obesity / Weight Status,46.5,1,026,Non-Hispanic Black,RACEBLK,48
+6401,2014,UT,Utah,BRFSS,Obesity / Weight Status,29.4,61,Non-Hispanic Black,RACEBLK,49
+53875,2014,VT,Vermont,BRFSS,Obesity / Weight Status,~,~,Non-Hispanic Black,RACEBLK,50
+10491,2014,VA,Virginia,BRFSS,Obesity / Weight Status,38.9,1,395,Non-Hispanic Black,RACEBLK,51
+19399,2014,WA,Washington,BRFSS,Obesity / Weight Status,33.5,163,Non-Hispanic Black,RACEBLK,53
+16940,2014,WV,West Virginia,BRFSS,Obesity / Weight Status,46,128,Non-Hispanic Black,RACEBLK,54
+8212,2014,WI,Wisconsin,BRFSS,Obesity / Weight Status,44.5,262,Non-Hispanic Black,RACEBLK,55
+51713,2014,WY,Wyoming,BRFSS,Obesity / Weight Status,~,~,Non-Hispanic Black,RACEBLK,56
+50776,2014,GU,Guam,BRFSS,Obesity / Weight Status,~,~,Non-Hispanic Black,RACEBLK,66
+44667,2014,PR,Puerto Rico,BRFSS,Obesity / Weight Status,~,~,Non-Hispanic Black,RACEBLK,72

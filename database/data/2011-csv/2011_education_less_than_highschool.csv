@@ -1,53 +1,53 @@
-﻿"ID","Description","LocationAbbr","LocationDesc","DataSource","Topic","Data_Value","Sample_Size","Stratification1","StratificationId1","LocationDisplayOrder"
-"1113","2011","US","National","BRFSS","Obesity / Weight Status","32.4","41,022","Less than high school","EDUHS","0"
-"22224","2011","AL","Alabama","BRFSS","Obesity / Weight Status","33.6","1,153","Less than high school","EDUHS","1"
-"5192","2011","AK","Alaska","BRFSS","Obesity / Weight Status","28.8","245","Less than high school","EDUHS","2"
-"20698","2011","AZ","Arizona","BRFSS","Obesity / Weight Status","36.2","536","Less than high school","EDUHS","4"
-"7260","2011","AR","Arkansas","BRFSS","Obesity / Weight Status","31.1","628","Less than high school","EDUHS","5"
-"6908","2011","CA","California","BRFSS","Obesity / Weight Status","32.9","1,870","Less than high school","EDUHS","6"
-"17749","2011","CO","Colorado","BRFSS","Obesity / Weight Status","25.7","744","Less than high school","EDUHS","8"
-"36971","2011","CT","Connecticut","BRFSS","Obesity / Weight Status","31.2","446","Less than high school","EDUHS","9"
-"8596","2011","DE","Delaware","BRFSS","Obesity / Weight Status","35.2","286","Less than high school","EDUHS","10"
-"32261","2011","DC","District of Columbia","BRFSS","Obesity / Weight Status","39.7","269","Less than high school","EDUHS","11"
-"24625","2011","FL","Florida","BRFSS","Obesity / Weight Status","32.7","1,152","Less than high school","EDUHS","12"
-"17770","2011","GA","Georgia","BRFSS","Obesity / Weight Status","34.1","1,062","Less than high school","EDUHS","13"
-"24222","2011","HI","Hawaii","BRFSS","Obesity / Weight Status","27.1","367","Less than high school","EDUHS","15"
-"23293","2011","ID","Idaho","BRFSS","Obesity / Weight Status","32.8","411","Less than high school","EDUHS","16"
-"3464","2011","IL","Illinois","BRFSS","Obesity / Weight Status","29","358","Less than high school","EDUHS","17"
-"38737","2011","IN","Indiana","BRFSS","Obesity / Weight Status","36.2","795","Less than high school","EDUHS","18"
-"36859","2011","IA","Iowa","BRFSS","Obesity / Weight Status","28.2","464","Less than high school","EDUHS","19"
-"19447","2011","KS","Kansas","BRFSS","Obesity / Weight Status","30.6","1,237","Less than high school","EDUHS","20"
-"11229","2011","KY","Kentucky","BRFSS","Obesity / Weight Status","34","1,528","Less than high school","EDUHS","21"
-"19297","2011","LA","Louisiana","BRFSS","Obesity / Weight Status","36.3","1,552","Less than high school","EDUHS","22"
-"29345","2011","ME","Maine","BRFSS","Obesity / Weight Status","32.2","755","Less than high school","EDUHS","23"
-"22878","2011","MD","Maryland","BRFSS","Obesity / Weight Status","35.2","606","Less than high school","EDUHS","24"
-"34423","2011","MA","Massachusetts","BRFSS","Obesity / Weight Status","31.1","1,623","Less than high school","EDUHS","25"
-"5653","2011","MI","Michigan","BRFSS","Obesity / Weight Status","33.8","715","Less than high school","EDUHS","26"
-"9690","2011","MN","Minnesota","BRFSS","Obesity / Weight Status","28.2","632","Less than high school","EDUHS","27"
-"21535","2011","MS","Mississippi","BRFSS","Obesity / Weight Status","35.4","1,380","Less than high school","EDUHS","28"
-"18204","2011","MO","Missouri","BRFSS","Obesity / Weight Status","33.8","651","Less than high school","EDUHS","29"
-"6327","2011","MT","Montana","BRFSS","Obesity / Weight Status","23.5","717","Less than high school","EDUHS","30"
-"10290","2011","NE","Nebraska","BRFSS","Obesity / Weight Status","28.1","1,738","Less than high school","EDUHS","31"
-"34243","2011","NV","Nevada","BRFSS","Obesity / Weight Status","27.6","341","Less than high school","EDUHS","32"
-"34531","2011","NH","New Hampshire","BRFSS","Obesity / Weight Status","28.4","349","Less than high school","EDUHS","33"
-"14061","2011","NJ","New Jersey","BRFSS","Obesity / Weight Status","29.4","1,075","Less than high school","EDUHS","34"
-"39166","2011","NM","New Mexico","BRFSS","Obesity / Weight Status","31.9","1,014","Less than high school","EDUHS","35"
-"7187","2011","NY","New York","BRFSS","Obesity / Weight Status","27.5","627","Less than high school","EDUHS","36"
-"35141","2011","NC","North Carolina","BRFSS","Obesity / Weight Status","31.9","1,326","Less than high school","EDUHS","37"
-"2877","2011","ND","North Dakota","BRFSS","Obesity / Weight Status","25.1","339","Less than high school","EDUHS","38"
-"14840","2011","OH","Ohio","BRFSS","Obesity / Weight Status","34.6","677","Less than high school","EDUHS","39"
-"29619","2011","OK","Oklahoma","BRFSS","Obesity / Weight Status","31","961","Less than high school","EDUHS","40"
-"36276","2011","OR","Oregon","BRFSS","Obesity / Weight Status","31.4","289","Less than high school","EDUHS","41"
-"33845","2011","PA","Pennsylvania","BRFSS","Obesity / Weight Status","30.8","871","Less than high school","EDUHS","42"
-"23105","2011","RI","Rhode Island","BRFSS","Obesity / Weight Status","28.7","529","Less than high school","EDUHS","44"
-"22812","2011","SC","South Carolina","BRFSS","Obesity / Weight Status","32.7","1,675","Less than high school","EDUHS","45"
-"20453","2011","SD","South Dakota","BRFSS","Obesity / Weight Status","30.7","647","Less than high school","EDUHS","46"
-"5594","2011","TN","Tennessee","BRFSS","Obesity / Weight Status","34.1","736","Less than high school","EDUHS","47"
-"38615","2011","TX","Texas","BRFSS","Obesity / Weight Status","33.6","1,859","Less than high school","EDUHS","48"
-"2879","2011","UT","Utah","BRFSS","Obesity / Weight Status","31.2","612","Less than high school","EDUHS","49"
-"7236","2011","VT","Vermont","BRFSS","Obesity / Weight Status","26.7","428","Less than high school","EDUHS","50"
-"37813","2011","VA","Virginia","BRFSS","Obesity / Weight Status","38.1","547","Less than high school","EDUHS","51"
-"11039","2011","WA","Washington","BRFSS","Obesity / Weight Status","28.2","751","Less than high school","EDUHS","53"
-"23999","2011","WV","West Virginia","BRFSS","Obesity / Weight Status","32.7","708","Less than high school","EDUHS","54"
-"11335","2011","WI","Wisconsin","BRFSS","Obesity / Weight Status","40.5","355","Less than high school","EDUHS","55"
-"15117","2011","WY","Wyoming","BRFSS","Obesity / Weight Status","28","386","Less than high school","EDUHS","56"
+﻿ID,Description,LocationAbbr,LocationDesc,DataSource,Topic,Data_Value,Sample_Size,Stratification1,StratificationId1,LocationDisplayOrder
+1113,2011,US,National,BRFSS,Obesity / Weight Status,32.4,41,022,Less than high school,EDUHS,0
+22224,2011,AL,Alabama,BRFSS,Obesity / Weight Status,33.6,1,153,Less than high school,EDUHS,1
+5192,2011,AK,Alaska,BRFSS,Obesity / Weight Status,28.8,245,Less than high school,EDUHS,2
+20698,2011,AZ,Arizona,BRFSS,Obesity / Weight Status,36.2,536,Less than high school,EDUHS,4
+7260,2011,AR,Arkansas,BRFSS,Obesity / Weight Status,31.1,628,Less than high school,EDUHS,5
+6908,2011,CA,California,BRFSS,Obesity / Weight Status,32.9,1,870,Less than high school,EDUHS,6
+17749,2011,CO,Colorado,BRFSS,Obesity / Weight Status,25.7,744,Less than high school,EDUHS,8
+36971,2011,CT,Connecticut,BRFSS,Obesity / Weight Status,31.2,446,Less than high school,EDUHS,9
+8596,2011,DE,Delaware,BRFSS,Obesity / Weight Status,35.2,286,Less than high school,EDUHS,10
+32261,2011,DC,District of Columbia,BRFSS,Obesity / Weight Status,39.7,269,Less than high school,EDUHS,11
+24625,2011,FL,Florida,BRFSS,Obesity / Weight Status,32.7,1,152,Less than high school,EDUHS,12
+17770,2011,GA,Georgia,BRFSS,Obesity / Weight Status,34.1,1,062,Less than high school,EDUHS,13
+24222,2011,HI,Hawaii,BRFSS,Obesity / Weight Status,27.1,367,Less than high school,EDUHS,15
+23293,2011,ID,Idaho,BRFSS,Obesity / Weight Status,32.8,411,Less than high school,EDUHS,16
+3464,2011,IL,Illinois,BRFSS,Obesity / Weight Status,29,358,Less than high school,EDUHS,17
+38737,2011,IN,Indiana,BRFSS,Obesity / Weight Status,36.2,795,Less than high school,EDUHS,18
+36859,2011,IA,Iowa,BRFSS,Obesity / Weight Status,28.2,464,Less than high school,EDUHS,19
+19447,2011,KS,Kansas,BRFSS,Obesity / Weight Status,30.6,1,237,Less than high school,EDUHS,20
+11229,2011,KY,Kentucky,BRFSS,Obesity / Weight Status,34,1,528,Less than high school,EDUHS,21
+19297,2011,LA,Louisiana,BRFSS,Obesity / Weight Status,36.3,1,552,Less than high school,EDUHS,22
+29345,2011,ME,Maine,BRFSS,Obesity / Weight Status,32.2,755,Less than high school,EDUHS,23
+22878,2011,MD,Maryland,BRFSS,Obesity / Weight Status,35.2,606,Less than high school,EDUHS,24
+34423,2011,MA,Massachusetts,BRFSS,Obesity / Weight Status,31.1,1,623,Less than high school,EDUHS,25
+5653,2011,MI,Michigan,BRFSS,Obesity / Weight Status,33.8,715,Less than high school,EDUHS,26
+9690,2011,MN,Minnesota,BRFSS,Obesity / Weight Status,28.2,632,Less than high school,EDUHS,27
+21535,2011,MS,Mississippi,BRFSS,Obesity / Weight Status,35.4,1,380,Less than high school,EDUHS,28
+18204,2011,MO,Missouri,BRFSS,Obesity / Weight Status,33.8,651,Less than high school,EDUHS,29
+6327,2011,MT,Montana,BRFSS,Obesity / Weight Status,23.5,717,Less than high school,EDUHS,30
+10290,2011,NE,Nebraska,BRFSS,Obesity / Weight Status,28.1,1,738,Less than high school,EDUHS,31
+34243,2011,NV,Nevada,BRFSS,Obesity / Weight Status,27.6,341,Less than high school,EDUHS,32
+34531,2011,NH,New Hampshire,BRFSS,Obesity / Weight Status,28.4,349,Less than high school,EDUHS,33
+14061,2011,NJ,New Jersey,BRFSS,Obesity / Weight Status,29.4,1,075,Less than high school,EDUHS,34
+39166,2011,NM,New Mexico,BRFSS,Obesity / Weight Status,31.9,1,014,Less than high school,EDUHS,35
+7187,2011,NY,New York,BRFSS,Obesity / Weight Status,27.5,627,Less than high school,EDUHS,36
+35141,2011,NC,North Carolina,BRFSS,Obesity / Weight Status,31.9,1,326,Less than high school,EDUHS,37
+2877,2011,ND,North Dakota,BRFSS,Obesity / Weight Status,25.1,339,Less than high school,EDUHS,38
+14840,2011,OH,Ohio,BRFSS,Obesity / Weight Status,34.6,677,Less than high school,EDUHS,39
+29619,2011,OK,Oklahoma,BRFSS,Obesity / Weight Status,31,961,Less than high school,EDUHS,40
+36276,2011,OR,Oregon,BRFSS,Obesity / Weight Status,31.4,289,Less than high school,EDUHS,41
+33845,2011,PA,Pennsylvania,BRFSS,Obesity / Weight Status,30.8,871,Less than high school,EDUHS,42
+23105,2011,RI,Rhode Island,BRFSS,Obesity / Weight Status,28.7,529,Less than high school,EDUHS,44
+22812,2011,SC,South Carolina,BRFSS,Obesity / Weight Status,32.7,1,675,Less than high school,EDUHS,45
+20453,2011,SD,South Dakota,BRFSS,Obesity / Weight Status,30.7,647,Less than high school,EDUHS,46
+5594,2011,TN,Tennessee,BRFSS,Obesity / Weight Status,34.1,736,Less than high school,EDUHS,47
+38615,2011,TX,Texas,BRFSS,Obesity / Weight Status,33.6,1,859,Less than high school,EDUHS,48
+2879,2011,UT,Utah,BRFSS,Obesity / Weight Status,31.2,612,Less than high school,EDUHS,49
+7236,2011,VT,Vermont,BRFSS,Obesity / Weight Status,26.7,428,Less than high school,EDUHS,50
+37813,2011,VA,Virginia,BRFSS,Obesity / Weight Status,38.1,547,Less than high school,EDUHS,51
+11039,2011,WA,Washington,BRFSS,Obesity / Weight Status,28.2,751,Less than high school,EDUHS,53
+23999,2011,WV,West Virginia,BRFSS,Obesity / Weight Status,32.7,708,Less than high school,EDUHS,54
+11335,2011,WI,Wisconsin,BRFSS,Obesity / Weight Status,40.5,355,Less than high school,EDUHS,55
+15117,2011,WY,Wyoming,BRFSS,Obesity / Weight Status,28,386,Less than high school,EDUHS,56

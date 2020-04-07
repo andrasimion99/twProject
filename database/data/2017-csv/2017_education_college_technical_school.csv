@@ -1,56 +1,56 @@
-﻿"ID","Description","LocationAbbr","LocationDesc","DataSource","Topic","Data_Value","Sample_Size","Stratification1","StratificationId1","LocationDisplayOrder"
-"56407","2017","US","National","BRFSS","Obesity / Weight Status","31.9","113,782","Some college or technical school","EDUCOTEC","0"
-"51858","2017","AL","Alabama","BRFSS","Obesity / Weight Status","36.3","1,789","Some college or technical school","EDUCOTEC","1"
-"49799","2017","AK","Alaska","BRFSS","Obesity / Weight Status","38.9","867","Some college or technical school","EDUCOTEC","2"
-"52905","2017","AZ","Arizona","BRFSS","Obesity / Weight Status","30.3","4,437","Some college or technical school","EDUCOTEC","4"
-"47483","2017","AR","Arkansas","BRFSS","Obesity / Weight Status","38.5","1,322","Some college or technical school","EDUCOTEC","5"
-"51165","2017","CA","California","BRFSS","Obesity / Weight Status","28","2,151","Some college or technical school","EDUCOTEC","6"
-"53148","2017","CO","Colorado","BRFSS","Obesity / Weight Status","25.7","2,495","Some college or technical school","EDUCOTEC","8"
-"57288","2017","CT","Connecticut","BRFSS","Obesity / Weight Status","28.6","2,193","Some college or technical school","EDUCOTEC","9"
-"46133","2017","DE","Delaware","BRFSS","Obesity / Weight Status","31.1","930","Some college or technical school","EDUCOTEC","10"
-"52440","2017","DC","District of Columbia","BRFSS","Obesity / Weight Status","28.2","806","Some college or technical school","EDUCOTEC","11"
-"51552","2017","FL","Florida","BRFSS","Obesity / Weight Status","28.7","5,978","Some college or technical school","EDUCOTEC","12"
-"56378","2017","GA","Georgia","BRFSS","Obesity / Weight Status","32.7","1,339","Some college or technical school","EDUCOTEC","13"
-"48868","2017","HI","Hawaii","BRFSS","Obesity / Weight Status","23.3","2,108","Some college or technical school","EDUCOTEC","15"
-"49140","2017","ID","Idaho","BRFSS","Obesity / Weight Status","29.6","1,498","Some college or technical school","EDUCOTEC","16"
-"58264","2017","IL","Illinois","BRFSS","Obesity / Weight Status","34.5","1,388","Some college or technical school","EDUCOTEC","17"
-"46072","2017","IN","Indiana","BRFSS","Obesity / Weight Status","36.2","3,296","Some college or technical school","EDUCOTEC","18"
-"45235","2017","IA","Iowa","BRFSS","Obesity / Weight Status","38","2,090","Some college or technical school","EDUCOTEC","19"
-"44487","2017","KS","Kansas","BRFSS","Obesity / Weight Status","34.4","6,049","Some college or technical school","EDUCOTEC","20"
-"48072","2017","KY","Kentucky","BRFSS","Obesity / Weight Status","35.2","2,270","Some college or technical school","EDUCOTEC","21"
-"51213","2017","LA","Louisiana","BRFSS","Obesity / Weight Status","37.7","1,188","Some college or technical school","EDUCOTEC","22"
-"53481","2017","ME","Maine","BRFSS","Obesity / Weight Status","31.1","2,353","Some college or technical school","EDUCOTEC","23"
-"53246","2017","MD","Maryland","BRFSS","Obesity / Weight Status","33.2","2,825","Some college or technical school","EDUCOTEC","24"
-"53577","2017","MA","Massachusetts","BRFSS","Obesity / Weight Status","26.3","1,503","Some college or technical school","EDUCOTEC","25"
-"56014","2017","MI","Michigan","BRFSS","Obesity / Weight Status","33.7","3,052","Some college or technical school","EDUCOTEC","26"
-"47380","2017","MN","Minnesota","BRFSS","Obesity / Weight Status","31.4","4,713","Some college or technical school","EDUCOTEC","27"
-"44933","2017","MS","Mississippi","BRFSS","Obesity / Weight Status","37.8","1,339","Some college or technical school","EDUCOTEC","28"
-"56404","2017","MO","Missouri","BRFSS","Obesity / Weight Status","35.5","1,976","Some college or technical school","EDUCOTEC","29"
-"49354","2017","MT","Montana","BRFSS","Obesity / Weight Status","26.2","1,785","Some college or technical school","EDUCOTEC","30"
-"53874","2017","NE","Nebraska","BRFSS","Obesity / Weight Status","33.8","4,460","Some college or technical school","EDUCOTEC","31"
-"52306","2017","NV","Nevada","BRFSS","Obesity / Weight Status","28.8","1,200","Some college or technical school","EDUCOTEC","32"
-"53374","2017","NH","New Hampshire","BRFSS","Obesity / Weight Status","29.1","1,354","Some college or technical school","EDUCOTEC","33"
-"48732","2017","NJ","New Jersey","BRFSS","Obesity / Weight Status","28","2,496","Some college or technical school","EDUCOTEC","34"
-"56692","2017","NM","New Mexico","BRFSS","Obesity / Weight Status","28.1","1,644","Some college or technical school","EDUCOTEC","35"
-"56111","2017","NY","New York","BRFSS","Obesity / Weight Status","28.2","2,662","Some college or technical school","EDUCOTEC","36"
-"45423","2017","NC","North Carolina","BRFSS","Obesity / Weight Status","36.9","1,261","Some college or technical school","EDUCOTEC","37"
-"45208","2017","ND","North Dakota","BRFSS","Obesity / Weight Status","35.6","2,100","Some college or technical school","EDUCOTEC","38"
-"54317","2017","OH","Ohio","BRFSS","Obesity / Weight Status","35.1","3,042","Some college or technical school","EDUCOTEC","39"
-"55338","2017","OK","Oklahoma","BRFSS","Obesity / Weight Status","38.8","1,929","Some college or technical school","EDUCOTEC","40"
-"54017","2017","OR","Oregon","BRFSS","Obesity / Weight Status","31.9","1,468","Some college or technical school","EDUCOTEC","41"
-"46516","2017","PA","Pennsylvania","BRFSS","Obesity / Weight Status","32.1","1,532","Some college or technical school","EDUCOTEC","42"
-"51304","2017","RI","Rhode Island","BRFSS","Obesity / Weight Status","29.3","1,268","Some college or technical school","EDUCOTEC","44"
-"46312","2017","SC","South Carolina","BRFSS","Obesity / Weight Status","35.5","2,898","Some college or technical school","EDUCOTEC","45"
-"45989","2017","SD","South Dakota","BRFSS","Obesity / Weight Status","32.1","1,962","Some college or technical school","EDUCOTEC","46"
-"48216","2017","TN","Tennessee","BRFSS","Obesity / Weight Status","36.5","1,392","Some college or technical school","EDUCOTEC","47"
-"50489","2017","TX","Texas","BRFSS","Obesity / Weight Status","32.7","2,913","Some college or technical school","EDUCOTEC","48"
-"57688","2017","UT","Utah","BRFSS","Obesity / Weight Status","27","3,012","Some college or technical school","EDUCOTEC","49"
-"48690","2017","VT","Vermont","BRFSS","Obesity / Weight Status","27.5","1,428","Some college or technical school","EDUCOTEC","50"
-"55767","2017","VA","Virginia","BRFSS","Obesity / Weight Status","31.8","2,264","Some college or technical school","EDUCOTEC","51"
-"48158","2017","WA","Washington","BRFSS","Obesity / Weight Status","30.2","3,514","Some college or technical school","EDUCOTEC","53"
-"46089","2017","WV","West Virginia","BRFSS","Obesity / Weight Status","42.5","1,316","Some college or technical school","EDUCOTEC","54"
-"54585","2017","WI","Wisconsin","BRFSS","Obesity / Weight Status","35.8","1,552","Some college or technical school","EDUCOTEC","55"
-"56437","2017","WY","Wyoming","BRFSS","Obesity / Weight Status","32.1","1,375","Some college or technical school","EDUCOTEC","56"
-"45243","2017","GU","Guam","BRFSS","Obesity / Weight Status","36.1","358","Some college or technical school","EDUCOTEC","66"
-"49674","2017","PR","Puerto Rico","BRFSS","Obesity / Weight Status","30.5","1,074","Some college or technical school","EDUCOTEC","72"
-"53050","2017","VI","Virgin Islands","BRFSS","Obesity / Weight Status","~","~","Some college or technical school","EDUCOTEC","78"
+﻿ID,Description,LocationAbbr,LocationDesc,DataSource,Topic,Data_Value,Sample_Size,Stratification1,StratificationId1,LocationDisplayOrder
+56407,2017,US,National,BRFSS,Obesity / Weight Status,31.9,113,782,Some college or technical school,EDUCOTEC,0
+51858,2017,AL,Alabama,BRFSS,Obesity / Weight Status,36.3,1,789,Some college or technical school,EDUCOTEC,1
+49799,2017,AK,Alaska,BRFSS,Obesity / Weight Status,38.9,867,Some college or technical school,EDUCOTEC,2
+52905,2017,AZ,Arizona,BRFSS,Obesity / Weight Status,30.3,4,437,Some college or technical school,EDUCOTEC,4
+47483,2017,AR,Arkansas,BRFSS,Obesity / Weight Status,38.5,1,322,Some college or technical school,EDUCOTEC,5
+51165,2017,CA,California,BRFSS,Obesity / Weight Status,28,2,151,Some college or technical school,EDUCOTEC,6
+53148,2017,CO,Colorado,BRFSS,Obesity / Weight Status,25.7,2,495,Some college or technical school,EDUCOTEC,8
+57288,2017,CT,Connecticut,BRFSS,Obesity / Weight Status,28.6,2,193,Some college or technical school,EDUCOTEC,9
+46133,2017,DE,Delaware,BRFSS,Obesity / Weight Status,31.1,930,Some college or technical school,EDUCOTEC,10
+52440,2017,DC,District of Columbia,BRFSS,Obesity / Weight Status,28.2,806,Some college or technical school,EDUCOTEC,11
+51552,2017,FL,Florida,BRFSS,Obesity / Weight Status,28.7,5,978,Some college or technical school,EDUCOTEC,12
+56378,2017,GA,Georgia,BRFSS,Obesity / Weight Status,32.7,1,339,Some college or technical school,EDUCOTEC,13
+48868,2017,HI,Hawaii,BRFSS,Obesity / Weight Status,23.3,2,108,Some college or technical school,EDUCOTEC,15
+49140,2017,ID,Idaho,BRFSS,Obesity / Weight Status,29.6,1,498,Some college or technical school,EDUCOTEC,16
+58264,2017,IL,Illinois,BRFSS,Obesity / Weight Status,34.5,1,388,Some college or technical school,EDUCOTEC,17
+46072,2017,IN,Indiana,BRFSS,Obesity / Weight Status,36.2,3,296,Some college or technical school,EDUCOTEC,18
+45235,2017,IA,Iowa,BRFSS,Obesity / Weight Status,38,2,090,Some college or technical school,EDUCOTEC,19
+44487,2017,KS,Kansas,BRFSS,Obesity / Weight Status,34.4,6,049,Some college or technical school,EDUCOTEC,20
+48072,2017,KY,Kentucky,BRFSS,Obesity / Weight Status,35.2,2,270,Some college or technical school,EDUCOTEC,21
+51213,2017,LA,Louisiana,BRFSS,Obesity / Weight Status,37.7,1,188,Some college or technical school,EDUCOTEC,22
+53481,2017,ME,Maine,BRFSS,Obesity / Weight Status,31.1,2,353,Some college or technical school,EDUCOTEC,23
+53246,2017,MD,Maryland,BRFSS,Obesity / Weight Status,33.2,2,825,Some college or technical school,EDUCOTEC,24
+53577,2017,MA,Massachusetts,BRFSS,Obesity / Weight Status,26.3,1,503,Some college or technical school,EDUCOTEC,25
+56014,2017,MI,Michigan,BRFSS,Obesity / Weight Status,33.7,3,052,Some college or technical school,EDUCOTEC,26
+47380,2017,MN,Minnesota,BRFSS,Obesity / Weight Status,31.4,4,713,Some college or technical school,EDUCOTEC,27
+44933,2017,MS,Mississippi,BRFSS,Obesity / Weight Status,37.8,1,339,Some college or technical school,EDUCOTEC,28
+56404,2017,MO,Missouri,BRFSS,Obesity / Weight Status,35.5,1,976,Some college or technical school,EDUCOTEC,29
+49354,2017,MT,Montana,BRFSS,Obesity / Weight Status,26.2,1,785,Some college or technical school,EDUCOTEC,30
+53874,2017,NE,Nebraska,BRFSS,Obesity / Weight Status,33.8,4,460,Some college or technical school,EDUCOTEC,31
+52306,2017,NV,Nevada,BRFSS,Obesity / Weight Status,28.8,1,200,Some college or technical school,EDUCOTEC,32
+53374,2017,NH,New Hampshire,BRFSS,Obesity / Weight Status,29.1,1,354,Some college or technical school,EDUCOTEC,33
+48732,2017,NJ,New Jersey,BRFSS,Obesity / Weight Status,28,2,496,Some college or technical school,EDUCOTEC,34
+56692,2017,NM,New Mexico,BRFSS,Obesity / Weight Status,28.1,1,644,Some college or technical school,EDUCOTEC,35
+56111,2017,NY,New York,BRFSS,Obesity / Weight Status,28.2,2,662,Some college or technical school,EDUCOTEC,36
+45423,2017,NC,North Carolina,BRFSS,Obesity / Weight Status,36.9,1,261,Some college or technical school,EDUCOTEC,37
+45208,2017,ND,North Dakota,BRFSS,Obesity / Weight Status,35.6,2,100,Some college or technical school,EDUCOTEC,38
+54317,2017,OH,Ohio,BRFSS,Obesity / Weight Status,35.1,3,042,Some college or technical school,EDUCOTEC,39
+55338,2017,OK,Oklahoma,BRFSS,Obesity / Weight Status,38.8,1,929,Some college or technical school,EDUCOTEC,40
+54017,2017,OR,Oregon,BRFSS,Obesity / Weight Status,31.9,1,468,Some college or technical school,EDUCOTEC,41
+46516,2017,PA,Pennsylvania,BRFSS,Obesity / Weight Status,32.1,1,532,Some college or technical school,EDUCOTEC,42
+51304,2017,RI,Rhode Island,BRFSS,Obesity / Weight Status,29.3,1,268,Some college or technical school,EDUCOTEC,44
+46312,2017,SC,South Carolina,BRFSS,Obesity / Weight Status,35.5,2,898,Some college or technical school,EDUCOTEC,45
+45989,2017,SD,South Dakota,BRFSS,Obesity / Weight Status,32.1,1,962,Some college or technical school,EDUCOTEC,46
+48216,2017,TN,Tennessee,BRFSS,Obesity / Weight Status,36.5,1,392,Some college or technical school,EDUCOTEC,47
+50489,2017,TX,Texas,BRFSS,Obesity / Weight Status,32.7,2,913,Some college or technical school,EDUCOTEC,48
+57688,2017,UT,Utah,BRFSS,Obesity / Weight Status,27,3,012,Some college or technical school,EDUCOTEC,49
+48690,2017,VT,Vermont,BRFSS,Obesity / Weight Status,27.5,1,428,Some college or technical school,EDUCOTEC,50
+55767,2017,VA,Virginia,BRFSS,Obesity / Weight Status,31.8,2,264,Some college or technical school,EDUCOTEC,51
+48158,2017,WA,Washington,BRFSS,Obesity / Weight Status,30.2,3,514,Some college or technical school,EDUCOTEC,53
+46089,2017,WV,West Virginia,BRFSS,Obesity / Weight Status,42.5,1,316,Some college or technical school,EDUCOTEC,54
+54585,2017,WI,Wisconsin,BRFSS,Obesity / Weight Status,35.8,1,552,Some college or technical school,EDUCOTEC,55
+56437,2017,WY,Wyoming,BRFSS,Obesity / Weight Status,32.1,1,375,Some college or technical school,EDUCOTEC,56
+45243,2017,GU,Guam,BRFSS,Obesity / Weight Status,36.1,358,Some college or technical school,EDUCOTEC,66
+49674,2017,PR,Puerto Rico,BRFSS,Obesity / Weight Status,30.5,1,074,Some college or technical school,EDUCOTEC,72
+53050,2017,VI,Virgin Islands,BRFSS,Obesity / Weight Status,~,~,Some college or technical school,EDUCOTEC,78

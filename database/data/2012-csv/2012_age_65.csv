@@ -1,53 +1,53 @@
-﻿"ID","Description","LocationAbbr","LocationDesc","DataSource","Topic","Data_Value","Sample_Size","Stratification1","StratificationId1","LocationDisplayOrder"
-"202","2012","US","National","BRFSS","Obesity / Weight Status","25.8","144,296","65 or older","AGEYR65PLUS","0"
-"12870","2012","AL","Alabama","BRFSS","Obesity / Weight Status","26.9","3,034","65 or older","AGEYR65PLUS","1"
-"31750","2012","AK","Alaska","BRFSS","Obesity / Weight Status","26.8","751","65 or older","AGEYR65PLUS","2"
-"39885","2012","AZ","Arizona","BRFSS","Obesity / Weight Status","22.6","2,805","65 or older","AGEYR65PLUS","4"
-"30800","2012","AR","Arkansas","BRFSS","Obesity / Weight Status","25.9","1,886","65 or older","AGEYR65PLUS","5"
-"37041","2012","CA","California","BRFSS","Obesity / Weight Status","21.1","4,092","65 or older","AGEYR65PLUS","6"
-"31499","2012","CO","Colorado","BRFSS","Obesity / Weight Status","19.6","3,419","65 or older","AGEYR65PLUS","8"
-"24186","2012","CT","Connecticut","BRFSS","Obesity / Weight Status","26.5","2,625","65 or older","AGEYR65PLUS","9"
-"1734","2012","DE","Delaware","BRFSS","Obesity / Weight Status","26","1,644","65 or older","AGEYR65PLUS","10"
-"36946","2012","DC","District of Columbia","BRFSS","Obesity / Weight Status","19.1","1,197","65 or older","AGEYR65PLUS","11"
-"20117","2012","FL","Florida","BRFSS","Obesity / Weight Status","22.9","2,976","65 or older","AGEYR65PLUS","12"
-"25807","2012","GA","Georgia","BRFSS","Obesity / Weight Status","25.4","1,834","65 or older","AGEYR65PLUS","13"
-"36235","2012","HI","Hawaii","BRFSS","Obesity / Weight Status","14.1","1,984","65 or older","AGEYR65PLUS","15"
-"28801","2012","ID","Idaho","BRFSS","Obesity / Weight Status","26.9","2,116","65 or older","AGEYR65PLUS","16"
-"33874","2012","IL","Illinois","BRFSS","Obesity / Weight Status","27.7","1,936","65 or older","AGEYR65PLUS","17"
-"24474","2012","IN","Indiana","BRFSS","Obesity / Weight Status","29.3","2,645","65 or older","AGEYR65PLUS","18"
-"19654","2012","IA","Iowa","BRFSS","Obesity / Weight Status","29.6","2,395","65 or older","AGEYR65PLUS","19"
-"5942","2012","KS","Kansas","BRFSS","Obesity / Weight Status","26.2","3,845","65 or older","AGEYR65PLUS","20"
-"10055","2012","KY","Kentucky","BRFSS","Obesity / Weight Status","29.2","3,266","65 or older","AGEYR65PLUS","21"
-"37719","2012","LA","Louisiana","BRFSS","Obesity / Weight Status","30.4","3,093","65 or older","AGEYR65PLUS","22"
-"6536","2012","ME","Maine","BRFSS","Obesity / Weight Status","25.9","3,065","65 or older","AGEYR65PLUS","23"
-"16433","2012","MD","Maryland","BRFSS","Obesity / Weight Status","26.2","3,990","65 or older","AGEYR65PLUS","24"
-"30002","2012","MA","Massachusetts","BRFSS","Obesity / Weight Status","22.6","5,936","65 or older","AGEYR65PLUS","25"
-"19682","2012","MI","Michigan","BRFSS","Obesity / Weight Status","29.6","3,447","65 or older","AGEYR65PLUS","26"
-"11290","2012","MN","Minnesota","BRFSS","Obesity / Weight Status","26.3","3,244","65 or older","AGEYR65PLUS","27"
-"35622","2012","MS","Mississippi","BRFSS","Obesity / Weight Status","29","2,731","65 or older","AGEYR65PLUS","28"
-"17835","2012","MO","Missouri","BRFSS","Obesity / Weight Status","28.1","2,350","65 or older","AGEYR65PLUS","29"
-"34870","2012","MT","Montana","BRFSS","Obesity / Weight Status","22.3","2,743","65 or older","AGEYR65PLUS","30"
-"14821","2012","NE","Nebraska","BRFSS","Obesity / Weight Status","26.8","6,558","65 or older","AGEYR65PLUS","31"
-"8734","2012","NV","Nevada","BRFSS","Obesity / Weight Status","25.1","1,519","65 or older","AGEYR65PLUS","32"
-"25448","2012","NH","New Hampshire","BRFSS","Obesity / Weight Status","26.5","2,548","65 or older","AGEYR65PLUS","33"
-"25819","2012","NJ","New Jersey","BRFSS","Obesity / Weight Status","27.2","4,189","65 or older","AGEYR65PLUS","34"
-"16952","2012","NM","New Mexico","BRFSS","Obesity / Weight Status","20.4","2,538","65 or older","AGEYR65PLUS","35"
-"28037","2012","NY","New York","BRFSS","Obesity / Weight Status","25.7","1,648","65 or older","AGEYR65PLUS","36"
-"3055","2012","NC","North Carolina","BRFSS","Obesity / Weight Status","26.2","3,489","65 or older","AGEYR65PLUS","37"
-"36711","2012","ND","North Dakota","BRFSS","Obesity / Weight Status","27.3","1,526","65 or older","AGEYR65PLUS","38"
-"9658","2012","OH","Ohio","BRFSS","Obesity / Weight Status","28.8","3,893","65 or older","AGEYR65PLUS","39"
-"24476","2012","OK","Oklahoma","BRFSS","Obesity / Weight Status","26.8","2,558","65 or older","AGEYR65PLUS","40"
-"4988","2012","OR","Oregon","BRFSS","Obesity / Weight Status","25.4","1,774","65 or older","AGEYR65PLUS","41"
-"29742","2012","PA","Pennsylvania","BRFSS","Obesity / Weight Status","29.3","6,374","65 or older","AGEYR65PLUS","42"
-"32534","2012","RI","Rhode Island","BRFSS","Obesity / Weight Status","24.5","1,628","65 or older","AGEYR65PLUS","44"
-"6681","2012","SC","South Carolina","BRFSS","Obesity / Weight Status","27.2","4,268","65 or older","AGEYR65PLUS","45"
-"32417","2012","SD","South Dakota","BRFSS","Obesity / Weight Status","28.4","2,274","65 or older","AGEYR65PLUS","46"
-"12795","2012","TN","Tennessee","BRFSS","Obesity / Weight Status","26.3","2,263","65 or older","AGEYR65PLUS","47"
-"26016","2012","TX","Texas","BRFSS","Obesity / Weight Status","26.9","2,603","65 or older","AGEYR65PLUS","48"
-"9901","2012","UT","Utah","BRFSS","Obesity / Weight Status","25.6","3,199","65 or older","AGEYR65PLUS","49"
-"33108","2012","VT","Vermont","BRFSS","Obesity / Weight Status","25.5","1,913","65 or older","AGEYR65PLUS","50"
-"11373","2012","VA","Virginia","BRFSS","Obesity / Weight Status","26.8","2,145","65 or older","AGEYR65PLUS","51"
-"6591","2012","WA","Washington","BRFSS","Obesity / Weight Status","25.6","4,796","65 or older","AGEYR65PLUS","53"
-"38301","2012","WV","West Virginia","BRFSS","Obesity / Weight Status","28.7","1,639","65 or older","AGEYR65PLUS","54"
-"25546","2012","WI","Wisconsin","BRFSS","Obesity / Weight Status","29.5","1,565","65 or older","AGEYR65PLUS","55"
-"16358","2012","WY","Wyoming","BRFSS","Obesity / Weight Status","20.5","2,340","65 or older","AGEYR65PLUS","56"
+﻿ID,Description,LocationAbbr,LocationDesc,DataSource,Topic,Data_Value,Sample_Size,Stratification1,StratificationId1,LocationDisplayOrder
+202,2012,US,National,BRFSS,Obesity / Weight Status,25.8,144,296,65 or older,AGEYR65PLUS,0
+12870,2012,AL,Alabama,BRFSS,Obesity / Weight Status,26.9,3,034,65 or older,AGEYR65PLUS,1
+31750,2012,AK,Alaska,BRFSS,Obesity / Weight Status,26.8,751,65 or older,AGEYR65PLUS,2
+39885,2012,AZ,Arizona,BRFSS,Obesity / Weight Status,22.6,2,805,65 or older,AGEYR65PLUS,4
+30800,2012,AR,Arkansas,BRFSS,Obesity / Weight Status,25.9,1,886,65 or older,AGEYR65PLUS,5
+37041,2012,CA,California,BRFSS,Obesity / Weight Status,21.1,4,092,65 or older,AGEYR65PLUS,6
+31499,2012,CO,Colorado,BRFSS,Obesity / Weight Status,19.6,3,419,65 or older,AGEYR65PLUS,8
+24186,2012,CT,Connecticut,BRFSS,Obesity / Weight Status,26.5,2,625,65 or older,AGEYR65PLUS,9
+1734,2012,DE,Delaware,BRFSS,Obesity / Weight Status,26,1,644,65 or older,AGEYR65PLUS,10
+36946,2012,DC,District of Columbia,BRFSS,Obesity / Weight Status,19.1,1,197,65 or older,AGEYR65PLUS,11
+20117,2012,FL,Florida,BRFSS,Obesity / Weight Status,22.9,2,976,65 or older,AGEYR65PLUS,12
+25807,2012,GA,Georgia,BRFSS,Obesity / Weight Status,25.4,1,834,65 or older,AGEYR65PLUS,13
+36235,2012,HI,Hawaii,BRFSS,Obesity / Weight Status,14.1,1,984,65 or older,AGEYR65PLUS,15
+28801,2012,ID,Idaho,BRFSS,Obesity / Weight Status,26.9,2,116,65 or older,AGEYR65PLUS,16
+33874,2012,IL,Illinois,BRFSS,Obesity / Weight Status,27.7,1,936,65 or older,AGEYR65PLUS,17
+24474,2012,IN,Indiana,BRFSS,Obesity / Weight Status,29.3,2,645,65 or older,AGEYR65PLUS,18
+19654,2012,IA,Iowa,BRFSS,Obesity / Weight Status,29.6,2,395,65 or older,AGEYR65PLUS,19
+5942,2012,KS,Kansas,BRFSS,Obesity / Weight Status,26.2,3,845,65 or older,AGEYR65PLUS,20
+10055,2012,KY,Kentucky,BRFSS,Obesity / Weight Status,29.2,3,266,65 or older,AGEYR65PLUS,21
+37719,2012,LA,Louisiana,BRFSS,Obesity / Weight Status,30.4,3,093,65 or older,AGEYR65PLUS,22
+6536,2012,ME,Maine,BRFSS,Obesity / Weight Status,25.9,3,065,65 or older,AGEYR65PLUS,23
+16433,2012,MD,Maryland,BRFSS,Obesity / Weight Status,26.2,3,990,65 or older,AGEYR65PLUS,24
+30002,2012,MA,Massachusetts,BRFSS,Obesity / Weight Status,22.6,5,936,65 or older,AGEYR65PLUS,25
+19682,2012,MI,Michigan,BRFSS,Obesity / Weight Status,29.6,3,447,65 or older,AGEYR65PLUS,26
+11290,2012,MN,Minnesota,BRFSS,Obesity / Weight Status,26.3,3,244,65 or older,AGEYR65PLUS,27
+35622,2012,MS,Mississippi,BRFSS,Obesity / Weight Status,29,2,731,65 or older,AGEYR65PLUS,28
+17835,2012,MO,Missouri,BRFSS,Obesity / Weight Status,28.1,2,350,65 or older,AGEYR65PLUS,29
+34870,2012,MT,Montana,BRFSS,Obesity / Weight Status,22.3,2,743,65 or older,AGEYR65PLUS,30
+14821,2012,NE,Nebraska,BRFSS,Obesity / Weight Status,26.8,6,558,65 or older,AGEYR65PLUS,31
+8734,2012,NV,Nevada,BRFSS,Obesity / Weight Status,25.1,1,519,65 or older,AGEYR65PLUS,32
+25448,2012,NH,New Hampshire,BRFSS,Obesity / Weight Status,26.5,2,548,65 or older,AGEYR65PLUS,33
+25819,2012,NJ,New Jersey,BRFSS,Obesity / Weight Status,27.2,4,189,65 or older,AGEYR65PLUS,34
+16952,2012,NM,New Mexico,BRFSS,Obesity / Weight Status,20.4,2,538,65 or older,AGEYR65PLUS,35
+28037,2012,NY,New York,BRFSS,Obesity / Weight Status,25.7,1,648,65 or older,AGEYR65PLUS,36
+3055,2012,NC,North Carolina,BRFSS,Obesity / Weight Status,26.2,3,489,65 or older,AGEYR65PLUS,37
+36711,2012,ND,North Dakota,BRFSS,Obesity / Weight Status,27.3,1,526,65 or older,AGEYR65PLUS,38
+9658,2012,OH,Ohio,BRFSS,Obesity / Weight Status,28.8,3,893,65 or older,AGEYR65PLUS,39
+24476,2012,OK,Oklahoma,BRFSS,Obesity / Weight Status,26.8,2,558,65 or older,AGEYR65PLUS,40
+4988,2012,OR,Oregon,BRFSS,Obesity / Weight Status,25.4,1,774,65 or older,AGEYR65PLUS,41
+29742,2012,PA,Pennsylvania,BRFSS,Obesity / Weight Status,29.3,6,374,65 or older,AGEYR65PLUS,42
+32534,2012,RI,Rhode Island,BRFSS,Obesity / Weight Status,24.5,1,628,65 or older,AGEYR65PLUS,44
+6681,2012,SC,South Carolina,BRFSS,Obesity / Weight Status,27.2,4,268,65 or older,AGEYR65PLUS,45
+32417,2012,SD,South Dakota,BRFSS,Obesity / Weight Status,28.4,2,274,65 or older,AGEYR65PLUS,46
+12795,2012,TN,Tennessee,BRFSS,Obesity / Weight Status,26.3,2,263,65 or older,AGEYR65PLUS,47
+26016,2012,TX,Texas,BRFSS,Obesity / Weight Status,26.9,2,603,65 or older,AGEYR65PLUS,48
+9901,2012,UT,Utah,BRFSS,Obesity / Weight Status,25.6,3,199,65 or older,AGEYR65PLUS,49
+33108,2012,VT,Vermont,BRFSS,Obesity / Weight Status,25.5,1,913,65 or older,AGEYR65PLUS,50
+11373,2012,VA,Virginia,BRFSS,Obesity / Weight Status,26.8,2,145,65 or older,AGEYR65PLUS,51
+6591,2012,WA,Washington,BRFSS,Obesity / Weight Status,25.6,4,796,65 or older,AGEYR65PLUS,53
+38301,2012,WV,West Virginia,BRFSS,Obesity / Weight Status,28.7,1,639,65 or older,AGEYR65PLUS,54
+25546,2012,WI,Wisconsin,BRFSS,Obesity / Weight Status,29.5,1,565,65 or older,AGEYR65PLUS,55
+16358,2012,WY,Wyoming,BRFSS,Obesity / Weight Status,20.5,2,340,65 or older,AGEYR65PLUS,56

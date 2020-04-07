@@ -1,55 +1,55 @@
-﻿"ID","Description","LocationAbbr","LocationDesc","DataSource","Topic","Data_Value","Sample_Size","Stratification1","StratificationId1","LocationDisplayOrder"
-"531","2014","US","National","BRFSS","Obesity / Weight Status","25.8","1,835","Other","RACEOTH","0"
-"52049","2014","AL","Alabama","BRFSS","Obesity / Weight Status","~","~","Other","RACEOTH","1"
-"44936","2014","AK","Alaska","BRFSS","Obesity / Weight Status","~","~","Other","RACEOTH","2"
-"26919","2014","AZ","Arizona","BRFSS","Obesity / Weight Status","26.1","133","Other","RACEOTH","4"
-"56250","2014","AR","Arkansas","BRFSS","Obesity / Weight Status","~","~","Other","RACEOTH","5"
-"2536","2014","CA","California","BRFSS","Obesity / Weight Status","22.7","130","Other","RACEOTH","6"
-"27447","2014","CO","Colorado","BRFSS","Obesity / Weight Status","19.4","56","Other","RACEOTH","8"
-"11266","2014","CT","Connecticut","BRFSS","Obesity / Weight Status","21.8","59","Other","RACEOTH","9"
-"45227","2014","DE","Delaware","BRFSS","Obesity / Weight Status","~","~","Other","RACEOTH","10"
-"52712","2014","DC","District of Columbia","BRFSS","Obesity / Weight Status","~","~","Other","RACEOTH","11"
-"48548","2014","FL","Florida","BRFSS","Obesity / Weight Status","~","~","Other","RACEOTH","12"
-"56600","2014","GA","Georgia","BRFSS","Obesity / Weight Status","~","~","Other","RACEOTH","13"
-"48148","2014","HI","Hawaii","BRFSS","Obesity / Weight Status","~","~","Other","RACEOTH","15"
-"55729","2014","ID","Idaho","BRFSS","Obesity / Weight Status","~","~","Other","RACEOTH","16"
-"46091","2014","IL","Illinois","BRFSS","Obesity / Weight Status","~","~","Other","RACEOTH","17"
-"50219","2014","IN","Indiana","BRFSS","Obesity / Weight Status","~","~","Other","RACEOTH","18"
-"45439","2014","IA","Iowa","BRFSS","Obesity / Weight Status","~","~","Other","RACEOTH","19"
-"52554","2014","KS","Kansas","BRFSS","Obesity / Weight Status","~","~","Other","RACEOTH","20"
-"51109","2014","KY","Kentucky","BRFSS","Obesity / Weight Status","~","~","Other","RACEOTH","21"
-"24138","2014","LA","Louisiana","BRFSS","Obesity / Weight Status","27.9","59","Other","RACEOTH","22"
-"45151","2014","ME","Maine","BRFSS","Obesity / Weight Status","~","~","Other","RACEOTH","23"
-"12901","2014","MD","Maryland","BRFSS","Obesity / Weight Status","36.5","66","Other","RACEOTH","24"
-"1840","2014","MA","Massachusetts","BRFSS","Obesity / Weight Status","25.3","123","Other","RACEOTH","25"
-"51624","2014","MI","Michigan","BRFSS","Obesity / Weight Status","~","~","Other","RACEOTH","26"
-"50150","2014","MN","Minnesota","BRFSS","Obesity / Weight Status","~","~","Other","RACEOTH","27"
-"54767","2014","MS","Mississippi","BRFSS","Obesity / Weight Status","~","~","Other","RACEOTH","28"
-"51658","2014","MO","Missouri","BRFSS","Obesity / Weight Status","~","~","Other","RACEOTH","29"
-"53865","2014","MT","Montana","BRFSS","Obesity / Weight Status","~","~","Other","RACEOTH","30"
-"53585","2014","NE","Nebraska","BRFSS","Obesity / Weight Status","~","~","Other","RACEOTH","31"
-"55145","2014","NV","Nevada","BRFSS","Obesity / Weight Status","~","~","Other","RACEOTH","32"
-"46231","2014","NH","New Hampshire","BRFSS","Obesity / Weight Status","~","~","Other","RACEOTH","33"
-"23155","2014","NJ","New Jersey","BRFSS","Obesity / Weight Status","23.6","56","Other","RACEOTH","34"
-"26866","2014","NM","New Mexico","BRFSS","Obesity / Weight Status","30.3","60","Other","RACEOTH","35"
-"53301","2014","NY","New York","BRFSS","Obesity / Weight Status","~","~","Other","RACEOTH","36"
-"56268","2014","NC","North Carolina","BRFSS","Obesity / Weight Status","~","~","Other","RACEOTH","37"
-"58504","2014","ND","North Dakota","BRFSS","Obesity / Weight Status","~","~","Other","RACEOTH","38"
-"26902","2014","OH","Ohio","BRFSS","Obesity / Weight Status","32.2","63","Other","RACEOTH","39"
-"51977","2014","OK","Oklahoma","BRFSS","Obesity / Weight Status","~","~","Other","RACEOTH","40"
-"54451","2014","OR","Oregon","BRFSS","Obesity / Weight Status","~","~","Other","RACEOTH","41"
-"49132","2014","PA","Pennsylvania","BRFSS","Obesity / Weight Status","~","~","Other","RACEOTH","42"
-"12866","2014","RI","Rhode Island","BRFSS","Obesity / Weight Status","18","77","Other","RACEOTH","44"
-"51573","2014","SC","South Carolina","BRFSS","Obesity / Weight Status","~","~","Other","RACEOTH","45"
-"48131","2014","SD","South Dakota","BRFSS","Obesity / Weight Status","~","~","Other","RACEOTH","46"
-"52302","2014","TN","Tennessee","BRFSS","Obesity / Weight Status","~","~","Other","RACEOTH","47"
-"47834","2014","TX","Texas","BRFSS","Obesity / Weight Status","~","~","Other","RACEOTH","48"
-"55440","2014","UT","Utah","BRFSS","Obesity / Weight Status","~","~","Other","RACEOTH","49"
-"44849","2014","VT","Vermont","BRFSS","Obesity / Weight Status","~","~","Other","RACEOTH","50"
-"50534","2014","VA","Virginia","BRFSS","Obesity / Weight Status","~","~","Other","RACEOTH","51"
-"7576","2014","WA","Washington","BRFSS","Obesity / Weight Status","23.7","78","Other","RACEOTH","53"
-"50723","2014","WV","West Virginia","BRFSS","Obesity / Weight Status","~","~","Other","RACEOTH","54"
-"15926","2014","WI","Wisconsin","BRFSS","Obesity / Weight Status","34.4","50","Other","RACEOTH","55"
-"22159","2014","WY","Wyoming","BRFSS","Obesity / Weight Status","16.9","58","Other","RACEOTH","56"
-"48459","2014","GU","Guam","BRFSS","Obesity / Weight Status","~","~","Other","RACEOTH","66"
-"47103","2014","PR","Puerto Rico","BRFSS","Obesity / Weight Status","~","~","Other","RACEOTH","72"
+﻿ID,Description,LocationAbbr,LocationDesc,DataSource,Topic,Data_Value,Sample_Size,Stratification1,StratificationId1,LocationDisplayOrder
+531,2014,US,National,BRFSS,Obesity / Weight Status,25.8,1,835,Other,RACEOTH,0
+52049,2014,AL,Alabama,BRFSS,Obesity / Weight Status,~,~,Other,RACEOTH,1
+44936,2014,AK,Alaska,BRFSS,Obesity / Weight Status,~,~,Other,RACEOTH,2
+26919,2014,AZ,Arizona,BRFSS,Obesity / Weight Status,26.1,133,Other,RACEOTH,4
+56250,2014,AR,Arkansas,BRFSS,Obesity / Weight Status,~,~,Other,RACEOTH,5
+2536,2014,CA,California,BRFSS,Obesity / Weight Status,22.7,130,Other,RACEOTH,6
+27447,2014,CO,Colorado,BRFSS,Obesity / Weight Status,19.4,56,Other,RACEOTH,8
+11266,2014,CT,Connecticut,BRFSS,Obesity / Weight Status,21.8,59,Other,RACEOTH,9
+45227,2014,DE,Delaware,BRFSS,Obesity / Weight Status,~,~,Other,RACEOTH,10
+52712,2014,DC,District of Columbia,BRFSS,Obesity / Weight Status,~,~,Other,RACEOTH,11
+48548,2014,FL,Florida,BRFSS,Obesity / Weight Status,~,~,Other,RACEOTH,12
+56600,2014,GA,Georgia,BRFSS,Obesity / Weight Status,~,~,Other,RACEOTH,13
+48148,2014,HI,Hawaii,BRFSS,Obesity / Weight Status,~,~,Other,RACEOTH,15
+55729,2014,ID,Idaho,BRFSS,Obesity / Weight Status,~,~,Other,RACEOTH,16
+46091,2014,IL,Illinois,BRFSS,Obesity / Weight Status,~,~,Other,RACEOTH,17
+50219,2014,IN,Indiana,BRFSS,Obesity / Weight Status,~,~,Other,RACEOTH,18
+45439,2014,IA,Iowa,BRFSS,Obesity / Weight Status,~,~,Other,RACEOTH,19
+52554,2014,KS,Kansas,BRFSS,Obesity / Weight Status,~,~,Other,RACEOTH,20
+51109,2014,KY,Kentucky,BRFSS,Obesity / Weight Status,~,~,Other,RACEOTH,21
+24138,2014,LA,Louisiana,BRFSS,Obesity / Weight Status,27.9,59,Other,RACEOTH,22
+45151,2014,ME,Maine,BRFSS,Obesity / Weight Status,~,~,Other,RACEOTH,23
+12901,2014,MD,Maryland,BRFSS,Obesity / Weight Status,36.5,66,Other,RACEOTH,24
+1840,2014,MA,Massachusetts,BRFSS,Obesity / Weight Status,25.3,123,Other,RACEOTH,25
+51624,2014,MI,Michigan,BRFSS,Obesity / Weight Status,~,~,Other,RACEOTH,26
+50150,2014,MN,Minnesota,BRFSS,Obesity / Weight Status,~,~,Other,RACEOTH,27
+54767,2014,MS,Mississippi,BRFSS,Obesity / Weight Status,~,~,Other,RACEOTH,28
+51658,2014,MO,Missouri,BRFSS,Obesity / Weight Status,~,~,Other,RACEOTH,29
+53865,2014,MT,Montana,BRFSS,Obesity / Weight Status,~,~,Other,RACEOTH,30
+53585,2014,NE,Nebraska,BRFSS,Obesity / Weight Status,~,~,Other,RACEOTH,31
+55145,2014,NV,Nevada,BRFSS,Obesity / Weight Status,~,~,Other,RACEOTH,32
+46231,2014,NH,New Hampshire,BRFSS,Obesity / Weight Status,~,~,Other,RACEOTH,33
+23155,2014,NJ,New Jersey,BRFSS,Obesity / Weight Status,23.6,56,Other,RACEOTH,34
+26866,2014,NM,New Mexico,BRFSS,Obesity / Weight Status,30.3,60,Other,RACEOTH,35
+53301,2014,NY,New York,BRFSS,Obesity / Weight Status,~,~,Other,RACEOTH,36
+56268,2014,NC,North Carolina,BRFSS,Obesity / Weight Status,~,~,Other,RACEOTH,37
+58504,2014,ND,North Dakota,BRFSS,Obesity / Weight Status,~,~,Other,RACEOTH,38
+26902,2014,OH,Ohio,BRFSS,Obesity / Weight Status,32.2,63,Other,RACEOTH,39
+51977,2014,OK,Oklahoma,BRFSS,Obesity / Weight Status,~,~,Other,RACEOTH,40
+54451,2014,OR,Oregon,BRFSS,Obesity / Weight Status,~,~,Other,RACEOTH,41
+49132,2014,PA,Pennsylvania,BRFSS,Obesity / Weight Status,~,~,Other,RACEOTH,42
+12866,2014,RI,Rhode Island,BRFSS,Obesity / Weight Status,18,77,Other,RACEOTH,44
+51573,2014,SC,South Carolina,BRFSS,Obesity / Weight Status,~,~,Other,RACEOTH,45
+48131,2014,SD,South Dakota,BRFSS,Obesity / Weight Status,~,~,Other,RACEOTH,46
+52302,2014,TN,Tennessee,BRFSS,Obesity / Weight Status,~,~,Other,RACEOTH,47
+47834,2014,TX,Texas,BRFSS,Obesity / Weight Status,~,~,Other,RACEOTH,48
+55440,2014,UT,Utah,BRFSS,Obesity / Weight Status,~,~,Other,RACEOTH,49
+44849,2014,VT,Vermont,BRFSS,Obesity / Weight Status,~,~,Other,RACEOTH,50
+50534,2014,VA,Virginia,BRFSS,Obesity / Weight Status,~,~,Other,RACEOTH,51
+7576,2014,WA,Washington,BRFSS,Obesity / Weight Status,23.7,78,Other,RACEOTH,53
+50723,2014,WV,West Virginia,BRFSS,Obesity / Weight Status,~,~,Other,RACEOTH,54
+15926,2014,WI,Wisconsin,BRFSS,Obesity / Weight Status,34.4,50,Other,RACEOTH,55
+22159,2014,WY,Wyoming,BRFSS,Obesity / Weight Status,16.9,58,Other,RACEOTH,56
+48459,2014,GU,Guam,BRFSS,Obesity / Weight Status,~,~,Other,RACEOTH,66
+47103,2014,PR,Puerto Rico,BRFSS,Obesity / Weight Status,~,~,Other,RACEOTH,72

@@ -1,55 +1,55 @@
-﻿"ID","Description","LocationAbbr","LocationDesc","DataSource","Topic","Data_Value","Sample_Size","Stratification1","StratificationId1","LocationDisplayOrder"
-"676","2015","US","National","BRFSS","Obesity / Weight Status","21.7","148,030","College graduate","EDUCOGRAD","0"
-"28820","2015","AL","Alabama","BRFSS","Obesity / Weight Status","29.1","2,068","College graduate","EDUCOGRAD","1"
-"15115","2015","AK","Alaska","BRFSS","Obesity / Weight Status","26.7","1,290","College graduate","EDUCOGRAD","2"
-"17536","2015","AZ","Arizona","BRFSS","Obesity / Weight Status","21","2,831","College graduate","EDUCOGRAD","4"
-"28586","2015","AR","Arkansas","BRFSS","Obesity / Weight Status","30.9","1,334","College graduate","EDUCOGRAD","5"
-"20547","2015","CA","California","BRFSS","Obesity / Weight Status","15.1","4,752","College graduate","EDUCOGRAD","6"
-"29941","2015","CO","Colorado","BRFSS","Obesity / Weight Status","14.7","5,172","College graduate","EDUCOGRAD","8"
-"8340","2015","CT","Connecticut","BRFSS","Obesity / Weight Status","18.8","5,092","College graduate","EDUCOGRAD","9"
-"8789","2015","DE","Delaware","BRFSS","Obesity / Weight Status","25.6","1,313","College graduate","EDUCOGRAD","10"
-"33449","2015","DC","District of Columbia","BRFSS","Obesity / Weight Status","12.7","2,242","College graduate","EDUCOGRAD","11"
-"20992","2015","FL","Florida","BRFSS","Obesity / Weight Status","21.3","3,460","College graduate","EDUCOGRAD","12"
-"15672","2015","GA","Georgia","BRFSS","Obesity / Weight Status","24.4","1,560","College graduate","EDUCOGRAD","13"
-"4624","2015","HI","Hawaii","BRFSS","Obesity / Weight Status","17.1","2,822","College graduate","EDUCOGRAD","15"
-"36797","2015","ID","Idaho","BRFSS","Obesity / Weight Status","23","1,737","College graduate","EDUCOGRAD","16"
-"31170","2015","IL","Illinois","BRFSS","Obesity / Weight Status","23.5","2,030","College graduate","EDUCOGRAD","17"
-"29781","2015","IN","Indiana","BRFSS","Obesity / Weight Status","26.5","1,871","College graduate","EDUCOGRAD","18"
-"38570","2015","IA","Iowa","BRFSS","Obesity / Weight Status","26.6","1,746","College graduate","EDUCOGRAD","19"
-"32739","2015","KS","Kansas","BRFSS","Obesity / Weight Status","30","7,971","College graduate","EDUCOGRAD","20"
-"34099","2015","KY","Kentucky","BRFSS","Obesity / Weight Status","30.6","2,415","College graduate","EDUCOGRAD","21"
-"3419","2015","LA","Louisiana","BRFSS","Obesity / Weight Status","29.1","1,238","College graduate","EDUCOGRAD","22"
-"28440","2015","ME","Maine","BRFSS","Obesity / Weight Status","21.8","3,311","College graduate","EDUCOGRAD","23"
-"38630","2015","MD","Maryland","BRFSS","Obesity / Weight Status","21.4","5,081","College graduate","EDUCOGRAD","24"
-"13385","2015","MA","Massachusetts","BRFSS","Obesity / Weight Status","17.3","3,807","College graduate","EDUCOGRAD","25"
-"27804","2015","MI","Michigan","BRFSS","Obesity / Weight Status","25.9","3,143","College graduate","EDUCOGRAD","26"
-"10637","2015","MN","Minnesota","BRFSS","Obesity / Weight Status","21.8","6,094","College graduate","EDUCOGRAD","27"
-"20194","2015","MS","Mississippi","BRFSS","Obesity / Weight Status","30.9","1,573","College graduate","EDUCOGRAD","28"
-"31133","2015","MO","Missouri","BRFSS","Obesity / Weight Status","28.7","2,072","College graduate","EDUCOGRAD","29"
-"6004","2015","MT","Montana","BRFSS","Obesity / Weight Status","18.5","1,954","College graduate","EDUCOGRAD","30"
-"38399","2015","NE","Nebraska","BRFSS","Obesity / Weight Status","25.4","5,094","College graduate","EDUCOGRAD","31"
-"11578","2015","NV","Nevada","BRFSS","Obesity / Weight Status","20.9","900","College graduate","EDUCOGRAD","32"
-"18462","2015","NH","New Hampshire","BRFSS","Obesity / Weight Status","20.9","2,731","College graduate","EDUCOGRAD","33"
-"15795","2015","NJ","New Jersey","BRFSS","Obesity / Weight Status","20.4","4,316","College graduate","EDUCOGRAD","34"
-"29114","2015","NM","New Mexico","BRFSS","Obesity / Weight Status","21.1","2,072","College graduate","EDUCOGRAD","35"
-"31137","2015","NY","New York","BRFSS","Obesity / Weight Status","17.2","4,879","College graduate","EDUCOGRAD","36"
-"39230","2015","NC","North Carolina","BRFSS","Obesity / Weight Status","22.3","2,055","College graduate","EDUCOGRAD","37"
-"4903","2015","ND","North Dakota","BRFSS","Obesity / Weight Status","26.3","1,493","College graduate","EDUCOGRAD","38"
-"8665","2015","OH","Ohio","BRFSS","Obesity / Weight Status","22.8","3,264","College graduate","EDUCOGRAD","39"
-"29140","2015","OK","Oklahoma","BRFSS","Obesity / Weight Status","27.1","1,968","College graduate","EDUCOGRAD","40"
-"21642","2015","OR","Oregon","BRFSS","Obesity / Weight Status","21.5","1,962","College graduate","EDUCOGRAD","41"
-"6929","2015","PA","Pennsylvania","BRFSS","Obesity / Weight Status","21.3","1,937","College graduate","EDUCOGRAD","42"
-"13789","2015","RI","Rhode Island","BRFSS","Obesity / Weight Status","20.2","2,287","College graduate","EDUCOGRAD","44"
-"35661","2015","SC","South Carolina","BRFSS","Obesity / Weight Status","25.6","3,409","College graduate","EDUCOGRAD","45"
-"5082","2015","SD","South Dakota","BRFSS","Obesity / Weight Status","28.6","2,220","College graduate","EDUCOGRAD","46"
-"4104","2015","TN","Tennessee","BRFSS","Obesity / Weight Status","27","1,686","College graduate","EDUCOGRAD","47"
-"19655","2015","TX","Texas","BRFSS","Obesity / Weight Status","25.4","4,790","College graduate","EDUCOGRAD","48"
-"8106","2015","UT","Utah","BRFSS","Obesity / Weight Status","21.2","3,770","College graduate","EDUCOGRAD","49"
-"21266","2015","VT","Vermont","BRFSS","Obesity / Weight Status","17","2,507","College graduate","EDUCOGRAD","50"
-"9159","2015","VA","Virginia","BRFSS","Obesity / Weight Status","23","3,248","College graduate","EDUCOGRAD","51"
-"33547","2015","WA","Washington","BRFSS","Obesity / Weight Status","20.1","6,402","College graduate","EDUCOGRAD","53"
-"27440","2015","WV","West Virginia","BRFSS","Obesity / Weight Status","31.4","1,458","College graduate","EDUCOGRAD","54"
-"27101","2015","WI","Wisconsin","BRFSS","Obesity / Weight Status","24.8","1,918","College graduate","EDUCOGRAD","55"
-"22679","2015","WY","Wyoming","BRFSS","Obesity / Weight Status","20.7","1,685","College graduate","EDUCOGRAD","56"
-"548","2015","GU","Guam","BRFSS","Obesity / Weight Status","26.4","480","College graduate","EDUCOGRAD","66"
-"1111","2015","PR","Puerto Rico","BRFSS","Obesity / Weight Status","26.4","1,496","College graduate","EDUCOGRAD","72"
+﻿ID,Description,LocationAbbr,LocationDesc,DataSource,Topic,Data_Value,Sample_Size,Stratification1,StratificationId1,LocationDisplayOrder
+676,2015,US,National,BRFSS,Obesity / Weight Status,21.7,148,030,College graduate,EDUCOGRAD,0
+28820,2015,AL,Alabama,BRFSS,Obesity / Weight Status,29.1,2,068,College graduate,EDUCOGRAD,1
+15115,2015,AK,Alaska,BRFSS,Obesity / Weight Status,26.7,1,290,College graduate,EDUCOGRAD,2
+17536,2015,AZ,Arizona,BRFSS,Obesity / Weight Status,21,2,831,College graduate,EDUCOGRAD,4
+28586,2015,AR,Arkansas,BRFSS,Obesity / Weight Status,30.9,1,334,College graduate,EDUCOGRAD,5
+20547,2015,CA,California,BRFSS,Obesity / Weight Status,15.1,4,752,College graduate,EDUCOGRAD,6
+29941,2015,CO,Colorado,BRFSS,Obesity / Weight Status,14.7,5,172,College graduate,EDUCOGRAD,8
+8340,2015,CT,Connecticut,BRFSS,Obesity / Weight Status,18.8,5,092,College graduate,EDUCOGRAD,9
+8789,2015,DE,Delaware,BRFSS,Obesity / Weight Status,25.6,1,313,College graduate,EDUCOGRAD,10
+33449,2015,DC,District of Columbia,BRFSS,Obesity / Weight Status,12.7,2,242,College graduate,EDUCOGRAD,11
+20992,2015,FL,Florida,BRFSS,Obesity / Weight Status,21.3,3,460,College graduate,EDUCOGRAD,12
+15672,2015,GA,Georgia,BRFSS,Obesity / Weight Status,24.4,1,560,College graduate,EDUCOGRAD,13
+4624,2015,HI,Hawaii,BRFSS,Obesity / Weight Status,17.1,2,822,College graduate,EDUCOGRAD,15
+36797,2015,ID,Idaho,BRFSS,Obesity / Weight Status,23,1,737,College graduate,EDUCOGRAD,16
+31170,2015,IL,Illinois,BRFSS,Obesity / Weight Status,23.5,2,030,College graduate,EDUCOGRAD,17
+29781,2015,IN,Indiana,BRFSS,Obesity / Weight Status,26.5,1,871,College graduate,EDUCOGRAD,18
+38570,2015,IA,Iowa,BRFSS,Obesity / Weight Status,26.6,1,746,College graduate,EDUCOGRAD,19
+32739,2015,KS,Kansas,BRFSS,Obesity / Weight Status,30,7,971,College graduate,EDUCOGRAD,20
+34099,2015,KY,Kentucky,BRFSS,Obesity / Weight Status,30.6,2,415,College graduate,EDUCOGRAD,21
+3419,2015,LA,Louisiana,BRFSS,Obesity / Weight Status,29.1,1,238,College graduate,EDUCOGRAD,22
+28440,2015,ME,Maine,BRFSS,Obesity / Weight Status,21.8,3,311,College graduate,EDUCOGRAD,23
+38630,2015,MD,Maryland,BRFSS,Obesity / Weight Status,21.4,5,081,College graduate,EDUCOGRAD,24
+13385,2015,MA,Massachusetts,BRFSS,Obesity / Weight Status,17.3,3,807,College graduate,EDUCOGRAD,25
+27804,2015,MI,Michigan,BRFSS,Obesity / Weight Status,25.9,3,143,College graduate,EDUCOGRAD,26
+10637,2015,MN,Minnesota,BRFSS,Obesity / Weight Status,21.8,6,094,College graduate,EDUCOGRAD,27
+20194,2015,MS,Mississippi,BRFSS,Obesity / Weight Status,30.9,1,573,College graduate,EDUCOGRAD,28
+31133,2015,MO,Missouri,BRFSS,Obesity / Weight Status,28.7,2,072,College graduate,EDUCOGRAD,29
+6004,2015,MT,Montana,BRFSS,Obesity / Weight Status,18.5,1,954,College graduate,EDUCOGRAD,30
+38399,2015,NE,Nebraska,BRFSS,Obesity / Weight Status,25.4,5,094,College graduate,EDUCOGRAD,31
+11578,2015,NV,Nevada,BRFSS,Obesity / Weight Status,20.9,900,College graduate,EDUCOGRAD,32
+18462,2015,NH,New Hampshire,BRFSS,Obesity / Weight Status,20.9,2,731,College graduate,EDUCOGRAD,33
+15795,2015,NJ,New Jersey,BRFSS,Obesity / Weight Status,20.4,4,316,College graduate,EDUCOGRAD,34
+29114,2015,NM,New Mexico,BRFSS,Obesity / Weight Status,21.1,2,072,College graduate,EDUCOGRAD,35
+31137,2015,NY,New York,BRFSS,Obesity / Weight Status,17.2,4,879,College graduate,EDUCOGRAD,36
+39230,2015,NC,North Carolina,BRFSS,Obesity / Weight Status,22.3,2,055,College graduate,EDUCOGRAD,37
+4903,2015,ND,North Dakota,BRFSS,Obesity / Weight Status,26.3,1,493,College graduate,EDUCOGRAD,38
+8665,2015,OH,Ohio,BRFSS,Obesity / Weight Status,22.8,3,264,College graduate,EDUCOGRAD,39
+29140,2015,OK,Oklahoma,BRFSS,Obesity / Weight Status,27.1,1,968,College graduate,EDUCOGRAD,40
+21642,2015,OR,Oregon,BRFSS,Obesity / Weight Status,21.5,1,962,College graduate,EDUCOGRAD,41
+6929,2015,PA,Pennsylvania,BRFSS,Obesity / Weight Status,21.3,1,937,College graduate,EDUCOGRAD,42
+13789,2015,RI,Rhode Island,BRFSS,Obesity / Weight Status,20.2,2,287,College graduate,EDUCOGRAD,44
+35661,2015,SC,South Carolina,BRFSS,Obesity / Weight Status,25.6,3,409,College graduate,EDUCOGRAD,45
+5082,2015,SD,South Dakota,BRFSS,Obesity / Weight Status,28.6,2,220,College graduate,EDUCOGRAD,46
+4104,2015,TN,Tennessee,BRFSS,Obesity / Weight Status,27,1,686,College graduate,EDUCOGRAD,47
+19655,2015,TX,Texas,BRFSS,Obesity / Weight Status,25.4,4,790,College graduate,EDUCOGRAD,48
+8106,2015,UT,Utah,BRFSS,Obesity / Weight Status,21.2,3,770,College graduate,EDUCOGRAD,49
+21266,2015,VT,Vermont,BRFSS,Obesity / Weight Status,17,2,507,College graduate,EDUCOGRAD,50
+9159,2015,VA,Virginia,BRFSS,Obesity / Weight Status,23,3,248,College graduate,EDUCOGRAD,51
+33547,2015,WA,Washington,BRFSS,Obesity / Weight Status,20.1,6,402,College graduate,EDUCOGRAD,53
+27440,2015,WV,West Virginia,BRFSS,Obesity / Weight Status,31.4,1,458,College graduate,EDUCOGRAD,54
+27101,2015,WI,Wisconsin,BRFSS,Obesity / Weight Status,24.8,1,918,College graduate,EDUCOGRAD,55
+22679,2015,WY,Wyoming,BRFSS,Obesity / Weight Status,20.7,1,685,College graduate,EDUCOGRAD,56
+548,2015,GU,Guam,BRFSS,Obesity / Weight Status,26.4,480,College graduate,EDUCOGRAD,66
+1111,2015,PR,Puerto Rico,BRFSS,Obesity / Weight Status,26.4,1,496,College graduate,EDUCOGRAD,72

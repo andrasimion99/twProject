@@ -1,53 +1,53 @@
-﻿"ID","Description","LocationAbbr","LocationDesc","DataSource","Topic","Data_Value","Sample_Size","Stratification1","StratificationId1","LocationDisplayOrder"
-"498","2012","US","National","BRFSS","Obesity / Weight Status","28.7","120,032","Some college or technical school","EDUCOTEC","0"
-"35150","2012","AL","Alabama","BRFSS","Obesity / Weight Status","34.4","2,405","Some college or technical school","EDUCOTEC","1"
-"28101","2012","AK","Alaska","BRFSS","Obesity / Weight Status","26.9","1,250","Some college or technical school","EDUCOTEC","2"
-"22251","2012","AZ","Arizona","BRFSS","Obesity / Weight Status","25.3","2,201","Some college or technical school","EDUCOTEC","4"
-"35464","2012","AR","Arkansas","BRFSS","Obesity / Weight Status","32.7","1,262","Some college or technical school","EDUCOTEC","5"
-"8572","2012","CA","California","BRFSS","Obesity / Weight Status","26.3","3,620","Some college or technical school","EDUCOTEC","6"
-"33396","2012","CO","Colorado","BRFSS","Obesity / Weight Status","21.9","3,295","Some college or technical school","EDUCOTEC","8"
-"34993","2012","CT","Connecticut","BRFSS","Obesity / Weight Status","28.3","1,995","Some college or technical school","EDUCOTEC","9"
-"7178","2012","DE","Delaware","BRFSS","Obesity / Weight Status","31.2","1,323","Some college or technical school","EDUCOTEC","10"
-"24287","2012","DC","District of Columbia","BRFSS","Obesity / Weight Status","27.8","556","Some college or technical school","EDUCOTEC","11"
-"25327","2012","FL","Florida","BRFSS","Obesity / Weight Status","24.3","2,029","Some college or technical school","EDUCOTEC","12"
-"17988","2012","GA","Georgia","BRFSS","Obesity / Weight Status","31","1,472","Some college or technical school","EDUCOTEC","13"
-"12934","2012","HI","Hawaii","BRFSS","Obesity / Weight Status","23.6","2,051","Some college or technical school","EDUCOTEC","15"
-"23306","2012","ID","Idaho","BRFSS","Obesity / Weight Status","29","1,770","Some college or technical school","EDUCOTEC","16"
-"30098","2012","IL","Illinois","BRFSS","Obesity / Weight Status","28.4","1,441","Some college or technical school","EDUCOTEC","17"
-"15321","2012","IN","Indiana","BRFSS","Obesity / Weight Status","32.6","2,145","Some college or technical school","EDUCOTEC","18"
-"9050","2012","IA","Iowa","BRFSS","Obesity / Weight Status","32.3","1,964","Some college or technical school","EDUCOTEC","19"
-"20733","2012","KS","Kansas","BRFSS","Obesity / Weight Status","31.6","3,275","Some college or technical school","EDUCOTEC","20"
-"20786","2012","KY","Kentucky","BRFSS","Obesity / Weight Status","32.6","2,825","Some college or technical school","EDUCOTEC","21"
-"7441","2012","LA","Louisiana","BRFSS","Obesity / Weight Status","37.5","2,115","Some college or technical school","EDUCOTEC","22"
-"31293","2012","ME","Maine","BRFSS","Obesity / Weight Status","29.6","2,522","Some college or technical school","EDUCOTEC","23"
-"38557","2012","MD","Maryland","BRFSS","Obesity / Weight Status","29.1","2,889","Some college or technical school","EDUCOTEC","24"
-"24019","2012","MA","Massachusetts","BRFSS","Obesity / Weight Status","25.2","4,658","Some college or technical school","EDUCOTEC","25"
-"39168","2012","MI","Michigan","BRFSS","Obesity / Weight Status","32.4","3,005","Some college or technical school","EDUCOTEC","26"
-"26636","2012","MN","Minnesota","BRFSS","Obesity / Weight Status","27.4","3,364","Some college or technical school","EDUCOTEC","27"
-"39526","2012","MS","Mississippi","BRFSS","Obesity / Weight Status","35.6","1,888","Some college or technical school","EDUCOTEC","28"
-"2780","2012","MO","Missouri","BRFSS","Obesity / Weight Status","29.9","1,745","Some college or technical school","EDUCOTEC","29"
-"6127","2012","MT","Montana","BRFSS","Obesity / Weight Status","26.3","2,407","Some college or technical school","EDUCOTEC","30"
-"37667","2012","NE","Nebraska","BRFSS","Obesity / Weight Status","28.7","5,549","Some college or technical school","EDUCOTEC","31"
-"20052","2012","NV","Nevada","BRFSS","Obesity / Weight Status","27.3","1,515","Some college or technical school","EDUCOTEC","32"
-"19168","2012","NH","New Hampshire","BRFSS","Obesity / Weight Status","28.4","1,845","Some college or technical school","EDUCOTEC","33"
-"37129","2012","NJ","New Jersey","BRFSS","Obesity / Weight Status","26.1","3,485","Some college or technical school","EDUCOTEC","34"
-"5057","2012","NM","New Mexico","BRFSS","Obesity / Weight Status","29.5","2,328","Some college or technical school","EDUCOTEC","35"
-"7245","2012","NY","New York","BRFSS","Obesity / Weight Status","25.4","1,377","Some college or technical school","EDUCOTEC","36"
-"3769","2012","NC","North Carolina","BRFSS","Obesity / Weight Status","30.5","3,032","Some college or technical school","EDUCOTEC","37"
-"29930","2012","ND","North Dakota","BRFSS","Obesity / Weight Status","30.2","1,468","Some college or technical school","EDUCOTEC","38"
-"20036","2012","OH","Ohio","BRFSS","Obesity / Weight Status","31.1","3,178","Some college or technical school","EDUCOTEC","39"
-"36719","2012","OK","Oklahoma","BRFSS","Obesity / Weight Status","34.9","2,220","Some college or technical school","EDUCOTEC","40"
-"21061","2012","OR","Oregon","BRFSS","Obesity / Weight Status","28","1,521","Some college or technical school","EDUCOTEC","41"
-"38548","2012","PA","Pennsylvania","BRFSS","Obesity / Weight Status","29.4","4,393","Some college or technical school","EDUCOTEC","42"
-"15893","2012","RI","Rhode Island","BRFSS","Obesity / Weight Status","26.9","1,311","Some college or technical school","EDUCOTEC","44"
-"32033","2012","SC","South Carolina","BRFSS","Obesity / Weight Status","32.4","3,242","Some college or technical school","EDUCOTEC","45"
-"9326","2012","SD","South Dakota","BRFSS","Obesity / Weight Status","28.1","2,308","Some college or technical school","EDUCOTEC","46"
-"37630","2012","TN","Tennessee","BRFSS","Obesity / Weight Status","33.2","1,808","Some college or technical school","EDUCOTEC","47"
-"23866","2012","TX","Texas","BRFSS","Obesity / Weight Status","29","2,093","Some college or technical school","EDUCOTEC","48"
-"28861","2012","UT","Utah","BRFSS","Obesity / Weight Status","25.5","4,019","Some college or technical school","EDUCOTEC","49"
-"19372","2012","VT","Vermont","BRFSS","Obesity / Weight Status","24.5","1,318","Some college or technical school","EDUCOTEC","50"
-"26141","2012","VA","Virginia","BRFSS","Obesity / Weight Status","28.1","1,699","Some college or technical school","EDUCOTEC","51"
-"7172","2012","WA","Washington","BRFSS","Obesity / Weight Status","28.6","4,424","Some college or technical school","EDUCOTEC","53"
-"12350","2012","WV","West Virginia","BRFSS","Obesity / Weight Status","35","1,188","Some college or technical school","EDUCOTEC","54"
-"22249","2012","WI","Wisconsin","BRFSS","Obesity / Weight Status","29.2","1,369","Some college or technical school","EDUCOTEC","55"
-"16348","2012","WY","Wyoming","BRFSS","Obesity / Weight Status","25.6","1,870","Some college or technical school","EDUCOTEC","56"
+﻿ID,Description,LocationAbbr,LocationDesc,DataSource,Topic,Data_Value,Sample_Size,Stratification1,StratificationId1,LocationDisplayOrder
+498,2012,US,National,BRFSS,Obesity / Weight Status,28.7,120,032,Some college or technical school,EDUCOTEC,0
+35150,2012,AL,Alabama,BRFSS,Obesity / Weight Status,34.4,2,405,Some college or technical school,EDUCOTEC,1
+28101,2012,AK,Alaska,BRFSS,Obesity / Weight Status,26.9,1,250,Some college or technical school,EDUCOTEC,2
+22251,2012,AZ,Arizona,BRFSS,Obesity / Weight Status,25.3,2,201,Some college or technical school,EDUCOTEC,4
+35464,2012,AR,Arkansas,BRFSS,Obesity / Weight Status,32.7,1,262,Some college or technical school,EDUCOTEC,5
+8572,2012,CA,California,BRFSS,Obesity / Weight Status,26.3,3,620,Some college or technical school,EDUCOTEC,6
+33396,2012,CO,Colorado,BRFSS,Obesity / Weight Status,21.9,3,295,Some college or technical school,EDUCOTEC,8
+34993,2012,CT,Connecticut,BRFSS,Obesity / Weight Status,28.3,1,995,Some college or technical school,EDUCOTEC,9
+7178,2012,DE,Delaware,BRFSS,Obesity / Weight Status,31.2,1,323,Some college or technical school,EDUCOTEC,10
+24287,2012,DC,District of Columbia,BRFSS,Obesity / Weight Status,27.8,556,Some college or technical school,EDUCOTEC,11
+25327,2012,FL,Florida,BRFSS,Obesity / Weight Status,24.3,2,029,Some college or technical school,EDUCOTEC,12
+17988,2012,GA,Georgia,BRFSS,Obesity / Weight Status,31,1,472,Some college or technical school,EDUCOTEC,13
+12934,2012,HI,Hawaii,BRFSS,Obesity / Weight Status,23.6,2,051,Some college or technical school,EDUCOTEC,15
+23306,2012,ID,Idaho,BRFSS,Obesity / Weight Status,29,1,770,Some college or technical school,EDUCOTEC,16
+30098,2012,IL,Illinois,BRFSS,Obesity / Weight Status,28.4,1,441,Some college or technical school,EDUCOTEC,17
+15321,2012,IN,Indiana,BRFSS,Obesity / Weight Status,32.6,2,145,Some college or technical school,EDUCOTEC,18
+9050,2012,IA,Iowa,BRFSS,Obesity / Weight Status,32.3,1,964,Some college or technical school,EDUCOTEC,19
+20733,2012,KS,Kansas,BRFSS,Obesity / Weight Status,31.6,3,275,Some college or technical school,EDUCOTEC,20
+20786,2012,KY,Kentucky,BRFSS,Obesity / Weight Status,32.6,2,825,Some college or technical school,EDUCOTEC,21
+7441,2012,LA,Louisiana,BRFSS,Obesity / Weight Status,37.5,2,115,Some college or technical school,EDUCOTEC,22
+31293,2012,ME,Maine,BRFSS,Obesity / Weight Status,29.6,2,522,Some college or technical school,EDUCOTEC,23
+38557,2012,MD,Maryland,BRFSS,Obesity / Weight Status,29.1,2,889,Some college or technical school,EDUCOTEC,24
+24019,2012,MA,Massachusetts,BRFSS,Obesity / Weight Status,25.2,4,658,Some college or technical school,EDUCOTEC,25
+39168,2012,MI,Michigan,BRFSS,Obesity / Weight Status,32.4,3,005,Some college or technical school,EDUCOTEC,26
+26636,2012,MN,Minnesota,BRFSS,Obesity / Weight Status,27.4,3,364,Some college or technical school,EDUCOTEC,27
+39526,2012,MS,Mississippi,BRFSS,Obesity / Weight Status,35.6,1,888,Some college or technical school,EDUCOTEC,28
+2780,2012,MO,Missouri,BRFSS,Obesity / Weight Status,29.9,1,745,Some college or technical school,EDUCOTEC,29
+6127,2012,MT,Montana,BRFSS,Obesity / Weight Status,26.3,2,407,Some college or technical school,EDUCOTEC,30
+37667,2012,NE,Nebraska,BRFSS,Obesity / Weight Status,28.7,5,549,Some college or technical school,EDUCOTEC,31
+20052,2012,NV,Nevada,BRFSS,Obesity / Weight Status,27.3,1,515,Some college or technical school,EDUCOTEC,32
+19168,2012,NH,New Hampshire,BRFSS,Obesity / Weight Status,28.4,1,845,Some college or technical school,EDUCOTEC,33
+37129,2012,NJ,New Jersey,BRFSS,Obesity / Weight Status,26.1,3,485,Some college or technical school,EDUCOTEC,34
+5057,2012,NM,New Mexico,BRFSS,Obesity / Weight Status,29.5,2,328,Some college or technical school,EDUCOTEC,35
+7245,2012,NY,New York,BRFSS,Obesity / Weight Status,25.4,1,377,Some college or technical school,EDUCOTEC,36
+3769,2012,NC,North Carolina,BRFSS,Obesity / Weight Status,30.5,3,032,Some college or technical school,EDUCOTEC,37
+29930,2012,ND,North Dakota,BRFSS,Obesity / Weight Status,30.2,1,468,Some college or technical school,EDUCOTEC,38
+20036,2012,OH,Ohio,BRFSS,Obesity / Weight Status,31.1,3,178,Some college or technical school,EDUCOTEC,39
+36719,2012,OK,Oklahoma,BRFSS,Obesity / Weight Status,34.9,2,220,Some college or technical school,EDUCOTEC,40
+21061,2012,OR,Oregon,BRFSS,Obesity / Weight Status,28,1,521,Some college or technical school,EDUCOTEC,41
+38548,2012,PA,Pennsylvania,BRFSS,Obesity / Weight Status,29.4,4,393,Some college or technical school,EDUCOTEC,42
+15893,2012,RI,Rhode Island,BRFSS,Obesity / Weight Status,26.9,1,311,Some college or technical school,EDUCOTEC,44
+32033,2012,SC,South Carolina,BRFSS,Obesity / Weight Status,32.4,3,242,Some college or technical school,EDUCOTEC,45
+9326,2012,SD,South Dakota,BRFSS,Obesity / Weight Status,28.1,2,308,Some college or technical school,EDUCOTEC,46
+37630,2012,TN,Tennessee,BRFSS,Obesity / Weight Status,33.2,1,808,Some college or technical school,EDUCOTEC,47
+23866,2012,TX,Texas,BRFSS,Obesity / Weight Status,29,2,093,Some college or technical school,EDUCOTEC,48
+28861,2012,UT,Utah,BRFSS,Obesity / Weight Status,25.5,4,019,Some college or technical school,EDUCOTEC,49
+19372,2012,VT,Vermont,BRFSS,Obesity / Weight Status,24.5,1,318,Some college or technical school,EDUCOTEC,50
+26141,2012,VA,Virginia,BRFSS,Obesity / Weight Status,28.1,1,699,Some college or technical school,EDUCOTEC,51
+7172,2012,WA,Washington,BRFSS,Obesity / Weight Status,28.6,4,424,Some college or technical school,EDUCOTEC,53
+12350,2012,WV,West Virginia,BRFSS,Obesity / Weight Status,35,1,188,Some college or technical school,EDUCOTEC,54
+22249,2012,WI,Wisconsin,BRFSS,Obesity / Weight Status,29.2,1,369,Some college or technical school,EDUCOTEC,55
+16348,2012,WY,Wyoming,BRFSS,Obesity / Weight Status,25.6,1,870,Some college or technical school,EDUCOTEC,56

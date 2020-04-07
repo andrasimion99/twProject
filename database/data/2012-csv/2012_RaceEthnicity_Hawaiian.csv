@@ -1,53 +1,53 @@
-﻿"ID","Description","LocationAbbr","LocationDesc","DataSource","Topic","Data_Value","Sample_Size","Stratification1","StratificationId1","LocationDisplayOrder"
-"503","2012","US","National","BRFSS","Obesity / Weight Status","25.8","950","Hawaiian / Pacific Islander","RACEHPI","0"
-"39876","2012","AL","Alabama","BRFSS","Obesity / Weight Status","~","~","Hawaiian / Pacific Islander","RACEHPI","1"
-"2824","2012","AK","Alaska","BRFSS","Obesity / Weight Status","~","~","Hawaiian / Pacific Islander","RACEHPI","2"
-"9720","2012","AZ","Arizona","BRFSS","Obesity / Weight Status","~","~","Hawaiian / Pacific Islander","RACEHPI","4"
-"38223","2012","AR","Arkansas","BRFSS","Obesity / Weight Status","~","~","Hawaiian / Pacific Islander","RACEHPI","5"
-"1683","2012","CA","California","BRFSS","Obesity / Weight Status","31.4","86","Hawaiian / Pacific Islander","RACEHPI","6"
-"39159","2012","CO","Colorado","BRFSS","Obesity / Weight Status","~","~","Hawaiian / Pacific Islander","RACEHPI","8"
-"30066","2012","CT","Connecticut","BRFSS","Obesity / Weight Status","~","~","Hawaiian / Pacific Islander","RACEHPI","9"
-"36424","2012","DE","Delaware","BRFSS","Obesity / Weight Status","~","~","Hawaiian / Pacific Islander","RACEHPI","10"
-"27233","2012","DC","District of Columbia","BRFSS","Obesity / Weight Status","~","~","Hawaiian / Pacific Islander","RACEHPI","11"
-"24427","2012","FL","Florida","BRFSS","Obesity / Weight Status","~","~","Hawaiian / Pacific Islander","RACEHPI","12"
-"6016","2012","GA","Georgia","BRFSS","Obesity / Weight Status","~","~","Hawaiian / Pacific Islander","RACEHPI","13"
-"5816","2012","HI","Hawaii","BRFSS","Obesity / Weight Status","51.4","256","Hawaiian / Pacific Islander","RACEHPI","15"
-"27009","2012","ID","Idaho","BRFSS","Obesity / Weight Status","~","~","Hawaiian / Pacific Islander","RACEHPI","16"
-"23822","2012","IL","Illinois","BRFSS","Obesity / Weight Status","~","~","Hawaiian / Pacific Islander","RACEHPI","17"
-"13365","2012","IN","Indiana","BRFSS","Obesity / Weight Status","~","~","Hawaiian / Pacific Islander","RACEHPI","18"
-"22911","2012","IA","Iowa","BRFSS","Obesity / Weight Status","~","~","Hawaiian / Pacific Islander","RACEHPI","19"
-"12991","2012","KS","Kansas","BRFSS","Obesity / Weight Status","~","~","Hawaiian / Pacific Islander","RACEHPI","20"
-"15906","2012","KY","Kentucky","BRFSS","Obesity / Weight Status","~","~","Hawaiian / Pacific Islander","RACEHPI","21"
-"13066","2012","LA","Louisiana","BRFSS","Obesity / Weight Status","~","~","Hawaiian / Pacific Islander","RACEHPI","22"
-"32625","2012","ME","Maine","BRFSS","Obesity / Weight Status","~","~","Hawaiian / Pacific Islander","RACEHPI","23"
-"3942","2012","MD","Maryland","BRFSS","Obesity / Weight Status","~","~","Hawaiian / Pacific Islander","RACEHPI","24"
-"28550","2012","MA","Massachusetts","BRFSS","Obesity / Weight Status","~","~","Hawaiian / Pacific Islander","RACEHPI","25"
-"30881","2012","MI","Michigan","BRFSS","Obesity / Weight Status","~","~","Hawaiian / Pacific Islander","RACEHPI","26"
-"12470","2012","MN","Minnesota","BRFSS","Obesity / Weight Status","~","~","Hawaiian / Pacific Islander","RACEHPI","27"
-"31690","2012","MS","Mississippi","BRFSS","Obesity / Weight Status","~","~","Hawaiian / Pacific Islander","RACEHPI","28"
-"24804","2012","MO","Missouri","BRFSS","Obesity / Weight Status","~","~","Hawaiian / Pacific Islander","RACEHPI","29"
-"20010","2012","MT","Montana","BRFSS","Obesity / Weight Status","~","~","Hawaiian / Pacific Islander","RACEHPI","30"
-"35540","2012","NE","Nebraska","BRFSS","Obesity / Weight Status","~","~","Hawaiian / Pacific Islander","RACEHPI","31"
-"3540","2012","NV","Nevada","BRFSS","Obesity / Weight Status","~","~","Hawaiian / Pacific Islander","RACEHPI","32"
-"20395","2012","NH","New Hampshire","BRFSS","Obesity / Weight Status","~","~","Hawaiian / Pacific Islander","RACEHPI","33"
-"11243","2012","NJ","New Jersey","BRFSS","Obesity / Weight Status","~","~","Hawaiian / Pacific Islander","RACEHPI","34"
-"33694","2012","NM","New Mexico","BRFSS","Obesity / Weight Status","~","~","Hawaiian / Pacific Islander","RACEHPI","35"
-"17104","2012","NY","New York","BRFSS","Obesity / Weight Status","~","~","Hawaiian / Pacific Islander","RACEHPI","36"
-"25105","2012","NC","North Carolina","BRFSS","Obesity / Weight Status","~","~","Hawaiian / Pacific Islander","RACEHPI","37"
-"9749","2012","ND","North Dakota","BRFSS","Obesity / Weight Status","~","~","Hawaiian / Pacific Islander","RACEHPI","38"
-"7419","2012","OH","Ohio","BRFSS","Obesity / Weight Status","~","~","Hawaiian / Pacific Islander","RACEHPI","39"
-"38856","2012","OK","Oklahoma","BRFSS","Obesity / Weight Status","~","~","Hawaiian / Pacific Islander","RACEHPI","40"
-"27543","2012","OR","Oregon","BRFSS","Obesity / Weight Status","~","~","Hawaiian / Pacific Islander","RACEHPI","41"
-"16379","2012","PA","Pennsylvania","BRFSS","Obesity / Weight Status","~","~","Hawaiian / Pacific Islander","RACEHPI","42"
-"24801","2012","RI","Rhode Island","BRFSS","Obesity / Weight Status","~","~","Hawaiian / Pacific Islander","RACEHPI","44"
-"37906","2012","SC","South Carolina","BRFSS","Obesity / Weight Status","~","~","Hawaiian / Pacific Islander","RACEHPI","45"
-"33645","2012","SD","South Dakota","BRFSS","Obesity / Weight Status","~","~","Hawaiian / Pacific Islander","RACEHPI","46"
-"24580","2012","TN","Tennessee","BRFSS","Obesity / Weight Status","~","~","Hawaiian / Pacific Islander","RACEHPI","47"
-"34847","2012","TX","Texas","BRFSS","Obesity / Weight Status","~","~","Hawaiian / Pacific Islander","RACEHPI","48"
-"9515","2012","UT","Utah","BRFSS","Obesity / Weight Status","~","~","Hawaiian / Pacific Islander","RACEHPI","49"
-"19706","2012","VT","Vermont","BRFSS","Obesity / Weight Status","~","~","Hawaiian / Pacific Islander","RACEHPI","50"
-"17497","2012","VA","Virginia","BRFSS","Obesity / Weight Status","~","~","Hawaiian / Pacific Islander","RACEHPI","51"
-"27770","2012","WA","Washington","BRFSS","Obesity / Weight Status","23.8","69","Hawaiian / Pacific Islander","RACEHPI","53"
-"23339","2012","WV","West Virginia","BRFSS","Obesity / Weight Status","~","~","Hawaiian / Pacific Islander","RACEHPI","54"
-"14547","2012","WI","Wisconsin","BRFSS","Obesity / Weight Status","~","~","Hawaiian / Pacific Islander","RACEHPI","55"
-"29694","2012","WY","Wyoming","BRFSS","Obesity / Weight Status","~","~","Hawaiian / Pacific Islander","RACEHPI","56"
+﻿ID,Description,LocationAbbr,LocationDesc,DataSource,Topic,Data_Value,Sample_Size,Stratification1,StratificationId1,LocationDisplayOrder
+503,2012,US,National,BRFSS,Obesity / Weight Status,25.8,950,Hawaiian / Pacific Islander,RACEHPI,0
+39876,2012,AL,Alabama,BRFSS,Obesity / Weight Status,~,~,Hawaiian / Pacific Islander,RACEHPI,1
+2824,2012,AK,Alaska,BRFSS,Obesity / Weight Status,~,~,Hawaiian / Pacific Islander,RACEHPI,2
+9720,2012,AZ,Arizona,BRFSS,Obesity / Weight Status,~,~,Hawaiian / Pacific Islander,RACEHPI,4
+38223,2012,AR,Arkansas,BRFSS,Obesity / Weight Status,~,~,Hawaiian / Pacific Islander,RACEHPI,5
+1683,2012,CA,California,BRFSS,Obesity / Weight Status,31.4,86,Hawaiian / Pacific Islander,RACEHPI,6
+39159,2012,CO,Colorado,BRFSS,Obesity / Weight Status,~,~,Hawaiian / Pacific Islander,RACEHPI,8
+30066,2012,CT,Connecticut,BRFSS,Obesity / Weight Status,~,~,Hawaiian / Pacific Islander,RACEHPI,9
+36424,2012,DE,Delaware,BRFSS,Obesity / Weight Status,~,~,Hawaiian / Pacific Islander,RACEHPI,10
+27233,2012,DC,District of Columbia,BRFSS,Obesity / Weight Status,~,~,Hawaiian / Pacific Islander,RACEHPI,11
+24427,2012,FL,Florida,BRFSS,Obesity / Weight Status,~,~,Hawaiian / Pacific Islander,RACEHPI,12
+6016,2012,GA,Georgia,BRFSS,Obesity / Weight Status,~,~,Hawaiian / Pacific Islander,RACEHPI,13
+5816,2012,HI,Hawaii,BRFSS,Obesity / Weight Status,51.4,256,Hawaiian / Pacific Islander,RACEHPI,15
+27009,2012,ID,Idaho,BRFSS,Obesity / Weight Status,~,~,Hawaiian / Pacific Islander,RACEHPI,16
+23822,2012,IL,Illinois,BRFSS,Obesity / Weight Status,~,~,Hawaiian / Pacific Islander,RACEHPI,17
+13365,2012,IN,Indiana,BRFSS,Obesity / Weight Status,~,~,Hawaiian / Pacific Islander,RACEHPI,18
+22911,2012,IA,Iowa,BRFSS,Obesity / Weight Status,~,~,Hawaiian / Pacific Islander,RACEHPI,19
+12991,2012,KS,Kansas,BRFSS,Obesity / Weight Status,~,~,Hawaiian / Pacific Islander,RACEHPI,20
+15906,2012,KY,Kentucky,BRFSS,Obesity / Weight Status,~,~,Hawaiian / Pacific Islander,RACEHPI,21
+13066,2012,LA,Louisiana,BRFSS,Obesity / Weight Status,~,~,Hawaiian / Pacific Islander,RACEHPI,22
+32625,2012,ME,Maine,BRFSS,Obesity / Weight Status,~,~,Hawaiian / Pacific Islander,RACEHPI,23
+3942,2012,MD,Maryland,BRFSS,Obesity / Weight Status,~,~,Hawaiian / Pacific Islander,RACEHPI,24
+28550,2012,MA,Massachusetts,BRFSS,Obesity / Weight Status,~,~,Hawaiian / Pacific Islander,RACEHPI,25
+30881,2012,MI,Michigan,BRFSS,Obesity / Weight Status,~,~,Hawaiian / Pacific Islander,RACEHPI,26
+12470,2012,MN,Minnesota,BRFSS,Obesity / Weight Status,~,~,Hawaiian / Pacific Islander,RACEHPI,27
+31690,2012,MS,Mississippi,BRFSS,Obesity / Weight Status,~,~,Hawaiian / Pacific Islander,RACEHPI,28
+24804,2012,MO,Missouri,BRFSS,Obesity / Weight Status,~,~,Hawaiian / Pacific Islander,RACEHPI,29
+20010,2012,MT,Montana,BRFSS,Obesity / Weight Status,~,~,Hawaiian / Pacific Islander,RACEHPI,30
+35540,2012,NE,Nebraska,BRFSS,Obesity / Weight Status,~,~,Hawaiian / Pacific Islander,RACEHPI,31
+3540,2012,NV,Nevada,BRFSS,Obesity / Weight Status,~,~,Hawaiian / Pacific Islander,RACEHPI,32
+20395,2012,NH,New Hampshire,BRFSS,Obesity / Weight Status,~,~,Hawaiian / Pacific Islander,RACEHPI,33
+11243,2012,NJ,New Jersey,BRFSS,Obesity / Weight Status,~,~,Hawaiian / Pacific Islander,RACEHPI,34
+33694,2012,NM,New Mexico,BRFSS,Obesity / Weight Status,~,~,Hawaiian / Pacific Islander,RACEHPI,35
+17104,2012,NY,New York,BRFSS,Obesity / Weight Status,~,~,Hawaiian / Pacific Islander,RACEHPI,36
+25105,2012,NC,North Carolina,BRFSS,Obesity / Weight Status,~,~,Hawaiian / Pacific Islander,RACEHPI,37
+9749,2012,ND,North Dakota,BRFSS,Obesity / Weight Status,~,~,Hawaiian / Pacific Islander,RACEHPI,38
+7419,2012,OH,Ohio,BRFSS,Obesity / Weight Status,~,~,Hawaiian / Pacific Islander,RACEHPI,39
+38856,2012,OK,Oklahoma,BRFSS,Obesity / Weight Status,~,~,Hawaiian / Pacific Islander,RACEHPI,40
+27543,2012,OR,Oregon,BRFSS,Obesity / Weight Status,~,~,Hawaiian / Pacific Islander,RACEHPI,41
+16379,2012,PA,Pennsylvania,BRFSS,Obesity / Weight Status,~,~,Hawaiian / Pacific Islander,RACEHPI,42
+24801,2012,RI,Rhode Island,BRFSS,Obesity / Weight Status,~,~,Hawaiian / Pacific Islander,RACEHPI,44
+37906,2012,SC,South Carolina,BRFSS,Obesity / Weight Status,~,~,Hawaiian / Pacific Islander,RACEHPI,45
+33645,2012,SD,South Dakota,BRFSS,Obesity / Weight Status,~,~,Hawaiian / Pacific Islander,RACEHPI,46
+24580,2012,TN,Tennessee,BRFSS,Obesity / Weight Status,~,~,Hawaiian / Pacific Islander,RACEHPI,47
+34847,2012,TX,Texas,BRFSS,Obesity / Weight Status,~,~,Hawaiian / Pacific Islander,RACEHPI,48
+9515,2012,UT,Utah,BRFSS,Obesity / Weight Status,~,~,Hawaiian / Pacific Islander,RACEHPI,49
+19706,2012,VT,Vermont,BRFSS,Obesity / Weight Status,~,~,Hawaiian / Pacific Islander,RACEHPI,50
+17497,2012,VA,Virginia,BRFSS,Obesity / Weight Status,~,~,Hawaiian / Pacific Islander,RACEHPI,51
+27770,2012,WA,Washington,BRFSS,Obesity / Weight Status,23.8,69,Hawaiian / Pacific Islander,RACEHPI,53
+23339,2012,WV,West Virginia,BRFSS,Obesity / Weight Status,~,~,Hawaiian / Pacific Islander,RACEHPI,54
+14547,2012,WI,Wisconsin,BRFSS,Obesity / Weight Status,~,~,Hawaiian / Pacific Islander,RACEHPI,55
+29694,2012,WY,Wyoming,BRFSS,Obesity / Weight Status,~,~,Hawaiian / Pacific Islander,RACEHPI,56
