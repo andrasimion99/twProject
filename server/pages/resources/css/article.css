@@ -77,7 +77,8 @@ section {
 }
 
 .main-header {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/hero2.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(img/hero2.jpg);
   height: 70vh;
   background-size: cover;
   background-position: center;
@@ -124,7 +125,7 @@ section {
   border-radius: 4px;
   background-color: white;
   background-image: url("img/searchicon.png");
-  background-position: 10px 10px; 
+  background-position: 10px 10px;
   background-repeat: no-repeat;
   background-size: 1.2vw;
   font-size: 0.9vw;
@@ -210,8 +211,8 @@ section {
   margin-left: 5%;
 }
 
-.ion-android-call,
-.ion-android-mail {
+.fa-phone-alt,
+.fa-envelope-open-text {
   margin-right: 15px;
   font-size: 100%;
 }
@@ -238,12 +239,12 @@ section {
   margin: 0 auto;
 }
 
-footer i.ion-social-facebook,
-footer i.ion-social-twitter,
-footer i.ion-social-googleplus,
-footer i.ion-social-instagram-outline {
+.fa-facebook-f,
+.fa-twitter,
+.fa-google-plus-g,
+.fa-instagram {
   color: #535050;
-  font-size: 130%;
+  font-size: 120%;
   margin-left: 15px;
 }
 
@@ -256,13 +257,11 @@ footer i.ion-social-instagram-outline {
   margin-bottom: 10px;
   margin-right: 10px;
 }
-
-
 /*----logIn modal------------*/
 
 .button-login {
   background: transparent;
-  border:none;
+  border: none;
   position: absolute;
   /* left:90%; */
   outline: none;
@@ -394,9 +393,12 @@ closeBtn:focus {
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  margin: 0 5px;
   height: 40px;
   width: 40px;
+  margin: 0 5px;
+}
+.social-container i {
+  margin: 0 auto;
 }
 
 .form-container input {
@@ -546,46 +548,41 @@ closeBtn:focus {
 }
 
 /*---------- Article-----------*/
-.container{
-    max-width: 1100px;
-    margin: auto;
+.container {
+  max-width: 1100px;
+  margin: auto;
 }
 
-.heading
-{
-    font-size: 2.5rem;
-    margin: 1rem;
-    text-align: center;
+.heading {
+  font-size: 2.5rem;
+  margin: 1rem;
+  text-align: center;
 }
 
-
-.article-info
-{
-    display: flex;
-    margin-bottom: 10px;
-    align-items: center;
+.article-info {
+  display: flex;
+  margin-bottom: 10px;
+  align-items: center;
 }
 
-.category
-{
-    margin-left: 1rem;
-    background-color: #428da3;
-    color: white;
-    font-size: 0.75rem;
-    border-radius: 100px;
-    padding: 0.2rem 0.5rem;
+.category {
+  margin-left: 1rem;
+  background-color: #428da3;
+  color: white;
+  font-size: 0.75rem;
+  border-radius: 100px;
+  padding: 0.2rem 0.5rem;
 }
 
-.btn
-{
-    display: block;
-    width: 100%;
-    text-align: center;
-    border: none;
-    background: #2980b9;
-    color: white;
-    padding: 0.5rem 1.5rem;
-    transition: background-color 0.2s;
+.btn {
+  display: block;
+  width: 100%;
+  text-align: center;
+  border: none;
+  background: #2980b9;
+  color: white;
+  padding: 0.5rem 1.5rem;
+  transition: background-color 0.2s;
 }
 
 .btn:hover,
@@ -593,137 +590,121 @@ closeBtn:focus {
   background-color: #469dd6;
 }
 
-.card
-{
-    padding: 1rem;
-    background: white;
-    text-align: center;
-    border-radius: 20px;
+.card {
+  padding: 1rem;
+  background: white;
+  text-align: center;
+  border-radius: 20px;
 }
 
-a{
-    text-decoration: none;
-    color: black;
+a {
+  text-decoration: none;
+  color: black;
 }
 
-
-.page-container{
-    display: grid;
-    grid-template-columns: 5fr 2fr;
-    grid-gap: 1.5rem;
+.page-container {
+  display: grid;
+  grid-template-columns: 5fr 2fr;
+  grid-gap: 1.5rem;
 }
-.page-container > *:first-child{
-    grid-row: 1 /span 3;
-    background-color: white ;
-}
-
-img
-{
-    height: 60vh;
-    width: 100%;
-    position: center;
-    border-radius: 5px;
+.page-container > *:first-child {
+  grid-row: 1 / span 3;
+  background-color: white;
 }
 
-.article-page p{
-    font-size: 1rem;
-    word-spacing: 2px;
-    margin-bottom: 10px;
-    text-justify: auto;
+img {
+  height: 60vh;
+  width: 100%;
+  position: center;
+  border-radius: 5px;
 }
 
-.article-page
-{
-    padding: 2rem;
-    margin: auto;
-    border-radius: 10px;
+.article-page p {
+  font-size: 1rem;
+  word-spacing: 2px;
+  margin-bottom: 10px;
+  text-justify: auto;
 }
 
-ul{
-    list-style: none;
+.article-page {
+  padding: 2rem;
+  margin: auto;
+  border-radius: 10px;
 }
 
-.list-articles li{
-    padding: 0.5rem 0;
-    border-bottom: #555 dotted 2px;
-    width: 100%;
-    color: black;
-    text-align: center;
-}
-.list-articles li:hover, .list-articles a:hover{
-    color: #2980b9;
-
+ul {
+  list-style: none;
 }
 
-.ion-arrow-right-b{
-    margin-right: 5px;
+.list-articles li {
+  padding: 0.5rem 0;
+  border-bottom: #555 dotted 2px;
+  width: 100%;
+  color: black;
+  text-align: center;
+}
+.list-articles li:hover,
+.list-articles a:hover {
+  color: #2980b9;
 }
 
-.card h3{
-    margin-top: 5px;
-    margin-bottom: 10px;
+.ion-arrow-right-b {
+  margin-right: 5px;
 }
 
-.card h3:after{
-    border: #2980b9 solid 1px;
-    display: block;
-    content: " ";
-    width: 40%;
-    margin: 0 auto;
+.card h3 {
+  margin-top: 5px;
+  margin-bottom: 10px;
 }
 
-#seeStatistics{
-    background-color: #1d5a81;
-    color: white;
+.card h3:after {
+  border: #2980b9 solid 1px;
+  display: block;
+  content: " ";
+  width: 40%;
+  margin: 0 auto;
 }
 
-
- #seeStatistics h3:after{
-    border: #bbdcf2 solid 1px;
-    display: block;
-    content: " ";
-    width: 40%;
-    margin: 0 auto;
+#seeStatistics {
+  background-color: #1d5a81;
+  color: white;
 }
 
-#seeStatistics p{
-    margin-bottom: 1rem;
+#seeStatistics h3:after {
+  border: #bbdcf2 solid 1px;
+  display: block;
+  content: " ";
+  width: 40%;
+  margin: 0 auto;
 }
 
-#like-article{
-    cursor: pointer;
-    display: flex;
-    padding: 0;
-    margin-top: 1rem;
-    justify-content: center;
-    align-items: center;
-    color: #2980b9;
-    text-transform: uppercase;
+#seeStatistics p {
+  margin-bottom: 1rem;
 }
 
-
-#like-article p{
-    margin-top:0.5rem;
+#like-article {
+  cursor: pointer;
+  display: flex;
+  padding: 0;
+  margin-top: 1rem;
+  justify-content: center;
+  align-items: center;
+  color: #2980b9;
+  text-transform: uppercase;
 }
 
-#like-article:hover p{
-    color: #ff126d;
+#like-article p {
+  margin-top: 0.5rem;
 }
 
-#like-article:hover .ion-heart{
-    color: #ff126d;
-    border: #ff126d 1px solid;
+#like-article:hover p {
+  color: #ff126d;
 }
 
-.ion-heart
-{
-    border: #1d5a81 1px solid;
-    color: #1d5a81;
-    border-radius: 100px;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 5px;
-    height: 25px;
-    width: 25px;
+#like-article:hover .fa-heart {
+  color: #ff126d;
+}
+
+.fa-heart {
+  margin: 0 5px;
 }

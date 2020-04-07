@@ -77,7 +77,8 @@ section {
 }
 
 .main-header {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/hero2.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(img/hero2.jpg);
   height: 70vh;
   background-size: cover;
   background-position: center;
@@ -124,7 +125,7 @@ section {
   border-radius: 4px;
   background-color: white;
   background-image: url("img/searchicon.png");
-  background-position: 10px 10px; 
+  background-position: 10px 10px;
   background-repeat: no-repeat;
   background-size: 1.2vw;
   font-size: 0.9vw;
@@ -210,8 +211,8 @@ section {
   margin-left: 5%;
 }
 
-.ion-android-call,
-.ion-android-mail {
+.fa-phone-alt,
+.fa-envelope-open-text {
   margin-right: 15px;
   font-size: 100%;
 }
@@ -238,12 +239,12 @@ section {
   margin: 0 auto;
 }
 
-footer i.ion-social-facebook,
-footer i.ion-social-twitter,
-footer i.ion-social-googleplus,
-footer i.ion-social-instagram-outline {
+.fa-facebook-f,
+.fa-twitter,
+.fa-google-plus-g,
+.fa-instagram {
   color: #535050;
-  font-size: 130%;
+  font-size: 120%;
   margin-left: 15px;
 }
 
@@ -257,12 +258,11 @@ footer i.ion-social-instagram-outline {
   margin-right: 10px;
 }
 
-
 /*----logIn modal------------*/
 
 .button-login {
   background: transparent;
-  border:none;
+  border: none;
   position: absolute;
   /* left:90%; */
   outline: none;
@@ -547,120 +547,116 @@ closeBtn:focus {
 
 /*-----statistics-----*/
 
-.container{
-    max-width: 1100px;
-    margin: auto;
+.container {
+  max-width: 1100px;
+  margin: auto;
 }
 
-.statistics-container{
-    display: grid;
-    grid-template-columns:  repeat(3,1fr);
-    grid-gap: 1rem;
+.statistics-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
 }
 
-.statistics-container > *:first-child, .statistics-container > *:last-child{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    grid-gap: 1rem;
-   grid-column: 1 / span 2;
+.statistics-container > *:first-child,
+.statistics-container > *:last-child {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1rem;
+  grid-column: 1 / span 2;
 }
 
-.statistics-container > *:last-child{
-    grid-column: 2 / span 2;
+.statistics-container > *:last-child {
+  grid-column: 2 / span 2;
 }
 
-.statistics-container .category
-{
-    width: 4rem;
-    text-align: center;
-    background-color: #428da3;
-    color: white;
-    font-size: 0.75rem;
-    border-radius: 100px;
-    padding: 0.2rem 0.5rem;
+.statistics-container .category {
+  width: 4rem;
+  text-align: center;
+  background-color: #428da3;
+  color: white;
+  font-size: 0.75rem;
+  border-radius: 100px;
+  padding: 0.2rem 0.5rem;
 }
 
-
-.card
-{
-    padding: 1rem;
-    background: white;
+.card {
+  padding: 1rem;
+  background: white;
 }
 
-a{
-    text-decoration: none;
-    color: black;
+a {
+  text-decoration: none;
+  color: black;
 }
 
-img
-{
-    height: 30vh;
-    width: 100%;
-    position: center;
-    border-radius: 5px;
+img {
+  height: 30vh;
+  width: 100%;
+  position: center;
+  border-radius: 5px;
 }
 
-.card h3{
-    margin-top: 5px;
-    margin-bottom: 10px;
-    font-size: 95%;
-    text-align: center;
+.card h3 {
+  margin-top: 5px;
+  margin-bottom: 10px;
+  font-size: 95%;
+  text-align: center;
 }
-.card p{
-    font-size: 95%;
-}
-
-.card h3:after{
-    border: #2980b9 solid 1px;
-    display: block;
-    content: " ";
-    width: 40%;
-    margin: 4px auto;
+.card p {
+  font-size: 95%;
 }
 
- #dark-card h3:after{
-    border: #bbdcf2 solid 1px;
-    display: block;
-    content: " ";
-    width: 40%;
-    margin: 4px auto;
+.card h3:after {
+  border: #2980b9 solid 1px;
+  display: block;
+  content: " ";
+  width: 40%;
+  margin: 4px auto;
 }
 
+#dark-card h3:after {
+  border: #bbdcf2 solid 1px;
+  display: block;
+  content: " ";
+  width: 40%;
+  margin: 4px auto;
+}
 
 .map-statistics {
-    background-image:radial-gradient(#3f9edd 5%, #2980b9 , #1267a0 60%);
-    margin-top: 1rem;
-    position: relative;
+  background-image: radial-gradient(#3f9edd 5%, #2980b9, #1267a0 60%);
+  margin-top: 1rem;
+  position: relative;
 }
 
-
-.heading
-{
-    font-size: 1rem;
-    text-align: center;
+.heading {
+  font-size: 1rem;
+  text-align: center;
 }
 
-#dark-card{
- background-color: #093652;
-    color: white;}
-#dark-card a{
-    color: white;}
+#dark-card {
+  background-color: #093652;
+  color: white;
+}
+#dark-card a {
+  color: white;
+}
 
-.statistics-numbers{
-    display: flex;
-    margin-bottom: 2rem;
+.statistics-numbers {
+  display: flex;
+  margin-bottom: 2rem;
 }
-.number-card{
-    display: flex;
-    background: white;
-    flex:1;
-    margin-right: 1rem;
-    padding: 1rem 1.5rem;
+.number-card {
+  display: flex;
+  background: white;
+  flex: 1;
+  margin-right: 1rem;
+  padding: 1rem 1.5rem;
 }
-.number-card a{
-    font-size: 130%;
-    font-weight: bold;
-    color: #5a5a5a;
-    margin: 0 auto;
-    text-transform: uppercase;
+.number-card a {
+  font-size: 130%;
+  font-weight: bold;
+  color: #5a5a5a;
+  margin: 0 auto;
+  text-transform: uppercase;
 }

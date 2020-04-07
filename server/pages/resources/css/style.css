@@ -97,7 +97,7 @@ section {
   background-color: #1d5a81;
 }
 
-.section-about .button-more{
+.section-about .button-more {
   width: 100%;
   text-align: center;
 }
@@ -123,7 +123,8 @@ section {
 /*--------------- HEADER -----------*/
 
 .main-header {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/hero2.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(img/hero2.jpg);
   height: 70vh;
   background-size: cover;
   background-position: center;
@@ -170,7 +171,7 @@ section {
   border-radius: 4px;
   background-color: white;
   background-image: url("img/searchicon.png");
-  background-position: 10px 10px; 
+  background-position: 10px 10px;
   background-repeat: no-repeat;
   background-size: 1.2vw;
   font-size: 0.9vw;
@@ -187,7 +188,7 @@ section {
 
 .button-login {
   background: transparent;
-  border:none;
+  border: none;
   position: absolute;
   /* left:90%; */
   outline: none;
@@ -319,9 +320,12 @@ closeBtn:focus {
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  margin: 0 5px;
   height: 40px;
   width: 40px;
+  margin: 0 5px;
+}
+.social-container i {
+  margin: 0 auto;
 }
 
 .form-container input {
@@ -612,26 +616,30 @@ closeBtn:focus {
 }
 
 #photo1 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/program-run.jpeg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(img/program-run.jpeg);
   background-size: cover;
   background-position: center;
   transition: 0.3s;
 }
 
 #photo1:hover {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), url(img/program-run.jpeg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)),
+    url(img/program-run.jpeg);
   width: 35%;
 }
 
 #photo2 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/program-test3.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(img/program-test3.jpg);
   background-size: cover;
   background-position: center;
   transition: 0.3s;
 }
 
 #photo2:hover {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), url(img/program-test3.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)),
+    url(img/program-test3.jpg);
   width: 35%;
 }
 
@@ -700,8 +708,8 @@ closeBtn:focus {
   margin-left: 5%;
 }
 
-.ion-android-call,
-.ion-android-mail {
+.fa-phone-alt,
+.fa-envelope-open-text {
   margin-right: 15px;
   font-size: 100%;
 }
@@ -728,12 +736,12 @@ closeBtn:focus {
   margin: 0 auto;
 }
 
-footer i.ion-social-facebook,
-footer i.ion-social-twitter,
-footer i.ion-social-googleplus,
-footer i.ion-social-instagram-outline {
+.fa-facebook-f,
+.fa-twitter,
+.fa-google-plus-g,
+.fa-instagram {
   color: #535050;
-  font-size: 130%;
+  font-size: 120%;
   margin-left: 15px;
 }
 
