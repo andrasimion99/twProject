@@ -1,0 +1,53 @@
+﻿ID,Description,LocationAbbr,LocationDesc,DataSource,Topic,Data_Value,Sample_Size,Stratification1,StratificationId1,LocationDisplayOrder
+264,2012,US,National,BRFSS,Obesity / Weight Status,21.2,153,786,College graduate,EDUCOGRAD,0
+20925,2012,AL,Alabama,BRFSS,Obesity / Weight Status,27.8,2,285,College graduate,EDUCOGRAD,1
+35473,2012,AK,Alaska,BRFSS,Obesity / Weight Status,24.9,1,376,College graduate,EDUCOGRAD,2
+10282,2012,AZ,Arizona,BRFSS,Obesity / Weight Status,22.3,2,350,College graduate,EDUCOGRAD,4
+1930,2012,AR,Arkansas,BRFSS,Obesity / Weight Status,30.7,1,235,College graduate,EDUCOGRAD,5
+19323,2012,CA,California,BRFSS,Obesity / Weight Status,16,5,869,College graduate,EDUCOGRAD,6
+33923,2012,CO,Colorado,BRFSS,Obesity / Weight Status,15.7,4,832,College graduate,EDUCOGRAD,8
+29888,2012,CT,Connecticut,BRFSS,Obesity / Weight Status,17.8,3,616,College graduate,EDUCOGRAD,9
+11076,2012,DE,Delaware,BRFSS,Obesity / Weight Status,20.5,1,800,College graduate,EDUCOGRAD,10
+10745,2012,DC,District of Columbia,BRFSS,Obesity / Weight Status,12,2,190,College graduate,EDUCOGRAD,11
+13582,2012,FL,Florida,BRFSS,Obesity / Weight Status,22.5,2,498,College graduate,EDUCOGRAD,12
+21217,2012,GA,Georgia,BRFSS,Obesity / Weight Status,23.2,1,849,College graduate,EDUCOGRAD,13
+22491,2012,HI,Hawaii,BRFSS,Obesity / Weight Status,17.4,2,982,College graduate,EDUCOGRAD,15
+36052,2012,ID,Idaho,BRFSS,Obesity / Weight Status,24.2,1,757,College graduate,EDUCOGRAD,16
+17551,2012,IL,Illinois,BRFSS,Obesity / Weight Status,24.2,2,081,College graduate,EDUCOGRAD,17
+21707,2012,IN,Indiana,BRFSS,Obesity / Weight Status,24.2,2,268,College graduate,EDUCOGRAD,18
+22288,2012,IA,Iowa,BRFSS,Obesity / Weight Status,23.9,2,034,College graduate,EDUCOGRAD,19
+5783,2012,KS,Kansas,BRFSS,Obesity / Weight Status,23.6,4,202,College graduate,EDUCOGRAD,20
+20689,2012,KY,Kentucky,BRFSS,Obesity / Weight Status,26.5,2,689,College graduate,EDUCOGRAD,21
+32077,2012,LA,Louisiana,BRFSS,Obesity / Weight Status,28.3,2,244,College graduate,EDUCOGRAD,22
+25264,2012,ME,Maine,BRFSS,Obesity / Weight Status,19.7,3,469,College graduate,EDUCOGRAD,23
+28885,2012,MD,Maryland,BRFSS,Obesity / Weight Status,21.1,5,068,College graduate,EDUCOGRAD,24
+3471,2012,MA,Massachusetts,BRFSS,Obesity / Weight Status,16.2,8,573,College graduate,EDUCOGRAD,25
+34249,2012,MI,Michigan,BRFSS,Obesity / Weight Status,25.5,3,401,College graduate,EDUCOGRAD,26
+29061,2012,MN,Minnesota,BRFSS,Obesity / Weight Status,19.6,4,670,College graduate,EDUCOGRAD,27
+26862,2012,MS,Mississippi,BRFSS,Obesity / Weight Status,30.6,1,854,College graduate,EDUCOGRAD,28
+11451,2012,MO,Missouri,BRFSS,Obesity / Weight Status,27.3,1,785,College graduate,EDUCOGRAD,29
+6757,2012,MT,Montana,BRFSS,Obesity / Weight Status,17.7,2,668,College graduate,EDUCOGRAD,30
+37340,2012,NE,Nebraska,BRFSS,Obesity / Weight Status,24.5,5,200,College graduate,EDUCOGRAD,31
+29396,2012,NV,Nevada,BRFSS,Obesity / Weight Status,19.2,1,402,College graduate,EDUCOGRAD,32
+14947,2012,NH,New Hampshire,BRFSS,Obesity / Weight Status,20.7,2,965,College graduate,EDUCOGRAD,33
+5130,2012,NJ,New Jersey,BRFSS,Obesity / Weight Status,18.3,5,857,College graduate,EDUCOGRAD,34
+6224,2012,NM,New Mexico,BRFSS,Obesity / Weight Status,19,2,841,College graduate,EDUCOGRAD,35
+18283,2012,NY,New York,BRFSS,Obesity / Weight Status,18,2,329,College graduate,EDUCOGRAD,36
+4231,2012,NC,North Carolina,BRFSS,Obesity / Weight Status,24.1,3,478,College graduate,EDUCOGRAD,37
+38107,2012,ND,North Dakota,BRFSS,Obesity / Weight Status,25,1,479,College graduate,EDUCOGRAD,38
+25533,2012,OH,Ohio,BRFSS,Obesity / Weight Status,24.3,3,698,College graduate,EDUCOGRAD,39
+33662,2012,OK,Oklahoma,BRFSS,Obesity / Weight Status,25.6,2,126,College graduate,EDUCOGRAD,40
+39111,2012,OR,Oregon,BRFSS,Obesity / Weight Status,19.3,1,983,College graduate,EDUCOGRAD,41
+22788,2012,PA,Pennsylvania,BRFSS,Obesity / Weight Status,21.7,5,937,College graduate,EDUCOGRAD,42
+10402,2012,RI,Rhode Island,BRFSS,Obesity / Weight Status,20.2,2,061,College graduate,EDUCOGRAD,44
+12666,2012,SC,South Carolina,BRFSS,Obesity / Weight Status,23.9,3,641,College graduate,EDUCOGRAD,45
+22213,2012,SD,South Dakota,BRFSS,Obesity / Weight Status,23.1,2,278,College graduate,EDUCOGRAD,46
+22393,2012,TN,Tennessee,BRFSS,Obesity / Weight Status,25.2,1,728,College graduate,EDUCOGRAD,47
+31470,2012,TX,Texas,BRFSS,Obesity / Weight Status,23.8,3,079,College graduate,EDUCOGRAD,48
+36903,2012,UT,Utah,BRFSS,Obesity / Weight Status,21.7,4,092,College graduate,EDUCOGRAD,49
+28944,2012,VT,Vermont,BRFSS,Obesity / Weight Status,16.5,2,348,College graduate,EDUCOGRAD,50
+24139,2012,VA,Virginia,BRFSS,Obesity / Weight Status,19.8,2,961,College graduate,EDUCOGRAD,51
+39374,2012,WA,Washington,BRFSS,Obesity / Weight Status,20.2,6,056,College graduate,EDUCOGRAD,53
+35668,2012,WV,West Virginia,BRFSS,Obesity / Weight Status,28.1,1,156,College graduate,EDUCOGRAD,54
+14606,2012,WI,Wisconsin,BRFSS,Obesity / Weight Status,24.1,1,528,College graduate,EDUCOGRAD,55
+28992,2012,WY,Wyoming,BRFSS,Obesity / Weight Status,17.1,1,918,College graduate,EDUCOGRAD,56
