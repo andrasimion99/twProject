@@ -1,31 +1,18 @@
 const helpers = require("../common/helpers");
+const url = require("url");
 
 module.exports = async (req, res, routes) => {
-  const route = routes.find((route) => {
-    const methodMatch = route.method === req.method;
-    let pathMatch = false;
-
-    if (typeof route.path === "string") {
-      pathMatch = route.path === req.url;
-    } else {
-      pathMatch = req.url.match(route.path);
-    }
-
-    return pathMatch && methodMatch;
+  const path = url.parse(req.url, true).pathname;
+  const found = routes.find((route) => {
+    return route.path == path && route.method == req.method;
   });
-
-  let param = null;
-
-  if (route) {
-    if (typeof route.path === "object") {
-      param = req.url.match(route.path)[1];
-    }
+  if (found) {
+    const param = url.parse(req.url, true).query;
     let body = null;
-    if (req.method === "POST" || req.method === "PUT") {
+    if (req.method === "POST" || req.method === "PATCH") {
       body = await getPostData(req);
     }
-
-    return route.handler(req, res, param, body);
+    return found.handler(req, res, param, body);
   } else {
     return helpers.error(res, "Endpoint not found", 404);
   }
@@ -38,9 +25,8 @@ function getPostData(req) {
       req.on("data", (chunk) => {
         body += chunk.toString();
       });
-
       req.on("end", () => {
-        resolve(body);
+        resolve(JSON.parse(body));
       });
     } catch (e) {
       reject(e);
