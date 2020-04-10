@@ -8,8 +8,7 @@ class StateController {
 
   async getAllStatesData(req, res) {
     try {
-      console.log(this.db.State);
-      const statesData = "RASPUNS"/*await this.db.State.find({})*/;
+      const statesData = await this.db.State.find({});
       return helpers.success(res, statesData);
     } catch (error) {
       return helpers.error(res, error);
