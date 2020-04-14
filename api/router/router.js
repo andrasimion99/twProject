@@ -28,11 +28,11 @@ function serveStaticPages(request, response) {
   var filePath = path.join(
     __dirname,
     "..",
-    "pages",
+    "view",
     request.url === "/" ? "index.html" : request.url
   );
   if (filePath == "./") {
-    filePath = "./../pages/index.html";
+    filePath = "./../view/index.html";
   }
 
   var extname = String(path.extname(filePath)).toLowerCase();
