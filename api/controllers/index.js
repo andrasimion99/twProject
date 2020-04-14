@@ -1,6 +1,7 @@
 const db = require("../models/index");
 
 const StateController = require("./StatesController");
+const GenderController = require("./GenderController");
 
 const stateController = new StateController({
   db: {
@@ -9,6 +10,14 @@ const stateController = new StateController({
   services: {},
 });
 
+const genderController = new GenderController({
+  db: {
+    Gender: db.Gender,
+  },
+  services: {},
+});
+
 module.exports = {
   stateController,
+  genderController,
 };

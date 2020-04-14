@@ -1,4 +1,5 @@
 const { stateController } = require("../controllers/index");
+const { genderController } = require("../controllers/index");
 
 const routes = [
   {
@@ -8,18 +9,38 @@ const routes = [
   },
   {
     method: "POST",
-    path: "/states",    
+    path: "/states",
     handler: stateController.createStateData.bind(stateController),
   },
   {
     method: "PATCH",
-    path: "/states",    
+    path: "/states",
     handler: stateController.updateStateData.bind(stateController),
   },
   {
     method: "DELETE",
-    path: "/states",    
+    path: "/states",
     handler: stateController.deleteStatesData.bind(stateController),
+  },
+  {
+    method: "GET",
+    path: "/gender",
+    handler: genderController.getGenderData.bind(genderController),
+  },
+  {
+    method: "POST",
+    path: "/gender",
+    handler: genderController.createGenderData.bind(genderController),
+  },
+  {
+    method: "PATCH",
+    path: "/gender",
+    handler: genderController.updateGenderData.bind(genderController),
+  },
+  {
+    method: "DELETE",
+    path: "/gender",
+    handler: genderController.deleteGenderData.bind(genderController),
   },
 ];
 

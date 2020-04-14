@@ -1,5 +1,7 @@
-const State = require('./states');
+const State = require("./states");
+const Gender = require("./gender");
 
 module.exports = {
-	State,
+  State,
+  Gender,
 };
