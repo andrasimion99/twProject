@@ -4,6 +4,7 @@ const StateController = require("./StatesController");
 const GenderController = require("./GenderController");
 const AgeController = require("./AgeController");
 const EducationController = require("./EducationController");
+const EthnicityController = require("./EthnicityController");
 
 const stateController = new StateController({
   db: {
@@ -33,9 +34,17 @@ const educationController = new EducationController({
   services: {},
 });
 
+const ethnicityController = new EthnicityController({
+  db: {
+    Ethnicity: db.Ethnicity,
+  },
+  services: {},
+});
+
 module.exports = {
   stateController,
   genderController,
   ageController,
   educationController,
+  ethnicityController,
 };

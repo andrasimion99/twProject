@@ -2,6 +2,7 @@ const { stateController } = require("../controllers/index");
 const { genderController } = require("../controllers/index");
 const { ageController } = require("../controllers/index");
 const { educationController } = require("../controllers/index");
+const { ethnicityController } = require("../controllers/index")
 
 const routes = [
   {
@@ -83,6 +84,26 @@ const routes = [
     method: "DELETE",
     path: "/education",
     handler: educationController.deleteEducationData.bind(educationController),
+  },
+  {
+    method: "GET",
+    path: "/ethnicity",
+    handler: ethnicityController.getEthnicityData.bind(ethnicityController),
+  },
+  {
+    method: "POST",
+    path: "/ethnicity",
+    handler: ethnicityController.createEthnicityData.bind(ethnicityController),
+  },
+  {
+    method: "PATCH",
+    path: "/ethnicity",
+    handler: ethnicityController.updateEthnicityData.bind(ethnicityController),
+  },
+  {
+    method: "DELETE",
+    path: "/ethnicity",
+    handler: ethnicityController.deleteEthnicityData.bind(ethnicityController),
   },
 ];
 
