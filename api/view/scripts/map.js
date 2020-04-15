@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function (e) {
     (async () => {
       var countryName = await countries[i].getAttribute("data-name");
       await fetch(
-        "http://localhost:3000/states?country=" + countryName + "&year=2018"
+        "http://localhost:3001/api/states?country=" + countryName + "&year=2018"
       )
         .then((data) => {
           return data.json();

@@ -3,9 +3,7 @@ module.exports.validationError = (
   error = "Data provided is not valid"
 ) => {
   addHeaders(res);
-
   res.statusCode = 422;
-
   res.end(
     JSON.stringify(
       {
@@ -24,9 +22,7 @@ module.exports.error = (
   statusCode = 500
 ) => {
   addHeaders(res);
-
   res.statusCode = statusCode;
-
   res.end(
     JSON.stringify(
       {
@@ -41,9 +37,7 @@ module.exports.error = (
 
 module.exports.success = (res, data = null) => {
   addHeaders(res);
-
   res.statusCode = 200;
-
   res.end(
     JSON.stringify(
       {
