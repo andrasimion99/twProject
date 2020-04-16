@@ -52,6 +52,6 @@ module.exports.success = (res, data = null) => {
 
 const addHeaders = (res) => {
   res.setHeader("Content-Type", "application/json");
-  res.setHeader("Access-Control-Allow-Origin", "http://127.0.0.1:8125");
+  res.setHeader("Access-Control-Allow-Origin", "http://localhost:3000");
   return res;
 };
