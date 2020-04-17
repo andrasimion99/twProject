@@ -141,7 +141,28 @@
                 </div>
             </article>
         </div>
+
+        <article class="card" id="mapTitle">
+              <div>
+                  <h2>Percentage of people suffering from obesity by states</h2>
+              </div>
+        </article>
+
     <section class="map-statistics">
+      <div id="year">
+        <label for="year">Choose a year</label>
+      <select id="years" name="year">
+        <option value="2018">2018</option>
+        <option value="2017">2017</option>
+        <option value="2016">2016</option>
+        <option value="2015">2015</option>
+        <option value="2014">2014</option>
+        <option value="2013">2013</option>
+        <option value="2012">2012</option>
+        <option value="2011">2011</option>
+      </select>
+      </div>
+      
         <div id="box"></div>
         <svg xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="us-map" preserveAspectRatio="xMinYMin meet" sodipodi:docname="Republican_Party_presidential_primaries_results,_2016.svg" inkscape:version="0.91 r13725" x="0px" y="0px" viewBox="174 100 959 593" enable-background="new 174 100 959 593" xml:space="preserve">
             <g vector-effect="non-scaling-stroke" id='countries'> 
@@ -198,6 +219,10 @@
               <path id="DC" data-name = "Washington" data-capital = "Washington DC" d="M975.8,353.8l-1.1-1.6l-1-0.8l1.1-1.6l2.2,1.5L975.8,353.8z"/>
             </g>
            </svg>
+
+           <div id="legend"></div>
+           <div id="low">Low Obesity</div>
+           <div id="high">High Obesity</div>
         </section>
         </div>
 </section>

@@ -615,6 +615,35 @@ img {
   margin: 4px auto;
 }
 
+.card h2 {
+  margin-top: 5%;
+  margin-bottom: 5%;
+  text-align: center;
+  font-size: 30px;
+  transition: 0.5s;
+}
+
+.card h2:hover {
+  font-size: 33px;
+}
+
+.card h2:after {
+  border: #2980b9 solid 1px;
+  display: block;
+  content: " ";
+  width: 40%;
+  margin: 4px auto;
+  transition: width 0.5s;
+}
+
+.card h2:hover::after {
+  width: 60%;
+}
+
+#mapTitle {
+  background-color: transparent;
+}
+
 #dark-card h3:after {
   border: #bbdcf2 solid 1px;
   display: block;
@@ -624,7 +653,7 @@ img {
 }
 
 .map-statistics {
-  background-image: radial-gradient(#3f9edd 5%, #2980b9, #1267a0 60%);
+  background-image:radial-gradient(#f7f9fa 5%, #e1e6e8 , #d5d9db 60%);
   margin-top: 1rem;
   position: relative;
 }
