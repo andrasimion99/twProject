@@ -110,7 +110,7 @@
                 </div>
                 <div class="statistics-grid">
                     <div class="choose-menu">
-                        <button class="dropdown">Country
+                        <button class="dropdown main-dropdown">Country
                             <i class="fa fa-caret-down"></i>
                         </button>
                             <div class="dropdown-content">
@@ -135,23 +135,140 @@
                                 <label for="country">Arkansas</label><br>
                             </div>
                             </div>
-                        <button class="dropdown">Series
+                        <button class="dropdown main-dropdown">Series
                             <i class="fa fa-caret-down"></i>
                         </button>
-                            <div class="dropdown-content">
+                            <div class="dropdown-content main-dropdown-content">
                                 <div class="checkbox">
                                     <input type="checkbox" id="Series" name="Series" value="Total">
                                     <label for="series"> Total</label><br>
                                 </div>
-                                <div class="checkbox">
-                                    <input type="checkbox" id="Series" name="Series" value="Age(years)18-24">
-                                    <label for="series">Age 18-24</label><br>
+                                <button class="dropdown secondary-dropdown">Age
+                                  <i class="fa fa-caret-down"></i>
+                                </button>
+                                    <div class="dropdown-content">
+                                      <div class="checkbox">
+                                          <input type="checkbox" id="Series" name="Age" value="18-24">
+                                          <label for="series">Age 18-24</label><br>
+                                      </div>
+                                      <div class="checkbox">
+                                          <input type="checkbox" id="Series" name="Age" value="25-34">
+                                          <label for="series">Age 25-34</label><br>
+                                      </div>
+                                      <div class="checkbox">
+                                        <input type="checkbox" id="Series" name="Age" value="35-44">
+                                        <label for="series">Age 35-44</label><br>
+                                      </div>
+                                      <div class="checkbox">
+                                          <input type="checkbox" id="Series" name="Age" value="45-54">
+                                          <label for="series">Age 45-54</label><br>
+                                      </div>
+                                      <div class="checkbox">
+                                        <input type="checkbox" id="Series" name="Age" value="55-64">
+                                        <label for="series">Age 55-64</label><br>
+                                      </div>
+                                      <div class="checkbox">
+                                          <input type="checkbox" id="Series" name="Age" value="65+">
+                                          <label for="series">65 or older</label><br>
+                                      </div>
+                                    </div>
+                                <button class="dropdown secondary-dropdown">Education
+                                  <i class="fa fa-caret-down"></i>
+                                </button>
+                                  <div class="dropdown-content">
+                                      <div class="checkbox">
+                                          <input type="checkbox" id="Series" name="Education" value="Less than highschool">
+                                          <label for="series">Less than highschool</label><br>
+                                      </div>
+                                      <div class="checkbox">
+                                          <input type="checkbox" id="Series" name="Education" value="High school graduate">
+                                          <label for="series">High school graduate</label><br>
+                                      </div>
+                                      <div class="checkbox">
+                                        <input type="checkbox" id="Series" name="Education" value="Some college or technical school">
+                                        <label for="series">Some college or technical school</label><br>
+                                      </div>
+                                      <div class="checkbox">
+                                        <input type="checkbox" id="Series" name="Education" value="College graduate">
+                                        <label for="series">College graduate</label><br>
+                                      </div>
+                                  </div>
+                                <button class="dropdown secondary-dropdown">Gender
+                                  <i class="fa fa-caret-down"></i>
+                                </button>
+                                  <div class="dropdown-content">
+                                    <div class="checkbox">
+                                        <input type="checkbox" id="Series" name="Gender" value="Female">
+                                        <label for="series">Female</label><br>
+                                    </div>
+                                    <div class="checkbox">
+                                      <input type="checkbox" id="Series" name="Gender" value="Male">
+                                      <label for="series">Male</label><br>
+                                    </div>
+                                  </div>
+                                  <button class="dropdown secondary-dropdown">Income
+                                    <i class="fa fa-caret-down"></i>
+                                  </button>
+                                  <div class="dropdown-content">
+                                    <div class="checkbox">
+                                        <input type="checkbox" id="Series" name="Income" value="Less than $15,000">
+                                        <label for="series">Less than $15.000</label><br>
+                                    </div>
+                                    <div class="checkbox">
+                                      <input type="checkbox" id="Series" name="Income" value="$15,000 - $24,999">
+                                      <label for="series">$15.000 - $24.999</label><br>
+                                    </div>
+                                    <div class="checkbox">
+                                      <input type="checkbox" id="Series" name="Income" value="$25,000 - $34,999">
+                                      <label for="series">$25.000 - $34.999</label><br>
+                                    </div>
+                                    <div class="checkbox">
+                                      <input type="checkbox" id="Series" name="Income" value="$35,000 - $49,999">
+                                      <label for="series">$35.000 - $49.999</label><br>
+                                    </div>
+                                    <div class="checkbox">
+                                      <input type="checkbox" id="Series" name="Income" value="$50,000 - $74,999">
+                                      <label for="series">$50.000 - $74.999</label><br>
+                                    </div>
+                                    <div class="checkbox">
+                                      <input type="checkbox" id="Series" name="Income" value="$75,000 or greater">
+                                      <label for="series">$75.000 or greater</label><br>
+                                    </div>
+                                  </div>
+                                  <button class="dropdown secondary-dropdown">Race/Ethnicity 
+                                    <i class="fa fa-caret-down"></i>
+                                  </button>
+                                  <div class="dropdown-content">
+                                    <div class="checkbox">
+                                        <input type="checkbox" id="Series" name="Race/Ethnicity" value="Non-Hispanic White">
+                                        <label for="series">Non-Hispanic White</label><br>
+                                    </div>
+                                    <div class="checkbox">
+                                      <input type="checkbox" id="Series" name="Race/Ethnicity" value="Non-Hispanic Black">
+                                      <label for="series">Non-Hispanic Black</label><br>
+                                    </div>
+                                    <div class="checkbox">
+                                      <input type="checkbox" id="Series" name="Race/Ethnicity" value="Hispanic">
+                                      <label for="series">Hispanic</label><br>
+                                    </div>
+                                    <div class="checkbox">
+                                      <input type="checkbox" id="Series" name="Race/Ethnicity" value="Asian">
+                                      <label for="series">Asian</label><br>
+                                    </div>
+                                    <div class="checkbox">
+                                      <input type="checkbox" id="Series" name="Race/Ethnicity" value="Hawaiian / Pacific Islander">
+                                      <label for="series">Hawaiian / Pacific Islander</label><br>
+                                  </div>
+                                  <div class="checkbox">
+                                    <input type="checkbox" id="Series" name="Race/Ethnicity" value="2 or more races">
+                                    <label for="series">2 or more races</label><br>
+                                  </div>
+                                  <div class="checkbox">
+                                    <input type="checkbox" id="Series" name="Race/Ethnicity" value="Other">
+                                    <label for="series">Other</label><br>
+                                  </div>
                                 </div>
-                                <div class="checkbox">
-                                    <input type="checkbox" id="Series" name="Series" value="Age(years)25-34">
-                                    <label for="series">Age 25-34</label><br>
-                                </div>
-                                </div>
+                            </div>
                     </div>
                     <div class="chart">
                     </div>
