@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="../resources/css/statistics-viewer.css" />
+    <script src="https://kit.fontawesome.com/cec80c6e23.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="../resources/css/queries.css" />
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <title>Latest news</title>
+    <script src="../scripts/main.js"></script>
+  </head>
+
+  <body>
+    <header class="main-header">
+      <div>
+        <nav id="mySidenav" class="sidenav">
+          <!-- <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a> -->
+          <div class="menu-elem"><a href="index.html">Home</a></div>
+          <div class="menu-elem"><a href="#">About</a></div>
+          <div class="menu-elem"><a href="statistics.html">Statistics</a></div>
+          <div class="menu-elem"><a href="healthArticles.html">Health and Wellness</a></div>
+          <div class="menu-elem"><a href="diseasesArticles.html">Diseases and Conditions</a></div>
+          <div class="menu-elem"><a href="programs.html">Programs</a></div>
+        </nav>
+        <div class="row">
+          <div id="main">
+            <p class="main-nav" onclick="openNav(window.matchMedia('(max-width: 650px)'))">&#9776;</p>
+          </div>
+        </div>
+        <!-- <div class="search-btn">
+          <form>
+            <input type="text" name="search" placeholder="Search.." />
+          </form>
+        </div> -->
+        <button id="modalBtn" class="button-login">Log in</button>
+        <div id="loginModal" class="modal">
+          <div id="container" class="modal-content">
+            <span class="closeBtn">&times;</span>
+            <div class="form-container sign-up-container">
+              <form action="#">
+                <h2>Create Account</h2>
+                <div class="social-container">
+                  <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                  <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                  <a href="#" class="social"><i class="fab fa-twitter"></i></a>
+                </div>
+                <spanz>or use your email for registration</span>
+                <input type="text" placeholder="Name" />
+                <input type="email" placeholder="Email" />
+                <input type="password" placeholder="Password" />
+                <p>Now you can sign in</p>
+                <button>Sign in</button>
+              </form>
+              <div class="change-1">
+                <button id="back" class="back">Back</button>
+              </div>
+            </div>
+
+            <div class="form-container sign-in-container">
+              <form action="#">
+                <h2>Sign in</h2>
+                <div class="social-container">
+                  <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                  <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                  <a href="#" class="social"><i class="fab fa-twitter"></i></a>
+                </div>
+                <span>or use your account</span>
+                <input type="email" placeholder="Email" />
+                <input type="password" placeholder="Password" />
+                <a href="#">Forgot your password?</a>
+                <button>Sign in</button>
+              </form>
+              <div class="change-2">
+                <p>You don't have an account?</p>
+                <button id="signUp" class="button-ghost">Sign up</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <script src="../scripts/login.js"></script>
+
+      <div class="title">
+        <h1>Obesity prevalance visualizer</h1>
+      </div>
+      <div class="hero-text-box">
+        <h2>Find out everything you want to know about obessity on this site!</h2>
+        <a class="button" href="#">Get started</a>
+        <a class="button" href="#">Show me more</a>
+      </div>
+    </header>
+      
+    <section id="statistics-viewer">
+        <div class="container">
+            <div class="viewer-container">
+                <div class="heading">
+                    <h2 >Statistics viewer</h2>
+                    <p> Percent of adults aged 18 years and older who have obesity </p>
+                </div>
+                <div class="export-menu">
+                    <p>Export as</p>
+                    <ul>
+                        <li><i class="fas fa-file-image"></i></li>
+                        <li><i class="fas fa-file-csv"></i></li>
+                        <li><i class="fas fa-file-code"></i></li>
+                        <li><i class="fas fa-window-maximize"></i></li>
+                    </ul>
+                </div>
+                <div class="statistics-grid">
+                    <div class="choose-menu">
+                        <button class="dropdown">Country
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                            <div class="dropdown-content">
+                            <div class="checkbox">
+                                <input type="checkbox" id="Country" name="Country" value="National">
+                                <label for="country"> National</label><br>
+                            </div>
+                            <div class="checkbox">
+                                <input type="checkbox" id="Country" name="Country" value="Alabama">
+                                <label for="country"> Alabama</label><br>
+                            </div>
+                            <div class="checkbox">
+                                <input type="checkbox" id="Country" name="Country" value="Alaska">
+                                <label for="country"> Alaska</label><br>
+                            </div>
+                            <div class="checkbox">
+                                <input type="checkbox" id="Country" name="Country" value="Arizona">
+                                <label for="country">Arizona</label><br>
+                            </div>
+                            <div class="checkbox">
+                                <input type="checkbox" id="Country" name="Country" value="Arkansas">
+                                <label for="country">Arkansas</label><br>
+                            </div>
+                            </div>
+                        <button class="dropdown">Series
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                            <div class="dropdown-content">
+                                <div class="checkbox">
+                                    <input type="checkbox" id="Series" name="Series" value="Total">
+                                    <label for="series"> Total</label><br>
+                                </div>
+                                <div class="checkbox">
+                                    <input type="checkbox" id="Series" name="Series" value="Age(years)18-24">
+                                    <label for="series">Age 18-24</label><br>
+                                </div>
+                                <div class="checkbox">
+                                    <input type="checkbox" id="Series" name="Series" value="Age(years)25-34">
+                                    <label for="series">Age 25-34</label><br>
+                                </div>
+                                </div>
+                    </div>
+                    <div class="chart">
+                    </div>
+                    <div class="chart-menu">
+                        <img src="./resources/css/img/chart.PNG">
+                        <img src="./resources/css/img/line-chart.PNG">
+                        <img src="./resources/css/img/bar-chart.PNG">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="./scripts/statisticsViewerMenu.js"></script>
+
+    <footer>
+      <div class="line"></div>
+      <div class="footer-content">
+        <div class="footer-about-us">
+          <h3>Obesity prevalance visualizer</h3>
+          <h3>About us</h3>
+          <p>
+            Why painful the sixteen how minuter looking nor. Subject but why ten earnest husband imagine sixteen
+            brandon.
+          </p>
+          <h3>Contact us</h3>
+          <div class="mail-tel">
+            <i class="fas fa-phone-alt"></i>
+            <p>07865678</p>
+          </div>
+          <div class="mail-tel">
+            <i class="fas fa-envelope-open-text"></i>
+            <p>obesity.prevalance@yahoo.com</p>
+          </div>
+        </div>
+        <div class="footer-information">
+          <h3>Informations</h3>
+          <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Statistics</a></li>
+            <li><a href="#">Health and Wellness</a></li>
+            <li><a href="#">Diseases and Conditions</a></li>
+            <li><a href="#">Programs</a></li>
+          </ul>
+        </div>
+        <div class="footer-helpful">
+          <h3>Helpful links</h3>
+          <ul>
+            <li><a href="#">Health and Wellness</a></li>
+            <li><a href="#">Diseases and Conditions</a></li>
+            <li><a href="#">Programs</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="line"></div>
+      <div class="social-media-links">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-google-plus-g"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+      <div class="footer-end">
+        <p>2020 &#64;FilimonSimion. All rights reserved</p>
+      </div>
+    </footer>
+    </body>
+</html>
