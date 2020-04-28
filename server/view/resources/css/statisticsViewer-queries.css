@@ -1,0 +1,33 @@
+@media only screen and (max-width: 776px) {
+  .statistics-grid {
+    grid-template-columns: 1fr;
+  }
+  .dropdown-content {
+    text-align: center;
+  }
+  .choose-menu .secondary-dropdown {
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 590px) {
+  .export-menu {
+    padding: 1rem 1rem 1rem 1rem;
+  }
+
+  .export-menu p {
+    font-size: 18px;
+  }
+  .export-menu li i {
+    margin-left: 1rem;
+    font-size: 1rem;
+  }
+}
+@media only screen and (max-width: 568px) {
+  .export-menu p {
+    font-size: 13px;
+  }
+  .export-menu li i {
+    margin-left: 0.7rem;
+    font-size: 1rem;
+  }
+}

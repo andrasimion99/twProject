@@ -598,7 +598,7 @@ closeBtn:focus {
   display: grid;
   grid-template-columns: 1.8fr 5fr 1fr;
   grid-gap: 1.5rem;
-  height: 90vh;
+  height: 100vh;
   overflow: hidden;
 }
 .choose-menu {
