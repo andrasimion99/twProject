@@ -2,3 +2,43 @@ section, svg, input {
     margin: 0 auto 10px;
     display: block;
   }
+
+#time-bar{
+  padding-left: 70px;
+  padding-right: 20px;
+}
+
+#time-img {
+  vertical-align: top;
+  cursor: pointer;
+}
+
+.far{
+  font-size: 30px;
+  color: rgb(90, 87, 87);
+}
+
+.far:hover{
+  color: rgb(56, 55, 55);
+}
+
+table {
+  margin: 0 auto;
+  border-spacing: 5px;
+}
+
+.time-cell {
+  box-sizing: border-box;
+  background-color: grey;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.time-cell:hover{
+  background-color: rgb(90, 87, 87);
+}
+
+.year-cell {
+  text-align: center;
+  font-size: 14px;
+}
