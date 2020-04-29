@@ -1,8 +1,5 @@
-main();
-function main() {
-  addCountries(function () {
-    console.log("huzzah, I'm done!");
-  });
+(async () => {
+  await addCountries();
   var charts = document.getElementsByClassName("Chart");
   var chart = "";
 
@@ -15,7 +12,7 @@ function main() {
 
   var api = "";
   console.log(series);
-  console.log(countries);
+  console.log(countries.length);
 
   /*-----Event listener for countries check box------*/
   for (var i = 0; i < countries.length; i++) {
@@ -43,8 +40,10 @@ function main() {
       console.log(chart);
       this.style.border = "5px solid #2980b9";
       unclickAll(this);
+      console.log(seriesName + " si " + country);
       if (chart == "column-chart" && country != "" && seriesValue == "All") {
         api = "http://localhost:3001/api/" + seriesName + "?country=" + country;
+
         createChart(seriesName, country);
       } else {
         d3.select("svg").remove();
@@ -74,7 +73,7 @@ function main() {
       }
     });
   }
-}
+})();
 
 function unclickAll(currentChart) {
   var charts = document.getElementsByClassName("Chart");
@@ -326,8 +325,8 @@ function createChart(seriesName, country) {
     });
 }
 
-function addCountries(_callback) {
-  fetch("http://localhost:3001/api/states?year=2018")
+async function addCountries() {
+  await fetch("http://localhost:3001/api/states?year=2018")
     .then((data) => {
       return data.json();
     })
@@ -337,6 +336,7 @@ function addCountries(_callback) {
       for (var i = 0; i < data.length; i++) {
         countryArr.push(data[i].LocationDesc);
       }
+      console.log(countryArr);
       var countries = d3
         .select("#dropdown-countries")
         .selectAll("div")
@@ -363,5 +363,4 @@ function addCountries(_callback) {
     .catch((error) => {
       console.log(error);
     });
-  _callback();
 }
