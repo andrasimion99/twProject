@@ -10,7 +10,6 @@
   var countries = document.getElementsByClassName("Country");
   var country = "";
 
-  var api = "";
   console.log(series);
   console.log(countries.length);
 
@@ -21,13 +20,13 @@
         country = this.value;
         disableAll(this, "Country");
         if (chart == "column-chart" && seriesValue == "All") {
-          api =
-            "http://localhost:3001/api/" + seriesName + "?country=" + country;
           createChart(seriesName, country);
         }
       } else {
         country = "";
         removeDisable(this, "Country");
+        d3.select("svg").remove();
+        d3.select("table").remove();
       }
     });
   }
@@ -42,8 +41,6 @@
       unclickAll(this);
       console.log(seriesName + " si " + country);
       if (chart == "column-chart" && country != "" && seriesValue == "All") {
-        api = "http://localhost:3001/api/" + seriesName + "?country=" + country;
-
         createChart(seriesName, country);
       } else {
         d3.select("svg").remove();
@@ -60,8 +57,6 @@
         seriesName = this.name;
         disableAll(this, "Series");
         if (chart == "column-chart" && country != "" && seriesValue == "All") {
-          api =
-            "http://localhost:3001/api/" + seriesName + "?country=" + country;
           createChart(seriesName, country);
         }
       } else {
@@ -170,7 +165,7 @@ function createChart(seriesName, country) {
         .attr("y", height + margin.bottom - 20)
         .attr("font-size", "20px")
         .attr("text-anchor", "middle")
-        .text(seriesName);
+        .text(country + " - " + seriesName);
 
       g.append("text")
         .attr("class", "y-axis-label")
