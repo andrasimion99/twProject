@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/andrasimion99/twProject#readme",
   "dependencies": {
-    "mongoose": "^5.9.7"
+    "mongoose": "^5.9.10"
   }
 }

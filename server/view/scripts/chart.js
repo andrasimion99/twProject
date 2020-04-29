@@ -18,7 +18,7 @@ for (var i = 0; i < countries.length; i++) {
       disableAll(this, "Country");
       if (chart == "column-chart" && seriesValue == "All") {
         api = "http://localhost:3001/api/" + seriesName + "?country=" + country;
-        createChart(api);
+        createChart(seriesName, country);
       }
     } else {
       country = "";
@@ -37,7 +37,7 @@ for (var i = 0; i < charts.length; i++) {
     unclickAll(this);
     if (chart == "column-chart" && country != "" && seriesValue == "All") {
       api = "http://localhost:3001/api/" + seriesName + "?country=" + country;
-      createChart(api);
+      createChart(seriesName, country);
     } else {
       d3.select("svg").remove();
       d3.select("table").remove();
@@ -62,7 +62,7 @@ for (var i = 0; i < series.length; i++) {
       disableAll(this, "Series");
       if (chart == "column-chart" && country != "" && seriesValue == "All") {
         api = "http://localhost:3001/api/" + seriesName + "?country=" + country;
-        createChart(api);
+        createChart(seriesName, country);
       }
     } else {
       seriesValue = "";
@@ -94,10 +94,10 @@ function removeDisable(currentChecked, id) {
   }
 }
 
-function createChart(api) {
+function createChart(seriesName, country) {
   d3.select("svg").remove();
   d3.select("table").remove();
-  fetch(api)
+  fetch("http://localhost:3001/api/" + seriesName + "?country=" + country)
     .then((data) => {
       return data.json();
     })
@@ -120,6 +120,9 @@ function createChart(api) {
       console.log(numBars);
 
       var margin = { left: 100, right: 10, top: 10, bottom: 180 };
+      if (seriesName === "age") {
+        margin.bottom = 100;
+      }
       var yearsArr = [];
       var width = 500 - margin.left - margin.right;
       var height = 450 - margin.top - margin.bottom;
@@ -157,7 +160,7 @@ function createChart(api) {
         .attr("y", height + margin.bottom - 20)
         .attr("font-size", "20px")
         .attr("text-anchor", "middle")
-        .text("Age Category(years)");
+        .text(seriesName);
 
       g.append("text")
         .attr("class", "y-axis-label")
