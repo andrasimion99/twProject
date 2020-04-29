@@ -1,77 +1,88 @@
-var countries = document.getElementsByClassName("Country");
-var country = "";
+main();
+function main() {
+  addCountries(function () {
+    console.log("huzzah, I'm done!");
+  });
+  var charts = document.getElementsByClassName("Chart");
+  var chart = "";
 
-var charts = document.getElementsByClassName("Chart");
-var chart = "";
+  var series = document.getElementsByClassName("Series");
+  var seriesValue = "";
+  var seriesName = "";
 
-var series = document.getElementsByClassName("Series");
-var seriesValue = "";
-var seriesName = "";
+  var countries = document.getElementsByClassName("Country");
+  var country = "";
 
-var api = "";
+  var api = "";
+  console.log(series);
+  console.log(countries);
 
-/*-----Event listener for countries check box------*/
-for (var i = 0; i < countries.length; i++) {
-  countries[i].addEventListener("change", function () {
-    if (this.checked) {
-      country = this.value;
-      disableAll(this, "Country");
-      if (chart == "column-chart" && seriesValue == "All") {
+  /*-----Event listener for countries check box------*/
+  for (var i = 0; i < countries.length; i++) {
+    countries[i].addEventListener("change", function () {
+      if (this.checked) {
+        country = this.value;
+        disableAll(this, "Country");
+        if (chart == "column-chart" && seriesValue == "All") {
+          api =
+            "http://localhost:3001/api/" + seriesName + "?country=" + country;
+          createChart(seriesName, country);
+        }
+      } else {
+        country = "";
+        removeDisable(this, "Country");
+      }
+    });
+  }
+
+  /*-----Event listener for chart tipe------*/
+
+  for (var i = 0; i < charts.length; i++) {
+    charts[i].addEventListener("click", function () {
+      chart = this.value;
+      console.log(chart);
+      this.style.border = "5px solid #2980b9";
+      unclickAll(this);
+      if (chart == "column-chart" && country != "" && seriesValue == "All") {
         api = "http://localhost:3001/api/" + seriesName + "?country=" + country;
         createChart(seriesName, country);
+      } else {
+        d3.select("svg").remove();
+        d3.select("table").remove();
       }
-    } else {
-      country = "";
-      removeDisable(this, "Country");
-    }
-  });
-}
+    });
+  }
 
-/*-----Event listener for chart tipe------*/
-
-for (var i = 0; i < charts.length; i++) {
-  charts[i].addEventListener("click", function () {
-    chart = this.value;
-    console.log(chart);
-    this.style.border = "5px solid #2980b9";
-    unclickAll(this);
-    if (chart == "column-chart" && country != "" && seriesValue == "All") {
-      api = "http://localhost:3001/api/" + seriesName + "?country=" + country;
-      createChart(seriesName, country);
-    } else {
-      d3.select("svg").remove();
-      d3.select("table").remove();
-    }
-  });
+  /*-----Event listener for series check box------*/
+  for (var i = 0; i < series.length; i++) {
+    series[i].addEventListener("change", function () {
+      if (this.checked) {
+        seriesValue = this.value;
+        seriesName = this.name;
+        disableAll(this, "Series");
+        if (chart == "column-chart" && country != "" && seriesValue == "All") {
+          api =
+            "http://localhost:3001/api/" + seriesName + "?country=" + country;
+          createChart(seriesName, country);
+        }
+      } else {
+        seriesValue = "";
+        seriesName = "";
+        removeDisable(this, "Series");
+        d3.select("svg").remove();
+        d3.select("table").remove();
+      }
+    });
+  }
 }
 
 function unclickAll(currentChart) {
+  var charts = document.getElementsByClassName("Chart");
   for (var i = 0; i < charts.length; i++) {
     if (charts[i] != currentChart) {
       charts[i].style.border = "none";
     }
   }
-}
-
-/*-----Event listener for series check box------*/
-for (var i = 0; i < series.length; i++) {
-  series[i].addEventListener("change", function () {
-    if (this.checked) {
-      seriesValue = this.value;
-      seriesName = this.name;
-      disableAll(this, "Series");
-      if (chart == "column-chart" && country != "" && seriesValue == "All") {
-        api = "http://localhost:3001/api/" + seriesName + "?country=" + country;
-        createChart(seriesName, country);
-      }
-    } else {
-      seriesValue = "";
-      seriesName = "";
-      removeDisable(this, "Series");
-      d3.select("svg").remove();
-      d3.select("table").remove();
-    }
-  });
 }
 
 function disableAll(currentChecked, id) {
@@ -313,4 +324,44 @@ function createChart(seriesName, country) {
     .catch((error) => {
       console.log(error);
     });
+}
+
+function addCountries(_callback) {
+  fetch("http://localhost:3001/api/states?year=2018")
+    .then((data) => {
+      return data.json();
+    })
+    .then((res) => {
+      var data = res.data;
+      var countryArr = [];
+      for (var i = 0; i < data.length; i++) {
+        countryArr.push(data[i].LocationDesc);
+      }
+      var countries = d3
+        .select("#dropdown-countries")
+        .selectAll("div")
+        .data(countryArr)
+        .enter()
+        .append("div")
+        .attr("class", "checkbox");
+      countries
+        .append("input")
+        .attr("class", "Country")
+        .attr("type", "checkbox")
+        .attr("name", "Country")
+        .attr("value", function (d, i) {
+          return countryArr[i];
+        });
+
+      countries
+        .append("label")
+        .attr("for", "country")
+        .text(function (d, i) {
+          return countryArr[i];
+        });
+    })
+    .catch((error) => {
+      console.log(error);
+    });
+  _callback();
 }
