@@ -1,9 +1,11 @@
-section, svg, input {
-    margin: 0 auto 10px;
-    display: block;
-  }
+section,
+svg,
+input {
+  margin: 0 auto 10px;
+  display: block;
+}
 
-#time-bar{
+#time-bar {
   padding-left: 70px;
   padding-right: 20px;
 }
@@ -13,12 +15,12 @@ section, svg, input {
   cursor: pointer;
 }
 
-.far{
+.far {
   font-size: 30px;
   color: rgb(90, 87, 87);
 }
 
-.far:hover{
+.far:hover {
   color: rgb(56, 55, 55);
 }
 
@@ -34,7 +36,7 @@ table {
   cursor: pointer;
 }
 
-.time-cell:hover{
+.time-cell:hover {
   background-color: rgb(90, 87, 87);
 }
 
