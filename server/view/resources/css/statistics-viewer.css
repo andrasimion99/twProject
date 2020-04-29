@@ -596,13 +596,13 @@ closeBtn:focus {
 .statistics-grid {
   background-color: #fff;
   display: grid;
-  grid-template-columns: 1.8fr 5fr 1fr;
+  grid-template-columns: 2fr 5fr 1fr;
   grid-gap: 1.5rem;
   height: 100vh;
-  overflow: hidden;
 }
 .choose-menu {
   border-right: #efefef solid 5px;
+  overflow-y: scroll;
 }
 
 .choose-menu .main-dropdown {
