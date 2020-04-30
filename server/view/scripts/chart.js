@@ -10,9 +10,6 @@
   var countries = document.getElementsByClassName("Country");
   var country = "";
 
-  console.log(series);
-  console.log(countries.length);
-
   /*-----Event listener for countries check box------*/
   for (var i = 0; i < countries.length; i++) {
     countries[i].addEventListener("change", function () {
@@ -36,10 +33,8 @@
   for (var i = 0; i < charts.length; i++) {
     charts[i].addEventListener("click", function () {
       chart = this.value;
-      console.log(chart);
       this.style.border = "5px solid #2980b9";
       unclickAll(this);
-      console.log(seriesName + " si " + country);
       if (chart == "column-chart" && country != "" && seriesValue == "All") {
         createChart(seriesName, country);
       } else {
@@ -122,7 +117,6 @@ function createChart(seriesName, country) {
           return d.Stratification1;
         })
         .size();
-      console.log(numBars);
 
       var margin = { left: 100, right: 10, top: 10, bottom: 180 };
       if (seriesName === "age") {
@@ -192,6 +186,27 @@ function createChart(seriesName, country) {
       });
       g.append("g").attr("class", "y-axis").call(yAxis);
 
+      var valueBox = d3
+        .select("#chart-area")
+        .data(
+          data.filter(function (d) {
+            return parseInt(d.Description) === minYear;
+          })
+        )
+        .append("div")
+        .style("position", "absolute")
+        .style("color", "#ffffff")
+        .style("z-index", "10")
+        .style("display", "none")
+        .style("background", "#212121")
+        .style("border", "0px solid #ffffff")
+        .style("border-radius", "5px")
+        .style("padding", "10px")
+        .style("font-size", "14px")
+        .text(function (d) {
+          return d.Data_Value;
+        });
+
       var rects = g
         .selectAll("rect")
         .data(
@@ -204,9 +219,8 @@ function createChart(seriesName, country) {
         .attr("width", barWidth)
         .attr("height", function (d) {
           if (d.Data_Value === "~") {
-            d.Data_Value = 1;
+            d.Data_Value = 0;
           }
-          console.log(height - yscale(parseFloat(d.Data_Value)));
           return height - yscale(parseFloat(d.Data_Value));
         })
         .attr("y", function (d) {
@@ -216,7 +230,21 @@ function createChart(seriesName, country) {
           // return (barWidth + barPadding) * i;
           return xscale(d.Stratification1);
         })
-        .attr("fill", "grey");
+        .attr("fill", "grey")
+        .on("mouseover", function (d) {
+          valueBox.text(d.Data_Value);
+          this.style.opacity = 0.5;
+          return valueBox.style("display", "block");
+        })
+        .on("mousemove", function () {
+          return valueBox
+            .style("top", d3.event.pageY - 30 + "px")
+            .style("left", d3.event.pageX + 10 + "px");
+        })
+        .on("mouseout", function () {
+          this.style.opacity = 1;
+          return valueBox.style("display", "none");
+        });
 
       var timeBar = d3
         .select("#chart-area")
@@ -331,7 +359,6 @@ async function addCountries() {
       for (var i = 0; i < data.length; i++) {
         countryArr.push(data[i].LocationDesc);
       }
-      console.log(countryArr);
       var countries = d3
         .select("#dropdown-countries")
         .selectAll("div")
