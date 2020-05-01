@@ -1,6 +1,5 @@
 section,
-svg,
-input {
+svg{
   margin: 0 auto 10px;
   display: block;
 }
