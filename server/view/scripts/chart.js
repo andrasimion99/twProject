@@ -154,7 +154,14 @@ function createChart(seriesName, country) {
         barPadding = 40;
       }
       var barWidth = width / numBars - barPadding;
-
+      var color = d3
+        .scaleOrdinal()
+        .domain(
+          data.map(function (d) {
+            return d.Stratification1;
+          })
+        )
+        .range(["#00a8cc", "#005082", "#ffa41b"]);
       var xscale = d3
         .scaleBand()
         .domain(
@@ -254,10 +261,12 @@ function createChart(seriesName, country) {
           // return (barWidth + barPadding) * i;
           return xscale(d.Stratification1);
         })
-        .attr("fill", "grey")
+        .attr("fill", function (d) {
+          return color(d.Stratification1);
+        })
         .on("mouseover", function (d) {
           valueBox.text(d.Data_Value);
-          this.style.opacity = 0.5;
+          this.style.opacity = 0.7;
           return valueBox.style("display", "block");
         })
         .on("mousemove", function () {
@@ -326,6 +335,8 @@ function createChart(seriesName, country) {
               return parseInt(d.Description) === year;
             })
           )
+          .transition()
+          .duration(1000)
           .attr("height", function (d) {
             return height - yscale(parseFloat(d.Data_Value));
           })
@@ -340,13 +351,13 @@ function createChart(seriesName, country) {
           if (year != minYear) {
             document.getElementsByClassName("time-cell")[
               yearsArr.indexOf(year - 1)
-            ].style["background-color"] = "grey";
+            ].style["background-color"] = "#005082";
           }
 
           if (year <= maxYear) {
             document.getElementsByClassName("time-cell")[
               yearsArr.indexOf(year)
-            ].style["background-color"] = "rgb(90, 87, 87)";
+            ].style["background-color"] = "#000839";
           }
           rects
             .data(
@@ -354,6 +365,8 @@ function createChart(seriesName, country) {
                 return parseInt(d.Description) === year;
               })
             )
+            .transition()
+            .duration(1000)
             .attr("height", function (d) {
               return height - yscale(parseFloat(d.Data_Value));
             })
@@ -407,7 +420,14 @@ async function createBarchart(seriesName, country, seriesValue) {
       var height = 450 - margin.top - margin.bottom;
       var barPadding = 20;
       var barWidth = width / numBars - barPadding;
-
+      var color = d3
+        .scaleOrdinal()
+        .domain(
+          data.map(function (d) {
+            return d.Description;
+          })
+        )
+        .range(["#88e1f2", "#ff7c7c", "#21243d"]);
       var xscale = d3
         .scaleBand()
         .domain(
@@ -512,10 +532,12 @@ async function createBarchart(seriesName, country, seriesValue) {
           // return (barWidth + barPadding) * i;
           return xscale(d.Description);
         })
-        .attr("fill", "grey")
+        .attr("fill", function (d) {
+          return color(d.Description);
+        })
         .on("mouseover", function (d) {
           valueBox.text(d.Data_Value);
-          this.style.opacity = 0.5;
+          this.style.opacity = 0.7;
           return valueBox.style("display", "block");
         })
         .on("mousemove", function () {
@@ -559,7 +581,7 @@ async function groupedBarchart(seriesName, country, types) {
       var color = d3
         .scaleOrdinal()
         .domain(types)
-        .range(["#a4d8eb", "#027fad", "#cbe9f7"]);
+        .range(["#543864", "#ffbd69", "#ff6363"]);
 
       var numBars = 8 + (types.length - 1) * 2;
       var margin = { left: 100, right: 10, top: 10, bottom: 100 };

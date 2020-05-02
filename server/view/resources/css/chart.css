@@ -16,11 +16,11 @@ svg{
 
 .far {
   font-size: 30px;
-  color: rgb(90, 87, 87);
+  color: #005082;
 }
 
 .far:hover {
-  color: rgb(56, 55, 55);
+  color: #000839;
 }
 
 table {
@@ -30,13 +30,13 @@ table {
 
 .time-cell {
   box-sizing: border-box;
-  background-color: grey;
-  padding: 10px;
+  background-color: #005082;
+  padding: 6px;
   cursor: pointer;
 }
 
 .time-cell:hover {
-  background-color: rgb(90, 87, 87);
+  background-color: #000839;
 }
 
 .year-cell {
