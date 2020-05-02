@@ -1,7 +1,19 @@
-groupedBarchart("age", "Alaska", ["18 - 24", "25 - 34", "45 - 54"]);
+groupedBarchart("age", "18 - 24", [
+  "Alaska",
+  "California",
+  "Virginia",
+  "Texas",
+]);
 
-async function groupedBarchart(seriesName, country, types) {
-  fetch("http://localhost:3001/api/" + seriesName + "?country=" + country)
+async function groupedBarchartByCountry(seriesName, seriesValue, types) {
+  fetch(
+    "http://localhost:3001/api/" +
+      seriesName +
+      "?" +
+      seriesName +
+      "=" +
+      seriesValue
+  )
     .then((data) => {
       return data.json();
     })
@@ -11,20 +23,20 @@ async function groupedBarchart(seriesName, country, types) {
       for (let item of datares) {
         await (async () => {
           for (let type of types) {
-            if (item.Stratification1 == type) {
+            if (item.LocationDesc == type) {
               await data.push(item);
             }
           }
         })();
       }
-
+      console.log(data);
       var maxPercent = d3.max(data, function (d) {
         return parseFloat(d.Data_Value);
       });
       var color = d3
         .scaleOrdinal()
         .domain(types)
-        .range(["#543864", "#ffbd69", "#ff6363"]);
+        .range(["#f9c6ba", "#dd6892", "#3c6f9c", "#512c96"]);
 
       var numBars = 8 + (types.length - 1) * 2;
       var margin = { left: 100, right: 10, top: 10, bottom: 100 };
@@ -36,7 +48,7 @@ async function groupedBarchart(seriesName, country, types) {
       var bars = d3
         .scaleOrdinal()
         .domain(types)
-        .range([0, barWidth, barWidth * 2]);
+        .range([0, barWidth, barWidth * 2, barWidth * 3]);
 
       var xscale = d3
         .scaleBand()
@@ -66,7 +78,7 @@ async function groupedBarchart(seriesName, country, types) {
         .attr("y", height + margin.bottom - 20)
         .attr("font-size", "20px")
         .attr("text-anchor", "middle")
-        .text(country + " - " + seriesName);
+        .text(seriesValue + " - " + seriesName);
 
       g.append("text")
         .attr("class", "y-axis-label")
@@ -134,13 +146,13 @@ async function groupedBarchart(seriesName, country, types) {
           return yscale(parseFloat(d.Data_Value));
         })
         .attr("x", function (d, i) {
-          return xscale(d.Description) + bars(d.Stratification1);
+          return xscale(d.Description) + bars(d.LocationDesc);
         })
         .attr("fill", function (d) {
-          return color(d.Stratification1);
+          return color(d.LocationDesc);
         })
         .attr("class", function (d) {
-          return "type" + types.indexOf(d.Stratification1);
+          return "type" + types.indexOf(d.LocationDesc);
         })
         .on("mouseover", function (d) {
           valueBox.text(d.Data_Value);
