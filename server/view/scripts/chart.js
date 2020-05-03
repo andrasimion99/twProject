@@ -24,7 +24,7 @@
           }
         } else if (chart == "column-chart" && seriesValue == "Total") {
           createBarchart("states", country);
-        } else if (chart == "column-chart") {
+        } else if (chart == "column-chart" && seriesName != "") {
           createBarchart(seriesName, country, seriesValue);
         }
       } else {
@@ -49,9 +49,13 @@
         } else {
           createChart(seriesName, country);
         }
-      } else if (chart == "column-chart" && seriesValue == "Total") {
+      } else if (
+        chart == "column-chart" &&
+        seriesValue == "Total" &&
+        country != ""
+      ) {
         createBarchart("states", country);
-      } else if (chart == "column-chart") {
+      } else if (chart == "column-chart" && seriesName != "" && country != "") {
         createBarchart(seriesName, country, seriesValue);
       } else {
         d3.select("svg").remove();
@@ -73,9 +77,17 @@
           } else {
             createChart(seriesName, country);
           }
-        } else if (chart == "column-chart" && seriesValue == "Total") {
+        } else if (
+          chart == "column-chart" &&
+          seriesValue == "Total" &&
+          country != ""
+        ) {
           createBarchart("states", country);
-        } else if (chart == "column-chart") {
+        } else if (
+          chart == "column-chart" &&
+          seriesName != "" &&
+          country != ""
+        ) {
           createBarchart(seriesName, country, seriesValue);
         }
       } else {
