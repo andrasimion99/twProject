@@ -157,7 +157,7 @@ async function addCountries() {
     });
 }
 
-async function downloads(svg, csvData) {
+async function downloads(svg, csvData, simpleSvg) {
   // ----------download as SVG---------------
   d3.select("#downloadSvg").on("click", function () {
     this.href = "data:image/svg+xml;base64," + btoa(svg.node().outerHTML);
@@ -166,8 +166,15 @@ async function downloads(svg, csvData) {
   // ----------download as WEBP---------------
   var canvasImg = d3.select("#canvasImage").node();
   var canvas = d3.select("canvas").node();
-  canvasImg.src = "data:image/svg+xml;base64," + btoa(svg.node().outerHTML);
+  if (simpleSvg) {
+    canvasImg.src =
+      "data:image/svg+xml;base64," + btoa(simpleSvg.node().outerHTML);
+  } else {
+    canvasImg.src = "data:image/svg+xml;base64," + btoa(svg.node().outerHTML);
+  }
+
   canvasImg.onload = function () {
+    canvas.getContext("2d").clearRect(0, 0, canvas.width, canvas.height);
     canvas.getContext("2d").drawImage(canvasImg, 0, 0);
   };
   d3.select("#downloadWebP").on("click", function () {
@@ -739,7 +746,7 @@ async function groupedBarchart(seriesName, country, types) {
       g.append("g").attr("class", "y-axis").call(yAxis);
 
       var valueBox = d3
-        .select("#chart-area")
+        .select("body")
         .data(
           data.filter(function (d) {
             return parseInt(d.Description);
@@ -808,6 +815,7 @@ async function groupedBarchart(seriesName, country, types) {
         .style("margin", "0 auto")
         .style("padding-left", margin.left + "px")
         .append("table")
+        .attr("xmlns", "http://www.w3.org/1999/xhtml")
         .attr("id", "legend")
         .attr("width", width / 2)
         .append("thead");
@@ -866,7 +874,7 @@ async function groupedBarchart(seriesName, country, types) {
           return types[i];
         });
 
-      downloads(svg, data);
+      downloads(d3.select("#chart-area"), data, svg);
     })
     .catch((error) => {
       console.log(error);
