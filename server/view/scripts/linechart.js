@@ -1,5 +1,14 @@
-async function createLineChart(seriesName, seriesValue, types) {
-  url = "http://localhost:3001/api/age?country=Alaska&age=18%20-%2024";
+async function createLineChart(seriesName, country, seriesValue) {
+  url =
+    "http://localhost:3001/api/" +
+    seriesName +
+    "?country=" +
+    country +
+    "&" +
+    seriesName +
+    "=" +
+    seriesValue;
+  /*url = "http://localhost:3001/api/age?country=Alaska&age=18%20-%2024";*/
   fetch(url)
     .then((data) => {
       return data.json();
@@ -161,4 +170,5 @@ async function createLineChart(seriesName, seriesValue, types) {
       console.log(error);
     });
 }
-createLineChart();
+/*createLineChart();*/
+export default createLineChart;
