@@ -157,7 +157,44 @@ async function addCountries() {
     });
 }
 
-function createChart(seriesName, country) {
+async function downloads(svg, csvData) {
+  // ----------download as SVG---------------
+  d3.select("#downloadSvg").on("click", function () {
+    this.href = "data:image/svg+xml;base64," + btoa(svg.node().outerHTML);
+  });
+
+  // ----------download as WEBP---------------
+  var canvasImg = d3.select("#canvasImage").node();
+  var canvas = d3.select("canvas").node();
+  canvasImg.src = "data:image/svg+xml;base64," + btoa(svg.node().outerHTML);
+  canvasImg.onload = function () {
+    canvas.getContext("2d").drawImage(canvasImg, 0, 0);
+  };
+  d3.select("#downloadWebP").on("click", function () {
+    this.href = canvas.toDataURL("image/webp");
+  });
+
+  // ----------download as CSV---------------
+  var csvContent = "Category,State,StateID,Year,ObesityPercent\n";
+  csvData.forEach((item) => {
+    csvContent +=
+      item.StratificationId1 +
+      "," +
+      item.LocationDesc +
+      "," +
+      item.LocationAbbr +
+      "," +
+      item.Description +
+      "," +
+      item.Data_Value +
+      "\n";
+  });
+  d3.select("#downloadCsv").on("click", function () {
+    this.href = "data:text/csv;charset=utf-8," + encodeURI(csvContent);
+  });
+}
+
+async function createChart(seriesName, country) {
   d3.select("svg").remove();
   d3.select("table").remove();
   fetch("http://localhost:3001/api/" + seriesName + "?country=" + country)
@@ -216,6 +253,7 @@ function createChart(seriesName, country) {
       var svg = d3
         .select("#chart-area")
         .append("svg")
+        .attr("xmlns", "http://www.w3.org/2000/svg")
         .attr("width", width + margin.left + margin.right)
         .attr("height", height + margin.top + margin.bottom);
 
@@ -223,13 +261,14 @@ function createChart(seriesName, country) {
         .append("g")
         .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-      g.append("text")
+      var xText = g
+        .append("text")
         .attr("class", "x-axis-label")
         .attr("x", width / 2)
         .attr("y", height + margin.bottom - 20)
         .attr("font-size", "20px")
         .attr("text-anchor", "middle")
-        .text(country + " - " + seriesName);
+        .text(country + " - " + seriesName + "( " + minYear + " )");
 
       g.append("text")
         .attr("class", "y-axis-label")
@@ -297,7 +336,6 @@ function createChart(seriesName, country) {
           return yscale(parseFloat(d.Data_Value));
         })
         .attr("x", function (d, i) {
-          // return (barWidth + barPadding) * i;
           return xscale(d.Stratification1);
         })
         .attr("fill", function (d) {
@@ -382,6 +420,8 @@ function createChart(seriesName, country) {
           .attr("y", function (d) {
             return yscale(parseFloat(d.Data_Value));
           });
+
+        xText.text(country + " - " + seriesName + "( " + year + " )");
       });
 
       playIcon.on("click", function () {
@@ -416,8 +456,13 @@ function createChart(seriesName, country) {
           if (year > maxYear + 1) {
             clearInterval(timer);
           }
+          if (year <= maxYear + 1) {
+            xText.text(country + " - " + seriesName + "( " + (year - 1) + " )");
+          }
         }, 1000);
       });
+
+      downloads(svg, data);
     })
     .catch((error) => {
       console.log(error);
@@ -440,7 +485,7 @@ async function createBarchart(seriesName, country, seriesValue) {
   } else {
     url = "http://localhost:3001/api/" + seriesName + "?country=" + country;
   }
-  fetch(url)
+  await fetch(url)
     .then((data) => {
       return data.json();
     })
@@ -482,6 +527,7 @@ async function createBarchart(seriesName, country, seriesValue) {
       var svg = d3
         .select("#chart-area")
         .append("svg")
+        .attr("xmlns", "http://www.w3.org/2000/svg")
         .attr("width", width + margin.left + margin.right)
         .attr("height", height + margin.top + margin.bottom);
 
@@ -588,6 +634,8 @@ async function createBarchart(seriesName, country, seriesValue) {
           this.style.opacity = 1;
           return valueBox.style("display", "none");
         });
+
+      downloads(svg, data);
     })
     .catch((error) => {
       console.log(error);
@@ -649,6 +697,7 @@ async function groupedBarchart(seriesName, country, types) {
       var svg = d3
         .select("#chart-area")
         .append("svg")
+        .attr("xmlns", "http://www.w3.org/2000/svg")
         .attr("width", width + margin.left + margin.right)
         .attr("height", height + margin.top + margin.bottom);
 
@@ -816,6 +865,8 @@ async function groupedBarchart(seriesName, country, types) {
         .text(function (d, i) {
           return types[i];
         });
+
+      downloads(svg, data);
     })
     .catch((error) => {
       console.log(error);
@@ -882,6 +933,7 @@ async function groupedBarchartByCountry(seriesName, seriesValue, types) {
       var svg = d3
         .select("#chart-area")
         .append("svg")
+        .attr("xmlns", "http://www.w3.org/2000/svg")
         .attr("width", width + margin.left + margin.right)
         .attr("height", height + margin.top + margin.bottom);
 
@@ -1049,6 +1101,8 @@ async function groupedBarchartByCountry(seriesName, seriesValue, types) {
         .text(function (d, i) {
           return types[i];
         });
+
+      downloads(svg, data);
     })
     .catch((error) => {
       console.log(error);
