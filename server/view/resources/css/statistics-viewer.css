@@ -665,3 +665,7 @@ closeBtn:focus {
   margin: 0 5px 0 0;
   display: inline;
 }
+
+.fas {
+ color: #555;
+}

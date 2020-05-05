@@ -1,5 +1,5 @@
-async () => {
-  fetch("http://localhost:3001/api/states?year=2018")
+async function addCountries() {
+  await fetch("http://localhost:3001/api/states?year=2018")
     .then((data) => {
       return data.json();
     })
@@ -16,7 +16,6 @@ async () => {
         .enter()
         .append("div")
         .attr("class", "checkbox");
-
       countries
         .append("input")
         .attr("class", "Country")
@@ -36,4 +35,4 @@ async () => {
     .catch((error) => {
       console.log(error);
     });
-};
+}
