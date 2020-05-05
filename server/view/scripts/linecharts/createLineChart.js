@@ -86,6 +86,7 @@ async function createLineChart(seriesName, country, seriesValue) {
 
       /*----create line chart---- */
 
+      console.log(data);
       var linepath = svg
         .append("path")
         .datum(data)
@@ -115,7 +116,7 @@ async function createLineChart(seriesName, country, seriesValue) {
 
       focus
         .append("rect")
-        .style("fill", "#0e4061")
+        .style("fill", "#3d77a8")
         .attr("class", "tooltip")
         .attr("width", 50)
         .attr("height", 50)

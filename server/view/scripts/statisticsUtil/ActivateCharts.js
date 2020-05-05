@@ -32,10 +32,14 @@
           }
         }
         if (chart == "line-chart") {
+          console.log(seriesName);
           d3.select("svg").remove();
           d3.select("table").remove();
-          if (seriesName != "" && seriesName != "All")
+          if (seriesName != "" && seriesValue != "All")
             createLineChart(seriesName, country, seriesValue);
+          if (seriesValue == "All" && country != "") {
+            createLineChartAll(seriesName, country);
+          }
         }
       } else {
         country = "";
@@ -70,8 +74,11 @@
       } else if (chart == "line-chart") {
         d3.select("svg").remove();
         d3.select("table").remove();
-        if (seriesName != "" && country != "") {
+        if (seriesName != "" && country != "" && seriesValue != "All") {
           createLineChart(seriesName, country, seriesValue);
+        }
+        if (seriesValue == "All" && country != "") {
+          createLineChartAll(seriesName, country);
         }
       } else {
         d3.select("svg").remove();
@@ -103,8 +110,11 @@
         } else if (chart == "line-chart") {
           d3.select("svg").remove();
           d3.select("table").remove();
-          if (seriesName != "" && country != "") {
+          if (seriesName != "" && country != "" && seriesValue != "All") {
             createLineChart(seriesName, country, seriesValue);
+          }
+          if (seriesValue == "All" && country != "") {
+            createLineChartAll(seriesName, country);
           }
         }
       } else {
