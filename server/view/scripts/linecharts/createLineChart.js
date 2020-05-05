@@ -63,34 +63,6 @@ async function createLineChart(seriesName, country, seriesValue) {
         return d.Description;
       }).left;
 
-      var focus = svg
-        .append("g")
-        .append("circle")
-        .style("fill", "none")
-        .attr("stroke", "steelblue")
-        .attr("r", 5)
-        .style("opacity", 0)
-        .style("fill", function (d) {
-          return "steelblue";
-        });
-
-      var focusText = d3
-        .select("#chart-area")
-        .data(data)
-        .append("div")
-        .style("position", "absolute")
-        .style("color", "#ffffff")
-        .style("z-index", "10")
-        .style("display", "none")
-        .style("background", "#125682")
-        .style("border", "0px solid #ffffff")
-        .style("border-radius", "5px")
-        .style("padding", "10px")
-        .style("font-size", "14px")
-        .text(function (d) {
-          return d.Data_Value;
-        });
-
       svg
         .append("text")
         .attr("class", "x-axis-label")
@@ -117,11 +89,6 @@ async function createLineChart(seriesName, country, seriesValue) {
       var linepath = svg
         .append("path")
         .datum(data)
-        .style("pointer-events", "all")
-        .on("mouseover", mouseover)
-        .on("mousemove", mousemove)
-        .on("mouseout", mouseout)
-        .attr("id", "pathID")
         .attr("fill", "none")
         .attr("stroke", "steelblue")
         .attr("stroke-width", 1.5)
@@ -139,18 +106,58 @@ async function createLineChart(seriesName, country, seriesValue) {
               return y(parseFloat(d.Data_Value));
             })
         );
-      var pathbox = linepath.node().getBBox();
+
+      var focus = svg
+        .append("g")
+        .attr("class", "focus")
+        .style("display", "none");
+      focus.append("circle").attr("r", 5).style("fill", "steelblue");
+
+      focus
+        .append("rect")
+        .style("fill", "#0e4061")
+        .attr("class", "tooltip")
+        .attr("width", 50)
+        .attr("height", 50)
+        .attr("x", 10)
+        .attr("y", -22)
+        .attr("rx", 10)
+        .attr("ry", 10);
+
+      focus
+        .append("text")
+        .style("font-size", "14px")
+        .style("fill", "white")
+        .attr("class", "tooltip-date")
+        .attr("x", 18)
+        .attr("y", -2);
+
+      focus
+        .append("text")
+        .style("font-size", "14px")
+        .style("fill", "white")
+        .attr("class", "tooltip-year")
+        .attr("x", 18)
+        .attr("y", 18);
+
+      svg
+        .append("rect")
+        .style("fill", "none")
+        .style("pointer-events", "all")
+        .attr("width", width)
+        .attr("height", height)
+        .on("mouseover", mouseover)
+        .on("mousemove", mousemove)
+        .on("mouseout", mouseout);
 
       function mouseover() {
-        focus.style("opacity", 1);
-        focusText.style("opacity", 1);
-        focusText.style("display", "block");
+        console.log("here");
+        focus.style("display", "block");
       }
 
       function mousemove() {
         var x0 = x.invert(d3.mouse(this)[0]);
         var i = bisectLeft(data, x0, 1);
-        console.log(d3.mouse(this)[0]);
         if (d3.mouse(this)[0] >= 270) selectedData = data[7];
         else if (i > 0) {
           (d0 = data[i - 1]), (d1 = data[i]);
@@ -158,20 +165,19 @@ async function createLineChart(seriesName, country, seriesValue) {
         } else {
           selectedData = data[0];
         }
-        focus
-          .attr("cx", x(selectedData.Description))
-          .attr("cy", y(selectedData.Data_Value));
-        focusText
-          .text(
-            selectedData.Description + " - " + selectedData.Data_Value + "%"
-          )
-          .style("top", d3.event.pageY - 30 + "px")
-          .style("left", d3.event.pageX + 10 + "px");
+        focus.attr(
+          "transform",
+          "translate(" +
+            x(selectedData.Description) +
+            "," +
+            y(selectedData.Data_Value) +
+            ")"
+        );
+        focus.select(".tooltip-date").text(selectedData.Data_Value + "%");
+        focus.select(".tooltip-year").text(selectedData.Description);
       }
       function mouseout() {
-        focus.style("opacity", 0);
-        focusText.style("opacity", 0);
-        focusText.style("display", "none");
+        focus.style("display", "none");
       }
 
       downloads(d3.select("svg"), data);
