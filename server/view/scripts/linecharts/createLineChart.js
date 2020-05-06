@@ -152,7 +152,6 @@ async function createLineChart(seriesName, country, seriesValue) {
         .on("mouseout", mouseout);
 
       function mouseover() {
-        console.log("here");
         focus.style("display", "block");
       }
 

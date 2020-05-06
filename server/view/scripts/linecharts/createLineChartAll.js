@@ -14,24 +14,26 @@ async function createLineChartAll(seriesName, country) {
       return data.json();
     })
     .then((res) => {
-      data = res.data;
+      data = res.data.filter(function (d) {
+        return parseInt(d.Description) === 2011;
+      });
       data.sort(sortByProperty("Stratification1"));
-      var minYear = d3.min(data, function (d) {
+      var minYear = d3.min(res.data, function (d) {
         return parseInt(d.Description);
       });
-      var maxYear = d3.max(data, function (d) {
+      var maxYear = d3.max(res.data, function (d) {
         return parseInt(d.Description);
       });
-      var maxPercent = d3.max(data, function (d) {
+      var maxPercent = d3.max(res.data, function (d) {
         return parseFloat(d.Data_Value);
       });
-      var numBars = d3
+      var numSeries = d3
         .set(data, function (d) {
           return d.Stratification1;
         })
         .size();
 
-      var margin = { left: 100, right: 10, top: 10, bottom: 180 };
+      var margin = { left: 100, right: 100, top: 10, bottom: 180 };
       var yearsArr = [];
       var width = 500 - margin.left - margin.right;
       var height = 450 - margin.top - margin.bottom;
@@ -54,12 +56,15 @@ async function createLineChartAll(seriesName, country) {
         )
         .range([0, width]);
 
-      x.invert = function (x) {
-        var domain = this.domain();
-        var range = this.range();
+      x.invert = (function () {
+        var domain = x.domain();
+        var range = x.range();
         var scale = d3.scaleQuantize().domain(range).range(domain);
-        return scale(x);
-      };
+
+        return function (x) {
+          return scale(x);
+        };
+      })();
 
       let xAxis = d3.axisBottom(x);
       svg
@@ -99,11 +104,7 @@ async function createLineChartAll(seriesName, country) {
 
       var linepath = svg
         .append("path")
-        .datum(
-          data.filter(function (d) {
-            return parseInt(d.Description) === minYear;
-          })
-        )
+        .datum(data)
         .attr("fill", "none")
         .attr("stroke", "steelblue")
         .attr("stroke-width", 1.5)
@@ -121,6 +122,67 @@ async function createLineChartAll(seriesName, country) {
               return y(d.Data_Value);
             })
         );
+
+      var focus = svg.append("g").attr("class", "focus").style("display", "");
+      focus.append("circle").attr("r", 5).style("fill", "steelblue");
+      focus
+        .append("rect")
+        .style("fill", "#3d77a8")
+        .attr("class", "tooltip")
+        .attr("width", 50)
+        .attr("height", 30)
+        .attr("x", 10)
+        .attr("y", -22)
+        .attr("rx", 10)
+        .attr("ry", 10);
+      focus
+        .append("text")
+        .style("font-size", "14px")
+        .style("fill", "white")
+        .attr("class", "tooltip-date")
+        .attr("x", 18)
+        .attr("y", -2);
+
+      svg
+        .append("rect")
+        .style("fill", "none")
+        .style("pointer-events", "all")
+        .attr("width", width)
+        .attr("height", height)
+        .on("mouseover", mouseover)
+        .on("mousemove", mousemove)
+        .on("mouseout", mouseout);
+
+      function mouseover() {
+        focus.style("display", "block");
+      }
+      function mouseout() {
+        focus.style("display", "none");
+      }
+
+      var bisectLeft = d3.bisector(function (d) {
+        return d.Stratification1;
+      }).left;
+
+      function mousemove() {
+        var x0 = x.invert(d3.mouse(this)[0]);
+        var i = bisectLeft(data, x0, 1);
+        d0 = data[i - 1];
+        d1 = data[i];
+        selectedData =
+          x0 - d0.Stratification1 > d1.Stratification1 - x0 ? d1 : d0;
+        console.log(d3.mouse(this)[0]);
+        if (d3.mouse(this)[0] > 270) selectedData = data[numSeries - 1];
+        focus.attr(
+          "transform",
+          "translate(" +
+            x(selectedData.Stratification1) +
+            "," +
+            y(selectedData.Data_Value) +
+            ")"
+        );
+        focus.select(".tooltip-date").text(selectedData.Data_Value + "%");
+      }
 
       var timeBar = d3
         .select("#chart-area")
@@ -167,15 +229,11 @@ async function createLineChartAll(seriesName, country) {
 
       timeCell.on("click", function () {
         let year = parseInt(this.getAttribute("data-cellvalue"));
-
+        data = res.data.filter(function (d) {
+          return parseInt(d.Description) === year;
+        });
         linepath
-          .datum(
-            data
-              .filter(function (d) {
-                return parseInt(d.Description) === year;
-              })
-              .sort(sortByProperty("Stratification1"))
-          )
+          .datum(data.sort(sortByProperty("Stratification1")))
           .transition()
           .duration(1000)
           .attr(
@@ -210,14 +268,11 @@ async function createLineChartAll(seriesName, country) {
               yearsArr.indexOf(year)
             ].style["background-color"] = "#000839";
           }
+          data = res.data.filter(function (d) {
+            return parseInt(d.Description) === year;
+          });
           linepath
-            .datum(
-              data
-                .filter(function (d) {
-                  return parseInt(d.Description) === year;
-                })
-                .sort(sortByProperty("Stratification1"))
-            )
+            .datum(data.sort(sortByProperty("Stratification1")))
             .transition()
             .duration(1000)
             .attr(
