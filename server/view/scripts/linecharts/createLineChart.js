@@ -7,15 +7,21 @@ function sortByProperty(property) {
   };
 }
 async function createLineChart(seriesName, country, seriesValue) {
-  url =
-    "http://localhost:3001/api/" +
-    seriesName +
-    "?country=" +
-    country +
-    "&" +
-    seriesName +
-    "=" +
-    seriesValue;
+  var url = "";
+  if (seriesValue) {
+    url =
+      "http://localhost:3001/api/" +
+      seriesName +
+      "?country=" +
+      country +
+      "&" +
+      seriesName +
+      "=" +
+      seriesValue;
+  } else {
+    url = "http://localhost:3001/api/" + seriesName + "?country=" + country;
+    seriesValue = "total";
+  }
   fetch(url)
     .then((data) => {
       return data.json();
@@ -71,7 +77,7 @@ async function createLineChart(seriesName, country, seriesValue) {
         .attr("font-size", "20px")
         .attr("text-anchor", "middle")
         .text(function () {
-          return country + "-" + seriesName + " " + seriesValue;
+          return country + " - " + seriesName + " " + seriesValue;
         });
 
       svg

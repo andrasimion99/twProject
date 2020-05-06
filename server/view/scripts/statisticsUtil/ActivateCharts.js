@@ -35,10 +35,12 @@
           console.log(seriesName);
           d3.select("svg").remove();
           d3.select("table").remove();
-          if (seriesName != "" && seriesValue != "All")
-            createLineChart(seriesName, country, seriesValue);
           if (seriesValue == "All" && country != "") {
             createLineChartAll(seriesName, country);
+          } else if (seriesValue == "Total") {
+            createLineChart("states", country);
+          } else if (seriesName != "") {
+            createLineChart(seriesName, country, seriesValue);
           }
         }
       } else {
@@ -74,15 +76,16 @@
       } else if (chart == "line-chart") {
         d3.select("svg").remove();
         d3.select("table").remove();
-        if (seriesName != "" && country != "" && seriesValue != "All") {
-          createLineChart(seriesName, country, seriesValue);
-        }
         if (seriesValue == "All" && country != "") {
           createLineChartAll(seriesName, country);
+        } else if (seriesValue == "Total" && country != "") {
+          createLineChart("states", country);
+        } else if (seriesName != "" && country != "") {
+          createLineChart(seriesName, country, seriesValue);
+        } else {
+          d3.select("svg").remove();
+          d3.select("table").remove();
         }
-      } else {
-        d3.select("svg").remove();
-        d3.select("table").remove();
       }
     });
   }
@@ -110,11 +113,12 @@
         } else if (chart == "line-chart") {
           d3.select("svg").remove();
           d3.select("table").remove();
-          if (seriesName != "" && country != "" && seriesValue != "All") {
-            createLineChart(seriesName, country, seriesValue);
-          }
           if (seriesValue == "All" && country != "") {
             createLineChartAll(seriesName, country);
+          } else if (seriesValue == "Total" && country != "") {
+            createLineChart("states", country);
+          } else if (seriesName != "" && country != "") {
+            createLineChart(seriesName, country, seriesValue);
           }
         }
       } else {

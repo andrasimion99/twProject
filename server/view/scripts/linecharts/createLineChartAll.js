@@ -81,14 +81,14 @@ async function createLineChartAll(seriesName, country) {
         return d + "%";
       });
       svg.append("g").call(yAxis);
-      svg
+      var xText = svg
         .append("text")
         .attr("class", "x-axis-label")
         .attr("x", width / 2)
         .attr("y", height + margin.bottom - 40)
         .attr("font-size", "20px")
         .attr("text-anchor", "middle")
-        .text(country + "-" + seriesName);
+        .text(country + "-" + seriesName + "(" + 2011 + ")");
 
       svg
         .append("text")
