@@ -123,7 +123,10 @@ async function createLineChartAll(seriesName, country) {
             })
         );
 
-      var focus = svg.append("g").attr("class", "focus").style("display", "");
+      var focus = svg
+        .append("g")
+        .attr("class", "focus")
+        .style("display", "none");
       focus.append("circle").attr("r", 5).style("fill", "steelblue");
       focus
         .append("rect")
