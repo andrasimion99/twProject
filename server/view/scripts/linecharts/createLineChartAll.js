@@ -301,6 +301,8 @@ async function createLineChartAll(seriesName, country) {
           }
         }, 1000);
       });
+
+      downloads(d3.select("svg"), data);
     })
     .catch((error) => {
       console.log(error);

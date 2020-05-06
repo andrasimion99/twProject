@@ -117,7 +117,7 @@ async function createBarChartAll(seriesName, country) {
           .style("padding", "10px")
           .style("font-size", "14px")
           .text(function (d) {
-            return d.Data_Value;
+            return d.Data_Value + "%";
           });
   
         var rects = g
@@ -146,7 +146,7 @@ async function createBarChartAll(seriesName, country) {
             return color(d.Stratification1);
           })
           .on("mouseover", function (d) {
-            valueBox.text(d.Data_Value);
+            valueBox.text(d.Data_Value + "%");
             this.style.opacity = 0.7;
             return valueBox.style("display", "block");
           })
