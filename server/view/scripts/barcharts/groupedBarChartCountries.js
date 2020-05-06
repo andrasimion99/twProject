@@ -1,3 +1,9 @@
+groupedBarChartCountries("age", "18 - 24", [
+  "Alaska",
+  "California",
+  "Virginia",
+  "Texas",
+]);
 async function groupedBarChartCountries(seriesName, seriesValue, types) {
   fetch(
     "http://localhost:3001/api/" +
