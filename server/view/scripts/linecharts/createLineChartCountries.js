@@ -12,6 +12,14 @@ function sortByProperty(property) {
     return 0;
   };
 }
+function sortDescByProperty(property) {
+  return function (a, b) {
+    if (a[property] > b[property]) return -1;
+    else if (a[property] < b[property]) return 1;
+
+    return 0;
+  };
+}
 async function createLineChartCountries(seriesName, seriesValue, types) {
   fetch(
     "http://localhost:3001/api/" +
@@ -36,8 +44,12 @@ async function createLineChartCountries(seriesName, seriesValue, types) {
           }
         })();
       }
+      dataForOne = res.data.filter(function (d) {
+        return d.LocationDesc === types[0];
+      });
+      dataForOne.sort(sortByProperty("Description"));
       data.sort(sortByProperty("Description"));
-      console.log(data);
+      console.log(dataForOne);
 
       var maxPercent = d3.max(data, function (d) {
         return parseFloat(d.Data_Value);
@@ -56,7 +68,9 @@ async function createLineChartCountries(seriesName, seriesValue, types) {
         .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
       var x = d3.scaleTime().domain([2011, 2018]).range([0, width]);
+
       let xAxis = d3.axisBottom(x).tickFormat(d3.format("d"));
+
       svg
         .append("g")
         .attr("class", "x-axis")
@@ -139,7 +153,6 @@ async function createLineChartCountries(seriesName, seriesValue, types) {
             })(d.values);
         });
 
-      console.log(types);
       svg
         .selectAll("mydots")
         .data(sumstat)
@@ -209,7 +222,59 @@ async function createLineChartCountries(seriesName, seriesValue, types) {
         .text(function (d, i) {
           return sumstat[i].key;
         });
-      downloads(svg, data);
+      var tooltip = d3
+        .select("body")
+        .append("div")
+        .style("position", "absolute")
+        .style("background-color", "lightgray")
+        .style("z-index", "10");
+      var tooltipLine = svg.append("line");
+
+      tipBox = svg
+        .append("rect")
+        .attr("width", width)
+        .attr("height", height)
+        .attr("opacity", 0)
+        .on("mouseout", removeTooltip)
+        .on("mousemove", drawTooltip);
+
+      function removeTooltip() {
+        if (tooltipLine) tooltipLine.attr("stroke", "none");
+        if (tooltip) tooltip.style("display", "none");
+      }
+      var bisectLeft = d3.bisector(function (d) {
+        return d.Description;
+      }).left;
+      function drawTooltip() {
+        var x0 = x.invert(d3.mouse(this)[0]);
+        var i = bisectLeft(dataForOne, x0);
+        if (d3.mouse(this)[0] > 280) i = 7;
+        tooltipLine
+          .attr("stroke", "black")
+          .attr("x1", x(dataForOne[i].Description))
+          .attr("x2", x(dataForOne[i].Description))
+          .attr("y1", 0)
+          .attr("y2", height);
+        var result = data
+          .filter(function (d) {
+            return d.Description === dataForOne[i].Description;
+          })
+          .sort(sortDescByProperty("Data_Value"));
+        tooltip
+          .html(dataForOne[i].Description)
+          .style("top", d3.event.pageY - 30 + "px")
+          .style("left", d3.event.pageX + 10 + "px")
+          .style("display", "block");
+        tooltip
+          .selectAll()
+          .data(result)
+          .enter()
+          .append("div")
+          .style("color", (d) => {
+            return color(d.LocationDesc);
+          })
+          .html((d) => d.LocationDesc + ": " + d.Data_Value + "%");
+      }
     })
     .catch((error) => {
       console.log(error);
