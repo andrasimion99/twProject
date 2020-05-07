@@ -1,4 +1,4 @@
-async function downloads(svg, csvData, simpleSvg) {
+async function downloads(svg, csvData) {
   // ----------download as SVG---------------
   d3.select("#downloadSvg").on("click", function () {
     this.href = "data:image/svg+xml;base64," + btoa(svg.node().outerHTML);
@@ -7,12 +7,7 @@ async function downloads(svg, csvData, simpleSvg) {
   // ----------download as WEBP---------------
   var canvasImg = d3.select("#canvasImage").node();
   var canvas = d3.select("canvas").node();
-  if (simpleSvg) {
-    canvasImg.src =
-      "data:image/svg+xml;base64," + btoa(simpleSvg.node().outerHTML);
-  } else {
-    canvasImg.src = "data:image/svg+xml;base64," + btoa(svg.node().outerHTML);
-  }
+  canvasImg.src = "data:image/svg+xml;base64," + btoa(svg.node().outerHTML);
 
   canvasImg.onload = function () {
     canvas.getContext("2d").clearRect(0, 0, canvas.width, canvas.height);

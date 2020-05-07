@@ -1,9 +1,9 @@
-groupedBarChartCountries("age", "18 - 24", [
-  "Alaska",
-  "California",
-  "Virginia",
-  "Texas",
-]);
+// groupedBarChartCountries("age", "18 - 24", [
+//   "Alaska",
+//   "California",
+//   "Virginia",
+//   "Texas",
+// ]);
 async function groupedBarChartCountries(seriesName, seriesValue, types) {
   fetch(
     "http://localhost:3001/api/" +
@@ -37,8 +37,8 @@ async function groupedBarChartCountries(seriesName, seriesValue, types) {
         .range(["#f9c6ba", "#dd6892", "#3c6f9c", "#512c96"]);
 
       var numBars = 8 + (types.length - 1) * 2;
-      var margin = { left: 100, right: 10, top: 10, bottom: 100 };
-      var width = 500 - margin.left - margin.right;
+      var margin = { left: 100, right: 100, top: 10, bottom: 100 };
+      var width = 600 - margin.left - margin.right;
       var height = 450 - margin.top - margin.bottom;
       var barPadding = 20;
       var barWidth = width / numBars - barPadding;
@@ -73,7 +73,7 @@ async function groupedBarChartCountries(seriesName, seriesValue, types) {
 
       g.append("text")
         .attr("class", "x-axis-label")
-        .attr("x", (width + margin.right) / 2)
+        .attr("x", (width) / 2)
         .attr("y", height + margin.bottom - 20)
         .attr("font-size", "20px")
         .attr("text-anchor", "middle")
@@ -103,6 +103,44 @@ async function groupedBarChartCountries(seriesName, seriesValue, types) {
         return d + "%";
       });
       g.append("g").attr("class", "y-axis").call(yAxis);
+
+      var sumstat = d3
+        .nest() 
+        .key(function (d) {
+          return d.LocationDesc;
+        })
+        .entries(data);
+
+      g
+      .selectAll("mydots")
+      .data(sumstat)
+      .enter()
+      .append("circle")
+      .attr("cx", width + 15)
+      .attr("cy", function (d, i) {
+        return margin.top + i * 20;
+      })
+      .attr("r", 3.5)
+      .style("fill", function (d) {
+        return color(d.key);
+      });
+    g
+      .selectAll("mylabels")
+      .data(sumstat)
+      .enter()
+      .append("text")
+      .attr("x", width + 20)
+      .attr("y", function (d, i) {
+        return margin.top + i * 20;
+      })
+      .style("fill", function (d) {
+        return color(d.key);
+      })
+      .text(function (d) {
+        return d.key;
+      })
+      .attr("text-anchor", "left")
+      .style("alignment-baseline", "middle");
 
       var valueBox = d3
         .select("#chart-area")
@@ -172,7 +210,7 @@ async function groupedBarChartCountries(seriesName, seriesValue, types) {
         .select("#chart-area")
         .append("div")
         .style("margin", "0 auto")
-        .style("padding-left", margin.left + "px")
+        // .style("padding-left", margin.left + "px")
         .append("table")
         .attr("id", "legend")
         .attr("width", width / 2)

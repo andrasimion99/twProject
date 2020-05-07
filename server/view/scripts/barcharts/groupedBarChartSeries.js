@@ -27,8 +27,8 @@ async function groupedBarChartSeries(seriesName, country, types) {
         .range(["#543864", "#ffbd69", "#ff6363"]);
 
       var numBars = 8 + (types.length - 1) * 2;
-      var margin = { left: 100, right: 10, top: 10, bottom: 100 };
-      var width = 500 - margin.left - margin.right;
+      var margin = { left: 100, right: 100, top: 10, bottom: 100 };
+      var width = 600 - margin.left - margin.right;
       var height = 450 - margin.top - margin.bottom;
       var barPadding = 20;
       var barWidth = width / numBars - barPadding;
@@ -63,7 +63,7 @@ async function groupedBarChartSeries(seriesName, country, types) {
 
       g.append("text")
         .attr("class", "x-axis-label")
-        .attr("x", (width + margin.right) / 2)
+        .attr("x", (width) / 2)
         .attr("y", height + margin.bottom - 20)
         .attr("font-size", "20px")
         .attr("text-anchor", "middle")
@@ -93,6 +93,42 @@ async function groupedBarChartSeries(seriesName, country, types) {
         return d + "%";
       });
       g.append("g").attr("class", "y-axis").call(yAxis);
+
+      var sumstat = d3
+        .nest()
+        .key(function (d) {
+          return d.Stratification1;
+        })
+        .entries(data);
+
+      g.selectAll("mydots")
+        .data(sumstat)
+        .enter()
+        .append("circle")
+        .attr("cx", width + 15)
+        .attr("cy", function (d, i) {
+          return margin.top + i * 20;
+        })
+        .attr("r", 3.5)
+        .style("fill", function (d) {
+          return color(d.key);
+        });
+      g.selectAll("mylabels")
+        .data(sumstat)
+        .enter()
+        .append("text")
+        .attr("x", width + 20)
+        .attr("y", function (d, i) {
+          return margin.top + i * 20;
+        })
+        .style("fill", function (d) {
+          return color(d.key);
+        })
+        .text(function (d) {
+          return d.key;
+        })
+        .attr("text-anchor", "left")
+        .style("alignment-baseline", "middle");
 
       var valueBox = d3
         .select("body")
@@ -162,7 +198,7 @@ async function groupedBarChartSeries(seriesName, country, types) {
         .select("#chart-area")
         .append("div")
         .style("margin", "0 auto")
-        .style("padding-left", margin.left + "px")
+        // .style("padding-left", margin.left + "px")
         .append("table")
         .attr("xmlns", "http://www.w3.org/1999/xhtml")
         .attr("id", "legend")
@@ -223,7 +259,7 @@ async function groupedBarChartSeries(seriesName, country, types) {
           return types[i];
         });
 
-      downloads(d3.select("#chart-area"), data, svg);
+      downloads(svg, data);
     })
     .catch((error) => {
       console.log(error);

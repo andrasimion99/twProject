@@ -114,7 +114,6 @@ async function createLineChartCountries(seriesName, seriesValue, types) {
           "#f781bf",
           "#999999",
         ]);
-
       console.log(sumstat);
       svg
         .selectAll(".line")
@@ -210,7 +209,7 @@ async function createLineChartCountries(seriesName, seriesValue, types) {
         .text(function (d, i) {
           return sumstat[i].key;
         });
-        downloads(d3.select("svg"), data);
+      downloads(svg, data);
     })
     .catch((error) => {
       console.log(error);
