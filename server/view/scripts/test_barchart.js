@@ -1,19 +1,14 @@
-groupedBarchart("age", "18 - 24", [
+HorizontallyBarchart("states", "18 - 24", [
   "Alaska",
   "California",
   "Virginia",
   "Texas",
+  "Ohio",
+  "New York",
 ]);
 
-async function groupedBarchartByCountry(seriesName, seriesValue, types) {
-  fetch(
-    "http://localhost:3001/api/" +
-      seriesName +
-      "?" +
-      seriesName +
-      "=" +
-      seriesValue
-  )
+async function HorizontallyBarchart(seriesName, seriesValue, types) {
+  fetch("http://localhost:3001/api/" + seriesName)
     .then((data) => {
       return data.json();
     })
@@ -29,42 +24,55 @@ async function groupedBarchartByCountry(seriesName, seriesValue, types) {
           }
         })();
       }
-      console.log(data);
+      data = data.sort(function (a, b) {
+        return (
+          parseInt(a.Description) - parseInt(b.Description) ||
+          parseFloat(a.Data_Value) - parseFloat(b.Data_Value)
+        );
+      });
+
+      var minYear = d3.min(data, function (d) {
+        return parseInt(d.Description);
+      });
+      var maxYear = d3.max(data, function (d) {
+        return parseInt(d.Description);
+      });
       var maxPercent = d3.max(data, function (d) {
         return parseFloat(d.Data_Value);
       });
+
+      var margin = { left: 200, right: 10, top: 10, bottom: 100 };
+      var yearsArr = [];
+      var width = 600 - margin.left - margin.right;
+      var height = 450 - margin.top - margin.bottom;
+      var precedentYear = minYear;
       var color = d3
         .scaleOrdinal()
-        .domain(types)
-        .range(["#f9c6ba", "#dd6892", "#3c6f9c", "#512c96"]);
-
-      var numBars = 8 + (types.length - 1) * 2;
-      var margin = { left: 100, right: 10, top: 10, bottom: 100 };
-      var width = 500 - margin.left - margin.right;
-      var height = 450 - margin.top - margin.bottom;
-      var barPadding = 20;
-      var barWidth = width / numBars - barPadding;
-
-      var bars = d3
-        .scaleOrdinal()
-        .domain(types)
-        .range([0, barWidth, barWidth * 2, barWidth * 3]);
-
-      var xscale = d3
-        .scaleBand()
         .domain(
           data.map(function (d) {
-            return d.Description;
+            return d.LocationDesc;
           })
         )
-        .range([0, width])
-        .paddingInner(0.3)
-        .paddingOuter(0.3);
-      var yscale = d3.scaleLinear().domain([0, maxPercent]).range([height, 0]);
+        .range(["#00a8cc", "#005082", "#ffa41b"]);
+      var xscale = d3.scaleLinear().range([0, width]).domain([0, maxPercent]);
+      var yscale = d3
+        .scaleBand()
+        .rangeRound([height, 0])
+        .padding(0.3)
+        .domain(
+          data
+            .filter(function (d) {
+              return parseInt(d.Description) == minYear;
+            })
+            .map(function (d) {
+              return d.LocationDesc;
+            })
+        );
 
       var svg = d3
         .select("#chart-area")
         .append("svg")
+        .attr("xmlns", "http://www.w3.org/2000/svg")
         .attr("width", width + margin.left + margin.right)
         .attr("height", height + margin.top + margin.bottom);
 
@@ -72,22 +80,14 @@ async function groupedBarchartByCountry(seriesName, seriesValue, types) {
         .append("g")
         .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-      g.append("text")
+      var xText = g
+        .append("text")
         .attr("class", "x-axis-label")
-        .attr("x", (width + margin.right) / 2)
+        .attr("x", width / 2)
         .attr("y", height + margin.bottom - 20)
         .attr("font-size", "20px")
         .attr("text-anchor", "middle")
-        .text(seriesValue + " - " + seriesName);
-
-      g.append("text")
-        .attr("class", "y-axis-label")
-        .attr("x", -(height / 2))
-        .attr("y", -60)
-        .attr("font-size", "20px")
-        .attr("text-anchor", "middle")
-        .attr("transform", "rotate(-90)")
-        .text("Obesity Percentage (%)");
+        .text(seriesName + "( " + minYear + " )");
 
       var xAxis = d3.axisBottom(xscale);
       g.append("g")
@@ -96,20 +96,25 @@ async function groupedBarchartByCountry(seriesName, seriesValue, types) {
         .call(xAxis)
         .selectAll("text")
         .attr("y", "10")
-        .attr("x", "-5")
-        .attr("text-anchor", "end")
-        .attr("transform", "rotate(-40)");
+        .attr("x", "4")
+        .attr("text-anchor", "end");
 
-      var yAxis = d3.axisLeft(yscale).tickFormat(function (d) {
-        return d + "%";
-      });
-      g.append("g").attr("class", "y-axis").call(yAxis);
+      var yAxis = d3
+        .axisLeft(yscale)
+        .tickFormat(function (d) {
+          return d;
+        })
+        .tickSize(0);
+      var callYAxis = g.append("g").attr("class", "y-axis").call(yAxis);
+
+      callYAxis.select(".domain").remove();
+      callYAxis.selectAll("text").attr("font-size", 15);
 
       var valueBox = d3
         .select("#chart-area")
         .data(
           data.filter(function (d) {
-            return parseInt(d.Description);
+            return parseInt(d.Description) === minYear;
           })
         )
         .append("div")
@@ -123,39 +128,32 @@ async function groupedBarchartByCountry(seriesName, seriesValue, types) {
         .style("padding", "10px")
         .style("font-size", "14px")
         .text(function (d) {
-          return d.Data_Value;
+          return d.Data_Value + "%";
         });
 
-      var rects = g.selectAll("rect").data(
-        data.filter(function (d) {
-          return parseInt(d.Description);
-        })
-      );
-
-      var rect = rects
+      var rects = g
+        .selectAll("rect")
+        .data(
+          data.filter(function (d) {
+            return parseInt(d.Description) === minYear;
+          })
+        )
         .enter()
         .append("rect")
-        .attr("width", barWidth)
+        .attr("width", function (d) {
+          return xscale(parseFloat(d.Data_Value));
+        })
         .attr("height", function (d) {
-          if (d.Data_Value === "~") {
-            d.Data_Value = 0;
-          }
-          return height - yscale(parseFloat(d.Data_Value));
+          return yscale.bandwidth();
         })
         .attr("y", function (d) {
-          return yscale(parseFloat(d.Data_Value));
-        })
-        .attr("x", function (d, i) {
-          return xscale(d.Description) + bars(d.LocationDesc);
+          return yscale(d.LocationDesc);
         })
         .attr("fill", function (d) {
           return color(d.LocationDesc);
         })
-        .attr("class", function (d) {
-          return "type" + types.indexOf(d.LocationDesc);
-        })
         .on("mouseover", function (d) {
-          valueBox.text(d.Data_Value);
+          valueBox.text(d.Data_Value + "%");
           this.style.opacity = 0.7;
           return valueBox.style("display", "block");
         })
@@ -169,69 +167,215 @@ async function groupedBarchartByCountry(seriesName, seriesValue, types) {
           return valueBox.style("display", "none");
         });
 
-      var legend = d3
+      var timeBar = d3
         .select("#chart-area")
-        .append("div")
-        .style("margin", "0 auto")
-        .style("padding-left", margin.left + "px")
         .append("table")
-        .attr("id", "legend")
-        .attr("width", width / 2)
+        .attr("id", "time-bar")
+        .attr("width", width + margin.left + margin.right)
+        .append("thead")
+        .append("tr");
+
+      var timeImg = timeBar.append("th").attr("id", "time-img");
+      var playIcon = timeImg.append("i").attr("class", "far fa-play-circle");
+
+      var timeTable = timeBar.append("th").attr("id", "time-table");
+      var timeCells = timeTable
+        .append("table")
+        .attr("id", "time-cells")
+        .attr("width", width + margin.right)
         .append("thead");
 
-      legend
+      var timeCell = timeCells
         .append("tr")
+        .attr("id", "cells-row")
         .selectAll("th")
-        .data(types)
+        .data(function (d, i) {
+          for (let j = minYear; j <= maxYear; j++) {
+            yearsArr.push(j);
+          }
+          return yearsArr;
+        })
         .enter()
         .append("th")
-        .attr("id", function (d, i) {
-          return types[i];
-        })
-        .style("width", function () {
-          return 100 / types.length + "%";
-        })
-        .style("padding", "10px")
-        .style("background-color", function (d, i) {
-          return color(types[i]);
-        })
-        .style("cursor", "pointer")
-        .on("mouseover", function (d, i) {
-          this.style.opacity = 0.7;
-          for (let j = 0; j < types.length; j++) {
-            if (types[j] != types[i]) {
-              d3.selectAll(".type" + j)
-                .style("opacity", "0.2")
-                .style("fill", "grey");
-            }
-          }
-        })
-        .on("mouseout", function (d, i) {
-          this.style.opacity = 1;
-          for (let j = 0; j < types.length; j++) {
-            if (types[j] != types[i]) {
-              d3.selectAll(".type" + j)
-                .style("opacity", "1")
-                .style("fill", color(types[j]));
-            }
-          }
+        .attr("class", "time-cell")
+        .attr("data-cellvalue", function (d, i) {
+          return yearsArr[i];
         });
 
-      legend
+      var yearCell = timeCells
         .append("tr")
+        .attr("id", "years-row")
         .selectAll("th")
-        .data(types)
+        .data(yearsArr)
         .enter()
         .append("th")
-        .attr("id", function (d, i) {
-          return types[i];
-        })
-        .style("padding", "5px")
-        .style("text-align", "center")
-        .style("font-size", "14px")
+        .attr("class", "year-cell")
         .text(function (d, i) {
-          return types[i];
+          return yearsArr[i];
         });
+
+      timeCell.on("click", function () {
+        let year = parseInt(this.getAttribute("data-cellvalue"));
+        rects
+          .data(
+            data.filter(function (d) {
+              return parseInt(d.Description) === year;
+            })
+          )
+          .attr("y", function (d) {
+            return yscale(d.LocationDesc);
+          });
+        rects
+          .data(
+            data.filter(function (d) {
+              return parseInt(d.Description) === precedentYear;
+            })
+          )
+          .attr("width", function (d) {
+            return xscale(parseFloat(d.Data_Value));
+          });
+
+        yscale = d3
+          .scaleBand()
+          .rangeRound([height, 0])
+          .padding(0.3)
+          .domain(
+            data
+              .filter(function (d) {
+                return parseInt(d.Description) == year;
+              })
+              .map(function (d) {
+                return d.LocationDesc;
+              })
+          );
+        yAxis = d3
+          .axisLeft(yscale)
+          .tickFormat(function (d) {
+            return d;
+          })
+          .tickSize(0);
+        callYAxis.transition().ease(d3.easeLinear).duration(1000).call(yAxis);
+        callYAxis.select(".domain").remove();
+
+        rects
+          .data(
+            data.filter(function (d) {
+              return parseInt(d.Description) === year;
+            })
+          )
+          .transition()
+          .ease(d3.easeLinear)
+          .duration(1000)
+          .attr("width", function (d) {
+            return xscale(parseFloat(d.Data_Value));
+          })
+          .attr("height", function (d) {
+            return yscale.bandwidth();
+          })
+
+          .attr("y", function (d) {
+            return yscale(d.LocationDesc);
+          })
+          .attr("fill", function (d) {
+            return color(d.LocationDesc);
+          })
+          .text(function (d) {
+            return d.LocationDesc;
+          });
+
+        xText.text(seriesName + "( " + year + " )");
+        precedentYear = year;
+      });
+
+      playIcon.on("click", function () {
+        let year = minYear;
+        let timer = setInterval(async function () {
+          if (year != minYear) {
+            document.getElementsByClassName("time-cell")[
+              yearsArr.indexOf(year - 1)
+            ].style["background-color"] = "#005082";
+          }
+
+          if (year <= maxYear) {
+            document.getElementsByClassName("time-cell")[
+              yearsArr.indexOf(year)
+            ].style["background-color"] = "#000839";
+
+            rects
+              .data(
+                data.filter(function (d) {
+                  return parseInt(d.Description) === year;
+                })
+              )
+              .attr("y", function (d) {
+                return yscale(d.LocationDesc);
+              });
+            rects
+              .data(
+                data.filter(function (d) {
+                  return parseInt(d.Description) === year - 1;
+                })
+              )
+              .attr("width", function (d) {
+                return xscale(parseFloat(d.Data_Value));
+              });
+            yscale = d3
+              .scaleBand()
+              .rangeRound([height, 0])
+              .padding(0.3)
+              .domain(
+                data
+                  .filter(function (d) {
+                    return parseInt(d.Description) == year;
+                  })
+                  .map(function (d) {
+                    return d.LocationDesc;
+                  })
+              );
+            yAxis = d3
+              .axisLeft(yscale)
+              .tickFormat(function (d) {
+                return d;
+              })
+              .tickSize(0);
+            callYAxis.transition().ease(d3.easeLinear).duration(1000).call(yAxis);
+            callYAxis.select(".domain").remove();
+          }
+          rects
+            .data(
+              data.filter(function (d) {
+                return parseInt(d.Description) === year;
+              })
+            )
+            .transition()
+            .ease(d3.easeLinear)
+            .duration(1000)
+            .attr("width", function (d) {
+              return xscale(parseFloat(d.Data_Value));
+            })
+            .attr("height", function (d) {
+              return yscale.bandwidth();
+            })
+            .attr("y", function (d) {
+              return yscale(d.LocationDesc);
+            })
+            .attr("x", function (d, i) {
+              return xscale(d.Stratification1);
+            })
+            .attr("fill", function (d) {
+              return color(d.LocationDesc);
+            });
+          year++;
+          if (year > maxYear + 1) {
+            clearInterval(timer);
+          }
+          if (year <= maxYear + 1) {
+            xText.text(seriesName + "( " + (year - 1) + " )");
+          }
+        }, 2000);
+      });
+
+      downloads(svg, data);
     })
     .catch((error) => {
       console.log(error);
