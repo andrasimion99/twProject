@@ -281,6 +281,7 @@ async function createLineChartCountries(seriesName, seriesValue, types) {
           })
           .html((d) => d.LocationDesc + ": " + d.Data_Value + "%");
       }
+      downloads(d3.select("svg"), data);
     })
     .catch((error) => {
       console.log(error);

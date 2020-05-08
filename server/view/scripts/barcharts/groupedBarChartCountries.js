@@ -33,6 +33,7 @@ async function groupedBarChartCountries(seriesName, seriesValue, types) {
       var maxPercent = d3.max(data, function (d) {
         return parseFloat(d.Data_Value);
       });
+      maxPercent += 10;
       var color = d3
         .scaleOrdinal()
         .domain(types)
@@ -48,7 +49,7 @@ async function groupedBarChartCountries(seriesName, seriesValue, types) {
       var bars = d3
         .scaleOrdinal()
         .domain(types)
-        .range([0, barWidth, barWidth * 2, barWidth * 3]);
+        .range([0, barWidth, barWidth * 2, barWidth * 3, barWidth * 4]);
 
       var xscale = d3
         .scaleBand()

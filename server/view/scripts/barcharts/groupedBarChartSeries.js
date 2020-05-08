@@ -36,7 +36,7 @@ async function groupedBarChartSeries(seriesName, country, types) {
       var bars = d3
         .scaleOrdinal()
         .domain(types)
-        .range([0, barWidth, barWidth * 2]);
+        .range([0, barWidth, barWidth * 2, barWidth * 3, barWidth * 4]);
 
       var xscale = d3
         .scaleBand()
