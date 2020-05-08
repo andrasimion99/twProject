@@ -7,6 +7,8 @@ function sortByProperty(property) {
   };
 }
 async function createLineChart(seriesName, country, seriesValue) {
+  d3.select("svg").remove();
+  d3.select("table").remove();
   var url = "";
   if (seriesValue) {
     url =

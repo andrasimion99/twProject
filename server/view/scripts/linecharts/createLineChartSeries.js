@@ -1,4 +1,4 @@
-createLineChartSeries("age", "Texas", ["18 - 24", "25 - 34", "35 - 44"]);
+/*createLineChartSeries("age", "Texas", ["18 - 24", "25 - 34", "35 - 44"]);*/
 function sortByProperty(property) {
   return function (a, b) {
     if (a[property] > b[property]) return 1;
@@ -17,6 +17,8 @@ function sortDescByProperty(property) {
   };
 }
 async function createLineChartSeries(seriesName, country, types) {
+  d3.select("svg").remove();
+  d3.select("table").remove();
   fetch("http://localhost:3001/api/" + seriesName + "?country=" + country)
     .then((data) => {
       return data.json();

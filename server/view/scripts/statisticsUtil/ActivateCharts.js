@@ -9,7 +9,6 @@
 
   var countries = document.getElementsByClassName("Country");
   var country = "";
-
   /*-----Event listener for countries check box------*/
   for (var i = 0; i < countries.length; i++) {
     countries[i].addEventListener("change", function () {

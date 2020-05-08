@@ -33,12 +33,12 @@ async function createLineChartAll(seriesName, country) {
         })
         .size();
 
-      var margin = { left: 80, right: 70, top: 10, bottom: 180 };
+      var margin = { left: 100, right: 70, top: 10, bottom: 180 };
       if (seriesName === "age") {
         margin.bottom = 100;
       }
       var yearsArr = [];
-      var width = 500 - margin.left - margin.right;
+      var width = 420 - margin.left - margin.right;
       var height = 450 - margin.top - margin.bottom;
 
       var svg = d3
