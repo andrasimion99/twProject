@@ -267,6 +267,7 @@ async function createLineChartSeries(seriesName, country, types) {
           })
           .html((d) => d.Stratification1 + ": " + d.Data_Value + "%");
       }
+      downloads(d3.select("svg"), data);
     })
     .catch((error) => {
       console.log(error);

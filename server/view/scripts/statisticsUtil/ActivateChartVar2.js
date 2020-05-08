@@ -30,15 +30,20 @@
         if (index > -1) {
           checkedCountries.splice(index, 1);
         }
-        if (chart == "line-chart" || chart == "column-chart") {
-          if (checkedCountries.length < maxValue) {
-            createChart(checkedCountries, seriesName, seriesValue, chart);
-            document.getElementById("error-message").innerHTML = "";
-            removeDisable(checkedCountries, "Country");
+        if (checkedCountries.length > 0) {
+          if (chart == "line-chart" || chart == "column-chart") {
+            if (checkedCountries.length < maxValue) {
+              createChart(checkedCountries, seriesName, seriesValue, chart);
+              document.getElementById("error-message").innerHTML = "";
+              removeDisable(checkedCountries, "Country");
+            }
+            if (checkedCountries.length == maxValue) {
+              disableAll(checkedCountries, "Country");
+            }
           }
-          if (checkedCountries.length == maxValue) {
-            disableAll(checkedCountries, "Country");
-          }
+        } else {
+          d3.select("svg").remove();
+          d3.select("table").remove();
         }
       }
     });
@@ -70,11 +75,19 @@
         document.getElementById("error-message").innerHTML = "";
         seriesValue.push(this.value);
         seriesName = this.name;
-        createChart(checkedCountries, seriesName, seriesValue, chart);
         if (this.value === "All") {
           disableAllUnlessThis(seriesName, seriesValue, "Series");
         } else {
           disableAllSeries(seriesName, "Series");
+        }
+        if (chart == "line-chart" || chart == "column-chart") {
+          if (checkedCountries.length > 5) {
+            document.getElementById("error-message").innerHTML =
+              "Can't select more than 5 for this type of chart";
+          } else {
+            document.getElementById("error-message").innerHTML = "";
+            createChart(checkedCountries, seriesName, seriesValue, chart);
+          }
         }
       } else {
         const index = seriesValue.indexOf(this.value);
@@ -86,7 +99,12 @@
         } else {
           if (seriesValue.length === 0) removeDisable(seriesValue, "Series");
         }
-        createChart(checkedCountries, seriesName, seriesValue, chart);
+        if (seriesValue.length > 0)
+          createChart(checkedCountries, seriesName, seriesValue, chart);
+        else {
+          d3.select("svg").remove();
+          d3.select("table").remove();
+        }
       }
     });
   }
@@ -105,41 +123,54 @@ function createChart(countries, seriesName, seriesValue, chart) {
   console.log(chart);
   if (chart == "line-chart") {
     if (countries.length == 1 && seriesValue.length == 1) {
-      if (seriesValue[0] != "All")
+      if (seriesValue[0] != "All") {
+        document.getElementById("error-message").innerHTML = "";
         createLineChart(seriesName, countries[0], seriesValue[0]);
-      else createLineChartAll(seriesName, countries[0]);
+      } else {
+        document.getElementById("error-message").innerHTML = "";
+        createLineChartAll(seriesName, countries[0]);
+      }
     } else if (countries.length > 1 && seriesValue.length == 1) {
-      if (seriesValue[0] != "All")
+      if (seriesValue[0] != "All") {
+        document.getElementById("error-message").innerHTML = "";
         createLineChartCountries(seriesName, seriesValue[0], countries);
-      else {
+      } else {
         document.getElementById("error-message").innerHTML =
           "Can't select more countries for all series";
         d3.select("svg").remove();
         d3.select("table").remove();
       }
     } else if (countries.length === 1 && seriesValue.length > 1) {
+      document.getElementById("error-message").innerHTML = "";
       createLineChartSeries(seriesName, countries[0], seriesValue);
     } else if (countries.length > 1 && seriesValue.length > 1) {
+      console.log(document.getElementById("error-message"));
       document.getElementById("error-message").innerHTML =
-        "Can't select more countries and more series for this type of chart";
+        "Can't select more countries for this type of chart";
       d3.select("svg").remove();
       d3.select("table").remove();
     }
   } else if (chart == "column-chart") {
     if (countries.length == 1 && seriesValue.length == 1) {
-      if (seriesValue[0] != "All")
+      if (seriesValue[0] != "All") {
+        document.getElementById("error-message").innerHTML = "";
         createBarChartYear(seriesName, countries[0], seriesValue[0]);
-      else createBarChartAll(seriesName, countries[0]);
+      } else {
+        document.getElementById("error-message").innerHTML = "";
+        createBarChartAll(seriesName, countries[0]);
+      }
     } else if (countries.length > 1 && seriesValue.length == 1) {
-      if (seriesValue[0] != "All")
+      if (seriesValue[0] != "All") {
+        document.getElementById("error-message").innerHTML = "";
         groupedBarChartCountries(seriesName, seriesValue[0], countries);
-      else {
+      } else {
         document.getElementById("error-message").innerHTML =
           "Can't select more countries for all series";
         d3.select("svg").remove();
         d3.select("table").remove();
       }
     } else if (countries.length === 1 && seriesValue.length > 1) {
+      document.getElementById("error-message").innerHTML = "";
       groupedBarChartSeries(seriesName, countries[0], seriesValue);
     } else if (countries.length > 1 && seriesValue.length > 1) {
       document.getElementById("error-message").innerHTML =
