@@ -5,6 +5,9 @@
 //   "Texas",
 // ]);
 async function groupedBarChartCountries(seriesName, seriesValue, types) {
+  d3.select("svg").remove();
+  d3.select("div").remove();
+  d3.select("table").remove();
   fetch(
     "http://localhost:3001/api/" +
       seriesName +
@@ -73,7 +76,7 @@ async function groupedBarChartCountries(seriesName, seriesValue, types) {
 
       g.append("text")
         .attr("class", "x-axis-label")
-        .attr("x", (width) / 2)
+        .attr("x", width / 2)
         .attr("y", height + margin.bottom - 20)
         .attr("font-size", "20px")
         .attr("text-anchor", "middle")
@@ -105,42 +108,40 @@ async function groupedBarChartCountries(seriesName, seriesValue, types) {
       g.append("g").attr("class", "y-axis").call(yAxis);
 
       var sumstat = d3
-        .nest() 
+        .nest()
         .key(function (d) {
           return d.LocationDesc;
         })
         .entries(data);
 
-      g
-      .selectAll("mydots")
-      .data(sumstat)
-      .enter()
-      .append("circle")
-      .attr("cx", width + 15)
-      .attr("cy", function (d, i) {
-        return margin.top + i * 20;
-      })
-      .attr("r", 3.5)
-      .style("fill", function (d) {
-        return color(d.key);
-      });
-    g
-      .selectAll("mylabels")
-      .data(sumstat)
-      .enter()
-      .append("text")
-      .attr("x", width + 20)
-      .attr("y", function (d, i) {
-        return margin.top + i * 20;
-      })
-      .style("fill", function (d) {
-        return color(d.key);
-      })
-      .text(function (d) {
-        return d.key;
-      })
-      .attr("text-anchor", "left")
-      .style("alignment-baseline", "middle");
+      g.selectAll("mydots")
+        .data(sumstat)
+        .enter()
+        .append("circle")
+        .attr("cx", width + 15)
+        .attr("cy", function (d, i) {
+          return margin.top + i * 20;
+        })
+        .attr("r", 3.5)
+        .style("fill", function (d) {
+          return color(d.key);
+        });
+      g.selectAll("mylabels")
+        .data(sumstat)
+        .enter()
+        .append("text")
+        .attr("x", width + 20)
+        .attr("y", function (d, i) {
+          return margin.top + i * 20;
+        })
+        .style("fill", function (d) {
+          return color(d.key);
+        })
+        .text(function (d) {
+          return d.key;
+        })
+        .attr("text-anchor", "left")
+        .style("alignment-baseline", "middle");
 
       var valueBox = d3
         .select("#chart-area")

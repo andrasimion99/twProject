@@ -1,6 +1,7 @@
 async function groupedBarChartSeries(seriesName, country, types) {
   d3.select("svg").remove();
   d3.select("div").remove();
+  d3.select("table").remove();
   fetch("http://localhost:3001/api/" + seriesName + "?country=" + country)
     .then((data) => {
       return data.json();
@@ -63,7 +64,7 @@ async function groupedBarChartSeries(seriesName, country, types) {
 
       g.append("text")
         .attr("class", "x-axis-label")
-        .attr("x", (width) / 2)
+        .attr("x", width / 2)
         .attr("y", height + margin.bottom - 20)
         .attr("font-size", "20px")
         .attr("text-anchor", "middle")

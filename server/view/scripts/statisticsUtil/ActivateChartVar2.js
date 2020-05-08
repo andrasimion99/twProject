@@ -110,7 +110,7 @@ function createChart(countries, seriesName, seriesValue, chart) {
       else createLineChartAll(seriesName, countries[0]);
     } else if (countries.length > 1 && seriesValue.length == 1) {
       if (seriesValue[0] != "All")
-        groupedBarChartCountries(seriesName, seriesValue[0], countries);
+        createLineChartCountries(seriesName, seriesValue[0], countries);
       else {
         document.getElementById("error-message").innerHTML =
           "Can't select more countries for all series";
