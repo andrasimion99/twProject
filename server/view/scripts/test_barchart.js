@@ -1,14 +1,29 @@
-HorizontallyBarchart("states", "18 - 24", [
+HorizontallyBarchart("states", [
   "Alaska",
   "California",
   "Virginia",
   "Texas",
   "Ohio",
   "New York",
+  "Michigan",
+  "Tennessee",
+  "Arizona",
+  "Nevada",
 ]);
 
-async function HorizontallyBarchart(seriesName, seriesValue, types) {
-  fetch("http://localhost:3001/api/" + seriesName)
+async function HorizontallyBarchart(seriesName, types, seriesValue) {
+  if (seriesValue) {
+    url =
+      "http://localhost:3001/api/" +
+      seriesName +
+      "?" +
+      seriesName +
+      "=" +
+      seriesValue;
+  } else {
+    url = "http://localhost:3001/api/" + seriesName;
+  }
+  await fetch(url)
     .then((data) => {
       return data.json();
     })
@@ -41,9 +56,9 @@ async function HorizontallyBarchart(seriesName, seriesValue, types) {
         return parseFloat(d.Data_Value);
       });
 
-      var margin = { left: 200, right: 10, top: 10, bottom: 100 };
+      var margin = { left: 100, right: 10, top: 10, bottom: 100 };
       var yearsArr = [];
-      var width = 600 - margin.left - margin.right;
+      var width = 500 - margin.left - margin.right;
       var height = 450 - margin.top - margin.bottom;
       var precedentYear = minYear;
       var color = d3
@@ -338,7 +353,11 @@ async function HorizontallyBarchart(seriesName, seriesValue, types) {
                 return d;
               })
               .tickSize(0);
-            callYAxis.transition().ease(d3.easeLinear).duration(1000).call(yAxis);
+            callYAxis
+              .transition()
+              .ease(d3.easeLinear)
+              .duration(1000)
+              .call(yAxis);
             callYAxis.select(".domain").remove();
           }
           rects

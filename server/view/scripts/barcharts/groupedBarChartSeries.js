@@ -1,6 +1,5 @@
 async function groupedBarChartSeries(seriesName, country, types) {
   d3.select("svg").remove();
-  d3.select("div").remove();
   d3.select("table").remove();
   fetch("http://localhost:3001/api/" + seriesName + "?country=" + country)
     .then((data) => {
