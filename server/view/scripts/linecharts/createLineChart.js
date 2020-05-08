@@ -33,9 +33,9 @@ async function createLineChart(seriesName, country, seriesValue) {
         return parseFloat(d.Data_Value);
       });
       maxPercent += 10;
-      var margin = { left: 100, right: 100, top: 10, bottom: 180 };
+      var margin = { left: 80, right: 70, top: 10, bottom: 130 };
       var width = 500 - margin.left - margin.right;
-      var height = 450 - margin.top - margin.bottom;
+      var height = 500 - margin.top - margin.bottom;
 
       var svg = d3
         .select("#chart-area")
@@ -73,7 +73,7 @@ async function createLineChart(seriesName, country, seriesValue) {
         .append("text")
         .attr("class", "x-axis-label")
         .attr("x", width / 2)
-        .attr("y", height + margin.bottom - 100)
+        .attr("y", height + margin.bottom - 10)
         .attr("font-size", "20px")
         .attr("text-anchor", "middle")
         .text(function () {
@@ -164,7 +164,7 @@ async function createLineChart(seriesName, country, seriesValue) {
       function mousemove() {
         var x0 = x.invert(d3.mouse(this)[0]);
         var i = bisectLeft(data, x0, 1);
-        if (d3.mouse(this)[0] >= 270) selectedData = data[7];
+        if (d3.mouse(this)[0] >= width - 20) selectedData = data[7];
         else if (i > 0) {
           (d0 = data[i - 1]), (d1 = data[i]);
           selectedData = x0 - d0.Description > d1.Description - x0 ? d1 : d0;

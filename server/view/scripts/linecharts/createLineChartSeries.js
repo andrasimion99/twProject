@@ -1,8 +1,17 @@
-createLineChartSeries("gender", "Texas", ["Female", "Male"]);
+createLineChartSeries("age", "Texas", ["18 - 24", "25 - 34", "35 - 44"]);
 function sortByProperty(property) {
   return function (a, b) {
     if (a[property] > b[property]) return 1;
     else if (a[property] < b[property]) return -1;
+
+    return 0;
+  };
+}
+
+function sortDescByProperty(property) {
+  return function (a, b) {
+    if (a[property] > b[property]) return -1;
+    else if (a[property] < b[property]) return 1;
 
     return 0;
   };
@@ -25,15 +34,14 @@ async function createLineChartSeries(seriesName, country, types) {
         })();
       }
       data.sort(sortByProperty("Description"));
-      console.log(data);
 
       var maxPercent = d3.max(data, function (d) {
         return parseFloat(d.Data_Value);
       });
       maxPercent += 10;
       var margin = { left: 100, right: 100, top: 10, bottom: 100 };
-      var width = 500 - margin.left - margin.right;
-      var height = 350 - margin.top - margin.bottom;
+      var width = 550 - margin.left - margin.right;
+      var height = 450 - margin.top - margin.bottom;
       var svg = d3
         .select("#chart-area")
         .append("svg")
@@ -197,7 +205,66 @@ async function createLineChartSeries(seriesName, country, types) {
         .text(function (d, i) {
           return sumstat[i].key;
         });
-      downloads(d3.select("svg"), data);
+      dataForOne = res.data.filter(function (d) {
+        return d.Stratification1 === types[0];
+      });
+      dataForOne.sort(sortByProperty("Description"));
+      console.log(dataForOne);
+      var tooltip = d3
+        .select("body")
+        .append("div")
+        .style("position", "absolute")
+        .style("background-color", "white")
+        .style("border", "1px solid #cfcfcf")
+        .style("border-radius", "5px")
+        .style("padding", "5px")
+        .style("z-index", "10");
+      var tooltipLine = svg.append("line");
+      tipBox = svg
+        .append("rect")
+        .attr("width", width)
+        .attr("height", height)
+        .attr("opacity", 0)
+        .on("mouseout", removeTooltip)
+        .on("mousemove", drawTooltip);
+      function removeTooltip() {
+        if (tooltipLine) tooltipLine.attr("stroke", "none");
+        if (tooltip) tooltip.style("display", "none");
+      }
+      var bisectLeft = d3.bisector(function (d) {
+        return d.Description;
+      }).left;
+      function drawTooltip() {
+        var x0 = x.invert(d3.mouse(this)[0]);
+        var i = bisectLeft(dataForOne, x0);
+        if (d3.mouse(this)[0] > width - 20) i = 7;
+        tooltipLine
+          .attr("stroke", "#636363")
+          .attr("stroke-width", 0.5)
+          .attr("x1", x(dataForOne[i].Description))
+          .attr("x2", x(dataForOne[i].Description))
+          .attr("y1", 0)
+          .attr("y2", height);
+        var result = data
+          .filter(function (d) {
+            return d.Description === dataForOne[i].Description;
+          })
+          .sort(sortDescByProperty("Data_Value"));
+        tooltip
+          .html(dataForOne[i].Description)
+          .style("top", d3.event.pageY - 30 + "px")
+          .style("left", d3.event.pageX + 10 + "px")
+          .style("display", "block");
+        tooltip
+          .selectAll()
+          .data(result)
+          .enter()
+          .append("div")
+          .style("color", (d) => {
+            return color(d.Stratification1);
+          })
+          .html((d) => d.Stratification1 + ": " + d.Data_Value + "%");
+      }
     })
     .catch((error) => {
       console.log(error);

@@ -33,7 +33,10 @@ async function createLineChartAll(seriesName, country) {
         })
         .size();
 
-      var margin = { left: 100, right: 100, top: 10, bottom: 180 };
+      var margin = { left: 80, right: 70, top: 10, bottom: 180 };
+      if (seriesName === "age") {
+        margin.bottom = 100;
+      }
       var yearsArr = [];
       var width = 500 - margin.left - margin.right;
       var height = 450 - margin.top - margin.bottom;
@@ -76,7 +79,10 @@ async function createLineChartAll(seriesName, country) {
         .attr("text-anchor", "end")
         .attr("transform", "rotate(-40)");
 
-      var y = d3.scaleLinear().domain([0, maxPercent]).range([height, 0]);
+      var y = d3
+        .scaleLinear()
+        .domain([0, maxPercent + 10])
+        .range([height, 0]);
       let yAxis = d3.axisLeft(y).tickFormat(function (d) {
         return d + "%";
       });
@@ -85,7 +91,7 @@ async function createLineChartAll(seriesName, country) {
         .append("text")
         .attr("class", "x-axis-label")
         .attr("x", width / 2)
-        .attr("y", height + margin.bottom - 40)
+        .attr("y", height + margin.bottom - 20)
         .attr("font-size", "20px")
         .attr("text-anchor", "middle")
         .text(country + "-" + seriesName + "(" + 2011 + ")");
@@ -175,7 +181,7 @@ async function createLineChartAll(seriesName, country) {
         selectedData =
           x0 - d0.Stratification1 > d1.Stratification1 - x0 ? d1 : d0;
         console.log(d3.mouse(this)[0]);
-        if (d3.mouse(this)[0] > 270) selectedData = data[numSeries - 1];
+        if (d3.mouse(this)[0] > width - 20) selectedData = data[numSeries - 1];
         focus.attr(
           "transform",
           "translate(" +

@@ -35,8 +35,12 @@
           console.log(seriesName);
           d3.select("svg").remove();
           d3.select("table").remove();
-          if (seriesValue == "All" && country != "") {
-            createLineChartAll(seriesName, country);
+          if (seriesValue == "All") {
+            if (seriesName === "gender") {
+              createLineChartSeries(seriesName, country, ["Female", "Male"]);
+            } else {
+              createLineChartAll(seriesName, country);
+            }
           } else if (seriesValue == "Total") {
             createLineChart("states", country);
           } else if (seriesName != "") {
@@ -77,7 +81,11 @@
         d3.select("svg").remove();
         d3.select("table").remove();
         if (seriesValue == "All" && country != "") {
-          createLineChartAll(seriesName, country);
+          if (seriesName === "gender") {
+            createLineChartSeries(seriesName, country, ["Female", "Male"]);
+          } else {
+            createLineChartAll(seriesName, country);
+          }
         } else if (seriesValue == "Total" && country != "") {
           createLineChart("states", country);
         } else if (seriesName != "" && country != "") {
@@ -114,7 +122,11 @@
           d3.select("svg").remove();
           d3.select("table").remove();
           if (seriesValue == "All" && country != "") {
-            createLineChartAll(seriesName, country);
+            if (seriesName === "gender") {
+              createLineChartSeries(seriesName, country, ["Female", "Male"]);
+            } else {
+              createLineChartAll(seriesName, country);
+            }
           } else if (seriesValue == "Total" && country != "") {
             createLineChart("states", country);
           } else if (seriesName != "" && country != "") {

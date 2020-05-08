@@ -3,6 +3,7 @@ createLineChartCountries("age", "18 - 24", [
   "California",
   "Virginia",
   "Texas",
+  "Montana",
 ]);
 function sortByProperty(property) {
   return function (a, b) {
@@ -123,7 +124,6 @@ async function createLineChartCountries(seriesName, seriesValue, types) {
           "#4daf4a",
           "#984ea3",
           "#ff7f00",
-          "#ffff33",
           "#a65628",
           "#f781bf",
           "#999999",
@@ -226,7 +226,10 @@ async function createLineChartCountries(seriesName, seriesValue, types) {
         .select("body")
         .append("div")
         .style("position", "absolute")
-        .style("background-color", "lightgray")
+        .style("background-color", "white")
+        .style("border", "1px solid #cfcfcf")
+        .style("border-radius", "5px")
+        .style("padding", "5px")
         .style("z-index", "10");
       var tooltipLine = svg.append("line");
 
@@ -248,9 +251,10 @@ async function createLineChartCountries(seriesName, seriesValue, types) {
       function drawTooltip() {
         var x0 = x.invert(d3.mouse(this)[0]);
         var i = bisectLeft(dataForOne, x0);
-        if (d3.mouse(this)[0] > 280) i = 7;
+        if (d3.mouse(this)[0] > width - 20) i = 7;
         tooltipLine
-          .attr("stroke", "black")
+          .attr("stroke", "#636363")
+          .attr("stroke-width", 0.5)
           .attr("x1", x(dataForOne[i].Description))
           .attr("x2", x(dataForOne[i].Description))
           .attr("y1", 0)
