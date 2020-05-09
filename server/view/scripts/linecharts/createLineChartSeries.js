@@ -17,13 +17,13 @@ function sortDescByProperty(property) {
   };
 }
 async function createLineChartSeries(seriesName, country, types) {
-  d3.select("svg").remove();
-  d3.select("table").remove();
   fetch("http://localhost:3001/api/" + seriesName + "?country=" + country)
     .then((data) => {
       return data.json();
     })
     .then(async function (res) {
+      d3.select("svg").remove();
+      d3.select("table").remove();
       var datares = res.data;
       var data = [];
       for (let item of datares) {
@@ -124,6 +124,9 @@ async function createLineChartSeries(seriesName, country, types) {
           return color(d.key);
         })
         .attr("stroke-width", 1.5)
+        .attr("class", function (d) {
+          return "type" + types.indexOf(d.key);
+        })
         .attr("d", function (d) {
           return d3
             .line()
@@ -137,13 +140,19 @@ async function createLineChartSeries(seriesName, country, types) {
               return y(parseFloat(d.Data_Value));
             })(d.values);
         });
-
+      var labelPoz = 10;
+      if (
+        seriesName == "education" ||
+        seriesName == "income" ||
+        seriesName == "ethnicity"
+      )
+        labelPoz = 30;
       svg
         .selectAll("mydots")
         .data(sumstat)
         .enter()
         .append("circle")
-        .attr("cx", width + 15)
+        .attr("cx", width - labelPoz)
         .attr("cy", function (d, i) {
           return i * 20;
         }) // 100 is where the first dot appears. 25 is the distance between dots
@@ -156,10 +165,10 @@ async function createLineChartSeries(seriesName, country, types) {
         .data(sumstat)
         .enter()
         .append("text")
-        .attr("x", width + 20)
+        .attr("x", width - labelPoz + 5)
         .attr("y", function (d, i) {
           return i * 20;
-        }) // 100 is where the first dot appears. 25 is the distance between dots
+        })
         .style("fill", function (d) {
           return color(d.key);
         })
@@ -167,7 +176,8 @@ async function createLineChartSeries(seriesName, country, types) {
           return d.key;
         })
         .attr("text-anchor", "left")
-        .style("alignment-baseline", "middle");
+        .style("alignment-baseline", "middle")
+        .style("font-size", "12px");
 
       var legend = d3
         .select("#chart-area")
@@ -182,16 +192,34 @@ async function createLineChartSeries(seriesName, country, types) {
         .data(sumstat)
         .enter()
         .append("th")
-        .attr("id", function (d, i) {
-          return types[i];
-        })
-        .style("width", function () {
-          return 100 / types.length + "%";
-        })
         .style("padding", "10px")
         .style("background-color", function (d, i) {
           return color(d.key);
+        })
+        .style("cursor", "pointer")
+        .on("mouseover", function (d, i) {
+          this.style.opacity = 0.7;
+          for (let j = 0; j < sumstat.length; j++) {
+            if (types[j] != types[i]) {
+              d3.selectAll(".type" + j)
+                .style("opacity", "0.2")
+                .attr("stroke", "#7a7a7a");
+            }
+          }
+        })
+        .on("mouseout", function (d, i) {
+          this.style.opacity = 1;
+          for (let j = 0; j < sumstat.length; j++) {
+            if (types[j] != types[i]) {
+              d3.selectAll(".type" + j)
+                .style("opacity", "1")
+                .attr("stroke", function (d) {
+                  return color(d.key);
+                });
+            }
+          }
         });
+
       legend
         .append("tr")
         .selectAll("th")
@@ -203,7 +231,7 @@ async function createLineChartSeries(seriesName, country, types) {
         })
         .style("padding", "5px")
         .style("text-align", "center")
-        .style("font-size", "14px")
+        .style("font-size", "12px")
         .text(function (d, i) {
           return sumstat[i].key;
         });
@@ -217,6 +245,7 @@ async function createLineChartSeries(seriesName, country, types) {
         .append("div")
         .style("position", "absolute")
         .style("background-color", "white")
+        .style("font-size", "14px")
         .style("border", "1px solid #cfcfcf")
         .style("border-radius", "5px")
         .style("padding", "5px")

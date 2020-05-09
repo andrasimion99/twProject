@@ -7,8 +7,6 @@ function sortByProperty(property) {
   };
 }
 async function createLineChart(seriesName, country, seriesValue) {
-  d3.select("svg").remove();
-  d3.select("table").remove();
   var url = "";
   if (seriesValue) {
     url =
@@ -29,6 +27,8 @@ async function createLineChart(seriesName, country, seriesValue) {
       return data.json();
     })
     .then(async function (res) {
+      d3.select("svg").remove();
+      d3.select("table").remove();
       data = res.data;
       data.sort(sortByProperty("Description"));
       var maxPercent = d3.max(data, function (d) {

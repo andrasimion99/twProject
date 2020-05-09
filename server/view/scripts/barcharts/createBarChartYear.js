@@ -1,6 +1,4 @@
 async function createBarChartYear(seriesName, country, seriesValue) {
-  d3.select("svg").remove();
-  d3.select("table").remove();
   var url = "";
   if (seriesValue) {
     url =
@@ -20,6 +18,8 @@ async function createBarChartYear(seriesName, country, seriesValue) {
       return data.json();
     })
     .then((res) => {
+      d3.select("svg").remove();
+      d3.select("table").remove();
       data = res.data;
       var maxPercent = d3.max(data, function (d) {
         if (d.Data_Value === "~") {

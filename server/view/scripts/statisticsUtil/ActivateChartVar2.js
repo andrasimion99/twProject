@@ -9,7 +9,6 @@
 
   var countries = document.getElementsByClassName("Country");
   var checkedCountries = [];
-
   var maxValue = 5;
   /*-----Event listener for countries check box------*/
   for (var i = 0; i < countries.length; i++) {
@@ -120,29 +119,38 @@ function unclickAll(currentChart) {
 }
 
 function createChart(countries, seriesName, seriesValue, chart) {
-  console.log(chart);
+  console.log("start");
   if (chart == "line-chart") {
     if (countries.length == 1 && seriesValue.length == 1) {
       if (seriesValue[0] != "All") {
         document.getElementById("error-message").innerHTML = "";
-        createLineChart(seriesName, countries[0], seriesValue[0]);
+        if (seriesValue[0] != "Total") {
+          createLineChart(seriesName, countries[0], seriesValue[0]);
+        } else {
+          createLineChart("states", countries[0]);
+        }
       } else {
         document.getElementById("error-message").innerHTML = "";
         createLineChartAll(seriesName, countries[0]);
       }
     } else if (countries.length > 1 && seriesValue.length == 1) {
-      if (seriesValue[0] != "All") {
+      if (seriesValue[0] != "All" && seriesValue[0] != "Total") {
         document.getElementById("error-message").innerHTML = "";
         createLineChartCountries(seriesName, seriesValue[0], countries);
       } else {
         document.getElementById("error-message").innerHTML =
-          "Can't select more countries for all series";
+          "Can't select more countries for this series";
         d3.select("svg").remove();
         d3.select("table").remove();
       }
     } else if (countries.length === 1 && seriesValue.length > 1) {
-      document.getElementById("error-message").innerHTML = "";
-      createLineChartSeries(seriesName, countries[0], seriesValue);
+      if (seriesValue.length <= 5) {
+        document.getElementById("error-message").innerHTML = "";
+        createLineChartSeries(seriesName, countries[0], seriesValue);
+      } else {
+        document.getElementById("error-message").innerHTML =
+          "Can't select more than 5 series";
+      }
     } else if (countries.length > 1 && seriesValue.length > 1) {
       console.log(document.getElementById("error-message"));
       document.getElementById("error-message").innerHTML =
@@ -152,26 +160,35 @@ function createChart(countries, seriesName, seriesValue, chart) {
     }
   } else if (chart == "column-chart") {
     if (countries.length == 1 && seriesValue.length == 1) {
+      document.getElementById("error-message").innerHTML = "";
       if (seriesValue[0] != "All") {
-        document.getElementById("error-message").innerHTML = "";
-        createBarChartYear(seriesName, countries[0], seriesValue[0]);
+        if (seriesValue[0] != "Total") {
+          createBarChartYear(seriesName, countries[0], seriesValue[0]);
+        } else {
+          createBarChartYear("states", countries[0]);
+        }
       } else {
         document.getElementById("error-message").innerHTML = "";
         createBarChartAll(seriesName, countries[0]);
       }
     } else if (countries.length > 1 && seriesValue.length == 1) {
-      if (seriesValue[0] != "All") {
+      if (seriesValue[0] != "All" && seriesValue[0] != "Total") {
         document.getElementById("error-message").innerHTML = "";
         groupedBarChartCountries(seriesName, seriesValue[0], countries);
       } else {
         document.getElementById("error-message").innerHTML =
-          "Can't select more countries for all series";
+          "Can't select more countries for this series";
         d3.select("svg").remove();
         d3.select("table").remove();
       }
     } else if (countries.length === 1 && seriesValue.length > 1) {
-      document.getElementById("error-message").innerHTML = "";
-      groupedBarChartSeries(seriesName, countries[0], seriesValue);
+      if (seriesValue.length <= 5) {
+        document.getElementById("error-message").innerHTML = "";
+        groupedBarChartSeries(seriesName, countries[0], seriesValue);
+      } else {
+        document.getElementById("error-message").innerHTML =
+          "Can't select more than 5 series";
+      }
     } else if (countries.length > 1 && seriesValue.length > 1) {
       document.getElementById("error-message").innerHTML =
         "Can't select more countries and more series for this type of chart";
@@ -192,9 +209,25 @@ function disableAll(checkedValues, id) {
   }
 }
 
+function disableCheckBoxes() {
+  var series = document.getElementsByClassName("Series");
+  var countries = document.getElementsByClassName("Country");
+  for (var i = 0; i < series.length; i++)
+    series[i].setAttribute("disabled", "");
+  for (var i = 0; i < countries.length; i++)
+    countries[i].setAttribute("disabled", "");
+}
+
+function removeDisableCheckBoxes() {
+  var series = document.getElementsByClassName("Series");
+  var countries = document.getElementsByClassName("Country");
+  for (var i = 0; i < series.length; i++) series[i].removeAttribute("disabled");
+  for (var i = 0; i < countries.length; i++)
+    countries[i].removeAttribute("disabled");
+}
+
 function disableAllUnlessThis(seriesName, seriesValue, id) {
   var elements = document.getElementsByClassName(id);
-  console.log(elements[0]);
   for (var i = 0; i < elements.length; i++) {
     {
       if (elements[i].value != seriesValue || elements[i].name != seriesName)

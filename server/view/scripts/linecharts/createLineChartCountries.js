@@ -22,8 +22,6 @@ function sortDescByProperty(property) {
   };
 }
 async function createLineChartCountries(seriesName, seriesValue, types) {
-  d3.select("svg").remove();
-  d3.select("table").remove();
   fetch(
     "http://localhost:3001/api/" +
       seriesName +
@@ -36,6 +34,8 @@ async function createLineChartCountries(seriesName, seriesValue, types) {
       return data.json();
     })
     .then(async function (res) {
+      d3.select("svg").remove();
+      d3.select("table").remove();
       var datares = res.data;
       var data = [];
       for (let item of datares) {
@@ -60,7 +60,7 @@ async function createLineChartCountries(seriesName, seriesValue, types) {
       maxPercent += 10;
       var margin = { left: 100, right: 100, top: 10, bottom: 100 };
       var width = 500 - margin.left - margin.right;
-      var height = 350 - margin.top - margin.bottom;
+      var height = 430 - margin.top - margin.bottom;
       var svg = d3
         .select("#chart-area")
         .append("svg")
@@ -141,6 +141,9 @@ async function createLineChartCountries(seriesName, seriesValue, types) {
           return color(d.key);
         })
         .attr("stroke-width", 1.5)
+        .attr("class", function (d) {
+          return "type" + types.indexOf(d.key);
+        })
         .attr("d", function (d) {
           return d3
             .line()
@@ -155,15 +158,16 @@ async function createLineChartCountries(seriesName, seriesValue, types) {
             })(d.values);
         });
 
+      dotsPoz = 20;
       svg
         .selectAll("mydots")
         .data(sumstat)
         .enter()
         .append("circle")
-        .attr("cx", width + 15)
+        .attr("cx", width - dotsPoz)
         .attr("cy", function (d, i) {
-          return i * 20;
-        }) // 100 is where the first dot appears. 25 is the distance between dots
+          return i * 15;
+        })
         .attr("r", 3.5)
         .style("fill", function (d) {
           return color(d.key);
@@ -173,10 +177,10 @@ async function createLineChartCountries(seriesName, seriesValue, types) {
         .data(sumstat)
         .enter()
         .append("text")
-        .attr("x", width + 20)
+        .attr("x", width - dotsPoz + 5)
         .attr("y", function (d, i) {
-          return i * 20;
-        }) // 100 is where the first dot appears. 25 is the distance between dots
+          return i * 15;
+        })
         .style("fill", function (d) {
           return color(d.key);
         })
@@ -184,7 +188,8 @@ async function createLineChartCountries(seriesName, seriesValue, types) {
           return d.key;
         })
         .attr("text-anchor", "left")
-        .style("alignment-baseline", "middle");
+        .style("alignment-baseline", "middle")
+        .style("font-size", "12px");
 
       var legend = d3
         .select("#chart-area")
@@ -208,6 +213,29 @@ async function createLineChartCountries(seriesName, seriesValue, types) {
         .style("padding", "10px")
         .style("background-color", function (d, i) {
           return color(d.key);
+        })
+        .style("cursor", "pointer")
+        .on("mouseover", function (d, i) {
+          this.style.opacity = 0.7;
+          for (let j = 0; j < sumstat.length; j++) {
+            if (types[j] != types[i]) {
+              d3.selectAll(".type" + j)
+                .style("opacity", "0.2")
+                .attr("stroke", "#7a7a7a");
+            }
+          }
+        })
+        .on("mouseout", function (d, i) {
+          this.style.opacity = 1;
+          for (let j = 0; j < sumstat.length; j++) {
+            if (types[j] != types[i]) {
+              d3.selectAll(".type" + j)
+                .style("opacity", "1")
+                .attr("stroke", function (d) {
+                  return color(d.key);
+                });
+            }
+          }
         });
       legend
         .append("tr")
@@ -220,7 +248,7 @@ async function createLineChartCountries(seriesName, seriesValue, types) {
         })
         .style("padding", "5px")
         .style("text-align", "center")
-        .style("font-size", "14px")
+        .style("font-size", "12px")
         .text(function (d, i) {
           return sumstat[i].key;
         });
@@ -228,6 +256,7 @@ async function createLineChartCountries(seriesName, seriesValue, types) {
         .select("body")
         .append("div")
         .style("position", "absolute")
+        .style("font-size", "14px")
         .style("background-color", "white")
         .style("border", "1px solid #cfcfcf")
         .style("border-radius", "5px")

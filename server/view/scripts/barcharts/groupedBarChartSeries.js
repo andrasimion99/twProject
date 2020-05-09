@@ -1,11 +1,11 @@
 async function groupedBarChartSeries(seriesName, country, types) {
-  d3.select("svg").remove();
-  d3.select("table").remove();
   fetch("http://localhost:3001/api/" + seriesName + "?country=" + country)
     .then((data) => {
       return data.json();
     })
     .then(async function (res) {
+      d3.select("svg").remove();
+      d3.select("table").remove();
       var datares = res.data;
       var data = [];
       for (let item of datares) {
@@ -21,6 +21,7 @@ async function groupedBarChartSeries(seriesName, country, types) {
       var maxPercent = d3.max(data, function (d) {
         return parseFloat(d.Data_Value);
       });
+      maxPercent += 10;
       var color = d3
         .scaleOrdinal()
         .domain(types)
@@ -28,8 +29,8 @@ async function groupedBarChartSeries(seriesName, country, types) {
 
       var numBars = 8 + (types.length - 1) * 2;
       var margin = { left: 100, right: 100, top: 10, bottom: 100 };
-      var width = 600 - margin.left - margin.right;
-      var height = 450 - margin.top - margin.bottom;
+      var width = 550 - margin.left - margin.right;
+      var height = 430 - margin.top - margin.bottom;
       var barPadding = 20;
       var barWidth = width / numBars - barPadding;
 
@@ -101,11 +102,18 @@ async function groupedBarChartSeries(seriesName, country, types) {
         })
         .entries(data);
 
+      var labelPoz = 10;
+      if (
+        seriesName == "education" ||
+        seriesName == "income" ||
+        seriesName == "ethnicity"
+      )
+        labelPoz = 30;
       g.selectAll("mydots")
         .data(sumstat)
         .enter()
         .append("circle")
-        .attr("cx", width + 15)
+        .attr("cx", width - labelPoz)
         .attr("cy", function (d, i) {
           return margin.top + i * 20;
         })
@@ -117,7 +125,7 @@ async function groupedBarChartSeries(seriesName, country, types) {
         .data(sumstat)
         .enter()
         .append("text")
-        .attr("x", width + 20)
+        .attr("x", width - labelPoz + 5)
         .attr("y", function (d, i) {
           return margin.top + i * 20;
         })
@@ -128,7 +136,8 @@ async function groupedBarChartSeries(seriesName, country, types) {
           return d.key;
         })
         .attr("text-anchor", "left")
-        .style("alignment-baseline", "middle");
+        .style("alignment-baseline", "middle")
+        .style("font-size", "12px");
 
       var valueBox = d3
         .select("body")
@@ -254,7 +263,7 @@ async function groupedBarChartSeries(seriesName, country, types) {
         })
         .style("padding", "5px")
         .style("text-align", "center")
-        .style("font-size", "14px")
+        .style("font-size", "10px")
         .text(function (d, i) {
           return types[i];
         });

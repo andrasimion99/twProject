@@ -5,8 +5,6 @@
 //   "Texas",
 // ]);
 async function groupedBarChartCountries(seriesName, seriesValue, types) {
-  d3.select("svg").remove();
-  d3.select("table").remove();
   fetch(
     "http://localhost:3001/api/" +
       seriesName +
@@ -19,6 +17,8 @@ async function groupedBarChartCountries(seriesName, seriesValue, types) {
       return data.json();
     })
     .then(async function (res) {
+      d3.select("svg").remove();
+      d3.select("table").remove();
       var datares = res.data;
       var data = [];
       for (let item of datares) {
@@ -41,8 +41,8 @@ async function groupedBarChartCountries(seriesName, seriesValue, types) {
 
       var numBars = 8 + (types.length - 1) * 2;
       var margin = { left: 100, right: 100, top: 10, bottom: 100 };
-      var width = 600 - margin.left - margin.right;
-      var height = 450 - margin.top - margin.bottom;
+      var width = 550 - margin.left - margin.right;
+      var height = 430 - margin.top - margin.bottom;
       var barPadding = 20;
       var barWidth = width / numBars - barPadding;
 
@@ -114,11 +114,12 @@ async function groupedBarChartCountries(seriesName, seriesValue, types) {
         })
         .entries(data);
 
+      var labelPoz = 25;
       g.selectAll("mydots")
         .data(sumstat)
         .enter()
         .append("circle")
-        .attr("cx", width + 15)
+        .attr("cx", width - labelPoz)
         .attr("cy", function (d, i) {
           return margin.top + i * 20;
         })
@@ -130,7 +131,7 @@ async function groupedBarChartCountries(seriesName, seriesValue, types) {
         .data(sumstat)
         .enter()
         .append("text")
-        .attr("x", width + 20)
+        .attr("x", width - labelPoz + 5)
         .attr("y", function (d, i) {
           return margin.top + i * 20;
         })
@@ -141,7 +142,8 @@ async function groupedBarChartCountries(seriesName, seriesValue, types) {
           return d.key;
         })
         .attr("text-anchor", "left")
-        .style("alignment-baseline", "middle");
+        .style("alignment-baseline", "middle")
+        .style("font-size", "12px");
 
       var valueBox = d3
         .select("#chart-area")
@@ -159,7 +161,7 @@ async function groupedBarChartCountries(seriesName, seriesValue, types) {
         .style("border", "0px solid #ffffff")
         .style("border-radius", "5px")
         .style("padding", "10px")
-        .style("font-size", "14px")
+        .style("font-size", "12px")
         .text(function (d) {
           return d.Data_Value + "%";
         });

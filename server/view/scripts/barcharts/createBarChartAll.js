@@ -1,11 +1,11 @@
 async function createBarChartAll(seriesName, country) {
-    d3.select("svg").remove();
-    d3.select("table").remove();
     fetch("http://localhost:3001/api/" + seriesName + "?country=" + country)
       .then((data) => {
         return data.json();
       })
       .then((res) => {
+        d3.select("svg").remove();
+        d3.select("table").remove();
         data = res.data;
         var minYear = d3.min(data, function (d) {
           return parseInt(d.Description);
