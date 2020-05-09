@@ -1,29 +1,11 @@
-HorizontallyBarchart("states", [
-  "Alaska",
-  "California",
-  "Virginia",
-  "Texas",
-  "Ohio",
-  "New York",
-  "Michigan",
-  "Tennessee",
-  "Arizona",
-  "Nevada",
-]);
+HorizontallyBarchartBySeries(
+  "age",
+  ["18 - 24", "25 - 34", "35 - 44", "45 - 54", "55 - 64"],
+  "Alaska"
+);
 
-async function HorizontallyBarchart(seriesName, types, seriesValue) {
-  if (seriesValue) {
-    url =
-      "http://localhost:3001/api/" +
-      seriesName +
-      "?" +
-      seriesName +
-      "=" +
-      seriesValue;
-  } else {
-    url = "http://localhost:3001/api/" + seriesName;
-  }
-  await fetch(url)
+async function HorizontallyBarchartBySeries(seriesName, types, country) {
+  await fetch("http://localhost:3001/api/" + seriesName + "?country=" + country)
     .then((data) => {
       return data.json();
     })
@@ -33,7 +15,7 @@ async function HorizontallyBarchart(seriesName, types, seriesValue) {
       for (let item of datares) {
         await (async () => {
           for (let type of types) {
-            if (item.LocationDesc == type) {
+            if (item.Stratification1 == type) {
               await data.push(item);
             }
           }
@@ -65,7 +47,7 @@ async function HorizontallyBarchart(seriesName, types, seriesValue) {
         .scaleOrdinal()
         .domain(
           data.map(function (d) {
-            return d.LocationDesc;
+            return d.Stratification1;
           })
         )
         .range(["#00a8cc", "#005082", "#ffa41b"]);
@@ -80,7 +62,7 @@ async function HorizontallyBarchart(seriesName, types, seriesValue) {
               return parseInt(d.Description) == minYear;
             })
             .map(function (d) {
-              return d.LocationDesc;
+              return d.Stratification1;
             })
         );
 
@@ -102,7 +84,7 @@ async function HorizontallyBarchart(seriesName, types, seriesValue) {
         .attr("y", height + margin.bottom - 20)
         .attr("font-size", "20px")
         .attr("text-anchor", "middle")
-        .text(seriesName + "( " + minYear + " )");
+        .text(country + " - " + seriesName + "( " + minYear + " )");
 
       var xAxis = d3.axisBottom(xscale);
       g.append("g")
@@ -162,10 +144,10 @@ async function HorizontallyBarchart(seriesName, types, seriesValue) {
           return yscale.bandwidth();
         })
         .attr("y", function (d) {
-          return yscale(d.LocationDesc);
+          return yscale(d.Stratification1);
         })
         .attr("fill", function (d) {
-          return color(d.LocationDesc);
+          return color(d.Stratification1);
         })
         .on("mouseover", function (d) {
           valueBox.text(d.Data_Value + "%");
@@ -238,7 +220,7 @@ async function HorizontallyBarchart(seriesName, types, seriesValue) {
             })
           )
           .attr("y", function (d) {
-            return yscale(d.LocationDesc);
+            return yscale(d.Stratification1);
           });
         rects
           .data(
@@ -260,7 +242,7 @@ async function HorizontallyBarchart(seriesName, types, seriesValue) {
                 return parseInt(d.Description) == year;
               })
               .map(function (d) {
-                return d.LocationDesc;
+                return d.Stratification1;
               })
           );
         yAxis = d3
@@ -289,16 +271,16 @@ async function HorizontallyBarchart(seriesName, types, seriesValue) {
           })
 
           .attr("y", function (d) {
-            return yscale(d.LocationDesc);
+            return yscale(d.Stratification1);
           })
           .attr("fill", function (d) {
-            return color(d.LocationDesc);
+            return color(d.Stratification1);
           })
           .text(function (d) {
-            return d.LocationDesc;
+            return d.Stratification1;
           });
 
-        xText.text(seriesName + "( " + year + " )");
+        xText.text(country + " - " + seriesName + "( " + year + " )");
         precedentYear = year;
       });
 
@@ -323,7 +305,7 @@ async function HorizontallyBarchart(seriesName, types, seriesValue) {
                 })
               )
               .attr("y", function (d) {
-                return yscale(d.LocationDesc);
+                return yscale(d.Stratification1);
               });
             rects
               .data(
@@ -344,7 +326,7 @@ async function HorizontallyBarchart(seriesName, types, seriesValue) {
                     return parseInt(d.Description) == year;
                   })
                   .map(function (d) {
-                    return d.LocationDesc;
+                    return d.Stratification1;
                   })
               );
             yAxis = d3
@@ -376,20 +358,20 @@ async function HorizontallyBarchart(seriesName, types, seriesValue) {
               return yscale.bandwidth();
             })
             .attr("y", function (d) {
-              return yscale(d.LocationDesc);
+              return yscale(d.Stratification1);
             })
             .attr("x", function (d, i) {
               return xscale(d.Stratification1);
             })
             .attr("fill", function (d) {
-              return color(d.LocationDesc);
+              return color(d.Stratification1);
             });
           year++;
           if (year > maxYear + 1) {
             clearInterval(timer);
           }
           if (year <= maxYear + 1) {
-            xText.text(seriesName + "( " + (year - 1) + " )");
+            xText.text(country + " - " + seriesName + "( " + (year - 1) + " )");
           }
         }, 2000);
       });
