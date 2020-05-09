@@ -1,10 +1,9 @@
-/*createLineChartCountries("age", "18 - 24", [
-  "Alaska",
-  "California",
-  "Virginia",
-  "Texas",
-  "Montana",
-]);*/
+// createLineChartCountries("states", [
+//   "Alaska",
+//   "California",
+//   "Virginia",
+//   "Texas",
+// ]);
 function sortByProperty(property) {
   return function (a, b) {
     if (a[property] > b[property]) return 1;
@@ -21,15 +20,20 @@ function sortDescByProperty(property) {
     return 0;
   };
 }
-async function createLineChartCountries(seriesName, seriesValue, types) {
-  fetch(
-    "http://localhost:3001/api/" +
+async function createLineChartCountries(seriesName, types, seriesValue) {
+  var url = "";
+  if (seriesValue) {
+    url =
+      "http://localhost:3001/api/" +
       seriesName +
       "?" +
       seriesName +
       "=" +
-      seriesValue
-  )
+      seriesValue;
+  } else {
+    url = "http://localhost:3001/api/" + seriesName;
+  }
+  fetch(url)
     .then((data) => {
       return data.json();
     })
@@ -97,7 +101,11 @@ async function createLineChartCountries(seriesName, seriesValue, types) {
         .attr("font-size", "20px")
         .attr("text-anchor", "middle")
         .text(function () {
-          return seriesName + " " + seriesValue;
+          if (seriesName === "states") {
+            return "Total";
+          } else {
+            return seriesName + " " + seriesValue;
+          }
         });
 
       svg

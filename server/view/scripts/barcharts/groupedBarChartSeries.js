@@ -25,13 +25,16 @@ async function groupedBarChartSeries(seriesName, country, types) {
       var color = d3
         .scaleOrdinal()
         .domain(types)
-        .range(["#543864", "#ffbd69", "#ff6363"]);
+        .range(["#543864", "#ffbd69", "#ff6363", "#00bcd4", "#084177"]);
 
       var numBars = 8 + (types.length - 1) * 2;
       var margin = { left: 100, right: 100, top: 10, bottom: 100 };
       var width = 550 - margin.left - margin.right;
       var height = 430 - margin.top - margin.bottom;
       var barPadding = 20;
+      if (types.length === 5) {
+        barPadding = 16;
+      }
       var barWidth = width / numBars - barPadding;
 
       var bars = d3

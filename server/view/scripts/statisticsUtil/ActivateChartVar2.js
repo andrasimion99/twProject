@@ -139,7 +139,7 @@ function createChart(countries, seriesName, seriesValue, chart) {
     } else if (countries.length > 1 && seriesValue.length == 1) {
       if (seriesValue[0] != "All" && seriesValue[0] != "Total") {
         document.getElementById("error-message").innerHTML = "";
-        createLineChartCountries(seriesName, seriesValue[0], countries);
+        createLineChartCountries(seriesName, countries, seriesValue[0]);
       } else {
         document.getElementById("error-message").innerHTML =
           "Can't select more countries for this series";
@@ -177,7 +177,7 @@ function createChart(countries, seriesName, seriesValue, chart) {
     } else if (countries.length > 1 && seriesValue.length == 1) {
       if (seriesValue[0] != "All" && seriesValue[0] != "Total") {
         document.getElementById("error-message").innerHTML = "";
-        groupedBarChartCountries(seriesName, seriesValue[0], countries);
+        groupedBarChartCountries(seriesName, countries, seriesValue[0]);
       } else {
         document.getElementById("error-message").innerHTML =
           "Can't select more countries for this series";

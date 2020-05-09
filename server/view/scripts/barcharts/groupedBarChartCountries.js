@@ -1,18 +1,23 @@
-// groupedBarChartCountries("age", "18 - 24", [
+// groupedBarChartCountries("age", [
 //   "Alaska",
 //   "California",
 //   "Virginia",
 //   "Texas",
-// ]);
-async function groupedBarChartCountries(seriesName, seriesValue, types) {
-  fetch(
-    "http://localhost:3001/api/" +
+// ], "18 - 24");
+async function groupedBarChartCountries(seriesName, types, seriesValue) {
+  var url = "";
+  if (seriesValue) {
+    url =
+      "http://localhost:3001/api/" +
       seriesName +
       "?" +
       seriesName +
       "=" +
-      seriesValue
-  )
+      seriesValue;
+  } else {
+    url = "http://localhost:3001/api/" + seriesName;
+  }
+  fetch(url)
     .then((data) => {
       return data.json();
     })
@@ -37,13 +42,16 @@ async function groupedBarChartCountries(seriesName, seriesValue, types) {
       var color = d3
         .scaleOrdinal()
         .domain(types)
-        .range(["#f9c6ba", "#dd6892", "#3c6f9c", "#512c96"]);
+        .range(["#f9c6ba", "#dd6892", "#3c6f9c", "#512c96", "#2c003e"]);
 
       var numBars = 8 + (types.length - 1) * 2;
       var margin = { left: 100, right: 100, top: 10, bottom: 100 };
       var width = 550 - margin.left - margin.right;
       var height = 430 - margin.top - margin.bottom;
       var barPadding = 20;
+      if (types.length === 5) {
+        barPadding = 16;
+      }
       var barWidth = width / numBars - barPadding;
 
       var bars = d3
@@ -80,7 +88,13 @@ async function groupedBarChartCountries(seriesName, seriesValue, types) {
         .attr("y", height + margin.bottom - 20)
         .attr("font-size", "20px")
         .attr("text-anchor", "middle")
-        .text(seriesValue + " - " + seriesName);
+        .text(function () {
+          if (seriesName === "states") {
+            return "Total";
+          } else {
+            return seriesName + " -> " + seriesValue;
+          }
+        });
 
       g.append("text")
         .attr("class", "y-axis-label")
