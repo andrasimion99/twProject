@@ -43,7 +43,7 @@ async function createLineChartSeries(seriesName, country, types) {
       maxPercent += 10;
       var margin = { left: 100, right: 100, top: 10, bottom: 100 };
       var width = 550 - margin.left - margin.right;
-      var height = 450 - margin.top - margin.bottom;
+      var height = 430 - margin.top - margin.bottom;
       var svg = d3
         .select("#chart-area")
         .append("svg")
@@ -185,6 +185,7 @@ async function createLineChartSeries(seriesName, country, types) {
         .style("margin", "0 auto")
         .append("table")
         .attr("id", "legend")
+        .attr("width", width / 2)
         .append("thead");
       legend
         .append("tr")

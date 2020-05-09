@@ -197,6 +197,7 @@ async function createLineChartCountries(seriesName, seriesValue, types) {
         .style("margin", "0 auto")
         .append("table")
         .attr("id", "legend")
+        .attr("width", width / 2)
         .append("thead");
       legend
         .append("tr")
