@@ -192,6 +192,9 @@ async function createLineChartSeries(seriesName, country, types) {
         .data(sumstat)
         .enter()
         .append("th")
+        .style("width", function () {
+          return 100 / types.length + "%";
+        })
         .style("padding", "10px")
         .style("background-color", function (d, i) {
           return color(d.key);

@@ -31,10 +31,10 @@
         }
         if (checkedCountries.length > 0) {
           if (chart == "line-chart" || chart == "column-chart") {
-            if (checkedCountries.length < maxValue) {
-              createChart(checkedCountries, seriesName, seriesValue, chart);
+            if (checkedCountries.length <= maxValue) {
               document.getElementById("error-message").innerHTML = "";
               removeDisable(checkedCountries, "Country");
+              createChart(checkedCountries, seriesName, seriesValue, chart);
             }
             if (checkedCountries.length == maxValue) {
               disableAll(checkedCountries, "Country");
@@ -55,13 +55,13 @@
       chart = this.value;
       this.style.border = "5px solid #2980b9";
       unclickAll(this);
-      createChart(checkedCountries, seriesName, seriesValue, chart);
       if (this.value == "line-chart" || this.value == "column-chart") {
         if (checkedCountries.length > 5) {
           document.getElementById("error-message").innerHTML =
             "Can't select more than 5 for this type of chart";
         } else {
           document.getElementById("error-message").innerHTML = "";
+          createChart(checkedCountries, seriesName, seriesValue, chart);
         }
       }
     });
@@ -82,7 +82,10 @@
         if (chart == "line-chart" || chart == "column-chart") {
           if (checkedCountries.length > 5) {
             document.getElementById("error-message").innerHTML =
-              "Can't select more than 5 for this type of chart";
+              "Can't select more than 5 countries for this type of chart";
+          } else if (seriesValue.length > 5) {
+            document.getElementById("error-message").innerHTML =
+              "Can't select more than 5 series for this type of chart";
           } else {
             document.getElementById("error-message").innerHTML = "";
             createChart(checkedCountries, seriesName, seriesValue, chart);

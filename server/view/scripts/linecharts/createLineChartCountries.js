@@ -204,9 +204,6 @@ async function createLineChartCountries(seriesName, seriesValue, types) {
         .data(sumstat)
         .enter()
         .append("th")
-        .attr("id", function (d, i) {
-          return types[i];
-        })
         .style("width", function () {
           return 100 / types.length + "%";
         })
