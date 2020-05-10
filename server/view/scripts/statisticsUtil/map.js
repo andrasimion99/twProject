@@ -11,28 +11,15 @@ document.addEventListener("DOMContentLoaded", function (e) {
 
     var subcategories = await document.getElementById("subcategories");
     var subcategory;
-    // if (subcategories) {
-    //   subcategory = subcategories.options[subcategories.selectedIndex].value;
-
-    //   subcategories.addEventListener("change", async function (event) {
-    //     year = years.options[years.selectedIndex].value;
-    //     category = categories.options[categories.selectedIndex].value;
-    //     await getCsvData(year, category);
-    //     downloadCsv();
-    //     await apiReq(year, category);
-    //     downloadWebP();
-    //     downloadSvg();
-    //   });
-    // }
 
     years.addEventListener("change", async function (event) {
       year = years.options[years.selectedIndex].value;
       category = categories.options[categories.selectedIndex].value;
       await getCsvData(year, category);
-      downloadCsv();
+      downloadCsv(year, category);
       await apiReq(year, category);
-      downloadWebP();
-      downloadSvg();
+      downloadWebP(year, category);
+      downloadSvg(year, category);
     });
 
     categories.addEventListener("change", async function (event) {
@@ -49,10 +36,10 @@ document.addEventListener("DOMContentLoaded", function (e) {
           subcategoryLabel.remove();
         }
         await getCsvData(year, category);
-        downloadCsv();
+        downloadCsv(year, category);
         await apiReq(year, category);
-        downloadWebP();
-        downloadSvg();
+        downloadWebP(year, category);
+        downloadSvg(year, category);
       } else {
         var selectNode;
         var subcategoriesElem = document.getElementById("subcategories");
@@ -134,28 +121,27 @@ document.addEventListener("DOMContentLoaded", function (e) {
           subcategory =
             subcategories.options[subcategories.selectedIndex].value;
           await getCsvData(year, category, subcategory);
-          downloadCsv();
+          downloadCsv(year, category, subcategory);
           await apiReq(year, category, subcategory);
-          downloadWebP();
-          downloadSvg();
+          downloadWebP(year, category, subcategory);
+          downloadSvg(year, category, subcategory);
         });
 
         await getCsvData(year, category, subcategory);
-        downloadCsv();
+        downloadCsv(year, category, subcategory);
         await apiReq(year, category, subcategory);
-        downloadWebP();
-        downloadSvg();
+        downloadWebP(year, category, subcategory);
+        downloadSvg(year, category, subcategory);
       }
     });
 
     await getCsvData(year, category);
-    downloadCsv();
+    downloadCsv(year, category);
     await apiReq(year, category);
-
+    downloadSvg(year, category);
+    downloadWebP(year, category);
     return valuesObj;
   })().then((valuesData) => {
-    downloadSvg();
-    downloadWebP();
     for (var i = 0; i < countries.length; i++) {
       countries[i].addEventListener("mouseover", function (event) {
         this.style.opacity = 0.5;
@@ -215,7 +201,9 @@ document.addEventListener("DOMContentLoaded", function (e) {
             console.log(error);
           });
       })();
-      if (15 > valuesObj[country.getAttribute("data-name")]) {
+      if (valuesObj[country.getAttribute("data-name")] === "~") {
+        country.style.fill = "#888888";
+      } else if (15 > valuesObj[country.getAttribute("data-name")]) {
         country.style.fill = "#cbe9f7";
       } else if (
         20 > valuesObj[country.getAttribute("data-name")] &&
@@ -275,7 +263,7 @@ document.addEventListener("DOMContentLoaded", function (e) {
       });
   };
 
-  var downloadWebP = function () {
+  var downloadWebP = function (year, category, subcategory) {
     var svg = document.querySelector("svg").outerHTML;
     var img = document.querySelector("#image");
     var canvas = document.querySelector("canvas");
@@ -286,17 +274,27 @@ document.addEventListener("DOMContentLoaded", function (e) {
     document.getElementById("webp").addEventListener("click", function () {
       var webp = canvas.toDataURL("image/webp");
       this.href = webp;
+      if (subcategory) {
+        this.download = year + "_" + category + "_" + subcategory + ".webp";
+      } else {
+        this.download = year + "_" + category + ".webp";
+      }
     });
   };
 
-  var downloadSvg = function () {
+  var downloadSvg = function (year, category, subcategory) {
     var svg = document.querySelector("svg").outerHTML;
     document.getElementById("svg").addEventListener("click", function () {
       this.href = "data:image/svg+xml;base64," + btoa(svg);
+      if (subcategory) {
+        this.download = year + "_" + category + "_" + subcategory + ".svg";
+      } else {
+        this.download = year + "_" + category + ".svg";
+      }
     });
   };
 
-  var downloadCsv = function () {
+  var downloadCsv = function (year, category, subcategory) {
     var csvContent = "Category,State,StateID,Year,ObesityPercent\n";
     csvData.forEach((item) => {
       csvContent +=
@@ -313,6 +311,11 @@ document.addEventListener("DOMContentLoaded", function (e) {
     });
     document.getElementById("csv").addEventListener("click", function () {
       this.href = "data:text/csv;charset=utf-8," + encodeURI(csvContent);
+      if (subcategory) {
+        this.download = year + "_" + category + "_" + subcategory + ".csv";
+      } else {
+        this.download = year + "_" + category + ".csv";
+      }
     });
   };
 });
