@@ -92,7 +92,7 @@ async function groupedBarChartCountries(seriesName, types, seriesValue) {
           if (seriesName === "states") {
             return "Total";
           } else {
-            return seriesName + " -> " + seriesValue;
+            return seriesName + " - " + seriesValue;
           }
         });
 
@@ -287,7 +287,8 @@ async function groupedBarChartCountries(seriesName, types, seriesValue) {
           return types[i];
         });
 
-      downloads(svg, data);
+      var name = seriesName + "_" + seriesValue + "_countries";
+      downloads(svg, data, name);
     })
     .catch((error) => {
       console.log(error);

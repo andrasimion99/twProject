@@ -271,7 +271,8 @@ async function groupedBarChartSeries(seriesName, country, types) {
           return types[i];
         });
 
-      downloads(svg, data);
+      var name = country + "_" + seriesName + "_series";
+      downloads(svg, data, name);
     })
     .catch((error) => {
       console.log(error);

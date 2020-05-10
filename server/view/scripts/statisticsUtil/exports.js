@@ -1,7 +1,8 @@
-async function downloads(svg, csvData) {
+async function downloads(svg, csvData, name) {
   // ----------download as SVG---------------
   d3.select("#downloadSvg").on("click", function () {
     this.href = "data:image/svg+xml;base64," + btoa(svg.node().outerHTML);
+    this.download = name + ".svg";
   });
 
   // ----------download as WEBP---------------
@@ -15,6 +16,7 @@ async function downloads(svg, csvData) {
   };
   d3.select("#downloadWebP").on("click", function () {
     this.href = canvas.toDataURL("image/webp");
+    this.download = name + ".webp";
   });
 
   // ----------download as CSV---------------
@@ -34,5 +36,6 @@ async function downloads(svg, csvData) {
   });
   d3.select("#downloadCsv").on("click", function () {
     this.href = "data:text/csv;charset=utf-8," + encodeURI(csvContent);
+    this.download = name + ".csv";
   });
 }

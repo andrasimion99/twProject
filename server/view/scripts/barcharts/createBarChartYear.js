@@ -165,7 +165,8 @@ async function createBarChartYear(seriesName, country, seriesValue) {
           return valueBox.style("display", "none");
         });
 
-      downloads(svg, data);
+      var name = country + "_" + seriesName + "_" + seriesValue;
+      downloads(svg, data, name);
     })
     .catch((error) => {
       console.log(error);

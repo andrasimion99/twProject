@@ -188,7 +188,8 @@ async function createLineChart(seriesName, country, seriesValue) {
         focus.style("display", "none");
       }
 
-      downloads(d3.select("svg"), data);
+      var name = country + "_" + seriesName + "_" + seriesValue;
+      downloads(d3.select("svg"), data, name);
     })
     .catch((error) => {
       console.log(error);
