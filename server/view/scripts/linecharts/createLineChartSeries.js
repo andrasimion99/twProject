@@ -300,7 +300,9 @@ async function createLineChartSeries(seriesName, country, types) {
           })
           .html((d) => d.Stratification1 + ": " + d.Data_Value + "%");
       }
-      downloads(d3.select("svg"), data);
+
+      var name = country + "_" + seriesName + "_series";
+      downloads(d3.select("svg"), data, name);
     })
     .catch((error) => {
       console.log(error);

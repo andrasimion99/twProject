@@ -1,8 +1,8 @@
-HorizontallyBarchartBySeries(
-  "age",
-  ["18 - 24", "25 - 34", "35 - 44", "45 - 54", "55 - 64"],
-  "Alaska"
-);
+// HorizontallyBarchartBySeries(
+//     "age",
+//     ["18 - 24", "25 - 34", "35 - 44", "45 - 54", "55 - 64"],
+//     "Alaska"
+//   );
 
 async function HorizontallyBarchartBySeries(seriesName, types, country) {
   await fetch("http://localhost:3001/api/" + seriesName + "?country=" + country)
@@ -42,6 +42,9 @@ async function HorizontallyBarchartBySeries(seriesName, types, country) {
       var yearsArr = [];
       var width = 500 - margin.left - margin.right;
       var height = 450 - margin.top - margin.bottom;
+      if (types.length <= 5) {
+        height = 300 - margin.top - margin.bottom;
+      }
       var precedentYear = minYear;
       var color = d3
         .scaleOrdinal()
@@ -50,7 +53,16 @@ async function HorizontallyBarchartBySeries(seriesName, types, country) {
             return d.Stratification1;
           })
         )
-        .range(["#00a8cc", "#005082", "#ffa41b"]);
+        .range([
+          "#00a8cc",
+          "#005082",
+          "#ffa41b",
+          "#c060a1",
+          "#d63447",
+          "#00bdaa",
+          "#af8baf",
+          "#cf7500",
+        ]);
       var xscale = d3.scaleLinear().range([0, width]).domain([0, maxPercent]);
       var yscale = d3
         .scaleBand()
@@ -376,7 +388,8 @@ async function HorizontallyBarchartBySeries(seriesName, types, country) {
         }, 2000);
       });
 
-      downloads(svg, data);
+      var name = country + "_" + seriesName + "_series";
+      downloads(svg, data, name);
     })
     .catch((error) => {
       console.log(error);
