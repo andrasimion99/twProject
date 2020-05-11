@@ -56,7 +56,6 @@ async function createLineChartCountries(seriesName, types, seriesValue) {
       });
       dataForOne.sort(sortByProperty("Description"));
       data.sort(sortByProperty("Description"));
-      console.log(dataForOne);
 
       var maxPercent = d3.max(data, function (d) {
         return parseFloat(d.Data_Value);
@@ -119,7 +118,7 @@ async function createLineChartCountries(seriesName, types, seriesValue) {
         .text("Obesity Percentage (%)");
 
       var sumstat = d3
-        .nest() // nest function allows to group the calculation per level of a factor
+        .nest()
         .key(function (d) {
           return d.LocationDesc;
         })
@@ -139,6 +138,7 @@ async function createLineChartCountries(seriesName, types, seriesValue) {
           "#999999",
         ]);
       console.log(sumstat);
+      console.log(types);
       svg
         .selectAll(".line")
         .data(sumstat)
@@ -225,7 +225,8 @@ async function createLineChartCountries(seriesName, types, seriesValue) {
           this.style.opacity = 0.7;
           for (let j = 0; j < sumstat.length; j++) {
             if (types[j] != types[i]) {
-              d3.selectAll(".type" + j)
+              console.log("d:" + d.key);
+              d3.selectAll(".type" + types.indexOf(sumstat[j].key))
                 .style("opacity", "0.2")
                 .attr("stroke", "#7a7a7a");
             }
@@ -235,7 +236,7 @@ async function createLineChartCountries(seriesName, types, seriesValue) {
           this.style.opacity = 1;
           for (let j = 0; j < sumstat.length; j++) {
             if (types[j] != types[i]) {
-              d3.selectAll(".type" + j)
+              d3.selectAll(".type" + types.indexOf(sumstat[j].key))
                 .style("opacity", "1")
                 .attr("stroke", function (d) {
                   return color(d.key);
