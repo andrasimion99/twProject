@@ -92,7 +92,7 @@ async function createLineChartSeries(seriesName, country, types) {
         .text("Obesity Percentage (%)");
 
       var sumstat = d3
-        .nest() // nest function allows to group the calculation per level of a factor
+        .nest()
         .key(function (d) {
           return d.Stratification1;
         })
@@ -205,7 +205,7 @@ async function createLineChartSeries(seriesName, country, types) {
           this.style.opacity = 0.7;
           for (let j = 0; j < sumstat.length; j++) {
             if (types[j] != types[i]) {
-              d3.selectAll(".type" + j)
+              d3.selectAll(".type" + types.indexOf(sumstat[j].key))
                 .style("opacity", "0.2")
                 .attr("stroke", "#7a7a7a");
             }
@@ -215,7 +215,7 @@ async function createLineChartSeries(seriesName, country, types) {
           this.style.opacity = 1;
           for (let j = 0; j < sumstat.length; j++) {
             if (types[j] != types[i]) {
-              d3.selectAll(".type" + j)
+              d3.selectAll(".type" + types.indexOf(sumstat[j].key))
                 .style("opacity", "1")
                 .attr("stroke", function (d) {
                   return color(d.key);
@@ -272,7 +272,7 @@ async function createLineChartSeries(seriesName, country, types) {
       function drawTooltip() {
         var x0 = x.invert(d3.mouse(this)[0]);
         var i = bisectLeft(dataForOne, x0);
-        if (d3.mouse(this)[0] > width - 20) i = 7;
+        if (d3.mouse(this)[0] > width - 10) i = 7;
         tooltipLine
           .attr("stroke", "#636363")
           .attr("stroke-width", 0.5)

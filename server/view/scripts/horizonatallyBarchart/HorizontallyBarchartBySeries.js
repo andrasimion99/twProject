@@ -10,6 +10,8 @@ async function HorizontallyBarchartBySeries(seriesName, types, country) {
       return data.json();
     })
     .then(async function (res) {
+      d3.select("svg").remove();
+      d3.select("table").remove();
       var datares = res.data;
       var data = [];
       for (let item of datares) {
