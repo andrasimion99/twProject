@@ -1,5 +1,8 @@
 const helpers = require("./../common/helpers");
 
+const CREATED = 201;
+const NO_CONTENT = 204;
+
 class IncomeController {
   constructor({ db, services }) {
     this.db = db;
@@ -55,7 +58,7 @@ class IncomeController {
     try {
       const income = new this.db.Income(incomeData);
       await income.save();
-      return helpers.success(res, incomeData);
+      return helpers.success(res, incomeData, CREATED);
     } catch (error) {
       return helpers.error(res, error);
     }
@@ -90,7 +93,7 @@ class IncomeController {
         propertyParams["StratificationId1"] = param.income;
       }
       const incomeData = await this.db.Income.deleteMany(propertyParams);
-      return helpers.success(res, incomeData);
+      return helpers.success(res, incomeData, NO_CONTENT);
     } catch (error) {
       return helpers.error(res, error);
     }

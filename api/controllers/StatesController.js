@@ -1,5 +1,8 @@
 const helpers = require("./../common/helpers");
 
+const CREATED = 201;
+const NO_CONTENT = 204;
+
 class StateController {
   constructor({ db, services }) {
     this.db = db;
@@ -63,7 +66,7 @@ class StateController {
     try {
       const state = new this.db.State(stateData);
       await state.save();
-      return helpers.success(res, stateData);
+      return helpers.success(res, stateData, CREATED);
     } catch (error) {
       return helpers.error(res, error);
     }
@@ -89,7 +92,7 @@ class StateController {
     try {
       if (Object.keys(param).length == 0) {
         const statesData = await this.db.State.deleteMany({});
-        return helpers.success(res, statesData);
+        return helpers.success(res, statesData, NO_CONTENT);
       } else if (param.country && !param.year) {
         const statesData = await this.db.State.deleteMany({
           LocationDesc: param.country,

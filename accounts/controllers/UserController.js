@@ -1,8 +1,10 @@
 const helpers = require("./../common/helpers");
-const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
 
 const ADMIN_EMAIL = "admin@gmail.com";
+
+const CREATED = 201;
+const NO_CONTENT = 204;
 
 class UserController {
   constructor({ db, services }) {
@@ -26,10 +28,10 @@ class UserController {
       password,
     };
 
-    const validEmail = await this.validateEmail(userData.email);
+    const validEmail = await this.db.User.validateEmail(userData.email);
 
     if (!validEmail) {
-      return helpers.error(res, "The email is not valid");
+      return helpers.error(res, "The email is not valid.");
     }
 
     if (email === ADMIN_EMAIL) {
@@ -44,24 +46,16 @@ class UserController {
       }
       const user = new this.db.User(userData);
       await user.save();
-      return helpers.success(res, user);
+      return helpers.success(res, user, CREATED);
     } catch (error) {
       return helpers.error(res, error);
     }
   }
 
-  async validateEmail(email) {
-    const regexEmail = /[A-Z0-9a-z._%+]+@[A-Z0-9.a-z]+\.[A-Za-z]{2,}/;
-    if (email.match(regexEmail)) {
-      return true;
-    }
-    return false;
-  }
-
   async deleteAllUsers(req, res, param) {
     try {
       const users = await this.db.User.deleteMany({});
-      return helpers.success(res, users);
+      return helpers.success(res, users, NO_CONTENT);
     } catch (error) {
       return helpers.error(res, error);
     }
@@ -70,8 +64,9 @@ class UserController {
   async login(req, res, param, body) {
     const { email, password } = body;
     try {
-      const user = await this.findByCredentials(email, password);
-      await this.generateAuthToken(user);
+      const user = await this.db.User.findByCredentials(email, password);
+      console.log(user);
+      await user.generateAuthToken(user);
       return helpers.success(res, user);
     } catch (error) {
       return helpers.error(res, error);
@@ -94,23 +89,35 @@ class UserController {
       return helpers.error(res, error);
     }
   }
-  async findByCredentials(email, password) {
-    const user = await this.db.User.findOne({ email });
-    if (!user) {
-      throw new Error("Unable to login");
+
+  async updateProfile(req, res, param, body) {
+    const { token } = body;
+    try {
+      const user = await this.db.User.updateOne({ token: token }, body);
+      return helpers.success(res, user);
+    } catch (error) {
+      return helpers.error(res, error);
     }
-    const isMatch = await bcrypt.compare(password, user.password);
-    if (!isMatch) {
-      throw new Error("Unable to login");
+  }
+
+  async isLoggedIn(token) {
+    try {
+        const { _id } = jwt.verify(token, "secretkey");
+        const user = await this.db.User.find({
+            _id,
+            token: token,
+        });
+        if (!user) {
+            throw new Error('Not authorized');
+        }
+        return { success: true, data: { token, user } };
+    } catch (error) {
+        return {
+            success: false,
+            error: { message: error.message },
+        };
     }
-    return user;
-  }
-  async generateAuthToken(user) {
-    const token = jwt.sign({ _id: user._id.toString() }, "secretkey");
-    user.token = token;
-    await user.save();
-    return token;
-  }
+}
 }
 
 module.exports = UserController;

@@ -276,28 +276,29 @@ async function createLineChartAll(seriesName, country) {
             document.getElementsByClassName("time-cell")[
               yearsArr.indexOf(year)
             ].style["background-color"] = "#000839";
+            data = res.data.filter(function (d) {
+              return parseInt(d.Description) === year;
+            });
+            linepath
+              .datum(data.sort(sortByProperty("Stratification1")))
+              .transition()
+              .duration(1000)
+              .attr(
+                "d",
+                d3
+                  .line()
+                  .x(function (d) {
+                    return x(d.Stratification1);
+                  })
+                  .y(function (d) {
+                    if (d.Data_Value === "~") {
+                      d.Data_Value = 0;
+                    }
+                    return y(d.Data_Value);
+                  })
+              );
           }
-          data = res.data.filter(function (d) {
-            return parseInt(d.Description) === year;
-          });
-          linepath
-            .datum(data.sort(sortByProperty("Stratification1")))
-            .transition()
-            .duration(1000)
-            .attr(
-              "d",
-              d3
-                .line()
-                .x(function (d) {
-                  return x(d.Stratification1);
-                })
-                .y(function (d) {
-                  if (d.Data_Value === "~") {
-                    d.Data_Value = 0;
-                  }
-                  return y(d.Data_Value);
-                })
-            );
+
           year++;
           if (year > maxYear + 1) {
             clearInterval(timer);

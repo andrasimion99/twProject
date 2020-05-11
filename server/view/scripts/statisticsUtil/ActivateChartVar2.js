@@ -1,5 +1,5 @@
 var maxValue = 5;
-var maxValueBar = 7;
+var maxValueBar = 20;
 (async () => {
   await addCountries();
   var charts = document.getElementsByClassName("Chart");
