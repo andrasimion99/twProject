@@ -85,14 +85,12 @@ async function HorizontallyBarchartByCountries(seriesName, types, seriesValue) {
         return parseFloat(d.Data_Value);
       });
 
-      var margin = { left: 150, right: 10, top: 10, bottom: 100 };
+      var margin = { left: 120, right: 10, top: 10, bottom: 100 };
       var yearsArr = [];
       var width = 500 - margin.left - margin.right;
       var height = 450 - margin.top - margin.bottom;
       if (types.length <= 5) {
         height = 300 - margin.top - margin.bottom;
-      } else if (types.length >= 15) {
-        height = 600 - margin.top - margin.bottom;
       }
       var precedentYear = minYear;
       var color = d3
