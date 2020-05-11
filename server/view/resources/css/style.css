@@ -437,7 +437,7 @@ closeBtn:focus {
 .sidenav a {
   padding: 10px 10px 10px 32px;
   text-decoration: none;
-  font-size: 23px;
+  font-size: 1.3vw;
   color: #c0b0b0;
   display: block;
   transition: 0.3s;
