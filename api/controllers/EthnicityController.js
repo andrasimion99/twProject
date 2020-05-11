@@ -1,5 +1,8 @@
 const helpers = require("./../common/helpers");
 
+const CREATED = 201;
+const NO_CONTENT = 204;
+
 class EthnicityController {
   constructor({ db, services }) {
     this.db = db;
@@ -55,7 +58,7 @@ class EthnicityController {
     try {
       const ethnicity = new this.db.Ethnicity(ethnicityData);
       await ethnicity.save();
-      return helpers.success(res, ethnicityData);
+      return helpers.success(res, ethnicityData, CREATED);
     } catch (error) {
       return helpers.error(res, error);
     }
@@ -90,7 +93,7 @@ class EthnicityController {
         propertyParams["StratificationId1"] = param.ethnicity;
       }
       const ethnicityData = await this.db.Ethnicity.deleteMany(propertyParams);
-      return helpers.success(res, ethnicityData);
+      return helpers.success(res, ethnicityData, NO_CONTENT);
     } catch (error) {
       return helpers.error(res, error);
     }

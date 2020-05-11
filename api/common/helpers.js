@@ -1,25 +1,10 @@
-module.exports.validationError = (
-  res,
-  error = "Data provided is not valid"
-) => {
-  addHeaders(res);
-  res.statusCode = 422;
-  res.end(
-    JSON.stringify(
-      {
-        status: "fail",
-        error,
-      },
-      null,
-      3
-    )
-  );
-};
+const OK = 200;
+const BAD_REQUEST = 400;
 
 module.exports.error = (
   res,
   error = "An unknown error occurred",
-  statusCode = 500
+  statusCode = BAD_REQUEST
 ) => {
   addHeaders(res);
   res.statusCode = statusCode;
@@ -27,7 +12,7 @@ module.exports.error = (
     JSON.stringify(
       {
         status: "fail",
-        error,
+        error: error.toString(),
       },
       null,
       3
@@ -37,7 +22,7 @@ module.exports.error = (
 
 module.exports.success = (res, data = null) => {
   addHeaders(res);
-  res.statusCode = 200;
+  res.statusCode = OK;
   res.end(
     JSON.stringify(
       {

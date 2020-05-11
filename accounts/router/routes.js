@@ -37,6 +37,11 @@ const routes = [
     path: "/api/users/logout",
     handler: userController.logout.bind(userController),
   },
+  {
+    method: "PATCH",
+    path: "/api/users/profile",
+    handler: userController.updateProfile.bind(userController),
+  },
 ];
 
 module.exports = routes;
