@@ -272,7 +272,7 @@ async function createLineChartSeries(seriesName, country, types) {
       function drawTooltip() {
         var x0 = x.invert(d3.mouse(this)[0]);
         var i = bisectLeft(dataForOne, x0);
-        if (d3.mouse(this)[0] > width - 20) i = 7;
+        if (d3.mouse(this)[0] > width - 10) i = 7;
         tooltipLine
           .attr("stroke", "#636363")
           .attr("stroke-width", 0.5)
