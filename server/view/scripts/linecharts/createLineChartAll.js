@@ -298,7 +298,6 @@ async function createLineChartAll(seriesName, country) {
                   })
               );
           }
-
           year++;
           if (year > maxYear + 1) {
             clearInterval(timer);

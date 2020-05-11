@@ -42,6 +42,8 @@ async function HorizontallyBarchartBySeries(seriesName, types, country) {
 
       var margin = { left: 100, right: 10, top: 10, bottom: 100 };
       var yearsArr = [];
+      if (seriesName == "education" || seriesName == "ethnicity")
+        margin.left = 145;
       var width = 500 - margin.left - margin.right;
       var height = 450 - margin.top - margin.bottom;
       if (types.length <= 5) {
@@ -119,7 +121,7 @@ async function HorizontallyBarchartBySeries(seriesName, types, country) {
       var callYAxis = g.append("g").attr("class", "y-axis").call(yAxis);
 
       callYAxis.select(".domain").remove();
-      callYAxis.selectAll("text").attr("font-size", 15);
+      callYAxis.selectAll("text").attr("font-size", 12);
 
       var valueBox = d3
         .select("#chart-area")
