@@ -1,4 +1,6 @@
 const helpers = require("./../common/helpers");
+const bcrypt = require("bcryptjs");
+const jwt = require("jsonwebtoken");
 
 const ADMIN_EMAIL = "admin@gmail.com";
 
@@ -63,6 +65,51 @@ class UserController {
     } catch (error) {
       return helpers.error(res, error);
     }
+  }
+
+  async login(req, res, param, body) {
+    const { email, password } = body;
+    try {
+      const user = await this.findByCredentials(email, password);
+      await this.generateAuthToken(user);
+      return helpers.success(res, user);
+    } catch (error) {
+      return helpers.error(res, error);
+    }
+  }
+
+  async logout(req, res, param, body) {
+    const { token } = body;
+    try {
+      const user = await this.db.User.updateOne(
+        { token: token },
+        {
+          $set: {
+            token: null,
+          },
+        }
+      );
+      return helpers.success(res, user);
+    } catch (error) {
+      return helpers.error(res, error);
+    }
+  }
+  async findByCredentials(email, password) {
+    const user = await this.db.User.findOne({ email });
+    if (!user) {
+      throw new Error("Unable to login");
+    }
+    const isMatch = await bcrypt.compare(password, user.password);
+    if (!isMatch) {
+      throw new Error("Unable to login");
+    }
+    return user;
+  }
+  async generateAuthToken(user) {
+    const token = jwt.sign({ _id: user._id.toString() }, "secretkey");
+    user.token = token;
+    await user.save();
+    return token;
   }
 }
 

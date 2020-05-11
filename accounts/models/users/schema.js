@@ -16,19 +16,24 @@ const userSchema = mongoose.Schema({
     required: true,
     default: "user",
   },
+  token: {
+    type: String,
+    required: false,
+    default: null,
+  },
   restricted: {
     type: Boolean,
     required: true,
     default: false,
   },
   firstName: {
-      type: String,
-      required: false,
+    type: String,
+    required: false,
   },
   lastName: {
     type: String,
     required: false,
-}
+  },
 });
 
 module.exports = userSchema;

@@ -27,6 +27,16 @@ const routes = [
     path: "/api/users/unrestrict",
     handler: adminController.unrestrict.bind(adminController),
   },
+  {
+    method: "PATCH",
+    path: "/api/users/login",
+    handler: userController.login.bind(userController),
+  },
+  {
+    method: "PATCH",
+    path: "/api/users/logout",
+    handler: userController.logout.bind(userController),
+  },
 ];
 
 module.exports = routes;
