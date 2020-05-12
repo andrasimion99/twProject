@@ -22,7 +22,7 @@ class UserController {
   }
 
   async register(req, res, param, body) {
-    console.log("HERE");
+
     const { email, password } = body;
     const userData = {
       email,

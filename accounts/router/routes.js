@@ -33,7 +33,7 @@ const routes = [
     handler: userController.login.bind(userController),
   },
   {
-    method: "PATCH",
+    method: "POST",
     path: "/api/users/logout",
     handler: userController.logout.bind(userController),
   },

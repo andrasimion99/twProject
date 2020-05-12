@@ -19,9 +19,10 @@ async function sendData(data) {
     .then(async function (res) {
       console.log(res);
       if (res.status === "fail") {
-        document.getElementById("signin-error-message").innerHTML = data.error;
+        document.getElementById("signin-error-message").innerHTML = res.error;
       } else {
         document.getElementById("signin-error-message").innerHTML = "";
+        document.getElementById("after-signup").innerHTML = "";
         document.getElementById("after-signin").innerHTML =
           "You are signed in now!";
         data = res.data;
