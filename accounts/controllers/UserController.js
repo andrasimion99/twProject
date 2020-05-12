@@ -22,6 +22,7 @@ class UserController {
   }
 
   async register(req, res, param, body) {
+    console.log("HERE");
     const { email, password } = body;
     const userData = {
       email,
@@ -102,22 +103,22 @@ class UserController {
 
   async isLoggedIn(token) {
     try {
-        const { _id } = jwt.verify(token, "secretkey");
-        const user = await this.db.User.find({
-            _id,
-            token: token,
-        });
-        if (!user) {
-            throw new Error('Not authorized');
-        }
-        return { success: true, data: { token, user } };
+      const { _id } = jwt.verify(token, "secretkey");
+      const user = await this.db.User.find({
+        _id,
+        token: token,
+      });
+      if (!user) {
+        throw new Error("Not authorized");
+      }
+      return { success: true, data: { token, user } };
     } catch (error) {
-        return {
-            success: false,
-            error: { message: error.message },
-        };
+      return {
+        success: false,
+        error: { message: error.message },
+      };
     }
-}
+  }
 }
 
 module.exports = UserController;

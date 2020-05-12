@@ -28,7 +28,7 @@ const routes = [
     handler: adminController.unrestrict.bind(adminController),
   },
   {
-    method: "PATCH",
+    method: "POST",
     path: "/api/users/login",
     handler: userController.login.bind(userController),
   },
