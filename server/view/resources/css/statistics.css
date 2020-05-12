@@ -711,6 +711,14 @@ img {
   color: #256692;
 }
 
+#container-title a:hover::after {
+  width: 35%;
+}
+
+#map-title h2:hover::after {
+  width: 35%;
+}
+
 .container h2:hover::after {
   width: 35%;
 }

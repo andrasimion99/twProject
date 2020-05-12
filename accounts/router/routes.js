@@ -5,7 +5,7 @@ const routes = [
   {
     method: "GET",
     path: "/api/users",
-    handler: userController.getAllUsers.bind(userController),
+    handler: userController.getUsers.bind(userController),
   },
   {
     method: "POST",
@@ -41,6 +41,11 @@ const routes = [
     method: "PATCH",
     path: "/api/users/profile",
     handler: userController.updateProfile.bind(userController),
+  },
+  {
+    method: "PATCH",
+    path: "/api/users/changePassword",
+    handler: userController.changePassword.bind(userController),
   },
 ];
 

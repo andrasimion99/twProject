@@ -12,9 +12,13 @@ class UserController {
     this.services = services;
   }
 
-  async getAllUsers(req, res, param) {
+  async getUsers(req, res, param) {
     try {
-      const users = await this.db.User.find({});
+      var propertyParams = {};
+      if (param.token) {
+        propertyParams["token"] = param.token;
+      }
+      const users = await this.db.User.find(propertyParams);
       return helpers.success(res, users);
     } catch (error) {
       return helpers.error(res, error);
@@ -22,7 +26,6 @@ class UserController {
   }
 
   async register(req, res, param, body) {
-
     const { email, password } = body;
     const userData = {
       email,
@@ -66,7 +69,6 @@ class UserController {
     const { email, password } = body;
     try {
       const user = await this.db.User.findByCredentials(email, password);
-      console.log(user);
       await user.generateAuthToken(user);
       return helpers.success(res, user);
     } catch (error) {
@@ -77,6 +79,8 @@ class UserController {
   async logout(req, res, param, body) {
     const { token } = body;
     try {
+      // const userLogged = await this.isLoggedIn(req, res);
+      // if (userLogged) {}
       const user = await this.db.User.updateOne(
         { token: token },
         {
@@ -101,23 +105,35 @@ class UserController {
     }
   }
 
-  async isLoggedIn(token) {
+  async changePassword(req, res, param, body) {
+    const { token } = body;
+    const { currentPassword } = body;
+    const { newPassword } = body;
     try {
-      const { _id } = jwt.verify(token, "secretkey");
-      const user = await this.db.User.find({
-        _id,
-        token: token,
-      });
-      if (!user) {
-        throw new Error("Not authorized");
+      const user = await this.db.User.checkPassword(token, currentPassword);
+      if (user) {
+        user.password = newPassword;
       }
-      return { success: true, data: { token, user } };
+      user.save();
+      return helpers.success(res, user);
     } catch (error) {
-      return {
-        success: false,
-        error: { message: error.message },
-      };
+      return helpers.error(res, error);
     }
+  }
+
+  async isLoggedIn(req, res) {
+    const token = req.headers["authorization"]
+      ? req.headers["authorization"].replace("Bearer ", "")
+      : "";
+    const { _id } = jwt.verify(token, "secretkey");
+    const user = await this.db.User.findOne({
+      _id,
+      token: token,
+    });
+    if (!user) {
+      throw new Error("Not logged in");
+    }
+    return user;
   }
 }
 

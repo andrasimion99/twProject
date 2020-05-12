@@ -8,13 +8,21 @@ logout.addEventListener("click", (e) => {
 });
 async function sendLogoutRequest(data) {
   console.log(data);
+  var bearer = "Bearer " + token;
   fetch("http://localhost:3002/api/users/logout", {
     method: "POST",
     body: JSON.stringify(data),
+    // withCredentials: true,
+    // credentials: "include",
+    // mode: "cors",
+    // headers: new Headers({
+    //   Authorization: bearer,
+    //   "Content-Type": "application/json; charset=utf-8",
+    // }),
   })
     .then((response) => response.json())
     .then(async function (res) {
-      console.log(res);
+      console.log("raspuns:", res);
       if (res.status != "fail") {
         localStorage.removeItem("token");
         var profileButton = document.getElementById("user_profile");

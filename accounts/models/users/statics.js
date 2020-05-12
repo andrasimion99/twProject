@@ -20,7 +20,20 @@ const validateEmail = async function (email) {
   return false;
 };
 
+const checkPassword = async function (token, currentPassword) {
+  const user = await this.findOne({ token: token });
+  if (!user) {
+    throw new Error("User not found. Not logged in.");
+  }
+  const isMatch = await bcrypt.compare(currentPassword, user.password);
+  if (!isMatch) {
+    throw new Error("Unable to change password.");
+  }
+  return user;
+};
+
 module.exports = {
   findByCredentials,
   validateEmail,
+  checkPassword,
 };
