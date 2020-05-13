@@ -98,6 +98,13 @@ class UserController {
   async updateProfile(req, res, param, body) {
     const { token } = body;
     try {
+      if (body.email) {
+        const validEmail = await this.db.User.validateEmail(body.email);
+
+        if (!validEmail) {
+          return helpers.error(res, "The email is not valid.");
+        }
+      }
       const user = await this.db.User.updateOne({ token: token }, body);
       return helpers.success(res, user);
     } catch (error) {

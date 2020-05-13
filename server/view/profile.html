@@ -32,54 +32,109 @@
               <input type="text" name="search" placeholder="" />
             </form>
           </div> -->
-        <button id="modalBtn" class="button-login">Log in</button>
-        <div id="loginModal" class="modal">
+          <div id="user_profile">
+            <a href="profile.html" class="user_profile"
+              ><i class="fas fa-user"></i>
+            </a>
+          </div>
+          <div id="logoutButton">
+            <button id="logout" class="button-login">Log out</button>
+          </div>
+          <div id="loginButton">
+            <button id="modalBtn" class="button-login">Log in</button>
+          </div>
+          <div id="loginModal" class="modal">
             <div id="container" class="modal-content">
-                <span class="closeBtn">&times;</span>
-                <div class="form-container sign-up-container">
-                    <form action="#">
-                        <h2>Create Account</h2>
-                        <div class="social-container">
-                            <a href="#" class="social"><i class="ion-social-facebook"></i></a>
-                            <a href="#" class="social"><i class="ion-social-googleplus"></i></a>
-                            <a href="#" class="social"><i class="ion-social-twitter"></i></a>
-                        </div>
-                        <span>or use your email for registration</span>
-                        <input type="text" placeholder="Name" />
-                        <input type="email" placeholder="Email" />
-                        <input type="password" placeholder="Password" />
-                        <p>Now you can sign in</p>
-                        <button>Sign in</button>
-                    </form>
-                    <div class="change-1">
-                    <button id="back" class="back" >Back</button>
-                    </div>
-                </div>  
-                <div class="form-container sign-in-container">
-                    <form action="#">
-                        <h2>Sign in</h2>
-                        <div class="social-container">
-                            <a href="#" class="social"><i class="ion-social-facebook"></i></a>
-                            <a href="#" class="social"><i class="ion-social-googleplus"></i></a>
-                            <a href="#" class="social"><i class="ion-social-twitter"></i></a>
-                        </div>
-                        <span>or use your account</span>
-                        <input type="email" placeholder="Email" />
-                        <input type="password" placeholder="Password" />
-                        <a href="#">Forgot your password?</a>
-                        <button>Sign in</button>
-                    </form>
-                    <div class="change-2">
-                    <p>You don't have an account?</p>
-                    <button id ="signUp" class="button-ghost">Sign up</button>
-                    </div>
+              <span class="closeBtn">&times;</span>
+              <div class="form-container sign-up-container">
+                <form id="signup-form">
+                  <h2>Create Account</h2>
+                  <div class="social-container">
+                    <a href="#" class="social"
+                      ><i class="fab fa-facebook-f"></i
+                    ></a>
+                    <a href="#" class="social"
+                      ><i class="fab fa-google-plus-g"></i
+                    ></a>
+                    <a href="#" class="social"><i class="fab fa-twitter"></i></a>
+                  </div>
+                  <span>or use your email for registration</span>
+                  <input
+                    type="email"
+                    placeholder="Email"
+                    id="signup-email"
+                    name="email"
+                  />
+                  <input
+                    type="password"
+                    placeholder="Password"
+                    id="signup-password"
+                    name="password"
+                  />
+                  <p>Let's get started</p>
+                  <button>Sign up</button>
+                </form>
+                <div class="error">
+                  <p id="signup-error-message"></p>
                 </div>
+                <div class="change-1">
+                  <button id="back" class="back">Back</button>
+                </div>
+              </div>
+  
+              <div class="form-container sign-in-container">
+                <form id="signin-form">
+                  <div class="after-signup">
+                    <p id="after-signup"></p>
+                  </div>
+                  <div class="after-signin">
+                    <p id="after-signin"></p>
+                  </div>
+                  <h2>Sign in</h2>
+                  <div class="social-container">
+                    <a href="#" class="social"
+                      ><i class="fab fa-facebook-f"></i
+                    ></a>
+                    <a href="#" class="social"
+                      ><i class="fab fa-google-plus-g"></i
+                    ></a>
+                    <a href="#" class="social"><i class="fab fa-twitter"></i></a>
+                  </div>
+                  <span>or use your account</span>
+                  <input
+                    type="email"
+                    placeholder="Email"
+                    id="signin-email"
+                    name="email"
+                  />
+                  <input
+                    type="password"
+                    placeholder="Password"
+                    id="signin-password"
+                    name="password"
+                  />
+                  <a href="#">Forgot your password?</a>
+                  <button>Sign in</button>
+                </form>
+                <div class="change-2">
+                  <p>You don't have an account?</p>
+                  <button id="signUp" class="button-ghost">Sign up</button>
+                </div>
+                <div class="error">
+                  <p id="signin-error-message"></p>
+                </div>
+              </div>
             </div>
+          </div>
         </div>
-    </div>  
-               <script src="./scripts/login.js"></script>
+  
+        <script src="./scripts/userUtil/register.js"></script>
+        <script src="./scripts/userUtil/logout.js"></script>
+        <script src="./scripts/userUtil/verifyToken.js"></script>
+        <script src="./scripts/userUtil/signin.js"></script>
+        <script src="./scripts/login.js"></script>
       <div class="profile-title">
-        <h1>Hello, Your Name!</h1>
+        <h1 id="profile-title">Hello, Your Name!</h1>
       </div>
     </header>
     <div class="total-profile-container">
@@ -87,7 +142,7 @@
         <div class="profile-pic">
           <div class="profile-name"><p>YN</p></div>
         </div>
-        <div class="username"><p>username0499</p></div>
+        <div class="username"><p>your name</p></div>
         <div class="user-info">
           <a href="profile.html"
             ><div class="profile-info"><i class="fas fa-user-cog"></i> Profile info</div></a
@@ -108,14 +163,17 @@
           <div class="edit-title"><h3>Your profile</h3></div>
           <div class="edit-subtitle"><p>Edit the information about yourself</p></div>
         </div>
+        <div>
+          <p id="after-save"></p>
+        </div>
         <div class="edit-info">
           <form>
             <p class="nume-camp">First Name</p>
             <input type="text" id="fname" name="fname" placeholder="First Name" />
             <p class="nume-camp">Last Name</p>
             <input type="text" id="lname" name="lname" placeholder="Last Name" />
-            <p class="nume-camp">Username</p>
-            <input type="text" id="username" name="username" placeholder="username" />
+            <!-- <p class="nume-camp">Username</p>
+            <input type="text" id="username" name="username" placeholder="username" /> -->
             <p class="nume-camp">Email</p>
             <input type="text" id="email" name="email" placeholder="email" />
           </form>
@@ -125,6 +183,8 @@
         </div>
       </div>
     </div>
+
+    <script src="./scripts/userUtil/profileInfo.js"></script>
 
     <footer>
       <div class="line"></div>

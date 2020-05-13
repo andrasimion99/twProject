@@ -31,6 +31,14 @@ async function sendLogoutRequest(data) {
         loginButton.style.display = "block";
         var logoutButton = document.getElementById("logoutButton");
         logoutButton.style.display = "none";
+        if (
+          window.location.href == "http://localhost:3000/profile.html" ||
+          window.location.href == "http://localhost:3000/settings.html" ||
+          window.location.href == "http://localhost:3000/likedArticles.html" ||
+          window.location.href == "http://localhost:3000/uploadPhoto.html"
+        ) {
+          window.location.replace("http://localhost:3000/index.html");
+        }
       }
     })
     .catch((error) => {

@@ -18,12 +18,12 @@ const routes = [
     handler: userController.deleteAllUsers.bind(userController),
   },
   {
-    method: "PATCH",
+    method: "POST",
     path: "/api/users/restrict",
     handler: adminController.restrict.bind(adminController),
   },
   {
-    method: "PATCH",
+    method: "POST",
     path: "/api/users/unrestrict",
     handler: adminController.unrestrict.bind(adminController),
   },
@@ -38,12 +38,12 @@ const routes = [
     handler: userController.logout.bind(userController),
   },
   {
-    method: "PATCH",
+    method: "POST",
     path: "/api/users/profile",
     handler: userController.updateProfile.bind(userController),
   },
   {
-    method: "PATCH",
+    method: "POST",
     path: "/api/users/changePassword",
     handler: userController.changePassword.bind(userController),
   },

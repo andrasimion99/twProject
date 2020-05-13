@@ -787,3 +787,8 @@ closeBtn:focus {
 #loginButton {
   display: block;
 }
+
+#after-save {
+  text-align: center;
+  padding: 15px;
+}
