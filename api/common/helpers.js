@@ -20,9 +20,9 @@ module.exports.error = (
   );
 };
 
-module.exports.success = (res, data = null) => {
+module.exports.success = (res, data = null, statusCode = OK) => {
   addHeaders(res);
-  res.statusCode = OK;
+  res.statusCode = statusCode;
   res.end(
     JSON.stringify(
       {

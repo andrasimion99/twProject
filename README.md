@@ -37,7 +37,39 @@ Data is represented by documents with the obesity percentage for the total popul
 **Returned data example**:
 
 ```JSON
-
+{
+   "status": "success",
+   "data": [
+      {
+         "_id": "5e8c9f221f3c4c71f47a1ccd",
+         "﻿ID": "21933",
+         "Description": "2011",
+         "LocationAbbr": "IL",
+         "LocationDesc": "Illinois",
+         "DataSource": "BRFSS",
+         "Topic": "Obesity / Weight Status",
+         "Data_Value": "27.1",
+         "Sample_Size": "5",
+         "Stratification1": "Total",
+         "StratificationId1": "Total",
+         "LocationDisplayOrder": "OVERALL"
+      },
+      {
+         "_id": "5e8c9f221f3c4c71f47a1cc4",
+         "﻿ID": "26780",
+         "Description": "2011",
+         "LocationAbbr": "CA",
+         "LocationDesc": "California",
+         "DataSource": "BRFSS",
+         "Topic": "Obesity / Weight Status",
+         "Data_Value": "23.8",
+         "Sample_Size": "17",
+         "Stratification1": "Total",
+         "StratificationId1": "Total",
+         "LocationDisplayOrder": "OVERALL"
+      }
+   ]
+}
 ```
 
 ## /api/states
@@ -49,7 +81,19 @@ Post a document into states db.
 **Request body**
 
 ```JSON
-
+{
+    "ID": "671",
+    "Description": "2019",
+    "LocationAbbr": "US",
+    "LocationDesc": "National",
+    "DataSource": "BRFSS",
+    "Topic": "Obesity / Weight Status",
+    "Data_Value": "27.4",
+    "Sample_Size": "470",
+    "Stratification1": "700",
+    "StratificationId1": "Total",
+    "LocationDisplayOrder": "OVERALL"
+}
 ```
 
 **Return codes**:
@@ -63,7 +107,22 @@ Post a document into states db.
 **Returned data example**:
 
 ```JSON
-
+{
+   "status": "success",
+   "data": {
+      "ID": "671",
+      "Description": "2019",
+      "LocationAbbr": "US",
+      "LocationDesc": "National",
+      "DataSource": "BRFSS",
+      "Topic": "Obesity / Weight Status",
+      "Data_Value": "27.4",
+      "Sample_Size": "470",
+      "Stratification1": "700",
+      "StratificationId1": "Total",
+      "LocationDisplayOrder": "OVERALL"
+   }
+}
 ```
 
 ## /api/states?id
@@ -79,7 +138,19 @@ Modify a document into states db.
 **Request body**
 
 ```JSON
-
+{
+    "ID": "671",
+    "Description": "2019",
+    "LocationAbbr": "US",
+    "LocationDesc": "National",
+    "DataSource": "BRFSS",
+    "Topic": "Obesity / Weight Status",
+    "Data_Value": "27.4",
+    "Sample_Size": "470",
+    "Stratification1": "700",
+    "StratificationId1": "Total",
+    "LocationDisplayOrder": "OVERALL"
+}
 ```
 
 **Return codes**:
@@ -88,12 +159,32 @@ Modify a document into states db.
 -   400 - Bad Request
 
 **Usage example**:  
- `localhost:3001/api/states`
+ `localhost:3001/api/states?id=5ebd2b39eeb71e05e4fc5349`
 
 **Returned data example**:
 
 ```JSON
-
+{
+   "status": "success",
+   "data": {
+      "n": 1,
+      "nModified": 1,
+      "opTime": {
+         "ts": "6826661366632284162",
+         "t": 18
+      },
+      "electionId": "7fffffff0000000000000012",
+      "ok": 1,
+      "$clusterTime": {
+         "clusterTime": "6826661366632284162",
+         "signature": {
+            "hash": "T44xuKftQy2O78t7gZ5lAhVfyyg=",
+            "keyId": "6796929880727486466"
+         }
+      },
+      "operationTime": "6826661366632284162"
+   }
+}
 ```
 
 ## /api/states

@@ -97,18 +97,18 @@ class StateController {
         const statesData = await this.db.State.deleteMany({
           LocationDesc: param.country,
         });
-        return helpers.success(res, statesData);
+        return helpers.success(res, statesData, NO_CONTENT);
       } else if (param.year && !param.country) {
         const statesData = await this.db.State.deleteMany({
           Description: param.year,
         });
-        return helpers.success(res, statesData);
+        return helpers.success(res, statesData, NO_CONTENT);
       } else {
         const statesData = await this.db.State.deleteMany({
           LocationDesc: param.country,
           Description: param.year,
         });
-        return helpers.success(res, statesData);
+        return helpers.success(res, statesData, NO_CONTENT);
       }
     } catch (error) {
       return helpers.error(res, error);
