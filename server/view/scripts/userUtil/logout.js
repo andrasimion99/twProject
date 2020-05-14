@@ -35,7 +35,13 @@ async function sendLogoutRequest(data) {
           window.location.href == "http://localhost:3000/profile.html" ||
           window.location.href == "http://localhost:3000/settings.html" ||
           window.location.href == "http://localhost:3000/likedArticles.html" ||
-          window.location.href == "http://localhost:3000/uploadPhoto.html"
+          window.location.href == "http://localhost:3000/uploadPhoto.html" ||
+          window.location.href == "http://localhost:3000/adminProfile.html" ||
+          window.location.href ==
+            "http://localhost:3000/adminStatisticsData.html" ||
+          window.location.href == "http://localhost:3000/adminStats.html" ||
+          window.location.href == "http://localhost:3000/removeData.html" ||
+          window.location.href == "http://localhost:3000/manageUsers.html"
         ) {
           window.location.replace("http://localhost:3000/index.html");
         }

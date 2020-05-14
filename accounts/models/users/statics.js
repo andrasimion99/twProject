@@ -5,6 +5,9 @@ const findByCredentials = async function (email, password) {
   if (!user) {
     throw new Error("Unable to login. Email or password wrong.");
   }
+  if (user.restricted) {
+    throw new Error("Unable to login. You are restricted.");
+  }
   const isMatch = await bcrypt.compare(password, user.password);
   if (!isMatch) {
     throw new Error("Unable to login. Email or password wrong.");

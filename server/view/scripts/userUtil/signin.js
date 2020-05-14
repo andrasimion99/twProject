@@ -31,10 +31,12 @@ async function sendData(data) {
         loginButton.style.display = "none";
         var logoutButton = document.getElementById("logoutButton");
         logoutButton.style.display = "block";
-        if(data.userType === "user"){
-          document.getElementsByClassName("user_profile")[0].href = "profile.html"
-        } else if(data.userType === "admin"){
-          document.getElementsByClassName("user_profile")[0].href = "adminProfile.html"
+        if (data.userType === "user") {
+          document.getElementsByClassName("user_profile")[0].href =
+            "profile.html";
+        } else if (data.userType === "admin") {
+          document.getElementsByClassName("user_profile")[0].href =
+            "adminProfile.html";
         }
         showAccount();
       }
