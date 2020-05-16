@@ -78,6 +78,11 @@ class UserController {
 
   async logout(req, res, param, body) {
     const { token } = body;
+    const validToken = await this.db.User.validateToken(token);
+
+    if (!validToken) {
+      return helpers.error(res, "The token is not valid.");
+    }
     try {
       // const userLogged = await this.isLoggedIn(req, res);
       // if (userLogged) {}
@@ -97,6 +102,11 @@ class UserController {
 
   async updateProfile(req, res, param, body) {
     const { token } = body;
+    const validToken = await this.db.User.validateToken(token);
+
+    if (!validToken) {
+      return helpers.error(res, "The token is not valid.");
+    }
     try {
       if (body.email) {
         const validEmail = await this.db.User.validateEmail(body.email);
@@ -116,6 +126,11 @@ class UserController {
     const { token } = body;
     const { currentPassword } = body;
     const { newPassword } = body;
+    const validToken = await this.db.User.validateToken(token);
+
+    if (!validToken) {
+      return helpers.error(res, "The token is not valid.");
+    }
     try {
       const user = await this.db.User.checkPassword(token, currentPassword);
       if (user) {

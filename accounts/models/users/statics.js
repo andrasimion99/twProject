@@ -23,6 +23,14 @@ const validateEmail = async function (email) {
   return false;
 };
 
+const validateToken = async function (token) {
+  const regexToken = /^[A-Za-z0-9-_=]+\.[A-Za-z0-9-_=]+\.?[A-Za-z0-9-_.+/=]*$/;
+  if (token.match(regexToken)) {
+    return true;
+  }
+  return false;
+};
+
 const checkPassword = async function (token, currentPassword) {
   const user = await this.findOne({ token: token });
   if (!user) {
@@ -39,4 +47,5 @@ module.exports = {
   findByCredentials,
   validateEmail,
   checkPassword,
+  validateToken,
 };
