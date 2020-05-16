@@ -9,6 +9,11 @@ class AdminController {
   async restrict(req, res, param, body) {
     const { token } = body;
     const { email } = body;
+    const validToken = await this.db.User.validateToken(token);
+
+    if (!validToken) {
+      return helpers.error(res, "The token is not valid.");
+    }
     try {
       const admin = await this.db.User.findOne({
         token: token,
@@ -39,6 +44,11 @@ class AdminController {
   async unrestrict(req, res, param, body) {
     const { token } = body;
     const { email } = body;
+    const validToken = await this.db.User.validateToken(token);
+
+    if (!validToken) {
+      return helpers.error(res, "The token is not valid.");
+    }
     try {
       const admin = await this.db.User.findOne({
         token: token,
