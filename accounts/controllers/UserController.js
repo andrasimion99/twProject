@@ -16,6 +16,11 @@ class UserController {
     try {
       var propertyParams = {};
       if (param.token) {
+        const validToken = await this.db.User.validateToken(param.token);
+
+        if (!validToken) {
+          return helpers.error(res, "The token is not valid.");
+        }
         propertyParams["token"] = param.token;
       }
       const users = await this.db.User.find(propertyParams);
