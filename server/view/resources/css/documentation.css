@@ -28,6 +28,9 @@
   font-weight: 400;
   margin-bottom: 15px;
 }
+.subtitle {
+  font-size: 20px;
+}
 .big-category a {
   font-size: 120%;
   text-decoration: none;
@@ -35,6 +38,9 @@
 }
 ol {
   list-style-type: upper-roman;
+}
+ul {
+  list-style-type: cirlce;
 }
 .big-category li {
   margin-left: 1rem;
@@ -48,6 +54,16 @@ ol {
 .medium-category li {
   margin-left: 2.5rem;
   padding-top: 8px;
+}
+.small-category li {
+  margin-left: 2.5rem;
+  padding-top: 8px;
+}
+.highlight{
+  background-color: rgba(27,31,35,.05);
+  padding: .2em .4em;
+  border-radius: 5px;
+  font-size: 90%;
 }
 /*.big-title:hover::after {
   width: 35%;

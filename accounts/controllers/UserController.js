@@ -89,8 +89,6 @@ class UserController {
       return helpers.error(res, "The token is not valid.");
     }
     try {
-      // const userLogged = await this.isLoggedIn(req, res);
-      // if (userLogged) {}
       const user = await this.db.User.updateOne(
         { token: token },
         {

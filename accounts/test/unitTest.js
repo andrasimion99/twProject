@@ -1,6 +1,5 @@
 const assert = require("assert");
 const http = require("http");
-const querystring = require("querystring");
 
 const testGetUsers = async function () {
   http
@@ -44,7 +43,7 @@ const testGetUserWithWrongToken = async function () {
 
 const testPostRegister = async function () {
   const parameters = {
-    email: "andrasimi@gmail.com",
+    email: "andrasimiooon@gmail.com",
     password: "andra",
   };
 

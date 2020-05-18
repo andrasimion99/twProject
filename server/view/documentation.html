@@ -173,14 +173,30 @@
       <h1 class="medium-title" id="general-doc">General documentation</h1>
       <ol class="medium-category">
         <li><a href="#overview">Overview</a></li>
-        <li><a href="#Introduction">Introduction</a></li>
+        <li><a href="#introduction">Introduction</a></li>
+        <li><a href="#database">Database Schema</a></li>
       </ol>
       <h1 class="medium-title" id="api-doc">API documentation</h1>
       <ol class="medium-category">
         <li><a href="#api-accounts">API accounts</a></li>
         <li><a href="#api-data">API obesity data</a></li>
       </ol>
+      <h1 class="small-title" id="overview">Overview</h1>
+      <h1 class="small-title" id="introduction">Introduction</h1>
+      <h1 class="small-title" id="database">Database Schema</h1>
       <h1 class="small-title" id="api-accounts">API accounts</h1>
+      <ol class="medium-category">
+        <li><a href="#api-accounts-response">Response structure</a></li>
+        <li><a href="#api-users">/api/users</a></li>
+        <li><a href="#api-register">/api/users/register</a></li>
+        <li><a href="#api-login">/api/users/login</a></li>
+        <li><a href="#api-logout">/api/users/logout</a></li>
+        <li><a href="#api-profile">/api/users/profile</a></li>
+        <li><a href="#api-password">/api/users/changePassword</a></li>
+        <li><a href="#api-restrict">/api/users/restrict</a></li>
+        <li><a href="#api-unrestrict">/api/users/unrestrict</a></li>
+      </ol>
+      <h1 class="small-title" id="api-data">API obesity data</h1>
       <ol class="medium-category">
         <li><a href="#api-accounts-response">Response structure</a></li>
         <li><a href="#api-states">/api/states</a></li>
@@ -190,7 +206,31 @@
         <li><a href="#api-income">/api/income</a></li>
         <li><a href="#api-ethnicity">/api/ethnicity</a></li>
       </ol>
-      <h1 class="small-title" id="api-data">API obesity data</h1>
+      <h1 class="small-title" id="api-accounts-response">Response structure</h1>
+      <p>The structure of the API responses' body is as follows:</p>
+      <ul class="small-category">
+        <li>for successful responses, a JSON object containing the properties:
+          <ul>
+            <li><mark class="highlight">status</mark>: <mark class="highlight">success</mark></li>
+            <li><mark class="highlight">data</mark>: An object, structure detailed for each route below.</li>
+          </ul>
+        </li>
+        <li>for unsuccessful responses, a JSON object containing the properties:
+          <ul>
+            <li><mark class="highlight">status</mark>: <mark class="highlight">fail</mark></li>
+            <li><mark class="highlight">error</mark>: An object containing a message property, and sometimes additional helpful properties.</li>
+          </ul>
+        </li>
+      </ul>
+      <h1 class="small-title" id="api-users">/api/users</h1>
+      <h1 class="subtitle">GET</h1>
+      <h1 class="small-title" id="api-register">/api/users/register</h1>
+      <h1 class="small-title" id="api-login">/api/users/login</h1>
+      <h1 class="small-title" id="api-logout">/api/users/logout</h1>
+      <h1 class="small-title" id="api-profile">/api/users/profile</h1>
+      <h1 class="small-title" id="api-password">/api/users/changePassword</h1>
+      <h1 class="small-title" id="api-restrict">/api/users/restrict</h1>
+      <h1 class="small-title" id="api-unrestrict">/api/users/unrestrict</h1>
     </div>
 
     <div class="clearfix"></div>
