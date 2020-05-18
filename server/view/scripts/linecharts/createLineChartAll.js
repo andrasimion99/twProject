@@ -45,6 +45,7 @@ async function createLineChartAll(seriesName, country) {
         .select("#chart-area")
         .append("svg")
         .attr("xmlns", "http://www.w3.org/2000/svg")
+        .attr("viewBox", `0 0 450 420`)
         .attr("width", width + margin.left + margin.right)
         .attr("height", height + margin.top + margin.bottom)
         .append("g")

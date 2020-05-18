@@ -47,6 +47,7 @@ async function createLineChartSeries(seriesName, country, types) {
       var svg = d3
         .select("#chart-area")
         .append("svg")
+        .attr("viewBox", `0 0 550 430`)
         .attr("xmlns", "http://www.w3.org/2000/svg")
         .attr("width", width + margin.left + margin.right)
         .attr("height", height + margin.top + margin.bottom)

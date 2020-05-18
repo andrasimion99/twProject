@@ -57,6 +57,7 @@ async function createBarChartAll(seriesName, country) {
       var svg = d3
         .select("#chart-area")
         .append("svg")
+        .attr("viewBox", `0 0 450 500`)
         .attr("xmlns", "http://www.w3.org/2000/svg")
         .attr("width", width + margin.left + margin.right)
         .attr("height", height + margin.top + margin.bottom);
