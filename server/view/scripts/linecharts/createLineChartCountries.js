@@ -256,7 +256,7 @@ async function createLineChartCountries(seriesName, types, seriesValue) {
         })
         .style("padding", "5px")
         .style("text-align", "center")
-        .style("font-size", "12px")
+        .style("font-size", "10px")
         .text(function (d, i) {
           return sumstat[i].key;
         });

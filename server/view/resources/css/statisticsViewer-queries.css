@@ -26,7 +26,8 @@
   }
 }
 @media only screen and (max-width: 640px) {
-  #time-bar, #time-cells {
+  #time-bar,
+  #time-cells {
     width: 200px !important;
   }
   .year-cell {
@@ -44,7 +45,6 @@
   }
 }
 @media only screen and (max-width: 568px) {
-  
   .export-menu p {
     font-size: 13px;
   }
@@ -57,13 +57,14 @@
 @media only screen and (max-width: 468px) {
   svg {
     height: 300px;
-    width: 300px;
+    width: 250px;
     margin: 0;
   }
 }
 
 @media only screen and (max-width: 436px) {
-  #time-bar, #time-cells {
+  #time-bar,
+  #time-cells {
     width: 130px !important;
     padding-left: 0px !important;
     padding-right: 0px !important;
@@ -74,7 +75,8 @@
 }
 
 @media only screen and (max-width: 360px) {
-  #time-bar, #time-cells {
+  #time-bar,
+  #time-cells {
     width: 120px !important;
     padding-left: 0px !important;
     padding-right: 0px !important;
@@ -83,8 +85,8 @@
     font-size: 6px !important;
   }
   svg {
-    height: 300px;
-    width: 250px;
+    height: 250px;
+    width: 220px;
     margin: 0;
   }
 }
