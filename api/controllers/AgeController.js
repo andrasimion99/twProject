@@ -73,7 +73,7 @@ class AgeController {
         );
       } else {
         const age = await this.db.Age.updateOne({ _id: param.id }, body);
-        return helpers.success(res, age);
+        return helpers.success(res, age, NO_CONTENT);
       }
     } catch (error) {
       return helpers.error(res, error);

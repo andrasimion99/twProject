@@ -73,7 +73,7 @@ class EthnicityController {
         );
       } else {
         const ethnicity = await this.db.Ethnicity.updateOne({ _id: param.id }, body);
-        return helpers.success(res, ethnicity);
+        return helpers.success(res, ethnicity, NO_CONTENT);
       }
     } catch (error) {
       return helpers.error(res, error);

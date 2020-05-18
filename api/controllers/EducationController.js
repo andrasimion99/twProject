@@ -76,7 +76,7 @@ class EducationController {
           { _id: param.id },
           body
         );
-        return helpers.success(res, education);
+        return helpers.success(res, education, NO_CONTENT);
       }
     } catch (error) {
       return helpers.error(res, error);

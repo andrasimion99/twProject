@@ -73,7 +73,7 @@ class IncomeController {
         );
       } else {
         const income = await this.db.Income.updateOne({ _id: param.id }, body);
-        return helpers.success(res, income);
+        return helpers.success(res, income, NO_CONTENT);
       }
     } catch (error) {
       return helpers.error(res, error);

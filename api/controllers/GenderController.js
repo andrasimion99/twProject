@@ -73,7 +73,7 @@ class GenderController {
         );
       } else {
         const gender = await this.db.Gender.updateOne({ _id: param.id }, body);
-        return helpers.success(res, gender);
+        return helpers.success(res, gender, NO_CONTENT);
       }
     } catch (error) {
       return helpers.error(res, error);

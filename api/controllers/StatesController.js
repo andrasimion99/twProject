@@ -81,7 +81,7 @@ class StateController {
         );
       } else {
         const state = await this.db.State.updateOne({ _id: param.id }, body);
-        return helpers.success(res, state);
+        return helpers.success(res, state, NO_CONTENT);
       }
     } catch (error) {
       return helpers.error(res, error);
