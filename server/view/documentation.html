@@ -36,7 +36,9 @@
             <a href="diseasesArticles.html">Diseases and Conditions</a>
           </div>
           <div class="menu-elem"><a href="programs.html">Programs</a></div>
-          <div class="menu-elem"><a href="./documentation.html">Documentation</a></div>
+          <div class="menu-elem">
+            <a href="./documentation.html">Documentation</a>
+          </div>
         </nav>
         <div class="row">
           <div id="main">
@@ -203,9 +205,9 @@
         <li><a href="#api-states">/api/states</a></li>
         <li><a href="#api-age">/api/age</a></li>
         <li><a href="#api-gender">/api/gender</a></li>
-        <li><a href="#api-education">/api/education</a></li>
         <li><a href="#api-income">/api/income</a></li>
         <li><a href="#api-ethnicity">/api/ethnicity</a></li>
+        <li><a href="#api-education">/api/education</a></li>
       </ol>
       <h1 class="small-title" id="api-accounts-response">Response structure</h1>
       <p>The structure of the API responses' body is as follows:</p>
@@ -785,16 +787,18 @@
       <pre>
 <code>
 </code></pre>
-  	<h1 class="subtitle">DELETE</h1>
+      <h1 class="subtitle">DELETE</h1>
       <p>
-        Delete the all the data from the states db. Data is represented by documents with the obesity percentage for the total population of each country, within the years 2011-2018.
+        Delete the all the data from the states db. Data is represented by
+        documents with the obesity percentage for the total population of each
+        country, within the years 2011-2018.
       </p>
       <h1 class="small-subtitle">Query parameters:</h1>
       <ul class="small-category">
         <li>
-          country - Delete  only the data for a specific country.
+          country - Delete only the data for a specific country.
         </li>
-        <li>year - Delete  only the data for a specific year.</li>
+        <li>year - Delete only the data for a specific year.</li>
       </ul>
       <h1 class="small-subtitle">Return codes:</h1>
       <ul class="small-category">
@@ -811,36 +815,566 @@
       <pre>
         <code>
         </code></pre>
+      <!-- AGE -->
+      <h1 class="small-title" id="api-age">/api/age</h1>
+      <h1 class="subtitle">GET</h1>
+      <p>
+        Get the all the data from the db. Data is represented by documents with
+        the obesity percentage filtered by people age for each country, within
+        the years 2011-2018.
+      </p>
+      <h1 class="small-subtitle">Query parameters:</h1>
+      <ul class="small-category">
+        <li>
+          country - Select only the data for a specific country.
+        </li>
+        <li>year - Select only the data for a specific year.</li>
+      </ul>
+      <h1 class="small-subtitle">Return codes:</h1>
+      <ul class="small-category">
+        <li>
+          200 - OK
+        </li>
+        <li>
+          400 - There was a problem fetching data
+        </li>
+      </ul>
+      <h1 class="small-subtitle">Usage example:</h1>
+      <mark class="highlight">localhost:3001/api/age</mark>
+      <h1 class="small-subtitle">Returned data example:</h1>
+      <pre>
+   <code>
+{
+  "status": "success",
+  "data": [
+      {
+        "_id": "5e8caf311f3c4c71f47a220d",
+        "﻿ID": "31667",
+        "Description": "2011",
+        "LocationAbbr": "TX",
+        "LocationDesc": "Texas",
+        "DataSource": "BRFSS",
+        "Topic": "Obesity / Weight Status",
+        "Data_Value": "17.5",
+        "Sample_Size": "570",
+        "Stratification1": "18 - 24",
+        "StratificationId1": "18 - 24",
+        "LocationDisplayOrder": "AGEYR1824"
+      },
+      {
+        "_id": "5e8caf311f3c4c71f47a21e4",
+        "﻿ID": "1919",
+        "Description": "2011",
+        "LocationAbbr": "AZ",
+        "LocationDesc": "Arizona",
+        "DataSource": "BRFSS",
+        "Topic": "Obesity / Weight Status",
+        "Data_Value": "18.7",
+        "Sample_Size": "240",
+        "Stratification1": "18 - 24",
+        "StratificationId1": "18 - 24",
+        "LocationDisplayOrder": "AGEYR1824"
+      }
+  ]
+}</code></pre>
+      <h1 class="subtitle">POST</h1>
+      <p>
+        Post a document into age db.
+      </p>
+      <h1 class="small-subtitle">Request body</h1>
+      <pre><code>{
+  "ID": "20626",
+  "Description": "2011",
+  "LocationAbbr": "WY",
+  "LocationDesc": "Wyoming",
+  "DataSource": "BRFSS",
+  "Topic": "Obesity / Weight Status",
+  "Data_Value": "12.6",
+  "Sample_Size": "303",
+  "Stratification1": "18 - 24",
+  "StratificationId1": "18 - 24",
+  "LocationDisplayOrder": "AGEYR1824"
+}</code></pre>
+      <h1 class="small-subtitle">Return codes:</h1>
+      <ul class="small-category">
+        <li>
+          201 - CREATED
+        </li>
+        <li>
+          400 - Bad Request
+        </li>
+      </ul>
+      <h1 class="small-subtitle">Usage example:</h1>
+      <mark class="highlight">localhost:3001/api/age</mark>
+      <h1 class="small-subtitle">Returned data example:</h1>
+      <pre>
+<code>{
+"status": "success",
+"data": {
+  "ID": "20626",
+  "Description": "2011",
+  "LocationAbbr": "WY",
+  "LocationDesc": "Wyoming",
+  "DataSource": "BRFSS",
+  "Topic": "Obesity / Weight Status",
+  "Data_Value": "12.6",
+  "Sample_Size": "303",
+  "Stratification1": "18 - 24",
+  "StratificationId1": "18 - 24",
+  "LocationDisplayOrder": "AGEYR1824"
+  }
+}</code></pre>
+      <h1 class="subtitle">PATCH</h1>
+      <p>
+        Modify a document into age db.
+      </p>
+      <h1 class="small-subtitle">Query parameters:</h1>
+      <ul class="small-category">
+        <li>
+          id - The id of the object you want to modify.
+        </li>
+      </ul>
+      <h1 class="small-subtitle">Request body</h1>
+      <pre><code>{
+  "ID": "20626",
+  "Description": "2011",
+  "LocationAbbr": "WY",
+  "LocationDesc": "Wyoming",
+  "DataSource": "BRFSS",
+  "Topic": "Obesity / Weight Status",
+  "Data_Value": "12.6",
+  "Sample_Size": "303",
+  "Stratification1": "18 - 24",
+  "StratificationId1": "18 - 24",
+  "LocationDisplayOrder": "AGEYR1824"
+}</code></pre>
+      <h1 class="small-subtitle">Return codes:</h1>
+      <ul class="small-category">
+        <li>
+          204 - NO_CONTENT
+        </li>
+        <li>
+          400 - Bad Request
+        </li>
+      </ul>
+      <h1 class="small-subtitle">Usage example:</h1>
+      <mark class="highlight"
+        >localhost:3001/api/age?id=5e8caf311f3c4c71f47a2214</mark
+      >
+      <h1 class="small-subtitle">Returned data example:</h1>
+      <pre>
+<code>
+</code></pre>
+      <h1 class="subtitle">DELETE</h1>
+      <p>
+        Delete the all the data from the age db. Data is represented by
+        documents with the obesity percentage filtered by the age of each
+        country, within the years 2011-2018.
+      </p>
+      <h1 class="small-subtitle">Query parameters:</h1>
+      <ul class="small-category">
+        <li>
+          country - Delete only the data for a specific country.
+        </li>
+        <li>year - Delete only the data for a specific year.</li>
+      </ul>
+      <h1 class="small-subtitle">Return codes:</h1>
+      <ul class="small-category">
+        <li>
+          204 - NO_CONTENT
+        </li>
+        <li>
+          400 - Bad Request
+        </li>
+      </ul>
+      <h1 class="small-subtitle">Usage example:</h1>
+      <mark class="highlight">localhost:3001/api/age</mark>
+      <h1 class="small-subtitle">Returned data example:</h1>
+      <pre>
+        <code>
+        </code></pre>
 
- <!-- ETHNICITY -->
+      <!-- GENDER -->
+      <h1 class="small-title" id="api-gender">/api/gender</h1>
+      <h1 class="subtitle">GET</h1>
+      <p>
+        Get the all the data from the db. Data is represented by documents with
+        the obesity percentage filtered by gender, within the years 2011-2018.
+      </p>
+      <h1 class="small-subtitle">Query parameters:</h1>
+      <ul class="small-category">
+        <li>
+          country - Select only the data for a specific country.
+        </li>
+        <li>year - Select only the data for a specific year.</li>
+      </ul>
+      <h1 class="small-subtitle">Return codes:</h1>
+      <ul class="small-category">
+        <li>
+          200 - OK
+        </li>
+        <li>
+          400 - There was a problem fetching data
+        </li>
+      </ul>
+      <h1 class="small-subtitle">Usage example:</h1>
+      <mark class="highlight">localhost:3001/api/gender</mark>
+      <h1 class="small-subtitle">Returned data example:</h1>
+      <pre>
+   <code>
+{
+  "status": "success",
+  "data": [
+      {
+        "_id": "5e8cad651f3c4c71f47a1e83",
+        "﻿ID": "61239",
+        "Description": "2018",
+        "LocationAbbr": "IL",
+        "LocationDesc": "Illinois",
+        "DataSource": "BRFSS",
+        "Topic": "Obesity / Weight Status",
+        "Data_Value": "33.2",
+        "Sample_Size": "2",
+        "Stratification1": "Female",
+        "StratificationId1": "Female",
+        "LocationDisplayOrder": "FEMALE"
+    },
+    {
+        "_id": "5e8cad651f3c4c71f47a1e90",
+        "﻿ID": "62939",
+        "Description": "2018",
+        "LocationAbbr": "MT",
+        "LocationDesc": "Montana",
+        "DataSource": "BRFSS",
+        "Topic": "Obesity / Weight Status",
+        "Data_Value": "25.8",
+        "Sample_Size": "2",
+        "Stratification1": "Female",
+        "StratificationId1": "Female",
+        "LocationDisplayOrder": "FEMALE"
+    }
+  ]
+}</code></pre>
+      <h1 class="subtitle">POST</h1>
+      <p>
+        Post a document into gender db.
+      </p>
+      <h1 class="small-subtitle">Request body</h1>
+      <pre><code>{
+    "ID": "62939",
+    "Description": "2018",
+    "LocationAbbr": "MT",
+    "LocationDesc": "Montana",
+    "DataSource": "BRFSS",
+    "Topic": "Obesity / Weight Status",
+    "Data_Value": "25.8",
+    "Sample_Size": "2",
+    "Stratification1": "Female",
+    "StratificationId1": "Female",
+    "LocationDisplayOrder": "FEMALE"
+}</code></pre>
+      <h1 class="small-subtitle">Return codes:</h1>
+      <ul class="small-category">
+        <li>
+          201 - CREATED
+        </li>
+        <li>
+          400 - Bad Request
+        </li>
+      </ul>
+      <h1 class="small-subtitle">Usage example:</h1>
+      <mark class="highlight">localhost:3001/api/gender</mark>
+      <h1 class="small-subtitle">Returned data example:</h1>
+      <pre>
+<code>{
+"status": "success",
+"data": {
+  "ID": "62939",
+  "Description": "2018",
+  "LocationAbbr": "MT",
+  "LocationDesc": "Montana",
+  "DataSource": "BRFSS",
+  "Topic": "Obesity / Weight Status",
+  "Data_Value": "25.8",
+  "Sample_Size": "2",
+  "Stratification1": "Female",
+  "StratificationId1": "Female",
+  "LocationDisplayOrder": "FEMALE"
+  }
+}</code></pre>
+      <h1 class="subtitle">PATCH</h1>
+      <p>
+        Modify a document into gender db.
+      </p>
+      <h1 class="small-subtitle">Query parameters:</h1>
+      <ul class="small-category">
+        <li>
+          id - The id of the object you want to modify.
+        </li>
+      </ul>
+      <h1 class="small-subtitle">Request body</h1>
+      <pre><code>{
+    "_id": "5e8cad651f3c4c71f47a1e90",
+    "﻿ID": "62939",
+    "Description": "2018",
+    "LocationAbbr": "MT",
+    "LocationDesc": "Montana",
+    "DataSource": "BRFSS",
+    "Topic": "Obesity / Weight Status",
+    "Data_Value": "25.8",
+    "Sample_Size": "2",
+    "Stratification1": "Female",
+    "StratificationId1": "Female",
+    "LocationDisplayOrder": "FEMALE"
+}</code></pre>
+      <h1 class="small-subtitle">Return codes:</h1>
+      <ul class="small-category">
+        <li>
+          204 - NO_CONTENT
+        </li>
+        <li>
+          400 - Bad Request
+        </li>
+      </ul>
+      <h1 class="small-subtitle">Usage example:</h1>
+      <mark class="highlight"
+        >localhost:3001/api/gender?id=5e8cad651f3c4c71f47a1ea9</mark
+      >
+      <h1 class="small-subtitle">Returned data example:</h1>
+      <pre>
+<code>
+</code></pre>
+      <h1 class="subtitle">DELETE</h1>
+      <p>
+        Delete the all the data from the gender db. Data is represented by
+        documents with the obesity percentage filtered by the gender of each
+        country, within the years 2011-2018.
+      </p>
+      <h1 class="small-subtitle">Query parameters:</h1>
+      <ul class="small-category">
+        <li>
+          country - Delete only the data for a specific country.
+        </li>
+        <li>year - Delete only the data for a specific year.</li>
+      </ul>
+      <h1 class="small-subtitle">Return codes:</h1>
+      <ul class="small-category">
+        <li>
+          204 - NO_CONTENT
+        </li>
+        <li>
+          400 - Bad Request
+        </li>
+      </ul>
+      <h1 class="small-subtitle">Usage example:</h1>
+      <mark class="highlight">localhost:3001/api/gender</mark>
+      <h1 class="small-subtitle">Returned data example:</h1>
+      <pre>
+        <code>
+        </code></pre>
 
- <h1 class="small-title" id="api-ethnicity">/api/ethnicity</h1>
- <h1 class="subtitle">GET</h1>
- <p>
-   Get the all the data from the db. Data is represented by documents with
-   the obesity percentage filtered by the ethnicity of each country, within
-   the years 2011-2018.
- </p>
- <h1 class="small-subtitle">Query parameters:</h1>
- <ul class="small-category">
-   <li>
-     country - Select only the data for a specific country.
-   </li>
-   <li>year - Select only the data for a specific year.</li>
- </ul>
- <h1 class="small-subtitle">Return codes:</h1>
- <ul class="small-category">
-   <li>
-     200 - OK
-   </li>
-   <li>
-     400 - There was a problem fetching data
-   </li>
- </ul>
- <h1 class="small-subtitle">Usage example:</h1>
- <mark class="highlight">localhost:3001/api/ethnicity</mark>
- <h1 class="small-subtitle">Returned data example:</h1>
- <pre>
+      <!-- INCOME -->
+      <h1 class="small-title" id="api-income">/api/income</h1>
+      <h1 class="subtitle">GET</h1>
+      <p>
+        Get the all the data from the db. Data is represented by documents with
+        the obesity percentage filtered by people income for each country,
+        within the years 2011-2018.
+      </p>
+      <h1 class="small-subtitle">Query parameters:</h1>
+      <ul class="small-category">
+        <li>
+          country - Select only the data for a specific country.
+        </li>
+        <li>year - Select only the data for a specific year.</li>
+      </ul>
+      <h1 class="small-subtitle">Return codes:</h1>
+      <ul class="small-category">
+        <li>
+          200 - OK
+        </li>
+        <li>
+          400 - There was a problem fetching data
+        </li>
+      </ul>
+      <h1 class="small-subtitle">Usage example:</h1>
+      <mark class="highlight">localhost:3001/api/income</mark>
+      <h1 class="small-subtitle">Returned data example:</h1>
+      <pre>
+   <code>
+{
+  "_id": "5e8cb0d31f3c4c71f47a259c",
+  "﻿ID": "16143",
+  "Description": "2011",
+  "LocationAbbr": "AL",
+  "LocationDesc": "Alabama",
+  "DataSource": "BRFSS",
+  "Topic": "Obesity / Weight Status",
+  "Data_Value": "34.8",
+  "Sample_Size": "1",
+  "Stratification1": "$15000 - $24999",
+  "StratificationId1": "$15000 - $24999",
+  "LocationDisplayOrder": "000 - $24"
+},
+{
+  "_id": "5e8cb0d31f3c4c71f47a25af",
+  "﻿ID": "6365",
+  "Description": "2011",
+  "LocationAbbr": "ME",
+  "LocationDesc": "Maine",
+  "DataSource": "BRFSS",
+  "Topic": "Obesity / Weight Status",
+  "Data_Value": "33.7",
+  "Sample_Size": "2",
+  "Stratification1": "$15000 - $24999",
+  "StratificationId1": "$15000 - $24999",
+  "LocationDisplayOrder": "000 - $24"
+}</code></pre>
+      <h1 class="subtitle">POST</h1>
+      <p>
+        Post a document into income db.
+      </p>
+      <h1 class="small-subtitle">Request body</h1>
+      <pre><code>{
+  "ID": "6365",
+  "Description": "2011",
+  "LocationAbbr": "ME",
+  "LocationDesc": "Maine",
+  "DataSource": "BRFSS",
+  "Topic": "Obesity / Weight Status",
+  "Data_Value": "33.7",
+  "Sample_Size": "2",
+  "Stratification1": "$15000 - $24999",
+  "StratificationId1": "$15000 - $24999",
+  "LocationDisplayOrder": "000 - $24"
+}</code></pre>
+      <h1 class="small-subtitle">Return codes:</h1>
+      <ul class="small-category">
+        <li>
+          201 - CREATED
+        </li>
+        <li>
+          400 - Bad Request
+        </li>
+      </ul>
+      <h1 class="small-subtitle">Usage example:</h1>
+      <mark class="highlight">localhost:3001/api/income</mark>
+      <h1 class="small-subtitle">Returned data example:</h1>
+      <pre>
+<code>{
+"status": "success",
+"data": {
+  "ID": "6365",
+  "Description": "2011",
+  "LocationAbbr": "ME",
+  "LocationDesc": "Maine",
+  "DataSource": "BRFSS",
+  "Topic": "Obesity / Weight Status",
+  "Data_Value": "33.7",
+  "Sample_Size": "2",
+  "Stratification1": "$15000 - $24999",
+  "StratificationId1": "$15000 - $24999",
+  "LocationDisplayOrder": "000 - $24"
+}
+}</code></pre>
+      <h1 class="subtitle">PATCH</h1>
+      <p>
+        Modify a document into income db.
+      </p>
+      <h1 class="small-subtitle">Query parameters:</h1>
+      <ul class="small-category">
+        <li>
+          id - The id of the object you want to modify.
+        </li>
+      </ul>
+      <h1 class="small-subtitle">Request body</h1>
+      <pre><code>{
+  "ID": "6365",
+  "Description": "2011",
+  "LocationAbbr": "ME",
+  "LocationDesc": "Maine",
+  "DataSource": "BRFSS",
+  "Topic": "Obesity / Weight Status",
+  "Data_Value": "33.7",
+  "Sample_Size": "2",
+  "Stratification1": "$15000 - $24999",
+  "StratificationId1": "$15000 - $24999",
+  "LocationDisplayOrder": "000 - $24"
+}</code></pre>
+      <h1 class="small-subtitle">Return codes:</h1>
+      <ul class="small-category">
+        <li>
+          204 - NO_CONTENT
+        </li>
+        <li>
+          400 - Bad Request
+        </li>
+      </ul>
+      <h1 class="small-subtitle">Usage example:</h1>
+      <mark class="highlight"
+        >localhost:3001/api/income?id=5e8cb0d31f3c4c71f47a259c</mark
+      >
+      <h1 class="small-subtitle">Returned data example:</h1>
+      <pre>
+<code>
+</code></pre>
+      <h1 class="subtitle">DELETE</h1>
+      <p>
+        Delete the all the data from the income db. Data is represented by
+        documents with the obesity percentage filtered by the income of each
+        country, within the years 2011-2018.
+      </p>
+      <h1 class="small-subtitle">Query parameters:</h1>
+      <ul class="small-category">
+        <li>
+          country - Delete only the data for a specific country.
+        </li>
+        <li>year - Delete only the data for a specific year.</li>
+      </ul>
+      <h1 class="small-subtitle">Return codes:</h1>
+      <ul class="small-category">
+        <li>
+          204 - NO_CONTENT
+        </li>
+        <li>
+          400 - Bad Request
+        </li>
+      </ul>
+      <h1 class="small-subtitle">Usage example:</h1>
+      <mark class="highlight">localhost:3001/api/income</mark>
+      <h1 class="small-subtitle">Returned data example:</h1>
+      <pre>
+        <code>
+        </code></pre>
+      <!-- ETHNICITY -->
+
+      <h1 class="small-title" id="api-ethnicity">/api/ethnicity</h1>
+      <h1 class="subtitle">GET</h1>
+      <p>
+        Get the all the data from the db. Data is represented by documents with
+        the obesity percentage filtered by ethnicity, within the years
+        2011-2018.
+      </p>
+      <h1 class="small-subtitle">Query parameters:</h1>
+      <ul class="small-category">
+        <li>
+          country - Select only the data for a specific country.
+        </li>
+        <li>year - Select only the data for a specific year.</li>
+      </ul>
+      <h1 class="small-subtitle">Return codes:</h1>
+      <ul class="small-category">
+        <li>
+          200 - OK
+        </li>
+        <li>
+          400 - There was a problem fetching data
+        </li>
+      </ul>
+      <h1 class="small-subtitle">Usage example:</h1>
+      <mark class="highlight">localhost:3001/api/ethnicity</mark>
+      <h1 class="small-subtitle">Returned data example:</h1>
+      <pre>
    <code>
 {
 "status": "success",
@@ -875,12 +1409,12 @@
       }
 ]
 }</code></pre>
- <h1 class="subtitle">POST</h1>
- <p>
-   Post a document into ethnicity db.
- </p>
- <h1 class="small-subtitle">Request body</h1>
- <pre><code>{
+      <h1 class="subtitle">POST</h1>
+      <p>
+        Post a document into ethnicity db.
+      </p>
+      <h1 class="small-subtitle">Request body</h1>
+      <pre><code>{
 "ID": "671",
 "Description": "2019",
 "LocationAbbr": "US",
@@ -893,19 +1427,19 @@
 "StratificationId1": "Asian",
 "LocationDisplayOrder": "RACEASN"
 }</code></pre>
- <h1 class="small-subtitle">Return codes:</h1>
- <ul class="small-category">
-   <li>
-     201 - CREATED
-   </li>
-   <li>
-     400 - Bad Request
-   </li>
- </ul>
- <h1 class="small-subtitle">Usage example:</h1>
- <mark class="highlight">localhost:3001/api/ethnicity</mark>
- <h1 class="small-subtitle">Returned data example:</h1>
- <pre>
+      <h1 class="small-subtitle">Return codes:</h1>
+      <ul class="small-category">
+        <li>
+          201 - CREATED
+        </li>
+        <li>
+          400 - Bad Request
+        </li>
+      </ul>
+      <h1 class="small-subtitle">Usage example:</h1>
+      <mark class="highlight">localhost:3001/api/ethnicity</mark>
+      <h1 class="small-subtitle">Returned data example:</h1>
+      <pre>
 <code>{
 "status": "success",
 "data": {
@@ -922,18 +1456,18 @@
     "LocationDisplayOrder": "RACEASN"
 }
 }</code></pre>
- <h1 class="subtitle">PATCH</h1>
- <p>
-   Modify a document into ethnicity db.
- </p>
- <h1 class="small-subtitle">Query parameters:</h1>
- <ul class="small-category">
-   <li>
-     id - The id of the object you want to modify.
-   </li>
- </ul>
- <h1 class="small-subtitle">Request body</h1>
- <pre><code>{
+      <h1 class="subtitle">PATCH</h1>
+      <p>
+        Modify a document into ethnicity db.
+      </p>
+      <h1 class="small-subtitle">Query parameters:</h1>
+      <ul class="small-category">
+        <li>
+          id - The id of the object you want to modify.
+        </li>
+      </ul>
+      <h1 class="small-subtitle">Request body</h1>
+      <pre><code>{
 "ID": "671",
 "Description": "2019",
 "LocationAbbr": "US",
@@ -946,33 +1480,35 @@
 "StratificationId1": "Asian",
 "LocationDisplayOrder": "RACEASN"
 }</code></pre>
- <h1 class="small-subtitle">Return codes:</h1>
- <ul class="small-category">
-   <li>
-     204 - NO_CONTENT
-   </li>
-   <li>
-     400 - Bad Request
-   </li>
- </ul>
- <h1 class="small-subtitle">Usage example:</h1>
- <mark class="highlight"
-   >localhost:3001/api/ethnicity?id=5ec2c930108fc525a4e217f6</mark
- >
- <h1 class="small-subtitle">Returned data example:</h1>
- <pre>
+      <h1 class="small-subtitle">Return codes:</h1>
+      <ul class="small-category">
+        <li>
+          204 - NO_CONTENT
+        </li>
+        <li>
+          400 - Bad Request
+        </li>
+      </ul>
+      <h1 class="small-subtitle">Usage example:</h1>
+      <mark class="highlight"
+        >localhost:3001/api/ethnicity?id=5ec2c930108fc525a4e217f6</mark
+      >
+      <h1 class="small-subtitle">Returned data example:</h1>
+      <pre>
 <code>
 </code></pre>
-<h1 class="subtitle">DELETE</h1>
+      <h1 class="subtitle">DELETE</h1>
       <p>
-        Delete the all the data from the ethnicity db. Data is represented by documents with the obesity percentage filtered by the ethnicity of each country, within the years 2011-2018.
+        Delete the all the data from the ethnicity db. Data is represented by
+        documents with the obesity percentage filtered by the ethnicity of each
+        country, within the years 2011-2018.
       </p>
       <h1 class="small-subtitle">Query parameters:</h1>
       <ul class="small-category">
         <li>
-          country - Delete  only the data for a specific country.
+          country - Delete only the data for a specific country.
         </li>
-        <li>year - Delete  only the data for a specific year.</li>
+        <li>year - Delete only the data for a specific year.</li>
       </ul>
       <h1 class="small-subtitle">Return codes:</h1>
       <ul class="small-category">
@@ -990,35 +1526,35 @@
         <code>
         </code></pre>
 
-        <!-- EDUCATION -->
+      <!-- EDUCATION -->
 
- <h1 class="small-title" id="api-education">/api/education</h1>
- <h1 class="subtitle">GET</h1>
- <p>
-   Get the all the data from the db. Data is represented by documents with
-   the obesity percentage filtered by the education of each country, within
-   the years 2011-2018.
- </p>
- <h1 class="small-subtitle">Query parameters:</h1>
- <ul class="small-category">
-   <li>
-     country - Select only the data for a specific country.
-   </li>
-   <li>year - Select only the data for a specific year.</li>
- </ul>
- <h1 class="small-subtitle">Return codes:</h1>
- <ul class="small-category">
-   <li>
-     200 - OK
-   </li>
-   <li>
-     400 - There was a problem fetching data
-   </li>
- </ul>
- <h1 class="small-subtitle">Usage example:</h1>
- <mark class="highlight">localhost:3001/api/education</mark>
- <h1 class="small-subtitle">Returned data example:</h1>
- <pre>
+      <h1 class="small-title" id="api-education">/api/education</h1>
+      <h1 class="subtitle">GET</h1>
+      <p>
+        Get the all the data from the db. Data is represented by documents with
+        the obesity percentage filtered by education, within the years
+        2011-2018.
+      </p>
+      <h1 class="small-subtitle">Query parameters:</h1>
+      <ul class="small-category">
+        <li>
+          country - Select only the data for a specific country.
+        </li>
+        <li>year - Select only the data for a specific year.</li>
+      </ul>
+      <h1 class="small-subtitle">Return codes:</h1>
+      <ul class="small-category">
+        <li>
+          200 - OK
+        </li>
+        <li>
+          400 - There was a problem fetching data
+        </li>
+      </ul>
+      <h1 class="small-subtitle">Usage example:</h1>
+      <mark class="highlight">localhost:3001/api/education</mark>
+      <h1 class="small-subtitle">Returned data example:</h1>
+      <pre>
    <code>
 {
 "status": "success",
@@ -1053,12 +1589,12 @@
       }
 ]
 }</code></pre>
- <h1 class="subtitle">POST</h1>
- <p>
-   Post a document into education db.
- </p>
- <h1 class="small-subtitle">Request body</h1>
- <pre><code>{
+      <h1 class="subtitle">POST</h1>
+      <p>
+        Post a document into education db.
+      </p>
+      <h1 class="small-subtitle">Request body</h1>
+      <pre><code>{
 "ID": "671",
 "Description": "2019",
 "LocationAbbr": "US",
@@ -1071,19 +1607,19 @@
 "StratificationId1": "College graduate",
 "LocationDisplayOrder": "EDUCOGRAD"
 }</code></pre>
- <h1 class="small-subtitle">Return codes:</h1>
- <ul class="small-category">
-   <li>
-     201 - CREATED
-   </li>
-   <li>
-     400 - Bad Request
-   </li>
- </ul>
- <h1 class="small-subtitle">Usage example:</h1>
- <mark class="highlight">localhost:3001/api/education</mark>
- <h1 class="small-subtitle">Returned data example:</h1>
- <pre>
+      <h1 class="small-subtitle">Return codes:</h1>
+      <ul class="small-category">
+        <li>
+          201 - CREATED
+        </li>
+        <li>
+          400 - Bad Request
+        </li>
+      </ul>
+      <h1 class="small-subtitle">Usage example:</h1>
+      <mark class="highlight">localhost:3001/api/education</mark>
+      <h1 class="small-subtitle">Returned data example:</h1>
+      <pre>
 <code>{
 "status": "success",
 "data": {
@@ -1100,18 +1636,18 @@
     "LocationDisplayOrder": "EDUCOGRAD"
 }
 }</code></pre>
- <h1 class="subtitle">PATCH</h1>
- <p>
-   Modify a document into education db.
- </p>
- <h1 class="small-subtitle">Query parameters:</h1>
- <ul class="small-category">
-   <li>
-     id - The id of the object you want to modify.
-   </li>
- </ul>
- <h1 class="small-subtitle">Request body</h1>
- <pre><code>{
+      <h1 class="subtitle">PATCH</h1>
+      <p>
+        Modify a document into education db.
+      </p>
+      <h1 class="small-subtitle">Query parameters:</h1>
+      <ul class="small-category">
+        <li>
+          id - The id of the object you want to modify.
+        </li>
+      </ul>
+      <h1 class="small-subtitle">Request body</h1>
+      <pre><code>{
 "ID": "671",
 "Description": "2019",
 "LocationAbbr": "US",
@@ -1124,33 +1660,35 @@
 "StratificationId1": "College graduate",
 "LocationDisplayOrder": "EDUCOGRAD"
 }</code></pre>
- <h1 class="small-subtitle">Return codes:</h1>
- <ul class="small-category">
-   <li>
-     204 - NO_CONTENT
-   </li>
-   <li>
-     400 - Bad Request
-   </li>
- </ul>
- <h1 class="small-subtitle">Usage example:</h1>
- <mark class="highlight"
-   >localhost:3001/api/education?id=5ec2c930108fc525a4e217f6</mark
- >
- <h1 class="small-subtitle">Returned data example:</h1>
- <pre>
+      <h1 class="small-subtitle">Return codes:</h1>
+      <ul class="small-category">
+        <li>
+          204 - NO_CONTENT
+        </li>
+        <li>
+          400 - Bad Request
+        </li>
+      </ul>
+      <h1 class="small-subtitle">Usage example:</h1>
+      <mark class="highlight"
+        >localhost:3001/api/education?id=5ec2c930108fc525a4e217f6</mark
+      >
+      <h1 class="small-subtitle">Returned data example:</h1>
+      <pre>
 <code>
 </code></pre>
-<h1 class="subtitle">DELETE</h1>
+      <h1 class="subtitle">DELETE</h1>
       <p>
-        Delete the all the data from the education db. Data is represented by documents with the obesity percentage filtered by the education of each country, within the years 2011-2018.
+        Delete the all the data from the education db. Data is represented by
+        documents with the obesity percentage filtered by the education of each
+        country, within the years 2011-2018.
       </p>
       <h1 class="small-subtitle">Query parameters:</h1>
       <ul class="small-category">
         <li>
-          country - Delete  only the data for a specific country.
+          country - Delete only the data for a specific country.
         </li>
-        <li>year - Delete  only the data for a specific year.</li>
+        <li>year - Delete only the data for a specific year.</li>
       </ul>
       <h1 class="small-subtitle">Return codes:</h1>
       <ul class="small-category">
