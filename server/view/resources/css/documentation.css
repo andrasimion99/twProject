@@ -1,0 +1,54 @@
+.doc-container {
+  max-width: 1000px;
+  margin: 70px auto;
+}
+.big-title {
+  font-size: 2rem;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+.big-title:after {
+  display: block;
+  height: 2px;
+  background-color: #2980b9;
+  content: " ";
+  width: 15%;
+  margin-left: 100px;
+  margin-top: 15px;
+  transition: width 0.5s;
+}
+.medium-title {
+  margin-top: 2rem;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+.small-title {
+  margin-top: 1rem;
+  font-size: 22px;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+.big-category a {
+  font-size: 120%;
+  text-decoration: none;
+  color: black;
+}
+ol {
+  list-style-type: upper-roman;
+}
+.big-category li {
+  margin-left: 1rem;
+  padding-top: 12px;
+}
+
+.medium-category a {
+  text-decoration: none;
+  color: black;
+}
+.medium-category li {
+  margin-left: 2.5rem;
+  padding-top: 8px;
+}
+/*.big-title:hover::after {
+  width: 35%;
+}*/
