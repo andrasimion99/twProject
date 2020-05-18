@@ -110,11 +110,49 @@ const testPostRegisterWithInvalidEmail = async function () {
   request.end();
 };
 
+const testPostLogin = async function () {
+  const parameters = {
+    email: "filimon.raluca@gmail.com",
+    password: "parola",
+  };
+
+  const options = {
+    host: "localhost",
+    port: "3002",
+    path: "/api/users/login",
+    method: "POST",
+  };
+  const request = http.request(options, (resp) => {
+    let data = "";
+
+    resp.on("data", (chunk) => {
+      data += chunk;
+    });
+
+    resp.on("end", () => {
+      data = JSON.parse(data);
+      assert.strictEqual(data.status, "success");
+      assert.strictEqual(data.data.email, parameters.email);
+      assert.strictEqual(data.data.userType, "user");
+      assert.strictEqual(data.data.restricted, false);
+      assert.notEqual(data.data.token, null);
+    });
+  });
+
+  request.on("error", (err) => {
+    console.log(err);
+  });
+
+  request.write(JSON.stringify(parameters));
+  request.end();
+};
+
 const mainTest = async function () {
   await testGetUsers();
   await testGetUserWithWrongToken();
   await testPostRegister();
   await testPostRegisterWithInvalidEmail();
+  await testPostLogin();
 };
 
 mainTest();
