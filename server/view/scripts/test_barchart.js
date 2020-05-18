@@ -71,7 +71,8 @@ async function HorizontallyBarchartBySeries(seriesName, types, country) {
         .append("svg")
         .attr("xmlns", "http://www.w3.org/2000/svg")
         .attr("width", width + margin.left + margin.right)
-        .attr("height", height + margin.top + margin.bottom);
+        .attr("height", height + margin.top + margin.bottom)
+        .attr("viewBox", `0 0 340 390`);
 
       var g = svg
         .append("g")

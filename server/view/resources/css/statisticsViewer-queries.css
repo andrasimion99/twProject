@@ -26,9 +26,11 @@
   }
 }
 @media only screen and (max-width: 640px) {
-  #time-bar,
-  #time-cells {
+  #time-bar, #time-cells {
     width: 200px !important;
+  }
+  .year-cell {
+    font-size: 10px !important;
   }
   .export-menu {
     padding: 1rem 1rem 1rem 1rem;
@@ -42,6 +44,7 @@
   }
 }
 @media only screen and (max-width: 568px) {
+  
   .export-menu p {
     font-size: 13px;
   }
@@ -50,9 +53,38 @@
     font-size: 1rem;
   }
 }
-@media only screen and (max-width: 360px) {
+
+@media only screen and (max-width: 468px) {
   svg {
     height: 300px;
-    width: 200px;
+    width: 300px;
+    margin: 0;
+  }
+}
+
+@media only screen and (max-width: 436px) {
+  #time-bar, #time-cells {
+    width: 130px !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+  .year-cell {
+    font-size: 8px !important;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  #time-bar, #time-cells {
+    width: 120px !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+  .year-cell {
+    font-size: 6px !important;
+  }
+  svg {
+    height: 300px;
+    width: 250px;
+    margin: 0;
   }
 }
