@@ -1,5 +1,42 @@
 /* color: #2980b9 */
+/*----error message ----*/
+.error {
+  text-align: center;
+}
+#signup-error-message,
+#signin-error-message {
+  color: red;
+}
+.after-signup,
+.after-signin {
+  text-align: center;
+}
+#after-signup,
+#after-signin {
+  color: green;
+}
+#user_profile {
+  display: none;
+  position: absolute;
+  right: 5%;
+  top: 8.5%;
+  cursor: pointer;
+}
+#user_profile i {
+  color: white;
+  font-size: 120%;
+}
+#logoutButton {
+  display: none;
+}
+#loginButton {
+  display: block;
+}
 
+#after-save {
+  text-align: center;
+  padding: 15px;
+}
 * {
   margin: 0;
   padding: 0;

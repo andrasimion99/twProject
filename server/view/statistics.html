@@ -14,90 +14,150 @@
   </head>
     
 <body>
-<header class="main-header">
-  <div>
-    <nav id="mySidenav" class="sidenav">
-      <!-- <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a> -->
-      <div class="menu-elem"><a href="index.html">Home</a></div>
-      <div class="menu-elem"><a href="about.html">About</a></div>
-      <div class="menu-elem"><a href="statistics.html">Statistics</a></div>
-      <div class="menu-elem">
-        <a href="healthArticles.html">Health and Wellness</a>
-      </div>
-      <div class="menu-elem">
-        <a href="diseasesArticles.html">Diseases and Conditions</a>
-      </div>
-      <div class="menu-elem"><a href="programs.html">Programs</a></div>
-      <div class="menu-elem"><a href="./documentation.html">Documentation</a></div>
-    </nav>
-    <div class="row">
-      <div id="main">
-        <p class="main-nav" onclick="openNav(window.matchMedia('(max-width: 650px)'))">&#9776;</p>
-      </div>
-    </div>
-    <!-- <div class="search-btn">
-      <form>
-        <input type="text" name="search" placeholder="Search." />
-      </form>
-    </div> -->
-    <button id="modalBtn" class="button-login">Log in</button>
-    <div id="loginModal" class="modal">
-      <div id="container" class="modal-content">
-        <span class="closeBtn">&times;</span>
-        <div class="form-container sign-up-container">
-          <form action="#">
-            <h2>Create Account</h2>
-            <div class="social-container">
-              <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
-              <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
-              <a href="#" class="social"><i class="fab fa-twitter"></i></a>
-            </div>
-            <spanz>or use your email for registration</span>
-            <input type="text" placeholder="Name" />
-            <input type="email" placeholder="Email" />
-            <input type="password" placeholder="Password" />
-            <p>Now you can sign in</p>
-            <button>Sign in</button>
-          </form>
-          <div class="change-1">
-            <button id="back" class="back">Back</button>
-          </div>
+  <header class="main-header">
+    <div>
+      <nav id="mySidenav" class="sidenav">
+        <!-- <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a> -->
+        <div class="menu-elem"><a href="index.html">Home</a></div>
+        <div class="menu-elem"><a href="about.html">About</a></div>
+        <div class="menu-elem"><a href="statistics.html">Statistics</a></div>
+        <div class="menu-elem">
+          <a href="healthArticles.html">Health and Wellness</a>
         </div>
-
-        <div class="form-container sign-in-container">
-          <form action="#">
-            <h2>Sign in</h2>
-            <div class="social-container">
-              <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
-              <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
-              <a href="#" class="social"><i class="fab fa-twitter"></i></a>
-            </div>
-            <span>or use your account</span>
-            <input type="email" placeholder="Email" />
-            <input type="password" placeholder="Password" />
-            <a href="#">Forgot your password?</a>
-            <button>Sign in</button>
-          </form>
-          <div class="change-2">
-            <p>You don't have an account?</p>
-            <button id="signUp" class="button-ghost">Sign up</button>
-          </div>
+        <div class="menu-elem">
+          <a href="diseasesArticles.html">Diseases and Conditions</a>
+        </div>
+        <div class="menu-elem"><a href="programs.html">Programs</a></div>
+        <div class="menu-elem">
+          <a href="./documentation.html">Documentation</a>
+        </div>
+      </nav>
+      <div class="row">
+        <div id="main">
+          <p
+            class="main-nav"
+            onclick="openNav(window.matchMedia('(max-width: 650px)'))"
+          >
+            &#9776;
+          </p>
         </div>
       </div>
+      <!-- <div class="search-btn">
+        <form>
+          <input type="text" name="search" placeholder="Search.." />
+        </form>
+      </div> -->
+      <div id="user_profile">
+        <a href="#" class="user_profile"><i class="fas fa-user"></i> </a>
+      </div>
+      <div id="logoutButton">
+        <button id="logout" class="button-login">Log out</button>
+      </div>
+      <div id="loginButton">
+        <button id="modalBtn" class="button-login">Log in</button>
+      </div>
+      <div id="loginModal" class="modal">
+        <div id="container" class="modal-content">
+          <span class="closeBtn">&times;</span>
+          <div class="form-container sign-up-container">
+            <form id="signup-form">
+              <h2>Create Account</h2>
+              <div class="social-container">
+                <a href="#" class="social"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+                <a href="#" class="social"
+                  ><i class="fab fa-google-plus-g"></i
+                ></a>
+                <a href="#" class="social"><i class="fab fa-twitter"></i></a>
+              </div>
+              <span>or use your email for registration</span>
+              <input
+                type="email"
+                placeholder="Email"
+                id="signup-email"
+                name="email"
+              />
+              <input
+                type="password"
+                placeholder="Password"
+                id="signup-password"
+                name="password"
+              />
+              <p>Let's get started</p>
+              <button>Sign up</button>
+            </form>
+            <div class="error">
+              <p id="signup-error-message"></p>
+            </div>
+            <div class="change-1">
+              <button id="back" class="back">Back</button>
+            </div>
+          </div>
+
+          <div class="form-container sign-in-container">
+            <form id="signin-form">
+              <div class="after-signup">
+                <p id="after-signup"></p>
+              </div>
+              <div class="after-signin">
+                <p id="after-signin"></p>
+              </div>
+              <h2>Sign in</h2>
+              <div class="social-container">
+                <a href="#" class="social"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+                <a href="#" class="social"
+                  ><i class="fab fa-google-plus-g"></i
+                ></a>
+                <a href="#" class="social"><i class="fab fa-twitter"></i></a>
+              </div>
+              <span>or use your account</span>
+              <input
+                type="email"
+                placeholder="Email"
+                id="signin-email"
+                name="email"
+              />
+              <input
+                type="password"
+                placeholder="Password"
+                id="signin-password"
+                name="password"
+              />
+              <a href="#">Forgot your password?</a>
+              <button>Sign in</button>
+            </form>
+            <div class="change-2">
+              <p>You don't have an account?</p>
+              <button id="signUp" class="button-ghost">Sign up</button>
+            </div>
+            <div class="error">
+              <p id="signin-error-message"></p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
 
-  <script src="./scripts/login.js"></script>
+    <script src="./scripts/userUtil/register.js"></script>
+    <script src="./scripts/userUtil/logout.js"></script>
+    <script src="./scripts/userUtil/verifyToken.js"></script>
+    <script src="./scripts/userUtil/signin.js"></script>
+    <script src="./scripts/login.js"></script>
 
-  <div class="title">
-    <h1>Obesity prevalance visualizer</h1>
-  </div>
-  <div class="hero-text-box">
-    <h2>Find out everything you want to know about obessity on this site!</h2>
-    <a class="button" href="./about.html">Get started</a>
-        <a class="button" href="./healthArticles.html">Show me more</a>
-  </div>
-</header>
+    <div class="title">
+      <h1>Obesity prevalance visualizer</h1>
+    </div>
+    <div class="hero-text-box">
+      <h2>
+        Find out everything you want to know about obessity on this site!
+      </h2>
+      <a class="button" href="./about.html">Get started</a>
+      <a class="button" href="./statisticsViewer.html">Show me more</a>
+    </div>
+  </header>
          
 <section>
     <div class="container">
