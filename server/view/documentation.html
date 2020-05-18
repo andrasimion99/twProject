@@ -198,7 +198,7 @@
       </ol>
       <h1 class="small-title" id="api-data">API obesity data</h1>
       <ol class="medium-category">
-        <li><a href="#api-accounts-response">Response structure</a></li>
+        <li><a href="#api-data-response">Response structure</a></li>
         <li><a href="#api-states">/api/states</a></li>
         <li><a href="#api-age">/api/age</a></li>
         <li><a href="#api-gender">/api/gender</a></li>
@@ -209,28 +209,597 @@
       <h1 class="small-title" id="api-accounts-response">Response structure</h1>
       <p>The structure of the API responses' body is as follows:</p>
       <ul class="small-category">
-        <li>for successful responses, a JSON object containing the properties:
+        <li>
+          for successful responses, a JSON object containing the properties:
           <ul>
-            <li><mark class="highlight">status</mark>: <mark class="highlight">success</mark></li>
-            <li><mark class="highlight">data</mark>: An object, structure detailed for each route below.</li>
+            <li>
+              <mark class="highlight">status</mark>:
+              <mark class="highlight">success</mark>
+            </li>
+            <li>
+              <mark class="highlight">data</mark>: An object, structure detailed
+              for each route below.
+            </li>
           </ul>
         </li>
-        <li>for unsuccessful responses, a JSON object containing the properties:
+        <li>
+          for unsuccessful responses, a JSON object containing the properties:
           <ul>
-            <li><mark class="highlight">status</mark>: <mark class="highlight">fail</mark></li>
-            <li><mark class="highlight">error</mark>: An object containing a message property, and sometimes additional helpful properties.</li>
+            <li>
+              <mark class="highlight">status</mark>:
+              <mark class="highlight">fail</mark>
+            </li>
+            <li>
+              <mark class="highlight">error</mark>: An object containing a
+              message property, and sometimes additional helpful properties.
+            </li>
           </ul>
         </li>
       </ul>
-      <h1 class="small-title" id="api-users">/api/users</h1>
+      <h1 class="small-title-content" id="api-users">/api/users</h1>
       <h1 class="subtitle">GET</h1>
+      <p>
+        Get the all the users from the db.
+      </p>
+      <h1 class="small-subtitle">Query parameters:</h1>
+      <ul class="small-category">
+        <li>
+          token - It will return only the user with that token.
+        </li>
+      </ul>
+      <h1 class="small-subtitle">Return codes:</h1>
+      <ul class="small-category">
+        <li>
+          200 - OK
+        </li>
+        <li>
+          400 - There was a problem fetching data
+        </li>
+      </ul>
+      <h1 class="small-subtitle">Usage example:</h1>
+      <mark class="highlight">localhost:3002/api/users</mark>
+      <h1 class="small-subtitle">Returned data example:</h1>
+      <pre>
+        <code>
+{
+    "status": "success",
+    "data": [
+        {
+            "userType": "user",
+            "token": null,
+            "restricted": false,
+            "_id": "5eba65e5f167ce03401fd428",
+            "email": "filimon.raluca@gmail.com",
+            "password": "$2a$08$oE6bzdKTEMXTHZIVRFgb7.X2ytw51ELeYF69QGfKJyc7LSDfLPTje",
+            "__v": 0
+        },
+        {
+            "userType": "user",
+            "token": null,
+            "restricted": false,
+            "_id": "5eba6ca9f167ce03401fd429",
+            "email": "ralucik_2006@yahoo.com",
+            "password": "$2a$08$1R/RQ6FIGJ8Rj1BmU1hHN.V3uEF6T/UCu1uZdSFYCXh4LwPFzNOWy",
+            "__v": 0
+        }
+    ]
+}</code></pre>
+      <h1 class="subtitle">DELETE</h1>
+      <p>
+        Deletes all users from db.
+      </p>
+      <h1 class="small-subtitle">Return codes:</h1>
+      <ul class="small-category">
+        <li>
+          204 - NO_CONTENT
+        </li>
+        <li>
+          400 - Bad Request
+        </li>
+      </ul>
+      <h1 class="small-subtitle">Usage example:</h1>
+      <mark class="highlight">localhost:3002/api/users</mark>
+      <h1 class="small-subtitle">Returned data example:</h1>
+      <pre>
+        <code>
+        </code></pre>
       <h1 class="small-title" id="api-register">/api/users/register</h1>
+      <h1 class="subtitle">POST</h1>
+      <p>
+        Post a user with an email and a password into db.
+      </p>
+      <h1 class="small-subtitle">Request body</h1>
+      <pre><code>{
+    "email": "andrasi@gmail.com",
+    "password": "andra"
+}</code></pre>
+      <h1 class="small-subtitle">Return codes:</h1>
+      <ul class="small-category">
+        <li>
+          201 - CREATED
+        </li>
+        <li>
+          400 - Bad Request
+        </li>
+      </ul>
+      <h1 class="small-subtitle">Usage example:</h1>
+      <mark class="highlight">localhost:3002/api/users/register</mark>
+      <h1 class="small-subtitle">Returned data example:</h1>
+      <pre>
+<code>{
+    "status": "success",
+    "data": {
+        "userType": "user",
+        "token": null,
+        "restricted": false,
+        "_id": "5ebfc318ba921b58b838ce61",
+        "email": "andrasi@gmail.com",
+        "password": "$2a$08$4iY0wY/E4K9wtCroNhWFSO.3qw9d/tyOK.GGGmGbTlW89dfVuYnwK",
+        "__v": 0
+    }
+}</code></pre>
       <h1 class="small-title" id="api-login">/api/users/login</h1>
+      <h1 class="subtitle">POST</h1>
+      <p>
+        Generates and sets the token for an user from db.
+      </p>
+      <h1 class="small-subtitle">Request body:</h1>
+      <pre>
+<code>{
+    "email": "andrasi@gmail.com",
+    "password": "andra"
+}</code>
+      </pre>
+      <h1 class="small-subtitle">Return codes:</h1>
+      <ul class="small-category">
+        <li>
+          201 - CREATED
+        </li>
+        <li>
+          400 - Bad Request
+        </li>
+      </ul>
+      <h1 class="small-subtitle">Usage example:</h1>
+      <mark class="highlight">localhost:3002/api/users/login</mark>
+      <h1 class="small-subtitle">Returned data example:</h1>
+      <pre>
+<code>{
+    "status": "success",
+    "data": {
+        "userType": "user",
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZWJmYzMxOGJh7OTIxYjU4YjgzOGNlNjEiLCJpYXQiOjE1ODk2MjYxMzV9.4fcDes2z80SwE8hTQejBq8UlmFUw1tRj6anD_dEEnM4",
+        "restricted": false,
+        "_id": "5ebfc318ba921b58b838ce61",
+        "email": "andrasi@gmail.com",
+        "password": "$2a$08$4iY0wY/E4K9wtCroNhWFSO.3qw9d/tyOK.GGGmGbTlW89dfVuYnwK",
+        "__v": 0
+    }
+}</code></pre>
       <h1 class="small-title" id="api-logout">/api/users/logout</h1>
+      <h1 class="subtitle">POST</h1>
+      <p>
+        Removes the token for an user from db.
+      </p>
+      <h1 class="small-subtitle">Request body:</h1>
+      <pre>
+<code>{
+	"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZWJmYzMxOGJhOTIxYjU4YjgzOGNlNjEiLCJpYXQiOjE1ODk2MjYxMzV9.4fcDes2z80SwE8hTQejBq8UlmFUw1tRj6anD_dEEnM4"
+}</code>
+      </pre>
+      <h1 class="small-subtitle">Return codes:</h1>
+      <ul class="small-category">
+        <li>
+          201 - CREATED
+        </li>
+        <li>
+          400 - Bad Request
+        </li>
+      </ul>
+      <h1 class="small-subtitle">Usage example:</h1>
+      <mark class="highlight">localhost:3002/api/users/logout</mark>
+      <h1 class="small-subtitle">Returned data example:</h1>
+      <pre>
+<code>{
+    "status": "success",
+    "data": {
+       "n": 1,
+       "nModified": 1,
+       "opTime": {
+          "ts": "6827392906936975364",
+          "t": 18
+       },
+       "electionId": "7fffffff0000000000000012",
+       "ok": 1,
+       "$clusterTime": {
+          "clusterTime": "6827392906936975364",
+          "signature": {
+             "hash": "EmxZqAkQ1tTeKVg0HivgEIvmMxU=",
+             "keyId": "6796929880727486466"
+          }
+       },
+       "operationTime": "6827392906936975364"
+    }
+ }</code></pre>
       <h1 class="small-title" id="api-profile">/api/users/profile</h1>
+      <h1 class="subtitle">POST</h1>
+      <p>
+        Adds information about the user profile in db.
+      </p>
+      <h1 class="small-subtitle">Request body:</h1>
+      <pre>
+<code>{
+	"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZWJmYzMxOGJhOTIxYjU4YjgzOGNlNjEiLCJpYXQiOjE1ODk2MjY0ODB9.uxvkoOXiPIH4Oe25RQt6MD1V9QBHEtCfet7FQXDcdBU",
+	"firstName": "Andra",
+	"lastName": "Simion"
+}</code>
+      </pre>
+      <h1 class="small-subtitle">Return codes:</h1>
+      <ul class="small-category">
+        <li>
+          201 - CREATED
+        </li>
+        <li>
+          400 - Bad Request
+        </li>
+      </ul>
+      <h1 class="small-subtitle">Usage example:</h1>
+      <mark class="highlight">localhost:3002/api/users/profile</mark>
+      <h1 class="small-subtitle">Returned data example:</h1>
+      <pre>
+<code>{
+    "status": "success",
+    "data": {
+       "n": 1,
+       "nModified": 1,
+       "opTime": {
+          "ts": "6827394131002654722",
+          "t": 18
+       },
+       "electionId": "7fffffff0000000000000012",
+       "ok": 1,
+       "$clusterTime": {
+          "clusterTime": "6827394131002654722",
+          "signature": {
+             "hash": "73QSrPARPY2uIYMlLLuCU4Aa33I=",
+             "keyId": "6796929880727486466"
+          }
+       },
+       "operationTime": "6827394131002654722"
+    }
+ }</code></pre>
       <h1 class="small-title" id="api-password">/api/users/changePassword</h1>
+      <h1 class="subtitle">POST</h1>
+      <p>
+        Change the password for an authenticated user.
+      </p>
+      <h1 class="small-subtitle">Request body:</h1>
+      <pre>
+<code>{
+	"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZWJmYzMxOGJhOTIxYjU4YjgzOGNlNjEiLCJpYXQiOjE1ODk2MjY0ODB9.uxvkoOXiPIH4Oe25RQt6MD1V9QBHEtCfet7FQXDcdBU",
+	"currentPassword": "andra",
+	"newPassword": "parola"
+}</code>
+      </pre>
+      <h1 class="small-subtitle">Return codes:</h1>
+      <ul class="small-category">
+        <li>
+          201 - CREATED
+        </li>
+        <li>
+          400 - Bad Request
+        </li>
+      </ul>
+      <h1 class="small-subtitle">Usage example:</h1>
+      <mark class="highlight">localhost:3002/api/users/changePassword</mark>
+      <h1 class="small-subtitle">Returned data example:</h1>
+      <pre>
+<code>{
+    "status": "success",
+    "data": {
+       "userType": "user",
+       "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZWJmYzMxOGJhOTIxYjU4YjgzOGNlNjEiLCJpYXQiOjE1ODk2MjY0ODB9.uxvkoOXiPIH4Oe25RQt6MD1V9QBHEtCfet7FQXDcdBU",
+       "restricted": false,
+       "_id": "5ebfc318ba921b58b838ce61",
+       "email": "andrasi@gmail.com",
+       "password": "parola",
+       "__v": 0,
+       "firstName": "Andra",
+       "lastName": "Simion"
+    }
+}</code></pre>
       <h1 class="small-title" id="api-restrict">/api/users/restrict</h1>
+      <h1 class="subtitle">POST</h1>
+      <p>
+        An admin can restrict an user with this route.
+      </p>
+      <h1 class="small-subtitle">Request body:</h1>
+      <pre>
+<code>{
+	"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZWJiZmVmMmU1Mjk0MjM1M2MzZDI0ZmIiLCJpYXQiOjE1ODk0NjAxNzh9.s0dzXqTGGgbXQono-xXYarUbm6q1-5uu7k6en1VJePQ",
+	"email": "andrasi@gmail.com"
+}</code>
+      </pre>
+      <h1 class="small-subtitle">Return codes:</h1>
+      <ul class="small-category">
+        <li>
+          201 - CREATED
+        </li>
+        <li>
+          400 - Bad Request
+        </li>
+      </ul>
+      <h1 class="small-subtitle">Usage example:</h1>
+      <mark class="highlight">localhost:3002/api/users/restrict</mark>
+      <h1 class="small-subtitle">Returned data example:</h1>
+      <pre>
+<code>{
+    "status": "success",
+    "data": {
+       "n": 1,
+       "nModified": 1,
+       "opTime": {
+          "ts": "6827396652148457473",
+          "t": 18
+       },
+       "electionId": "7fffffff0000000000000012",
+       "ok": 1,
+       "$clusterTime": {
+          "clusterTime": "6827396652148457473",
+          "signature": {
+             "hash": "3H76Nk4T1FHuy04aEhk3CpYAcNA=",
+             "keyId": "6796929880727486466"
+          }
+       },
+       "operationTime": "6827396652148457473"
+    }
+ }</code></pre>
       <h1 class="small-title" id="api-unrestrict">/api/users/unrestrict</h1>
+      <h1 class="subtitle">POST</h1>
+      <p>
+        An admin can unrestrict an user with this route.
+      </p>
+      <h1 class="small-subtitle">Request body:</h1>
+      <pre>
+<code>{
+	"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZWJiZmVmMmU1Mjk0MjM1M2MzZDI0ZmIiLCJpYXQiOjE1ODk0NjAxNzh9.s0dzXqTGGgbXQono-xXYarUbm6q1-5uu7k6en1VJePQ",
+	"email": "andrasi@gmail.com"
+}</code>
+      </pre>
+      <h1 class="small-subtitle">Return codes:</h1>
+      <ul class="small-category">
+        <li>
+          201 - CREATED
+        </li>
+        <li>
+          400 - Bad Request
+        </li>
+      </ul>
+      <h1 class="small-subtitle">Usage example:</h1>
+      <mark class="highlight">localhost:3002/api/users/unrestrict</mark>
+      <h1 class="small-subtitle">Returned data example:</h1>
+      <pre>
+<code>{
+    "status": "success",
+    "data": {
+       "n": 1,
+       "nModified": 1,
+       "opTime": {
+          "ts": "6827396811062247425",
+          "t": 18
+       },
+       "electionId": "7fffffff0000000000000012",
+       "ok": 1,
+       "$clusterTime": {
+          "clusterTime": "6827396811062247425",
+          "signature": {
+             "hash": "/IoMsXkq/lLqepyWy3ZZyp39JOM=",
+             "keyId": "6796929880727486466"
+          }
+       },
+       "operationTime": "6827396811062247425"
+    }
+ }</code></pre>
+
+      <!-- Obesity data documentation -->
+      <h1 class="medium-title" id="api-data-response">Obesity data API</h1>
+      <h1 class="small-title" id="api-data-response">Response structure</h1>
+      <p>The structure of the API responses' body is as follows:</p>
+      <ul class="small-category">
+        <li>
+          for successful responses, a JSON object containing the properties:
+          <ul>
+            <li>
+              <mark class="highlight">status</mark>:
+              <mark class="highlight">success</mark>
+            </li>
+            <li>
+              <mark class="highlight">data</mark>: An object, structure detailed
+              for each route below.
+            </li>
+          </ul>
+        </li>
+        <li>
+          for unsuccessful responses, a JSON object containing the properties:
+          <ul>
+            <li>
+              <mark class="highlight">status</mark>:
+              <mark class="highlight">fail</mark>
+            </li>
+            <li>
+              <mark class="highlight">error</mark>: An object containing a
+              message property, and sometimes additional helpful properties.
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <h1 class="small-title">/api/states</h1>
+      <h1 class="subtitle">GET</h1>
+      <p>
+        Get the all the data from the db. Data is represented by documents with
+        the obesity percentage for the total population of each country, within
+        the years 2011-2018.
+      </p>
+      <h1 class="small-subtitle">Query parameters:</h1>
+      <ul class="small-category">
+        <li>
+          country - Select only the data for a specific country.
+        </li>
+        <li>year - Select only the data for a specific year.</li>
+      </ul>
+      <h1 class="small-subtitle">Return codes:</h1>
+      <ul class="small-category">
+        <li>
+          200 - OK
+        </li>
+        <li>
+          400 - There was a problem fetching data
+        </li>
+      </ul>
+      <h1 class="small-subtitle">Usage example:</h1>
+      <mark class="highlight">localhost:3001/api/states</mark>
+      <h1 class="small-subtitle">Returned data example:</h1>
+      <pre>
+        <code>
+{
+    "status": "success",
+    "data": [
+        {
+            "_id": "5e8c9f221f3c4c71f47a1ccd",
+            "﻿ID": "21933",
+            "Description": "2011",
+            "LocationAbbr": "IL",
+            "LocationDesc": "Illinois",
+            "DataSource": "BRFSS",
+            "Topic": "Obesity / Weight Status",
+            "Data_Value": "27.1",
+            "Sample_Size": "5",
+            "Stratification1": "Total",
+            "StratificationId1": "Total",
+            "LocationDisplayOrder": "OVERALL"
+        },
+        {
+            "_id": "5e8c9f221f3c4c71f47a1cc4",
+            "﻿ID": "26780",
+            "Description": "2011",
+            "LocationAbbr": "CA",
+            "LocationDesc": "California",
+            "DataSource": "BRFSS",
+            "Topic": "Obesity / Weight Status",
+            "Data_Value": "23.8",
+            "Sample_Size": "17",
+            "Stratification1": "Total",
+            "StratificationId1": "Total",
+            "LocationDisplayOrder": "OVERALL"
+        }
+    ]
+    }</code></pre>
+      <h1 class="subtitle">POST</h1>
+      <p>
+        Post a document into states db.
+      </p>
+      <h1 class="small-subtitle">Request body</h1>
+      <pre><code>{
+    "ID": "671",
+    "Description": "2019",
+    "LocationAbbr": "US",
+    "LocationDesc": "National",
+    "DataSource": "BRFSS",
+    "Topic": "Obesity / Weight Status",
+    "Data_Value": "27.4",
+    "Sample_Size": "470",
+    "Stratification1": "700",
+    "StratificationId1": "Total",
+    "LocationDisplayOrder": "OVERALL"
+}</code></pre>
+      <h1 class="small-subtitle">Return codes:</h1>
+      <ul class="small-category">
+        <li>
+          201 - CREATED
+        </li>
+        <li>
+          400 - Bad Request
+        </li>
+      </ul>
+      <h1 class="small-subtitle">Usage example:</h1>
+      <mark class="highlight">localhost:3001/api/states</mark>
+      <h1 class="small-subtitle">Returned data example:</h1>
+      <pre>
+<code>{
+    "status": "success",
+    "data": {
+       "ID": "671",
+       "Description": "2019",
+       "LocationAbbr": "US",
+       "LocationDesc": "National",
+       "DataSource": "BRFSS",
+       "Topic": "Obesity / Weight Status",
+       "Data_Value": "27.4",
+       "Sample_Size": "470",
+       "Stratification1": "700",
+       "StratificationId1": "Total",
+       "LocationDisplayOrder": "OVERALL"
+    }
+}</code></pre>
+      <h1 class="subtitle">PATCH</h1>
+      <p>
+        Modify a document into states db.
+      </p>
+      <h1 class="small-subtitle">Query parameters:</h1>
+      <ul class="small-category">
+        <li>
+          id - The id of the object you want to modify.
+        </li>
+      </ul>
+      <h1 class="small-subtitle">Request body</h1>
+      <pre><code>{
+    "ID": "671",
+    "Description": "2019",
+    "LocationAbbr": "US",
+    "LocationDesc": "National",
+    "DataSource": "BRFSS",
+    "Topic": "Obesity / Weight Status",
+    "Data_Value": "27.4",
+    "Sample_Size": "470",
+    "Stratification1": "700",
+    "StratificationId1": "Total",
+    "LocationDisplayOrder": "OVERALL"
+}</code></pre>
+      <h1 class="small-subtitle">Return codes:</h1>
+      <ul class="small-category">
+        <li>
+          201 - CREATED
+        </li>
+        <li>
+          400 - Bad Request
+        </li>
+      </ul>
+      <h1 class="small-subtitle">Usage example:</h1>
+      <mark class="highlight"
+        >localhost:3001/api/states?id=5ebd2b39eeb71e05e4fc5349</mark
+      >
+      <h1 class="small-subtitle">Returned data example:</h1>
+      <pre>
+<code>{
+    "status": "success",
+    "data": {
+       "n": 1,
+       "nModified": 1,
+       "opTime": {
+          "ts": "6826661366632284162",
+          "t": 18
+       },
+       "electionId": "7fffffff0000000000000012",
+       "ok": 1,
+       "$clusterTime": {
+          "clusterTime": "6826661366632284162",
+          "signature": {
+             "hash": "T44xuKftQy2O78t7gZ5lAhVfyyg=",
+             "keyId": "6796929880727486466"
+          }
+       },
+       "operationTime": "6826661366632284162"
+    }
+ }</code></pre>
     </div>
 
     <div class="clearfix"></div>
