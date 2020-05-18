@@ -21,11 +21,11 @@ a {
 }
 
 .profile-header {
-    background-color: #489ed8;
+    background-color: #2980b9;
 }
 
 .profile-title {
-    color: aliceblue;
+    color: white;
     text-align: center;
     padding: 30px;
 }
@@ -78,7 +78,7 @@ a {
     width: 50%;
     margin: 0 auto;
     border-radius: 50%;
-    background-color: #489ed8;
+    background-color: #2980b9;
 }
 
 .profile-pic:after {
@@ -134,25 +134,25 @@ a {
 }
 
 .profile-info:hover {
-    background-color: rgb(41, 75, 143);
+    background-color: #2980b9;
     color: white;
     transition: 0.3s;
 }
 
 .user-photo:hover {
-    background-color: rgb(41, 75, 143);
+    background-color: #2980b9;
     transition: 0.3s;
     color: white;
 }
 
 .liked-articles:hover {
-    background-color: rgb(41, 75, 143);
+    background-color: #2980b9;
     color: white;
     transition: 0.3s;
 }
 
 .settings:hover {
-    background-color: rgb(41, 75, 143);
+    background-color: #2980b9;
     color: white;
     transition: 0.3s;
 }
@@ -216,7 +216,7 @@ input:hover{
 }
 
 input:focus {
-    border: 2px solid rgb(41, 75, 143);
+    border: 2px solid #2980b9;
     border-radius: 10px;
 }
 
