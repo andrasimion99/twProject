@@ -98,6 +98,18 @@ pre {
   font-size: 85%;
   margin-bottom: 10px;
 }
+#work {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.work-flex {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+}
 /*.big-title:hover::after {
   width: 35%;
 }*/
